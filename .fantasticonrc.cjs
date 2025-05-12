@@ -2,7 +2,7 @@ const path = require("path");
 const codepoints = require("./codepoints.json");
 
 module.exports = {
-  inputDir: "./output", // zachová strukturu a názvy
+  inputDir: "./output-flat", // zachová strukturu a názvy
   outputDir: "./dist",
   fontTypes: ['ttf', 'woff', 'woff2'],
   assetTypes: ['css', 'html', 'json', 'ts'],

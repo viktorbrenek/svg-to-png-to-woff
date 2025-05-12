@@ -4,11 +4,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-  "fix": "node trace-svg.js",
-  "generate:codepoints": "node generate-codepoints.js",
+  "trace": "node trace-svg.js",
+  "flatten": "node flatten-for-fantasticon.js",
+  "codepoints": "node generate-codepoints.js",
   "build": "npx fantasticon --config .fantasticonrc.cjs",
-  "all": "npm run fix && npm run generate:codepoints && npm run build"
-  },
+  "all": "npm run trace && npm run flatten && npm run codepoints && npm run build"
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",

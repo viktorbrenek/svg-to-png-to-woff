@@ -79,6 +79,10 @@ You will find the generated fonts in the `dist/` folder, ready to use in your we
 
 ---
 
+## 📝 Current problems
+
+For now the generated icon-types.ts is generated backwards from Z to A. However it is an easy fix with VS Code command "sort ascending" if you really need it to be from A to Z. 
+
 ## 📝 Notes
 
 - This tool handles `fill-rule="evenodd"` properly, which can cause issues with typical vector conversion.

@@ -1,5537 +1,5537 @@
 export type MyIconsId =
-  | "regular-web-webcam"
-  | "regular-web-warning"
-  | "regular-web-tabs"
-  | "regular-web-tabs-plus"
-  | "regular-web-tabs-minus"
-  | "regular-web-tabs-cross"
-  | "regular-web-tabs-check"
-  | "regular-web-tablet-increase"
-  | "regular-web-statistic"
-  | "regular-web-shield-warning"
-  | "regular-web-share"
-  | "regular-web-server"
-  | "regular-web-rss"
-  | "regular-web-rss-settings"
-  | "regular-web-link"
-  | "regular-web-link-b"
-  | "regular-web-link-b-check"
-  | "regular-web-increase-mail"
-  | "regular-web-grid-upload"
-  | "regular-web-graph-linear-small"
-  | "regular-web-globe"
-  | "regular-web-flag"
-  | "regular-web-flag-c"
-  | "regular-web-data-file-bars"
-  | "regular-web-console"
-  | "regular-web-collapse-up"
-  | "regular-web-collapse-right"
-  | "regular-web-collapse-left"
-  | "regular-web-collapse-down"
-  | "regular-web-code"
-  | "regular-web-chart"
-  | "regular-web-bug"
-  | "regular-web-browser"
-  | "regular-web-browser-window"
-  | "regular-web-browser-grid"
-  | "regular-web-broken-link"
-  | "regular-web-bars-home"
-  | "regular-web-at-sign"
-  | "regular-web-analytics-net"
-  | "regular-web-analytics-graph"
-  | "regular-weather-windsock"
-  | "regular-weather-water"
-  | "regular-weather-thermometer"
-  | "regular-weather-sunrise"
-  | "regular-weather-sun"
-  | "regular-weather-sun-cloud-snow"
-  | "regular-weather-snowflake"
-  | "regular-weather-moon"
-  | "regular-weather-moon-a"
-  | "regular-weather-flash"
-  | "regular-weather-fire"
-  | "regular-weather-cloud"
-  | "regular-weather-cloud-snow"
-  | "regular-weather-cloud-rain"
-  | "regular-weather-cloud-flash"
-  | "regular-video-player"
-  | "regular-user"
-  | "regular-user-walking"
-  | "regular-user-toilet-sign"
-  | "regular-user-single-neutral-home"
-  | "regular-user-single-neutral-actions-edit"
-  | "regular-user-single-neutral-actions-block"
-  | "regular-user-share"
-  | "regular-user-plus"
-  | "regular-user-multiple-users"
-  | "regular-user-minus"
-  | "regular-user-messages-people-user-warning"
-  | "regular-user-male"
-  | "regular-user-male-sign"
-  | "regular-user-male-plus"
-  | "regular-user-male-minus"
-  | "regular-user-male-list"
-  | "regular-user-male-cross"
-  | "regular-user-male-check"
-  | "regular-user-lock"
-  | "regular-user-lock-unlocked"
-  | "regular-user-lock-unlocked-b"
-  | "regular-user-list"
-  | "regular-user-key"
-  | "regular-user-headset"
-  | "regular-user-group"
-  | "regular-user-group-female"
-  | "regular-user-group-a"
-  | "regular-user-gear"
-  | "regular-user-forward"
-  | "regular-user-female"
-  | "regular-user-female-sign"
-  | "regular-user-female-plus"
-  | "regular-user-female-minus"
-  | "regular-user-female-list"
-  | "regular-user-female-cross"
-  | "regular-user-female-check"
-  | "regular-user-cross"
-  | "regular-user-contact-book"
-  | "regular-user-contact-book-a"
-  | "regular-user-circle"
-  | "regular-user-check"
-  | "regular-user-business-deal-cash-exchange"
-  | "regular-ui-zoom-in-page"
-  | "regular-ui-window"
-  | "regular-ui-undo"
-  | "regular-ui-undo-b"
-  | "regular-ui-undo-a"
-  | "regular-ui-triangle-top"
-  | "regular-ui-triangle-right"
-  | "regular-ui-triangle-left"
-  | "regular-ui-triangle-bottom"
-  | "regular-ui-tree-save"
-  | "regular-ui-tree-load"
-  | "regular-ui-target"
-  | "regular-ui-sync"
-  | "regular-ui-star"
-  | "regular-ui-sqare-dashed"
-  | "regular-ui-split-vertical"
-  | "regular-ui-split-horizontal"
-  | "regular-ui-shrink"
-  | "regular-ui-search"
-  | "regular-ui-search-plus"
-  | "regular-ui-search-minus"
-  | "regular-ui-search-cross"
-  | "regular-ui-search-check"
-  | "regular-ui-scroll-vertical"
-  | "regular-ui-scroll-horizontal"
-  | "regular-ui-resize-vertical"
-  | "regular-ui-resize-top-right"
-  | "regular-ui-resize-top-left"
-  | "regular-ui-resize-horizontal"
-  | "regular-ui-resize-diagonal"
-  | "regular-ui-resize-bottom-right"
-  | "regular-ui-resize-bottom-left"
-  | "regular-ui-reply"
-  | "regular-ui-repeating"
-  | "regular-ui-remove-connection-point"
-  | "regular-ui-refresh"
-  | "regular-ui-radiobutton"
-  | "regular-ui-property-and"
-  | "regular-ui-previous"
-  | "regular-ui-previous-a"
-  | "regular-ui-power"
-  | "regular-ui-popup"
-  | "regular-ui-plus"
-  | "regular-ui-plus-small"
-  | "regular-ui-pixel"
-  | "regular-ui-out-link"
-  | "regular-ui-number"
-  | "regular-ui-next"
-  | "regular-ui-next-a"
-  | "regular-ui-move"
-  | "regular-ui-move-up"
-  | "regular-ui-move-up-front"
-  | "regular-ui-move-down"
-  | "regular-ui-move-down-background"
-  | "regular-ui-more"
-  | "regular-ui-more-vertical"
-  | "regular-ui-more-vertical-small"
-  | "regular-ui-more-small"
-  | "regular-ui-more-small-circle"
-  | "regular-ui-more-horizontal-small"
-  | "regular-ui-minus"
-  | "regular-ui-minus-small"
-  | "regular-ui-method"
-  | "regular-ui-method-inherited"
-  | "regular-ui-logout"
-  | "regular-ui-login"
-  | "regular-ui-list-view"
-  | "regular-ui-list-user"
-  | "regular-ui-list-share"
-  | "regular-ui-list-forward"
-  | "regular-ui-layout-wireframe"
-  | "regular-ui-layout-third-vertical"
-  | "regular-ui-layout-table-view"
-  | "regular-ui-layout-sidebar-l"
-  | "regular-ui-layout-sidebar-l-half"
-  | "regular-ui-layout-half"
-  | "regular-ui-layout-half-horizontal"
-  | "regular-ui-keyboard"
-  | "regular-ui-in-link"
-  | "regular-ui-import"
-  | "regular-ui-house"
-  | "regular-ui-home"
-  | "regular-ui-home-a"
-  | "regular-ui-hierarchy"
-  | "regular-ui-hierarchy-tree"
-  | "regular-ui-help"
-  | "regular-ui-help-life"
-  | "regular-ui-heart"
-  | "regular-ui-hamburger"
-  | "regular-ui-grid-view"
-  | "regular-ui-fullscreen"
-  | "regular-ui-fullscreen-a"
-  | "regular-ui-frame"
-  | "regular-ui-forward"
-  | "regular-ui-filter"
-  | "regular-ui-eye"
-  | "regular-ui-eye-cross"
-  | "regular-ui-export"
-  | "regular-ui-expand"
-  | "regular-ui-enlarge"
-  | "regular-ui-drag-handle"
-  | "regular-ui-dot"
-  | "regular-ui-dot-large"
-  | "regular-ui-cross"
-  | "regular-ui-cross-small"
-  | "regular-ui-crop"
-  | "regular-ui-create-connection"
-  | "regular-ui-connection"
-  | "regular-ui-connection-open"
-  | "regular-ui-connection-open-inherited"
-  | "regular-ui-connection-inherited"
-  | "regular-ui-cone"
-  | "regular-ui-condition"
-  | "regular-ui-combobox"
-  | "regular-ui-cmd"
-  | "regular-ui-cloud-upload"
-  | "regular-ui-cloud-download"
-  | "regular-ui-close-parallel-connection"
-  | "regular-ui-circle"
-  | "regular-ui-circle-warning"
-  | "regular-ui-circle-plus"
-  | "regular-ui-circle-minus"
-  | "regular-ui-circle-info"
-  | "regular-ui-circle-help"
-  | "regular-ui-circle-cross"
-  | "regular-ui-circle-chevron-top"
-  | "regular-ui-circle-chevron-right"
-  | "regular-ui-circle-chevron-left"
-  | "regular-ui-circle-chevron-bottom"
-  | "regular-ui-circle-check"
-  | "regular-ui-circle-check-a"
-  | "regular-ui-circle-arrow-top"
-  | "regular-ui-circle-arrow-right"
-  | "regular-ui-circle-arrow-left"
-  | "regular-ui-circle-arrow-bottom"
-  | "regular-ui-chevron-top"
-  | "regular-ui-chevron-top-small"
-  | "regular-ui-chevron-right"
-  | "regular-ui-chevron-right-tripple"
-  | "regular-ui-chevron-right-small"
-  | "regular-ui-chevron-left"
-  | "regular-ui-chevron-left-small"
-  | "regular-ui-chevron-bottom"
-  | "regular-ui-chevron-bottom-small"
-  | "regular-ui-checkbox"
-  | "regular-ui-check"
-  | "regular-ui-check-small"
-  | "regular-ui-check-small-circle"
-  | "regular-ui-card"
-  | "regular-ui-card-view"
-  | "regular-ui-bullet-view"
-  | "regular-ui-box-warning"
-  | "regular-ui-box-help"
-  | "regular-ui-block"
-  | "regular-ui-backspace"
-  | "regular-ui-attribute"
-  | "regular-ui-attribute-inherited"
-  | "regular-ui-arrow-top"
-  | "regular-ui-arrow-top-small"
-  | "regular-ui-arrow-top-right"
-  | "regular-ui-arrow-top-left"
-  | "regular-ui-arrow-top-a"
-  | "regular-ui-arrow-right"
-  | "regular-ui-arrow-right-small"
-  | "regular-ui-arrow-right-a"
-  | "regular-ui-arrow-left"
-  | "regular-ui-arrow-left-small"
-  | "regular-ui-arrow-left-a"
-  | "regular-ui-arrow-bottom"
-  | "regular-ui-arrow-bottom-small"
-  | "regular-ui-arrow-bottom-right"
-  | "regular-ui-arrow-bottom-left"
-  | "regular-ui-arrow-bottom-a"
-  | "regular-ui-align-top"
-  | "regular-ui-align-right"
-  | "regular-ui-align-left"
-  | "regular-ui-align-center-vertical"
-  | "regular-ui-align-center-horizontal"
-  | "regular-ui-align-bottom"
-  | "regular-ui-add-connection-point"
-  | "regular-transport-truck"
-  | "regular-transport-truck-a"
-  | "regular-transport-train"
-  | "regular-transport-sign-stop"
-  | "regular-transport-ship"
-  | "regular-transport-ship-a"
-  | "regular-transport-car"
-  | "regular-transport-car-a"
-  | "regular-transport-bus"
-  | "regular-transport-bus-ticket"
-  | "regular-transport-bus-a"
-  | "regular-transport-bicycle"
-  | "regular-tool-umbrella"
-  | "regular-tool-tools-box"
-  | "regular-tool-text-type"
-  | "regular-tool-smartphone-pay"
-  | "regular-tool-scissors"
-  | "regular-tool-satelite-type"
-  | "regular-tool-ruler"
-  | "regular-tool-ruler-corner"
-  | "regular-tool-ruler-b"
-  | "regular-tool-router-signal"
-  | "regular-tool-razor"
-  | "regular-tool-protection-type"
-  | "regular-tool-property-type"
-  | "regular-tool-projector"
-  | "regular-tool-plug"
-  | "regular-tool-phone"
-  | "regular-tool-phone-landscape"
-  | "regular-tool-mouse"
-  | "regular-tool-module-three"
-  | "regular-tool-magnet"
-  | "regular-tool-magic-wand"
-  | "regular-tool-laptop"
-  | "regular-tool-int-type"
-  | "regular-tool-hardware-type"
-  | "regular-tool-hammer"
-  | "regular-tool-hammer-plus"
-  | "regular-tool-hammer-angle"
-  | "regular-tool-hammer-a"
-  | "regular-tool-grid"
-  | "regular-tool-gears-type"
-  | "regular-tool-focus"
-  | "regular-tool-floppy-edit"
-  | "regular-tool-floppy-disks"
-  | "regular-tool-floppy-disk"
-  | "regular-tool-flashlight"
-  | "regular-tool-fire-extinguisher"
-  | "regular-tool-display"
-  | "regular-tool-display-user"
-  | "regular-tool-console"
-  | "regular-tool-console-a"
-  | "regular-tool-compass"
-  | "regular-tool-camera"
-  | "regular-tool-calc"
-  | "regular-tool-binoculars"
-  | "regular-tool-area-type"
-  | "regular-tool-android-type"
-  | "regular-time-watch"
-  | "regular-time-timer"
-  | "regular-time-stopwatch"
-  | "regular-time-speed-meter"
-  | "regular-time-hourglass"
-  | "regular-time-clock-f"
-  | "regular-time-clock-circle"
-  | "regular-time-calendar"
-  | "regular-time-calendar-week"
-  | "regular-time-calendar-small"
-  | "regular-time-calendar-dots"
-  | "regular-time-calendar-clock"
-  | "regular-time-calendar-cash"
-  | "regular-time-alarm"
-  | "regular-sport-tv"
-  | "regular-sport-trophy"
-  | "regular-sport-puzzle"
-  | "regular-sport-medicine-lab"
-  | "regular-sport-medic"
-  | "regular-sport-heart-pulse"
-  | "regular-sport-gauge"
-  | "regular-sport-flag"
-  | "regular-sport-dumbell"
-  | "regular-sport-badge"
-  | "regular-sport-badge-h"
-  | "regular-sport-badge-c"
-  | "regular-sport-badge-b"
-  | "regular-shop-wallet"
-  | "regular-shop-tracking"
-  | "regular-shop-tie"
-  | "regular-shop-tag"
-  | "regular-shop-tag-search"
-  | "regular-shop-tag-refresh"
-  | "regular-shop-tag-plus"
-  | "regular-shop-tag-minus"
-  | "regular-shop-tag-lock"
-  | "regular-shop-tag-info"
-  | "regular-shop-tag-database"
-  | "regular-shop-tag-cross"
-  | "regular-shop-tag-check"
-  | "regular-shop-suitcase"
-  | "regular-shop-shipment-packages"
-  | "regular-shop-saving-piggy-bank"
-  | "regular-shop-safe-box"
-  | "regular-shop-present"
-  | "regular-shop-pound"
-  | "regular-shop-performance-money-decrease"
-  | "regular-shop-mastercard"
-  | "regular-shop-market"
-  | "regular-shop-euro"
-  | "regular-shop-dolar"
-  | "regular-shop-discount-coupon"
-  | "regular-shop-discount-circle"
-  | "regular-shop-diamond"
-  | "regular-shop-creditcard"
-  | "regular-shop-coins"
-  | "regular-shop-cash"
-  | "regular-shop-cash-dolar"
-  | "regular-shop-cart-full"
-  | "regular-shop-cart-empty"
-  | "regular-shop-cart-empty-alt"
-  | "regular-shop-cart-download"
-  | "regular-shop-box"
-  | "regular-shop-box-plus"
-  | "regular-shop-box-minus"
-  | "regular-shop-box-empty"
-  | "regular-shop-bill"
-  | "regular-shop-basket"
-  | "regular-shop-barcode"
-  | "regular-shop-bag"
-  | "regular-shop-accounting-bill-stack"
-  | "regular-settings-wrench"
-  | "regular-settings-machine-track"
-  | "regular-settings-hotspot"
-  | "regular-settings-gear"
-  | "regular-settings-gear-a"
-  | "regular-settings-equalizer"
-  | "regular-settings-comonent"
-  | "regular-settings-color-mode"
-  | "regular-settings-auto-flash"
-  | "regular-settings-airplane"
-  | "regular-music-volume-mute"
-  | "regular-music-volume-medium"
-  | "regular-music-volume-low"
-  | "regular-music-volume-high"
-  | "regular-music-stop"
-  | "regular-music-speaker"
-  | "regular-music-shuffle"
-  | "regular-music-repeat"
-  | "regular-music-repeat-one"
-  | "regular-music-radio"
-  | "regular-music-previous"
-  | "regular-music-previous-a"
-  | "regular-music-playlist"
-  | "regular-music-play"
-  | "regular-music-pause"
-  | "regular-music-note"
-  | "regular-music-note-a"
-  | "regular-music-next"
-  | "regular-music-next-a"
-  | "regular-music-mic"
-  | "regular-music-list"
-  | "regular-music-headphones"
-  | "regular-music-headphones-a"
-  | "regular-music-equaliser"
-  | "regular-music-eject"
-  | "regular-music-cd"
-  | "regular-music-album"
-  | "regular-misc-wifi"
-  | "regular-misc-smile-sad"
-  | "regular-misc-smile-meh"
-  | "regular-misc-smile-laught"
-  | "regular-misc-smile-happy"
-  | "regular-misc-smile-angry"
-  | "regular-misc-reception-hotel-bell"
-  | "regular-misc-puzzle"
-  | "regular-misc-module-hand-puzzle"
-  | "regular-misc-male-sign"
-  | "regular-misc-grid-perspective"
-  | "regular-misc-globe"
-  | "regular-misc-gesture"
-  | "regular-misc-gesture-tap"
-  | "regular-misc-gesture-swipe-right"
-  | "regular-misc-gesture-swipe-left"
-  | "regular-misc-gesture-double-tap"
-  | "regular-misc-female-sign"
-  | "regular-misc-cursor-hand-open"
-  | "regular-misc-cube"
-  | "regular-misc-crown"
-  | "regular-misc-bullet-diamond"
-  | "regular-logo-x"
-  | "regular-logo-windows"
-  | "regular-logo-twitter"
-  | "regular-logo-linux"
-  | "regular-logo-linkedin"
-  | "regular-logo-instagram"
-  | "regular-logo-facebook"
-  | "regular-logo-apple"
-  | "regular-location-street-sign"
-  | "regular-location-street-sign-a"
-  | "regular-location-pins"
-  | "regular-location-pin"
-  | "regular-location-pin-plus"
-  | "regular-location-pin-minus"
-  | "regular-location-pin-map"
-  | "regular-location-pin-check"
-  | "regular-location-pin-b"
-  | "regular-location-pin-a"
-  | "regular-location-map"
-  | "regular-location-map-cross"
-  | "regular-location-direction"
-  | "regular-location-direction-sign"
-  | "regular-location-compass"
-  | "regular-env-tree"
-  | "regular-env-tree-a"
-  | "regular-env-mountains"
-  | "regular-env-leaf"
-  | "regular-env-flower"
-  | "regular-env-earth"
-  | "regular-env-atomic-bomb"
-  | "regular-editorial-undo"
-  | "regular-editorial-typing-machine"
-  | "regular-editorial-trash"
-  | "regular-editorial-text-underline"
-  | "regular-editorial-text-style"
-  | "regular-editorial-text-strike-through"
-  | "regular-editorial-text-italic"
-  | "regular-editorial-text-format"
-  | "regular-editorial-text-bold"
-  | "regular-editorial-sort-desc"
-  | "regular-editorial-sort-cancel"
-  | "regular-editorial-sort-asc"
-  | "regular-editorial-redo"
-  | "regular-editorial-pencil"
-  | "regular-editorial-pencil-small"
-  | "regular-editorial-pen"
-  | "regular-editorial-paragraph"
-  | "regular-editorial-paragraph-first-letter"
-  | "regular-editorial-italic-off"
-  | "regular-editorial-indent-right"
-  | "regular-editorial-indent-left"
-  | "regular-editorial-hashtag-small"
-  | "regular-editorial-hash"
-  | "regular-editorial-font-size"
-  | "regular-editorial-combine-intersect"
-  | "regular-editorial-color-palette"
-  | "regular-editorial-brush"
-  | "regular-editorial-bookmark"
-  | "regular-editorial-align-right"
-  | "regular-editorial-align-left"
-  | "regular-editorial-align-center"
-  | "regular-doc-wboard-search"
-  | "regular-doc-wboard-line"
-  | "regular-doc-wboard-gear"
-  | "regular-doc-wboard-check"
-  | "regular-doc-wboard-arrow-top"
-  | "regular-doc-upload"
-  | "regular-doc-todo-list"
-  | "regular-doc-todo-list-user"
-  | "regular-doc-todo-list-square"
-  | "regular-doc-task-list-question"
-  | "regular-doc-task-checklist"
-  | "regular-doc-stack"
-  | "regular-doc-profile"
-  | "regular-doc-printer"
-  | "regular-doc-plus"
-  | "regular-doc-pin"
-  | "regular-doc-pie"
-  | "regular-doc-papers"
-  | "regular-doc-paper-stack"
-  | "regular-doc-paper-line"
-  | "regular-doc-office-stamp-document"
-  | "regular-doc-office-folder"
-  | "regular-doc-office-file-pdf"
-  | "regular-doc-notes-upload"
-  | "regular-doc-notes-paper-text"
-  | "regular-doc-notes-home"
-  | "regular-doc-notes-give"
-  | "regular-doc-notes-flip"
-  | "regular-doc-newspaper"
-  | "regular-doc-minus"
-  | "regular-doc-mailbox-in"
-  | "regular-doc-list"
-  | "regular-doc-list-numbers"
-  | "regular-doc-invoice"
-  | "regular-doc-image"
-  | "regular-doc-image-a"
-  | "regular-doc-id-card-vertical"
-  | "regular-doc-glasses"
-  | "regular-doc-folder"
-  | "regular-doc-folder-sync"
-  | "regular-doc-folder-plus"
-  | "regular-doc-folder-minus"
-  | "regular-doc-folder-home"
-  | "regular-doc-folder-cross"
-  | "regular-doc-folder-check"
-  | "regular-doc-file-zip"
-  | "regular-doc-file-xls"
-  | "regular-doc-file-video"
-  | "regular-doc-file-save"
-  | "regular-doc-file-refresh"
-  | "regular-doc-file-print"
-  | "regular-doc-file-prev"
-  | "regular-doc-file-presentation"
-  | "regular-doc-file-ppt"
-  | "regular-doc-file-plus"
-  | "regular-doc-file-next"
-  | "regular-doc-file-minus"
-  | "regular-doc-file-line"
-  | "regular-doc-file-image"
-  | "regular-doc-file-graph"
-  | "regular-doc-file-doc"
-  | "regular-doc-file-cross"
-  | "regular-doc-file-check"
-  | "regular-doc-file-bookmark"
-  | "regular-doc-file-blank"
-  | "regular-doc-file-audio"
-  | "regular-doc-download"
-  | "regular-doc-diary"
-  | "regular-doc-copy"
-  | "regular-doc-compose"
-  | "regular-doc-common-file-text-edit"
-  | "regular-doc-common-file-home"
-  | "regular-doc-common-file-edit"
-  | "regular-doc-camera"
-  | "regular-doc-briefcase"
-  | "regular-doc-box-p"
-  | "regular-doc-bookmark"
-  | "regular-doc-book"
-  | "regular-doc-book-upload"
-  | "regular-doc-book-target"
-  | "regular-doc-book-settings"
-  | "regular-doc-book-modules"
-  | "regular-doc-book-library"
-  | "regular-doc-book-download"
-  | "regular-doc-book-cash"
-  | "regular-doc-book-b"
-  | "regular-doc-book-a"
-  | "regular-doc-attachment"
-  | "regular-doc-article"
-  | "regular-doc-archive"
-  | "regular-doc-archive-upload"
-  | "regular-doc-archive-folder"
-  | "regular-doc-archive-empty"
-  | "regular-doc-archive-download"
-  | "regular-doc-analytics-up"
-  | "regular-com-warning"
-  | "regular-com-voicemail"
-  | "regular-com-satellite"
-  | "regular-com-postcard"
-  | "regular-com-pictures"
-  | "regular-com-phone"
-  | "regular-com-phone-landline"
-  | "regular-com-paperplane"
-  | "regular-com-microphone-podcast"
-  | "regular-com-mic"
-  | "regular-com-mic-mute"
-  | "regular-com-megaphone"
-  | "regular-com-mail"
-  | "regular-com-mail-warning"
-  | "regular-com-mail-sync"
-  | "regular-com-mail-receive"
-  | "regular-com-mail-plus"
-  | "regular-com-mail-open"
-  | "regular-com-mail-open-warning"
-  | "regular-com-mail-minus"
-  | "regular-com-mail-download"
-  | "regular-com-mail-cross"
-  | "regular-com-mail-clock"
-  | "regular-com-mail-check"
-  | "regular-com-language"
-  | "regular-com-help"
-  | "regular-com-help-a"
-  | "regular-com-bubble"
-  | "regular-com-bubble-line"
-  | "regular-com-bubble-line-a"
-  | "regular-com-bubble-group"
-  | "regular-com-bubble-group-a"
-  | "regular-com-bubble-dot"
-  | "regular-com-bubble-dot-a"
-  | "regular-com-bubble-a"
-  | "regular-com-bell"
-  | "regular-com-advertising-megaphone"
-  | "regular-building-view"
-  | "regular-building-toilet"
-  | "regular-building-sofa"
-  | "regular-building-sofa-a"
-  | "regular-building-safety-fire-shield"
-  | "regular-building-rocker-switch"
-  | "regular-building-real-estate-dimensions-plan"
-  | "regular-building-real-estate-dimensions-block"
-  | "regular-building-plan-balcony"
-  | "regular-building-office"
-  | "regular-building-office-settings-b"
-  | "regular-building-office-add-b"
-  | "regular-building-office-a"
-  | "regular-building-museum"
-  | "regular-building-lift"
-  | "regular-building-lamp"
-  | "regular-building-lamp-a"
-  | "regular-building-house"
-  | "regular-building-heater"
-  | "regular-building-hanging-rack"
-  | "regular-building-fireplace"
-  | "regular-building-faucet"
-  | "regular-building-exit"
-  | "regular-building-drawer"
-  | "regular-building-door"
-  | "regular-building-dimensions-ruler"
-  | "regular-building-desk"
-  | "regular-building-daylight"
-  | "regular-building-chair"
-  | "regular-building-cabinet"
-  | "regular-building-blueprint"
-  | "regular-building-bed"
-  | "bold-web-webcam-filled"
-  | "bold-web-warning-filled"
-  | "bold-web-tabs-plus-filled"
-  | "bold-web-tabs-minus-filled"
-  | "bold-web-tabs-filled"
-  | "bold-web-tabs-cross-filled"
-  | "bold-web-tabs-check-filled"
-  | "bold-web-tablet-increase-filled"
-  | "bold-web-statistic-filled"
-  | "bold-web-shield-warning-filled"
-  | "bold-web-share-filled"
-  | "bold-web-server-filled"
-  | "bold-web-rss-settings-filled"
-  | "bold-web-rss-filled"
-  | "bold-web-link-filled"
-  | "bold-web-link-b-filled"
-  | "bold-web-link-b-check-filled"
-  | "bold-web-increase-mail-filled"
-  | "bold-web-grid-upload-filled"
-  | "bold-web-graph-linear-small-filled"
-  | "bold-web-globe-filled"
-  | "bold-web-flag-filled"
-  | "bold-web-flag-c-filled"
-  | "bold-web-data-file-bars-filled"
-  | "bold-web-console-filled"
-  | "bold-web-collapse-up-filled"
-  | "bold-web-collapse-right-filled"
-  | "bold-web-collapse-left-filled"
-  | "bold-web-collapse-down-filled"
-  | "bold-web-code-filled"
-  | "bold-web-chart-filled"
-  | "bold-web-bug-filled"
-  | "bold-web-browser-window-filled"
-  | "bold-web-browser-grid-filled"
-  | "bold-web-browser-filled"
-  | "bold-web-broken-link-filled"
-  | "bold-web-bars-home-filled"
-  | "bold-web-at-sign-filled"
-  | "bold-web-analytics-net-filled"
-  | "bold-web-analytics-graph-filled"
-  | "bold-weather-windsock-filled"
-  | "bold-weather-water-filled"
-  | "bold-weather-thermometer-filled"
-  | "bold-weather-sunrise-filled"
-  | "bold-weather-sun-filled"
-  | "bold-weather-sun-cloud-snow-filled"
-  | "bold-weather-snowflake-filled"
-  | "bold-weather-moon-filled"
-  | "bold-weather-moon-a-filled"
-  | "bold-weather-flash-filled"
-  | "bold-weather-fire-filled"
-  | "bold-weather-cloud-snow-filled"
-  | "bold-weather-cloud-rain-filled"
-  | "bold-weather-cloud-flash-filled"
-  | "bold-weather-cloud-filled"
-  | "bold-video-player-filled"
-  | "bold-user-walking-filled"
-  | "bold-user-toilet-sign-filled"
-  | "bold-user-single-neutral-home-filled"
-  | "bold-user-single-neutral-actions-edit-filled"
-  | "bold-user-single-neutral-actions-block-filled"
-  | "bold-user-share-filled"
-  | "bold-user-plus-filled"
-  | "bold-user-multiple-users-filled"
-  | "bold-user-minus-filled"
-  | "bold-user-messages-people-user-warning-filled"
-  | "bold-user-male-sign-filled"
-  | "bold-user-male-plus-filled"
-  | "bold-user-male-minus-filled"
-  | "bold-user-male-list-filled"
-  | "bold-user-male-filled"
-  | "bold-user-male-cross-filled"
-  | "bold-user-male-check-filled"
-  | "bold-user-lock-unlocked-filled"
-  | "bold-user-lock-unlocked-b-filled"
-  | "bold-user-lock-filled"
-  | "bold-user-list-filled"
-  | "bold-user-key-filled"
-  | "bold-user-headset-filled"
-  | "bold-user-group-filled"
-  | "bold-user-group-female-filled"
-  | "bold-user-group-a-filled"
-  | "bold-user-gear-filled"
-  | "bold-user-forward-filled"
-  | "bold-user-filled"
-  | "bold-user-female-sign-filled"
-  | "bold-user-female-plus-filled"
-  | "bold-user-female-minus-filled"
-  | "bold-user-female-list-filled"
-  | "bold-user-female-filled"
-  | "bold-user-female-cross-filled"
-  | "bold-user-female-check-filled"
-  | "bold-user-cross-filled"
-  | "bold-user-contact-book-filled"
-  | "bold-user-contact-book-a-filled"
-  | "bold-user-circle-filled"
-  | "bold-user-check-filled"
-  | "bold-user-business-deal-cash-exchange-filled"
-  | "bold-ui-zoom-in-page-filled"
-  | "bold-ui-window-filled"
-  | "bold-ui-undo-filled"
-  | "bold-ui-undo-b-filled"
-  | "bold-ui-undo-a-filled"
-  | "bold-ui-triangle-top-filled"
-  | "bold-ui-triangle-right-filled"
-  | "bold-ui-triangle-left-filled"
-  | "bold-ui-triangle-bottom-filled"
-  | "bold-ui-tree-save-filled"
-  | "bold-ui-tree-load-filled"
-  | "bold-ui-target-filled"
-  | "bold-ui-sync-filled"
-  | "bold-ui-star-filled"
-  | "bold-ui-sqare-dashed-filled"
-  | "bold-ui-split-vertical-filled"
-  | "bold-ui-split-horizontal-filled"
-  | "bold-ui-shrink-filled"
-  | "bold-ui-search-plus-filled"
-  | "bold-ui-search-minus-filled"
-  | "bold-ui-search-filled"
-  | "bold-ui-search-cross-filled"
-  | "bold-ui-search-check-filled"
-  | "bold-ui-scroll-vertical-filled"
-  | "bold-ui-scroll-horizontal-filled"
-  | "bold-ui-resize-vertical-filled"
-  | "bold-ui-resize-top-right-filled"
-  | "bold-ui-resize-top-left-filled"
-  | "bold-ui-resize-horizontal-filled"
-  | "bold-ui-resize-diagonal-filled"
-  | "bold-ui-resize-bottom-right-filled"
-  | "bold-ui-resize-bottom-left-filled"
-  | "bold-ui-reply-filled"
-  | "bold-ui-repeating-filled"
-  | "bold-ui-remove-connection-point-filled"
-  | "bold-ui-refresh-filled"
-  | "bold-ui-radiobutton-filled"
-  | "bold-ui-property-and-filled"
-  | "bold-ui-previous-filled"
-  | "bold-ui-previous-a-filled"
-  | "bold-ui-power-filled"
-  | "bold-ui-popup-filled"
-  | "bold-ui-plus-small-filled"
-  | "bold-ui-plus-filled"
-  | "bold-ui-pixel-filled"
-  | "bold-ui-out-link-filled"
-  | "bold-ui-number-filled"
-  | "bold-ui-next-filled"
-  | "bold-ui-next-a-filled"
-  | "bold-ui-move-up-front-filled"
-  | "bold-ui-move-up-filled"
-  | "bold-ui-move-filled"
-  | "bold-ui-move-down-filled"
-  | "bold-ui-move-down-background-filled"
-  | "bold-ui-more-vertical-small-filled"
-  | "bold-ui-more-vertical-filled"
-  | "bold-ui-more-small-filled"
-  | "bold-ui-more-small-circle-filled"
-  | "bold-ui-more-horizontal-small-filled"
-  | "bold-ui-more-filled"
-  | "bold-ui-minus-small-filled"
-  | "bold-ui-minus-filled"
-  | "bold-ui-method-inherited-filled"
-  | "bold-ui-method-filled"
-  | "bold-ui-logout-filled"
-  | "bold-ui-login-filled"
-  | "bold-ui-list-view-filled"
-  | "bold-ui-list-user-filled"
-  | "bold-ui-list-share-filled"
-  | "bold-ui-list-forward-filled"
-  | "bold-ui-layout-wireframe-filled"
-  | "bold-ui-layout-third-vertical-filled"
-  | "bold-ui-layout-table-view-filled"
-  | "bold-ui-layout-sidebar-l-half-filled"
-  | "bold-ui-layout-sidebar-l-filled"
-  | "bold-ui-layout-half-horizontal-filled"
-  | "bold-ui-layout-half-filled"
-  | "bold-ui-keyboard-filled"
-  | "bold-ui-in-link-filled"
-  | "bold-ui-import-filled"
-  | "bold-ui-house-filled"
-  | "bold-ui-home-filled"
-  | "bold-ui-home-a-filled"
-  | "bold-ui-hierarchy-tree-filled"
-  | "bold-ui-hierarchy-filled"
-  | "bold-ui-help-life-filled"
-  | "bold-ui-help-filled"
-  | "bold-ui-heart-filled"
-  | "bold-ui-hamburger-filled"
-  | "bold-ui-grid-view-filled"
-  | "bold-ui-fullscreen-filled"
-  | "bold-ui-fullscreen-a-filled"
-  | "bold-ui-frame-filled"
-  | "bold-ui-forward-filled"
-  | "bold-ui-filter-filled"
-  | "bold-ui-eye-filled"
-  | "bold-ui-eye-cross-filled"
-  | "bold-ui-export-filled"
-  | "bold-ui-expand-filled"
-  | "bold-ui-enlarge-filled"
-  | "bold-ui-drag-handle-filled"
-  | "bold-ui-dot-large-filled"
-  | "bold-ui-dot-filled"
-  | "bold-ui-cross-small-filled"
-  | "bold-ui-cross-filled"
-  | "bold-ui-crop-filled"
-  | "bold-ui-create-connection-filled"
-  | "bold-ui-connection-open-inherited-filled"
-  | "bold-ui-connection-open-filled"
-  | "bold-ui-connection-inherited-filled"
-  | "bold-ui-connection-filled"
-  | "bold-ui-cone-filled"
-  | "bold-ui-condition-filled"
-  | "bold-ui-combobox-filled"
-  | "bold-ui-cmd-filled"
-  | "bold-ui-cloud-upload-filled"
-  | "bold-ui-cloud-download-filled"
-  | "bold-ui-close-parallel-connection-filled"
-  | "bold-ui-circle-warning-filled"
-  | "bold-ui-circle-plus-filled"
-  | "bold-ui-circle-minus-filled"
-  | "bold-ui-circle-info-filled"
-  | "bold-ui-circle-help-filled"
-  | "bold-ui-circle-filled"
-  | "bold-ui-circle-cross-filled"
-  | "bold-ui-circle-chevron-top-filled"
-  | "bold-ui-circle-chevron-right-filled"
-  | "bold-ui-circle-chevron-left-filled"
-  | "bold-ui-circle-chevron-bottom-filled"
-  | "bold-ui-circle-check-filled"
-  | "bold-ui-circle-check-a-filled"
-  | "bold-ui-circle-arrow-top-filled"
-  | "bold-ui-circle-arrow-right-filled"
-  | "bold-ui-circle-arrow-left-filled"
-  | "bold-ui-circle-arrow-bottom-filled"
-  | "bold-ui-chevron-top-small-filled"
-  | "bold-ui-chevron-top-filled"
-  | "bold-ui-chevron-right-tripple-filled"
-  | "bold-ui-chevron-right-small-filled"
-  | "bold-ui-chevron-right-filled"
-  | "bold-ui-chevron-left-small-filled"
-  | "bold-ui-chevron-left-filled"
-  | "bold-ui-chevron-bottom-small-filled"
-  | "bold-ui-chevron-bottom-filled"
-  | "bold-ui-checkbox-filled"
-  | "bold-ui-check-small-filled"
-  | "bold-ui-check-small-circle-filled"
-  | "bold-ui-check-filled"
-  | "bold-ui-card-view-filled"
-  | "bold-ui-card-filled"
-  | "bold-ui-bullet-view-filled"
-  | "bold-ui-box-warning-filled"
-  | "bold-ui-box-help-filled"
-  | "bold-ui-block-filled"
-  | "bold-ui-backspace-filled"
-  | "bold-ui-attribute-inherited-filled"
-  | "bold-ui-attribute-filled"
-  | "bold-ui-arrow-top-small-filled"
-  | "bold-ui-arrow-top-right-filled"
-  | "bold-ui-arrow-top-left-filled"
-  | "bold-ui-arrow-top-filled"
-  | "bold-ui-arrow-top-a-filled"
-  | "bold-ui-arrow-right-small-filled"
-  | "bold-ui-arrow-right-filled"
-  | "bold-ui-arrow-right-a-filled"
-  | "bold-ui-arrow-left-small-filled"
-  | "bold-ui-arrow-left-filled"
-  | "bold-ui-arrow-left-a-filled"
-  | "bold-ui-arrow-bottom-small-filled"
-  | "bold-ui-arrow-bottom-right-filled"
-  | "bold-ui-arrow-bottom-left-filled"
-  | "bold-ui-arrow-bottom-filled"
-  | "bold-ui-arrow-bottom-a-filled"
-  | "bold-ui-align-top-filled"
-  | "bold-ui-align-right-filled"
-  | "bold-ui-align-left-filled"
-  | "bold-ui-align-center-vertical-filled"
-  | "bold-ui-align-center-horizontal-filled"
-  | "bold-ui-align-bottom-filled"
-  | "bold-ui-add-connection-point-filled"
-  | "bold-transport-truck-filled"
-  | "bold-transport-truck-a-filled"
-  | "bold-transport-train-filled"
-  | "bold-transport-sign-stop-filled"
-  | "bold-transport-ship-filled"
-  | "bold-transport-ship-a-filled"
-  | "bold-transport-car-filled"
-  | "bold-transport-car-a-filled"
-  | "bold-transport-bus-ticket-filled"
-  | "bold-transport-bus-filled"
-  | "bold-transport-bus-a-filled"
-  | "bold-transport-bicycle-filled"
-  | "bold-tool-umbrella-filled"
-  | "bold-tool-tools-box-filled"
-  | "bold-tool-text-type-filled"
-  | "bold-tool-smartphone-pay-filled"
-  | "bold-tool-scissors-filled"
-  | "bold-tool-satelite-type-filled"
-  | "bold-tool-ruler-filled"
-  | "bold-tool-ruler-corner-filled"
-  | "bold-tool-ruler-b-filled"
-  | "bold-tool-router-signal-filled"
-  | "bold-tool-razor-filled"
-  | "bold-tool-protection-type-filled"
-  | "bold-tool-property-type-filled"
-  | "bold-tool-projector-filled"
-  | "bold-tool-plug-filled"
-  | "bold-tool-phone-landscape-filled"
-  | "bold-tool-phone-filled"
-  | "bold-tool-mouse-filled"
-  | "bold-tool-module-three-filled"
-  | "bold-tool-magnet-filled"
-  | "bold-tool-magic-wand-filled"
-  | "bold-tool-laptop-filled"
-  | "bold-tool-int-type-filled"
-  | "bold-tool-hardware-type-filled"
-  | "bold-tool-hammer-plus-filled"
-  | "bold-tool-hammer-filled"
-  | "bold-tool-hammer-angle-filled"
-  | "bold-tool-hammer-a-filled"
-  | "bold-tool-grid-filled"
-  | "bold-tool-gears-type-filled"
-  | "bold-tool-focus-filled"
-  | "bold-tool-floppy-edit-filled"
-  | "bold-tool-floppy-disks-filled"
-  | "bold-tool-floppy-disk-filled"
-  | "bold-tool-flashlight-filled"
-  | "bold-tool-fire-extinguisher-filled"
-  | "bold-tool-display-user-filled"
-  | "bold-tool-display-filled"
-  | "bold-tool-console-filled"
-  | "bold-tool-console-a-filled"
-  | "bold-tool-compass-filled"
-  | "bold-tool-camera-filled"
-  | "bold-tool-calc-filled"
-  | "bold-tool-binoculars-filled"
-  | "bold-tool-area-type-filled"
-  | "bold-tool-android-type-filled"
-  | "bold-time-watch-filled"
-  | "bold-time-timer-filled"
-  | "bold-time-stopwatch-filled"
-  | "bold-time-speed-meter-filled"
-  | "bold-time-hourglass-filled"
-  | "bold-time-clock-f-filled"
-  | "bold-time-clock-circle-filled"
-  | "bold-time-calendar-week-filled"
-  | "bold-time-calendar-small-filled"
-  | "bold-time-calendar-filled"
-  | "bold-time-calendar-dots-filled"
-  | "bold-time-calendar-clock-filled"
-  | "bold-time-calendar-cash-filled"
-  | "bold-time-alarm-filled"
-  | "bold-sport-tv-filled"
-  | "bold-sport-trophy-filled"
-  | "bold-sport-puzzle-filled"
-  | "bold-sport-medicine-lab-filled"
-  | "bold-sport-medic-filled"
-  | "bold-sport-heart-pulse-filled"
-  | "bold-sport-gauge-filled"
-  | "bold-sport-flag-filled"
-  | "bold-sport-dumbell-filled"
-  | "bold-sport-badge-h-filled"
-  | "bold-sport-badge-filled"
-  | "bold-sport-badge-c-filled"
-  | "bold-sport-badge-b-filled"
-  | "bold-shop-wallet-filled"
-  | "bold-shop-tracking-filled"
-  | "bold-shop-tie-filled"
-  | "bold-shop-tag-search-filled"
-  | "bold-shop-tag-refresh-filled"
-  | "bold-shop-tag-plus-filled"
-  | "bold-shop-tag-minus-filled"
-  | "bold-shop-tag-lock-filled"
-  | "bold-shop-tag-info-filled"
-  | "bold-shop-tag-filled"
-  | "bold-shop-tag-database-filled"
-  | "bold-shop-tag-cross-filled"
-  | "bold-shop-tag-check-filled"
-  | "bold-shop-suitcase-filled"
-  | "bold-shop-shipment-packages-filled"
-  | "bold-shop-saving-piggy-bank-filled"
-  | "bold-shop-safe-box-filled"
-  | "bold-shop-present-filled"
-  | "bold-shop-pound-filled"
-  | "bold-shop-performance-money-decrease-filled"
-  | "bold-shop-mastercard-filled"
-  | "bold-shop-market-filled"
-  | "bold-shop-euro-filled"
-  | "bold-shop-dolar-filled"
-  | "bold-shop-discount-coupon-filled"
-  | "bold-shop-discount-circle-filled"
-  | "bold-shop-diamond-filled"
-  | "bold-shop-creditcard-filled"
-  | "bold-shop-coins-filled"
-  | "bold-shop-cash-filled"
-  | "bold-shop-cash-dolar-filled"
-  | "bold-shop-cart-full-filled"
-  | "bold-shop-cart-empty-filled"
-  | "bold-shop-cart-empty-alt-filled"
-  | "bold-shop-cart-download-filled"
-  | "bold-shop-box-plus-filled"
-  | "bold-shop-box-minus-filled"
-  | "bold-shop-box-filled"
-  | "bold-shop-box-empty-filled"
-  | "bold-shop-bill-filled"
-  | "bold-shop-basket-filled"
-  | "bold-shop-barcode-filled"
-  | "bold-shop-bag-filled"
-  | "bold-shop-accounting-bill-stack-filled"
-  | "bold-settings-wrench-filled"
-  | "bold-settings-machine-track-filled"
-  | "bold-settings-hotspot-filled"
-  | "bold-settings-gear-filled"
-  | "bold-settings-gear-a-filled"
-  | "bold-settings-equalizer-filled"
-  | "bold-settings-comonent-filled"
-  | "bold-settings-color-mode-filled"
-  | "bold-settings-auto-flash-filled"
-  | "bold-settings-airplane-filled"
-  | "bold-music-volume-mute-filled"
-  | "bold-music-volume-medium-filled"
-  | "bold-music-volume-low-filled"
-  | "bold-music-volume-high-filled"
-  | "bold-music-stop-filled"
-  | "bold-music-speaker-filled"
-  | "bold-music-shuffle-filled"
-  | "bold-music-repeat-one-filled"
-  | "bold-music-repeat-filled"
-  | "bold-music-radio-filled"
-  | "bold-music-previous-filled"
-  | "bold-music-previous-a-filled"
-  | "bold-music-playlist-filled"
-  | "bold-music-play-filled"
-  | "bold-music-pause-filled"
-  | "bold-music-note-filled"
-  | "bold-music-note-a-filled"
-  | "bold-music-next-filled"
-  | "bold-music-next-a-filled"
-  | "bold-music-mic-filled"
-  | "bold-music-list-filled"
-  | "bold-music-headphones-filled"
-  | "bold-music-headphones-a-filled"
-  | "bold-music-equaliser-filled"
-  | "bold-music-eject-filled"
-  | "bold-music-cd-filled"
-  | "bold-music-album-filled"
-  | "bold-misc-wifi-filled"
-  | "bold-misc-smile-sad-filled"
-  | "bold-misc-smile-meh-filled"
-  | "bold-misc-smile-laught-filled"
-  | "bold-misc-smile-happy-filled"
-  | "bold-misc-smile-angry-filled"
-  | "bold-misc-reception-hotel-bell-filled"
-  | "bold-misc-puzzle-filled"
-  | "bold-misc-module-hand-puzzle-filled"
-  | "bold-misc-male-sign-filled"
-  | "bold-misc-grid-perspective-filled"
-  | "bold-misc-globe-filled"
-  | "bold-misc-gesture-tap-filled"
-  | "bold-misc-gesture-swipe-right-filled"
-  | "bold-misc-gesture-swipe-left-filled"
-  | "bold-misc-gesture-filled"
-  | "bold-misc-gesture-double-tap-filled"
-  | "bold-misc-female-sign-filled"
-  | "bold-misc-cursor-hand-open-filled"
-  | "bold-misc-cube-filled"
-  | "bold-misc-crown-filled"
-  | "bold-misc-bullet-diamond-filled"
-  | "bold-logo-x-filled"
-  | "bold-logo-windows-filled"
-  | "bold-logo-twitter-filled"
-  | "bold-logo-linux-filled"
-  | "bold-logo-linkedin-filled"
-  | "bold-logo-instagram-filled"
-  | "bold-logo-facebook-filled"
-  | "bold-logo-apple-filled"
-  | "bold-location-street-sign-filled"
-  | "bold-location-street-sign-a-filled"
-  | "bold-location-pins-filled"
-  | "bold-location-pin-plus-filled"
-  | "bold-location-pin-minus-filled"
-  | "bold-location-pin-map-filled"
-  | "bold-location-pin-filled"
-  | "bold-location-pin-check-filled"
-  | "bold-location-pin-b-filled"
-  | "bold-location-pin-a-filled"
-  | "bold-location-map-filled"
-  | "bold-location-map-cross-filled"
-  | "bold-location-direction-sign-filled"
-  | "bold-location-direction-filled"
-  | "bold-location-compass-filled"
-  | "bold-env-tree-filled"
-  | "bold-env-tree-a-filled"
-  | "bold-env-mountains-filled"
-  | "bold-env-leaf-filled"
-  | "bold-env-flower-filled"
-  | "bold-env-earth-filled"
-  | "bold-env-atomic-bomb-filled"
-  | "bold-editorial-undo-filled"
-  | "bold-editorial-typing-machine-filled"
-  | "bold-editorial-trash-filled"
-  | "bold-editorial-text-underline-filled"
-  | "bold-editorial-text-style-filled"
-  | "bold-editorial-text-strike-through-filled"
-  | "bold-editorial-text-italic-filled"
-  | "bold-editorial-text-format-filled"
-  | "bold-editorial-text-bold-filled"
-  | "bold-editorial-sort-desc-filled"
-  | "bold-editorial-sort-cancel-filled"
-  | "bold-editorial-sort-asc-filled"
-  | "bold-editorial-redo-filled"
-  | "bold-editorial-pencil-small-filled"
-  | "bold-editorial-pencil-filled"
-  | "bold-editorial-pen-filled"
-  | "bold-editorial-paragraph-first-letter-filled"
-  | "bold-editorial-paragraph-filled"
-  | "bold-editorial-italic-off-filled"
-  | "bold-editorial-indent-right-filled"
-  | "bold-editorial-indent-left-filled"
-  | "bold-editorial-hashtag-small-filled"
-  | "bold-editorial-hash-filled"
-  | "bold-editorial-font-size-filled"
-  | "bold-editorial-combine-intersect-filled"
-  | "bold-editorial-color-palette-filled"
-  | "bold-editorial-brush-filled"
-  | "bold-editorial-bookmark-filled"
-  | "bold-editorial-align-right-filled"
-  | "bold-editorial-align-left-filled"
-  | "bold-editorial-align-center-filled"
-  | "bold-doc-wboard-search-filled"
-  | "bold-doc-wboard-line-filled"
-  | "bold-doc-wboard-gear-filled"
-  | "bold-doc-wboard-check-filled"
-  | "bold-doc-wboard-arrow-top-filled"
-  | "bold-doc-upload-filled"
-  | "bold-doc-todo-list-user-filled"
-  | "bold-doc-todo-list-square-filled"
-  | "bold-doc-todo-list-filled"
-  | "bold-doc-task-list-question-filled"
-  | "bold-doc-task-checklist-filled"
-  | "bold-doc-stack-filled"
-  | "bold-doc-profile-filled"
-  | "bold-doc-printer-filled"
-  | "bold-doc-plus-filled"
-  | "bold-doc-pin-filled"
-  | "bold-doc-pie-filled"
-  | "bold-doc-papers-filled"
-  | "bold-doc-paper-stack-filled"
-  | "bold-doc-paper-line-filled"
-  | "bold-doc-office-stamp-document-filled"
-  | "bold-doc-office-folder-filled"
-  | "bold-doc-office-file-pdf-filled"
-  | "bold-doc-notes-upload-filled"
-  | "bold-doc-notes-paper-text-filled"
-  | "bold-doc-notes-home-filled"
-  | "bold-doc-notes-give-filled"
-  | "bold-doc-notes-flip-filled"
-  | "bold-doc-newspaper-filled"
-  | "bold-doc-minus-filled"
-  | "bold-doc-mailbox-in-filled"
-  | "bold-doc-list-numbers-filled"
-  | "bold-doc-list-filled"
-  | "bold-doc-invoice-filled"
-  | "bold-doc-image-filled"
-  | "bold-doc-image-a-filled"
-  | "bold-doc-id-card-vertical-filled"
-  | "bold-doc-glasses-filled"
-  | "bold-doc-folder-sync-filled"
-  | "bold-doc-folder-plus-filled"
-  | "bold-doc-folder-minus-filled"
-  | "bold-doc-folder-home-filled"
-  | "bold-doc-folder-filled"
-  | "bold-doc-folder-cross-filled"
-  | "bold-doc-folder-check-filled"
-  | "bold-doc-file-zip-filled"
-  | "bold-doc-file-xls-filled"
-  | "bold-doc-file-video-filled"
-  | "bold-doc-file-save-filled"
-  | "bold-doc-file-refresh-filled"
-  | "bold-doc-file-print-filled"
-  | "bold-doc-file-prev-filled"
-  | "bold-doc-file-presentation-filled"
-  | "bold-doc-file-ppt-filled"
-  | "bold-doc-file-plus-filled"
-  | "bold-doc-file-next-filled"
-  | "bold-doc-file-minus-filled"
-  | "bold-doc-file-line-filled"
-  | "bold-doc-file-image-filled"
-  | "bold-doc-file-graph-filled"
-  | "bold-doc-file-doc-filled"
-  | "bold-doc-file-cross-filled"
-  | "bold-doc-file-check-filled"
-  | "bold-doc-file-bookmark-filled"
-  | "bold-doc-file-blank-filled"
-  | "bold-doc-file-audio-filled"
-  | "bold-doc-download-filled"
-  | "bold-doc-diary-filled"
-  | "bold-doc-copy-filled"
-  | "bold-doc-compose-filled"
-  | "bold-doc-common-file-text-edit-filled"
-  | "bold-doc-common-file-home-filled"
-  | "bold-doc-common-file-edit-filled"
-  | "bold-doc-camera-filled"
-  | "bold-doc-briefcase-filled"
-  | "bold-doc-box-p-filled"
-  | "bold-doc-bookmark-filled"
-  | "bold-doc-book-upload-filled"
-  | "bold-doc-book-target-filled"
-  | "bold-doc-book-settings-filled"
-  | "bold-doc-book-modules-filled"
-  | "bold-doc-book-library-filled"
-  | "bold-doc-book-filled"
-  | "bold-doc-book-download-filled"
-  | "bold-doc-book-cash-filled"
-  | "bold-doc-book-b-filled"
-  | "bold-doc-book-a-filled"
-  | "bold-doc-attachment-filled"
-  | "bold-doc-article-filled"
-  | "bold-doc-archive-upload-filled"
-  | "bold-doc-archive-folder-filled"
-  | "bold-doc-archive-filled"
-  | "bold-doc-archive-empty-filled"
-  | "bold-doc-archive-download-filled"
-  | "bold-doc-analytics-up-filled"
-  | "bold-com-warning-filled"
-  | "bold-com-voicemail-filled"
-  | "bold-com-satellite-filled"
-  | "bold-com-postcard-filled"
-  | "bold-com-pictures-filled"
-  | "bold-com-phone-landline-filled"
-  | "bold-com-phone-filled"
-  | "bold-com-paperplane-filled"
-  | "bold-com-microphone-podcast-filled"
-  | "bold-com-mic-mute-filled"
-  | "bold-com-mic-filled"
-  | "bold-com-megaphone-filled"
-  | "bold-com-mail-warning-filled"
-  | "bold-com-mail-sync-filled"
-  | "bold-com-mail-receive-filled"
-  | "bold-com-mail-plus-filled"
-  | "bold-com-mail-open-warning-filled"
-  | "bold-com-mail-open-filled"
-  | "bold-com-mail-minus-filled"
-  | "bold-com-mail-filled"
-  | "bold-com-mail-download-filled"
-  | "bold-com-mail-cross-filled"
-  | "bold-com-mail-clock-filled"
-  | "bold-com-mail-check-filled"
-  | "bold-com-language-filled"
-  | "bold-com-help-filled"
-  | "bold-com-help-a-filled"
-  | "bold-com-bubble-line-filled"
-  | "bold-com-bubble-line-a-filled"
-  | "bold-com-bubble-group-filled"
-  | "bold-com-bubble-group-a-filled"
-  | "bold-com-bubble-filled"
-  | "bold-com-bubble-dot-filled"
-  | "bold-com-bubble-dot-a-filled"
-  | "bold-com-bubble-a-filled"
-  | "bold-com-bell-filled"
-  | "bold-com-advertising-megaphone-filled"
-  | "bold-building-view-filled"
-  | "bold-building-toilet-filled"
-  | "bold-building-sofa-filled"
-  | "bold-building-sofa-a-filled"
-  | "bold-building-safety-fire-shield-filled"
-  | "bold-building-rocker-switch-filled"
-  | "bold-building-real-estate-dimensions-plan-filled"
-  | "bold-building-real-estate-dimensions-block-filled"
-  | "bold-building-plan-balcony-filled"
-  | "bold-building-office-settings-b-filled"
-  | "bold-building-office-filled"
-  | "bold-building-office-add-b-filled"
-  | "bold-building-office-a-filled"
-  | "bold-building-museum-filled"
-  | "bold-building-lift-filled"
-  | "bold-building-lamp-filled"
-  | "bold-building-lamp-a-filled"
-  | "bold-building-house-filled"
-  | "bold-building-heater-filled"
-  | "bold-building-hanging-rack-filled"
-  | "bold-building-fireplace-filled"
-  | "bold-building-faucet-filled"
-  | "bold-building-exit-filled"
-  | "bold-building-drawer-filled"
-  | "bold-building-door-filled"
-  | "bold-building-dimensions-ruler-filled"
-  | "bold-building-desk-filled"
-  | "bold-building-daylight-filled"
-  | "bold-building-chair-filled"
-  | "bold-building-cabinet-filled"
-  | "bold-building-blueprint-filled"
-  | "bold-building-bed-filled";
+  | "web-webcam"
+  | "web-webcam-filled"
+  | "web-warning"
+  | "web-warning-filled"
+  | "web-tabs"
+  | "web-tabs-plus"
+  | "web-tabs-plus-filled"
+  | "web-tabs-minus"
+  | "web-tabs-minus-filled"
+  | "web-tabs-filled"
+  | "web-tabs-cross"
+  | "web-tabs-cross-filled"
+  | "web-tabs-check"
+  | "web-tabs-check-filled"
+  | "web-tablet-increase"
+  | "web-tablet-increase-filled"
+  | "web-statistic"
+  | "web-statistic-filled"
+  | "web-shield-warning"
+  | "web-shield-warning-filled"
+  | "web-share"
+  | "web-share-filled"
+  | "web-server"
+  | "web-server-filled"
+  | "web-rss"
+  | "web-rss-settings"
+  | "web-rss-settings-filled"
+  | "web-rss-filled"
+  | "web-link"
+  | "web-link-filled"
+  | "web-link-b"
+  | "web-link-b-filled"
+  | "web-link-b-check"
+  | "web-link-b-check-filled"
+  | "web-increase-mail"
+  | "web-increase-mail-filled"
+  | "web-grid-upload"
+  | "web-grid-upload-filled"
+  | "web-graph-linear-small"
+  | "web-graph-linear-small-filled"
+  | "web-globe"
+  | "web-globe-filled"
+  | "web-flag"
+  | "web-flag-filled"
+  | "web-flag-c"
+  | "web-flag-c-filled"
+  | "web-data-file-bars"
+  | "web-data-file-bars-filled"
+  | "web-console"
+  | "web-console-filled"
+  | "web-collapse-up"
+  | "web-collapse-up-filled"
+  | "web-collapse-right"
+  | "web-collapse-right-filled"
+  | "web-collapse-left"
+  | "web-collapse-left-filled"
+  | "web-collapse-down"
+  | "web-collapse-down-filled"
+  | "web-code"
+  | "web-code-filled"
+  | "web-chart"
+  | "web-chart-filled"
+  | "web-bug"
+  | "web-bug-filled"
+  | "web-browser"
+  | "web-browser-window"
+  | "web-browser-window-filled"
+  | "web-browser-grid"
+  | "web-browser-grid-filled"
+  | "web-browser-filled"
+  | "web-broken-link"
+  | "web-broken-link-filled"
+  | "web-bars-home"
+  | "web-bars-home-filled"
+  | "web-at-sign"
+  | "web-at-sign-filled"
+  | "web-analytics-net"
+  | "web-analytics-net-filled"
+  | "web-analytics-graph"
+  | "web-analytics-graph-filled"
+  | "weather-windsock"
+  | "weather-windsock-filled"
+  | "weather-water"
+  | "weather-water-filled"
+  | "weather-thermometer"
+  | "weather-thermometer-filled"
+  | "weather-sunrise"
+  | "weather-sunrise-filled"
+  | "weather-sun"
+  | "weather-sun-filled"
+  | "weather-sun-cloud-snow"
+  | "weather-sun-cloud-snow-filled"
+  | "weather-snowflake"
+  | "weather-snowflake-filled"
+  | "weather-moon"
+  | "weather-moon-filled"
+  | "weather-moon-a"
+  | "weather-moon-a-filled"
+  | "weather-flash"
+  | "weather-flash-filled"
+  | "weather-fire"
+  | "weather-fire-filled"
+  | "weather-cloud"
+  | "weather-cloud-snow"
+  | "weather-cloud-snow-filled"
+  | "weather-cloud-rain"
+  | "weather-cloud-rain-filled"
+  | "weather-cloud-flash"
+  | "weather-cloud-flash-filled"
+  | "weather-cloud-filled"
+  | "video-player"
+  | "video-player-filled"
+  | "user"
+  | "user-walking"
+  | "user-walking-filled"
+  | "user-toilet-sign"
+  | "user-toilet-sign-filled"
+  | "user-single-neutral-home"
+  | "user-single-neutral-home-filled"
+  | "user-single-neutral-actions-edit"
+  | "user-single-neutral-actions-edit-filled"
+  | "user-single-neutral-actions-block"
+  | "user-single-neutral-actions-block-filled"
+  | "user-share"
+  | "user-share-filled"
+  | "user-plus"
+  | "user-plus-filled"
+  | "user-multiple-users"
+  | "user-multiple-users-filled"
+  | "user-minus"
+  | "user-minus-filled"
+  | "user-messages-people-user-warning"
+  | "user-messages-people-user-warning-filled"
+  | "user-male"
+  | "user-male-sign"
+  | "user-male-sign-filled"
+  | "user-male-plus"
+  | "user-male-plus-filled"
+  | "user-male-minus"
+  | "user-male-minus-filled"
+  | "user-male-list"
+  | "user-male-list-filled"
+  | "user-male-filled"
+  | "user-male-cross"
+  | "user-male-cross-filled"
+  | "user-male-check"
+  | "user-male-check-filled"
+  | "user-lock"
+  | "user-lock-unlocked"
+  | "user-lock-unlocked-filled"
+  | "user-lock-unlocked-b"
+  | "user-lock-unlocked-b-filled"
+  | "user-lock-filled"
+  | "user-list"
+  | "user-list-filled"
+  | "user-key"
+  | "user-key-filled"
+  | "user-headset"
+  | "user-headset-filled"
+  | "user-group"
+  | "user-group-filled"
+  | "user-group-female"
+  | "user-group-female-filled"
+  | "user-group-a"
+  | "user-group-a-filled"
+  | "user-gear"
+  | "user-gear-filled"
+  | "user-forward"
+  | "user-forward-filled"
+  | "user-filled"
+  | "user-female"
+  | "user-female-sign"
+  | "user-female-sign-filled"
+  | "user-female-plus"
+  | "user-female-plus-filled"
+  | "user-female-minus"
+  | "user-female-minus-filled"
+  | "user-female-list"
+  | "user-female-list-filled"
+  | "user-female-filled"
+  | "user-female-cross"
+  | "user-female-cross-filled"
+  | "user-female-check"
+  | "user-female-check-filled"
+  | "user-cross"
+  | "user-cross-filled"
+  | "user-contact-book"
+  | "user-contact-book-filled"
+  | "user-contact-book-a"
+  | "user-contact-book-a-filled"
+  | "user-circle"
+  | "user-circle-filled"
+  | "user-check"
+  | "user-check-filled"
+  | "user-business-deal-cash-exchange"
+  | "user-business-deal-cash-exchange-filled"
+  | "ui-zoom-in-page"
+  | "ui-zoom-in-page-filled"
+  | "ui-window"
+  | "ui-window-filled"
+  | "ui-undo"
+  | "ui-undo-filled"
+  | "ui-undo-b"
+  | "ui-undo-b-filled"
+  | "ui-undo-a"
+  | "ui-undo-a-filled"
+  | "ui-triangle-top"
+  | "ui-triangle-top-filled"
+  | "ui-triangle-right"
+  | "ui-triangle-right-filled"
+  | "ui-triangle-left"
+  | "ui-triangle-left-filled"
+  | "ui-triangle-bottom"
+  | "ui-triangle-bottom-filled"
+  | "ui-tree-save"
+  | "ui-tree-save-filled"
+  | "ui-tree-load"
+  | "ui-tree-load-filled"
+  | "ui-target"
+  | "ui-target-filled"
+  | "ui-sync"
+  | "ui-sync-filled"
+  | "ui-star"
+  | "ui-star-filled"
+  | "ui-sqare-dashed"
+  | "ui-sqare-dashed-filled"
+  | "ui-split-vertical"
+  | "ui-split-vertical-filled"
+  | "ui-split-horizontal"
+  | "ui-split-horizontal-filled"
+  | "ui-shrink"
+  | "ui-shrink-filled"
+  | "ui-search"
+  | "ui-search-plus"
+  | "ui-search-plus-filled"
+  | "ui-search-minus"
+  | "ui-search-minus-filled"
+  | "ui-search-filled"
+  | "ui-search-cross"
+  | "ui-search-cross-filled"
+  | "ui-search-check"
+  | "ui-search-check-filled"
+  | "ui-scroll-vertical"
+  | "ui-scroll-vertical-filled"
+  | "ui-scroll-horizontal"
+  | "ui-scroll-horizontal-filled"
+  | "ui-resize-vertical"
+  | "ui-resize-vertical-filled"
+  | "ui-resize-top-right"
+  | "ui-resize-top-right-filled"
+  | "ui-resize-top-left"
+  | "ui-resize-top-left-filled"
+  | "ui-resize-horizontal"
+  | "ui-resize-horizontal-filled"
+  | "ui-resize-diagonal"
+  | "ui-resize-diagonal-filled"
+  | "ui-resize-bottom-right"
+  | "ui-resize-bottom-right-filled"
+  | "ui-resize-bottom-left"
+  | "ui-resize-bottom-left-filled"
+  | "ui-reply"
+  | "ui-reply-filled"
+  | "ui-repeating"
+  | "ui-repeating-filled"
+  | "ui-remove-connection-point"
+  | "ui-remove-connection-point-filled"
+  | "ui-refresh"
+  | "ui-refresh-filled"
+  | "ui-radiobutton"
+  | "ui-radiobutton-filled"
+  | "ui-property-and"
+  | "ui-property-and-filled"
+  | "ui-previous"
+  | "ui-previous-filled"
+  | "ui-previous-a"
+  | "ui-previous-a-filled"
+  | "ui-power"
+  | "ui-power-filled"
+  | "ui-popup"
+  | "ui-popup-filled"
+  | "ui-plus"
+  | "ui-plus-small"
+  | "ui-plus-small-filled"
+  | "ui-plus-filled"
+  | "ui-pixel"
+  | "ui-pixel-filled"
+  | "ui-out-link"
+  | "ui-out-link-filled"
+  | "ui-number"
+  | "ui-number-filled"
+  | "ui-next"
+  | "ui-next-filled"
+  | "ui-next-a"
+  | "ui-next-a-filled"
+  | "ui-move"
+  | "ui-move-up"
+  | "ui-move-up-front"
+  | "ui-move-up-front-filled"
+  | "ui-move-up-filled"
+  | "ui-move-filled"
+  | "ui-move-down"
+  | "ui-move-down-filled"
+  | "ui-move-down-background"
+  | "ui-move-down-background-filled"
+  | "ui-more"
+  | "ui-more-vertical"
+  | "ui-more-vertical-small"
+  | "ui-more-vertical-small-filled"
+  | "ui-more-vertical-filled"
+  | "ui-more-small"
+  | "ui-more-small-filled"
+  | "ui-more-small-circle"
+  | "ui-more-small-circle-filled"
+  | "ui-more-horizontal-small"
+  | "ui-more-horizontal-small-filled"
+  | "ui-more-filled"
+  | "ui-minus"
+  | "ui-minus-small"
+  | "ui-minus-small-filled"
+  | "ui-minus-filled"
+  | "ui-method"
+  | "ui-method-inherited"
+  | "ui-method-inherited-filled"
+  | "ui-method-filled"
+  | "ui-logout"
+  | "ui-logout-filled"
+  | "ui-login"
+  | "ui-login-filled"
+  | "ui-list-view"
+  | "ui-list-view-filled"
+  | "ui-list-user"
+  | "ui-list-user-filled"
+  | "ui-list-share"
+  | "ui-list-share-filled"
+  | "ui-list-forward"
+  | "ui-list-forward-filled"
+  | "ui-layout-wireframe"
+  | "ui-layout-wireframe-filled"
+  | "ui-layout-third-vertical"
+  | "ui-layout-third-vertical-filled"
+  | "ui-layout-table-view"
+  | "ui-layout-table-view-filled"
+  | "ui-layout-sidebar-l"
+  | "ui-layout-sidebar-l-half"
+  | "ui-layout-sidebar-l-half-filled"
+  | "ui-layout-sidebar-l-filled"
+  | "ui-layout-half"
+  | "ui-layout-half-horizontal"
+  | "ui-layout-half-horizontal-filled"
+  | "ui-layout-half-filled"
+  | "ui-keyboard"
+  | "ui-keyboard-filled"
+  | "ui-in-link"
+  | "ui-in-link-filled"
+  | "ui-import"
+  | "ui-import-filled"
+  | "ui-house"
+  | "ui-house-filled"
+  | "ui-home"
+  | "ui-home-filled"
+  | "ui-home-a"
+  | "ui-home-a-filled"
+  | "ui-hierarchy"
+  | "ui-hierarchy-tree"
+  | "ui-hierarchy-tree-filled"
+  | "ui-hierarchy-filled"
+  | "ui-help"
+  | "ui-help-life"
+  | "ui-help-life-filled"
+  | "ui-help-filled"
+  | "ui-heart"
+  | "ui-heart-filled"
+  | "ui-hamburger"
+  | "ui-hamburger-filled"
+  | "ui-grid-view"
+  | "ui-grid-view-filled"
+  | "ui-fullscreen"
+  | "ui-fullscreen-filled"
+  | "ui-fullscreen-a"
+  | "ui-fullscreen-a-filled"
+  | "ui-frame"
+  | "ui-frame-filled"
+  | "ui-forward"
+  | "ui-forward-filled"
+  | "ui-filter"
+  | "ui-filter-filled"
+  | "ui-eye"
+  | "ui-eye-filled"
+  | "ui-eye-cross"
+  | "ui-eye-cross-filled"
+  | "ui-export"
+  | "ui-export-filled"
+  | "ui-expand"
+  | "ui-expand-filled"
+  | "ui-enlarge"
+  | "ui-enlarge-filled"
+  | "ui-drag-handle"
+  | "ui-drag-handle-filled"
+  | "ui-dot"
+  | "ui-dot-large"
+  | "ui-dot-large-filled"
+  | "ui-dot-filled"
+  | "ui-cross"
+  | "ui-cross-small"
+  | "ui-cross-small-filled"
+  | "ui-cross-filled"
+  | "ui-crop"
+  | "ui-crop-filled"
+  | "ui-create-connection"
+  | "ui-create-connection-filled"
+  | "ui-connection"
+  | "ui-connection-open"
+  | "ui-connection-open-inherited"
+  | "ui-connection-open-inherited-filled"
+  | "ui-connection-open-filled"
+  | "ui-connection-inherited"
+  | "ui-connection-inherited-filled"
+  | "ui-connection-filled"
+  | "ui-cone"
+  | "ui-cone-filled"
+  | "ui-condition"
+  | "ui-condition-filled"
+  | "ui-combobox"
+  | "ui-combobox-filled"
+  | "ui-cmd"
+  | "ui-cmd-filled"
+  | "ui-cloud-upload"
+  | "ui-cloud-upload-filled"
+  | "ui-cloud-download"
+  | "ui-cloud-download-filled"
+  | "ui-close-parallel-connection"
+  | "ui-close-parallel-connection-filled"
+  | "ui-circle"
+  | "ui-circle-warning"
+  | "ui-circle-warning-filled"
+  | "ui-circle-plus"
+  | "ui-circle-plus-filled"
+  | "ui-circle-minus"
+  | "ui-circle-minus-filled"
+  | "ui-circle-info"
+  | "ui-circle-info-filled"
+  | "ui-circle-help"
+  | "ui-circle-help-filled"
+  | "ui-circle-filled"
+  | "ui-circle-cross"
+  | "ui-circle-cross-filled"
+  | "ui-circle-chevron-top"
+  | "ui-circle-chevron-top-filled"
+  | "ui-circle-chevron-right"
+  | "ui-circle-chevron-right-filled"
+  | "ui-circle-chevron-left"
+  | "ui-circle-chevron-left-filled"
+  | "ui-circle-chevron-bottom"
+  | "ui-circle-chevron-bottom-filled"
+  | "ui-circle-check"
+  | "ui-circle-check-filled"
+  | "ui-circle-check-a"
+  | "ui-circle-check-a-filled"
+  | "ui-circle-arrow-top"
+  | "ui-circle-arrow-top-filled"
+  | "ui-circle-arrow-right"
+  | "ui-circle-arrow-right-filled"
+  | "ui-circle-arrow-left"
+  | "ui-circle-arrow-left-filled"
+  | "ui-circle-arrow-bottom"
+  | "ui-circle-arrow-bottom-filled"
+  | "ui-chevron-top"
+  | "ui-chevron-top-small"
+  | "ui-chevron-top-small-filled"
+  | "ui-chevron-top-filled"
+  | "ui-chevron-right"
+  | "ui-chevron-right-tripple"
+  | "ui-chevron-right-tripple-filled"
+  | "ui-chevron-right-small"
+  | "ui-chevron-right-small-filled"
+  | "ui-chevron-right-filled"
+  | "ui-chevron-left"
+  | "ui-chevron-left-small"
+  | "ui-chevron-left-small-filled"
+  | "ui-chevron-left-filled"
+  | "ui-chevron-bottom"
+  | "ui-chevron-bottom-small"
+  | "ui-chevron-bottom-small-filled"
+  | "ui-chevron-bottom-filled"
+  | "ui-checkbox"
+  | "ui-checkbox-filled"
+  | "ui-check"
+  | "ui-check-small"
+  | "ui-check-small-filled"
+  | "ui-check-small-circle"
+  | "ui-check-small-circle-filled"
+  | "ui-check-filled"
+  | "ui-card"
+  | "ui-card-view"
+  | "ui-card-view-filled"
+  | "ui-card-filled"
+  | "ui-bullet-view"
+  | "ui-bullet-view-filled"
+  | "ui-box-warning"
+  | "ui-box-warning-filled"
+  | "ui-box-help"
+  | "ui-box-help-filled"
+  | "ui-block"
+  | "ui-block-filled"
+  | "ui-backspace"
+  | "ui-backspace-filled"
+  | "ui-attribute"
+  | "ui-attribute-inherited"
+  | "ui-attribute-inherited-filled"
+  | "ui-attribute-filled"
+  | "ui-arrow-top"
+  | "ui-arrow-top-small"
+  | "ui-arrow-top-small-filled"
+  | "ui-arrow-top-right"
+  | "ui-arrow-top-right-filled"
+  | "ui-arrow-top-left"
+  | "ui-arrow-top-left-filled"
+  | "ui-arrow-top-filled"
+  | "ui-arrow-top-a"
+  | "ui-arrow-top-a-filled"
+  | "ui-arrow-right"
+  | "ui-arrow-right-small"
+  | "ui-arrow-right-small-filled"
+  | "ui-arrow-right-filled"
+  | "ui-arrow-right-a"
+  | "ui-arrow-right-a-filled"
+  | "ui-arrow-left"
+  | "ui-arrow-left-small"
+  | "ui-arrow-left-small-filled"
+  | "ui-arrow-left-filled"
+  | "ui-arrow-left-a"
+  | "ui-arrow-left-a-filled"
+  | "ui-arrow-bottom"
+  | "ui-arrow-bottom-small"
+  | "ui-arrow-bottom-small-filled"
+  | "ui-arrow-bottom-right"
+  | "ui-arrow-bottom-right-filled"
+  | "ui-arrow-bottom-left"
+  | "ui-arrow-bottom-left-filled"
+  | "ui-arrow-bottom-filled"
+  | "ui-arrow-bottom-a"
+  | "ui-arrow-bottom-a-filled"
+  | "ui-align-top"
+  | "ui-align-top-filled"
+  | "ui-align-right"
+  | "ui-align-right-filled"
+  | "ui-align-left"
+  | "ui-align-left-filled"
+  | "ui-align-center-vertical"
+  | "ui-align-center-vertical-filled"
+  | "ui-align-center-horizontal"
+  | "ui-align-center-horizontal-filled"
+  | "ui-align-bottom"
+  | "ui-align-bottom-filled"
+  | "ui-add-connection-point"
+  | "ui-add-connection-point-filled"
+  | "transport-truck"
+  | "transport-truck-filled"
+  | "transport-truck-a"
+  | "transport-truck-a-filled"
+  | "transport-train"
+  | "transport-train-filled"
+  | "transport-sign-stop"
+  | "transport-sign-stop-filled"
+  | "transport-ship"
+  | "transport-ship-filled"
+  | "transport-ship-a"
+  | "transport-ship-a-filled"
+  | "transport-car"
+  | "transport-car-filled"
+  | "transport-car-a"
+  | "transport-car-a-filled"
+  | "transport-bus"
+  | "transport-bus-ticket"
+  | "transport-bus-ticket-filled"
+  | "transport-bus-filled"
+  | "transport-bus-a"
+  | "transport-bus-a-filled"
+  | "transport-bicycle"
+  | "transport-bicycle-filled"
+  | "tool-umbrella"
+  | "tool-umbrella-filled"
+  | "tool-tools-box"
+  | "tool-tools-box-filled"
+  | "tool-text-type"
+  | "tool-text-type-filled"
+  | "tool-smartphone-pay"
+  | "tool-smartphone-pay-filled"
+  | "tool-scissors"
+  | "tool-scissors-filled"
+  | "tool-satelite-type"
+  | "tool-satelite-type-filled"
+  | "tool-ruler"
+  | "tool-ruler-filled"
+  | "tool-ruler-corner"
+  | "tool-ruler-corner-filled"
+  | "tool-ruler-b"
+  | "tool-ruler-b-filled"
+  | "tool-router-signal"
+  | "tool-router-signal-filled"
+  | "tool-razor"
+  | "tool-razor-filled"
+  | "tool-protection-type"
+  | "tool-protection-type-filled"
+  | "tool-property-type"
+  | "tool-property-type-filled"
+  | "tool-projector"
+  | "tool-projector-filled"
+  | "tool-plug"
+  | "tool-plug-filled"
+  | "tool-phone"
+  | "tool-phone-landscape"
+  | "tool-phone-landscape-filled"
+  | "tool-phone-filled"
+  | "tool-mouse"
+  | "tool-mouse-filled"
+  | "tool-module-three"
+  | "tool-module-three-filled"
+  | "tool-magnet"
+  | "tool-magnet-filled"
+  | "tool-magic-wand"
+  | "tool-magic-wand-filled"
+  | "tool-laptop"
+  | "tool-laptop-filled"
+  | "tool-int-type"
+  | "tool-int-type-filled"
+  | "tool-hardware-type"
+  | "tool-hardware-type-filled"
+  | "tool-hammer"
+  | "tool-hammer-plus"
+  | "tool-hammer-plus-filled"
+  | "tool-hammer-filled"
+  | "tool-hammer-angle"
+  | "tool-hammer-angle-filled"
+  | "tool-hammer-a"
+  | "tool-hammer-a-filled"
+  | "tool-grid"
+  | "tool-grid-filled"
+  | "tool-gears-type"
+  | "tool-gears-type-filled"
+  | "tool-focus"
+  | "tool-focus-filled"
+  | "tool-floppy-edit"
+  | "tool-floppy-edit-filled"
+  | "tool-floppy-disks"
+  | "tool-floppy-disks-filled"
+  | "tool-floppy-disk"
+  | "tool-floppy-disk-filled"
+  | "tool-flashlight"
+  | "tool-flashlight-filled"
+  | "tool-fire-extinguisher"
+  | "tool-fire-extinguisher-filled"
+  | "tool-display"
+  | "tool-display-user"
+  | "tool-display-user-filled"
+  | "tool-display-filled"
+  | "tool-console"
+  | "tool-console-filled"
+  | "tool-console-a"
+  | "tool-console-a-filled"
+  | "tool-compass"
+  | "tool-compass-filled"
+  | "tool-camera"
+  | "tool-camera-filled"
+  | "tool-calc"
+  | "tool-calc-filled"
+  | "tool-binoculars"
+  | "tool-binoculars-filled"
+  | "tool-area-type"
+  | "tool-area-type-filled"
+  | "tool-android-type"
+  | "tool-android-type-filled"
+  | "time-watch"
+  | "time-watch-filled"
+  | "time-timer"
+  | "time-timer-filled"
+  | "time-stopwatch"
+  | "time-stopwatch-filled"
+  | "time-speed-meter"
+  | "time-speed-meter-filled"
+  | "time-hourglass"
+  | "time-hourglass-filled"
+  | "time-clock-f"
+  | "time-clock-f-filled"
+  | "time-clock-circle"
+  | "time-clock-circle-filled"
+  | "time-calendar"
+  | "time-calendar-week"
+  | "time-calendar-week-filled"
+  | "time-calendar-small"
+  | "time-calendar-small-filled"
+  | "time-calendar-filled"
+  | "time-calendar-dots"
+  | "time-calendar-dots-filled"
+  | "time-calendar-clock"
+  | "time-calendar-clock-filled"
+  | "time-calendar-cash"
+  | "time-calendar-cash-filled"
+  | "time-alarm"
+  | "time-alarm-filled"
+  | "sport-tv"
+  | "sport-tv-filled"
+  | "sport-trophy"
+  | "sport-trophy-filled"
+  | "sport-puzzle"
+  | "sport-puzzle-filled"
+  | "sport-medicine-lab"
+  | "sport-medicine-lab-filled"
+  | "sport-medic"
+  | "sport-medic-filled"
+  | "sport-heart-pulse"
+  | "sport-heart-pulse-filled"
+  | "sport-gauge"
+  | "sport-gauge-filled"
+  | "sport-flag"
+  | "sport-flag-filled"
+  | "sport-dumbell"
+  | "sport-dumbell-filled"
+  | "sport-badge"
+  | "sport-badge-h"
+  | "sport-badge-h-filled"
+  | "sport-badge-filled"
+  | "sport-badge-c"
+  | "sport-badge-c-filled"
+  | "sport-badge-b"
+  | "sport-badge-b-filled"
+  | "shop-wallet"
+  | "shop-wallet-filled"
+  | "shop-tracking"
+  | "shop-tracking-filled"
+  | "shop-tie"
+  | "shop-tie-filled"
+  | "shop-tag"
+  | "shop-tag-search"
+  | "shop-tag-search-filled"
+  | "shop-tag-refresh"
+  | "shop-tag-refresh-filled"
+  | "shop-tag-plus"
+  | "shop-tag-plus-filled"
+  | "shop-tag-minus"
+  | "shop-tag-minus-filled"
+  | "shop-tag-lock"
+  | "shop-tag-lock-filled"
+  | "shop-tag-info"
+  | "shop-tag-info-filled"
+  | "shop-tag-filled"
+  | "shop-tag-database"
+  | "shop-tag-database-filled"
+  | "shop-tag-cross"
+  | "shop-tag-cross-filled"
+  | "shop-tag-check"
+  | "shop-tag-check-filled"
+  | "shop-suitcase"
+  | "shop-suitcase-filled"
+  | "shop-shipment-packages"
+  | "shop-shipment-packages-filled"
+  | "shop-saving-piggy-bank"
+  | "shop-saving-piggy-bank-filled"
+  | "shop-safe-box"
+  | "shop-safe-box-filled"
+  | "shop-present"
+  | "shop-present-filled"
+  | "shop-pound"
+  | "shop-pound-filled"
+  | "shop-performance-money-decrease"
+  | "shop-performance-money-decrease-filled"
+  | "shop-mastercard"
+  | "shop-mastercard-filled"
+  | "shop-market"
+  | "shop-market-filled"
+  | "shop-euro"
+  | "shop-euro-filled"
+  | "shop-dolar"
+  | "shop-dolar-filled"
+  | "shop-discount-coupon"
+  | "shop-discount-coupon-filled"
+  | "shop-discount-circle"
+  | "shop-discount-circle-filled"
+  | "shop-diamond"
+  | "shop-diamond-filled"
+  | "shop-creditcard"
+  | "shop-creditcard-filled"
+  | "shop-coins"
+  | "shop-coins-filled"
+  | "shop-cash"
+  | "shop-cash-filled"
+  | "shop-cash-dolar"
+  | "shop-cash-dolar-filled"
+  | "shop-cart-full"
+  | "shop-cart-full-filled"
+  | "shop-cart-empty"
+  | "shop-cart-empty-filled"
+  | "shop-cart-empty-alt"
+  | "shop-cart-empty-alt-filled"
+  | "shop-cart-download"
+  | "shop-cart-download-filled"
+  | "shop-box"
+  | "shop-box-plus"
+  | "shop-box-plus-filled"
+  | "shop-box-minus"
+  | "shop-box-minus-filled"
+  | "shop-box-filled"
+  | "shop-box-empty"
+  | "shop-box-empty-filled"
+  | "shop-bill"
+  | "shop-bill-filled"
+  | "shop-basket"
+  | "shop-basket-filled"
+  | "shop-barcode"
+  | "shop-barcode-filled"
+  | "shop-bag"
+  | "shop-bag-filled"
+  | "shop-accounting-bill-stack"
+  | "shop-accounting-bill-stack-filled"
+  | "settings-wrench"
+  | "settings-wrench-filled"
+  | "settings-machine-track"
+  | "settings-machine-track-filled"
+  | "settings-hotspot"
+  | "settings-hotspot-filled"
+  | "settings-gear"
+  | "settings-gear-filled"
+  | "settings-gear-a"
+  | "settings-gear-a-filled"
+  | "settings-equalizer"
+  | "settings-equalizer-filled"
+  | "settings-comonent"
+  | "settings-comonent-filled"
+  | "settings-color-mode"
+  | "settings-color-mode-filled"
+  | "settings-auto-flash"
+  | "settings-auto-flash-filled"
+  | "settings-airplane"
+  | "settings-airplane-filled"
+  | "music-volume-mute"
+  | "music-volume-mute-filled"
+  | "music-volume-medium"
+  | "music-volume-medium-filled"
+  | "music-volume-low"
+  | "music-volume-low-filled"
+  | "music-volume-high"
+  | "music-volume-high-filled"
+  | "music-stop"
+  | "music-stop-filled"
+  | "music-speaker"
+  | "music-speaker-filled"
+  | "music-shuffle"
+  | "music-shuffle-filled"
+  | "music-repeat"
+  | "music-repeat-one"
+  | "music-repeat-one-filled"
+  | "music-repeat-filled"
+  | "music-radio"
+  | "music-radio-filled"
+  | "music-previous"
+  | "music-previous-filled"
+  | "music-previous-a"
+  | "music-previous-a-filled"
+  | "music-playlist"
+  | "music-playlist-filled"
+  | "music-play"
+  | "music-play-filled"
+  | "music-pause"
+  | "music-pause-filled"
+  | "music-note"
+  | "music-note-filled"
+  | "music-note-a"
+  | "music-note-a-filled"
+  | "music-next"
+  | "music-next-filled"
+  | "music-next-a"
+  | "music-next-a-filled"
+  | "music-mic"
+  | "music-mic-filled"
+  | "music-list"
+  | "music-list-filled"
+  | "music-headphones"
+  | "music-headphones-filled"
+  | "music-headphones-a"
+  | "music-headphones-a-filled"
+  | "music-equaliser"
+  | "music-equaliser-filled"
+  | "music-eject"
+  | "music-eject-filled"
+  | "music-cd"
+  | "music-cd-filled"
+  | "music-album"
+  | "music-album-filled"
+  | "misc-wifi"
+  | "misc-wifi-filled"
+  | "misc-smile-sad"
+  | "misc-smile-sad-filled"
+  | "misc-smile-meh"
+  | "misc-smile-meh-filled"
+  | "misc-smile-laught"
+  | "misc-smile-laught-filled"
+  | "misc-smile-happy"
+  | "misc-smile-happy-filled"
+  | "misc-smile-angry"
+  | "misc-smile-angry-filled"
+  | "misc-reception-hotel-bell"
+  | "misc-reception-hotel-bell-filled"
+  | "misc-puzzle"
+  | "misc-puzzle-filled"
+  | "misc-module-hand-puzzle"
+  | "misc-module-hand-puzzle-filled"
+  | "misc-male-sign"
+  | "misc-male-sign-filled"
+  | "misc-grid-perspective"
+  | "misc-grid-perspective-filled"
+  | "misc-globe"
+  | "misc-globe-filled"
+  | "misc-gesture"
+  | "misc-gesture-tap"
+  | "misc-gesture-tap-filled"
+  | "misc-gesture-swipe-right"
+  | "misc-gesture-swipe-right-filled"
+  | "misc-gesture-swipe-left"
+  | "misc-gesture-swipe-left-filled"
+  | "misc-gesture-filled"
+  | "misc-gesture-double-tap"
+  | "misc-gesture-double-tap-filled"
+  | "misc-female-sign"
+  | "misc-female-sign-filled"
+  | "misc-cursor-hand-open"
+  | "misc-cursor-hand-open-filled"
+  | "misc-cube"
+  | "misc-cube-filled"
+  | "misc-crown"
+  | "misc-crown-filled"
+  | "misc-bullet-diamond"
+  | "misc-bullet-diamond-filled"
+  | "logo-x"
+  | "logo-x-filled"
+  | "logo-windows"
+  | "logo-windows-filled"
+  | "logo-twitter"
+  | "logo-twitter-filled"
+  | "logo-linux"
+  | "logo-linux-filled"
+  | "logo-linkedin"
+  | "logo-linkedin-filled"
+  | "logo-instagram"
+  | "logo-instagram-filled"
+  | "logo-facebook"
+  | "logo-facebook-filled"
+  | "logo-apple"
+  | "logo-apple-filled"
+  | "location-street-sign"
+  | "location-street-sign-filled"
+  | "location-street-sign-a"
+  | "location-street-sign-a-filled"
+  | "location-pins"
+  | "location-pins-filled"
+  | "location-pin"
+  | "location-pin-plus"
+  | "location-pin-plus-filled"
+  | "location-pin-minus"
+  | "location-pin-minus-filled"
+  | "location-pin-map"
+  | "location-pin-map-filled"
+  | "location-pin-filled"
+  | "location-pin-check"
+  | "location-pin-check-filled"
+  | "location-pin-b"
+  | "location-pin-b-filled"
+  | "location-pin-a"
+  | "location-pin-a-filled"
+  | "location-map"
+  | "location-map-filled"
+  | "location-map-cross"
+  | "location-map-cross-filled"
+  | "location-direction"
+  | "location-direction-sign"
+  | "location-direction-sign-filled"
+  | "location-direction-filled"
+  | "location-compass"
+  | "location-compass-filled"
+  | "env-tree"
+  | "env-tree-filled"
+  | "env-tree-a"
+  | "env-tree-a-filled"
+  | "env-mountains"
+  | "env-mountains-filled"
+  | "env-leaf"
+  | "env-leaf-filled"
+  | "env-flower"
+  | "env-flower-filled"
+  | "env-earth"
+  | "env-earth-filled"
+  | "env-atomic-bomb"
+  | "env-atomic-bomb-filled"
+  | "editorial-undo"
+  | "editorial-undo-filled"
+  | "editorial-typing-machine"
+  | "editorial-typing-machine-filled"
+  | "editorial-trash"
+  | "editorial-trash-filled"
+  | "editorial-text-underline"
+  | "editorial-text-underline-filled"
+  | "editorial-text-style"
+  | "editorial-text-style-filled"
+  | "editorial-text-strike-through"
+  | "editorial-text-strike-through-filled"
+  | "editorial-text-italic"
+  | "editorial-text-italic-filled"
+  | "editorial-text-format"
+  | "editorial-text-format-filled"
+  | "editorial-text-bold"
+  | "editorial-text-bold-filled"
+  | "editorial-sort-desc"
+  | "editorial-sort-desc-filled"
+  | "editorial-sort-cancel"
+  | "editorial-sort-cancel-filled"
+  | "editorial-sort-asc"
+  | "editorial-sort-asc-filled"
+  | "editorial-redo"
+  | "editorial-redo-filled"
+  | "editorial-pencil"
+  | "editorial-pencil-small"
+  | "editorial-pencil-small-filled"
+  | "editorial-pencil-filled"
+  | "editorial-pen"
+  | "editorial-pen-filled"
+  | "editorial-paragraph"
+  | "editorial-paragraph-first-letter"
+  | "editorial-paragraph-first-letter-filled"
+  | "editorial-paragraph-filled"
+  | "editorial-italic-off"
+  | "editorial-italic-off-filled"
+  | "editorial-indent-right"
+  | "editorial-indent-right-filled"
+  | "editorial-indent-left"
+  | "editorial-indent-left-filled"
+  | "editorial-hashtag-small"
+  | "editorial-hashtag-small-filled"
+  | "editorial-hash"
+  | "editorial-hash-filled"
+  | "editorial-font-size"
+  | "editorial-font-size-filled"
+  | "editorial-combine-intersect"
+  | "editorial-combine-intersect-filled"
+  | "editorial-color-palette"
+  | "editorial-color-palette-filled"
+  | "editorial-brush"
+  | "editorial-brush-filled"
+  | "editorial-bookmark"
+  | "editorial-bookmark-filled"
+  | "editorial-align-right"
+  | "editorial-align-right-filled"
+  | "editorial-align-left"
+  | "editorial-align-left-filled"
+  | "editorial-align-center"
+  | "editorial-align-center-filled"
+  | "doc-wboard-search"
+  | "doc-wboard-search-filled"
+  | "doc-wboard-line"
+  | "doc-wboard-line-filled"
+  | "doc-wboard-gear"
+  | "doc-wboard-gear-filled"
+  | "doc-wboard-check"
+  | "doc-wboard-check-filled"
+  | "doc-wboard-arrow-top"
+  | "doc-wboard-arrow-top-filled"
+  | "doc-upload"
+  | "doc-upload-filled"
+  | "doc-todo-list"
+  | "doc-todo-list-user"
+  | "doc-todo-list-user-filled"
+  | "doc-todo-list-square"
+  | "doc-todo-list-square-filled"
+  | "doc-todo-list-filled"
+  | "doc-task-list-question"
+  | "doc-task-list-question-filled"
+  | "doc-task-checklist"
+  | "doc-task-checklist-filled"
+  | "doc-stack"
+  | "doc-stack-filled"
+  | "doc-profile"
+  | "doc-profile-filled"
+  | "doc-printer"
+  | "doc-printer-filled"
+  | "doc-plus"
+  | "doc-plus-filled"
+  | "doc-pin"
+  | "doc-pin-filled"
+  | "doc-pie"
+  | "doc-pie-filled"
+  | "doc-papers"
+  | "doc-papers-filled"
+  | "doc-paper-stack"
+  | "doc-paper-stack-filled"
+  | "doc-paper-line"
+  | "doc-paper-line-filled"
+  | "doc-office-stamp-document"
+  | "doc-office-stamp-document-filled"
+  | "doc-office-folder"
+  | "doc-office-folder-filled"
+  | "doc-office-file-pdf"
+  | "doc-office-file-pdf-filled"
+  | "doc-notes-upload"
+  | "doc-notes-upload-filled"
+  | "doc-notes-paper-text"
+  | "doc-notes-paper-text-filled"
+  | "doc-notes-home"
+  | "doc-notes-home-filled"
+  | "doc-notes-give"
+  | "doc-notes-give-filled"
+  | "doc-notes-flip"
+  | "doc-notes-flip-filled"
+  | "doc-newspaper"
+  | "doc-newspaper-filled"
+  | "doc-minus"
+  | "doc-minus-filled"
+  | "doc-mailbox-in"
+  | "doc-mailbox-in-filled"
+  | "doc-list"
+  | "doc-list-numbers"
+  | "doc-list-numbers-filled"
+  | "doc-list-filled"
+  | "doc-invoice"
+  | "doc-invoice-filled"
+  | "doc-image"
+  | "doc-image-filled"
+  | "doc-image-a"
+  | "doc-image-a-filled"
+  | "doc-id-card-vertical"
+  | "doc-id-card-vertical-filled"
+  | "doc-glasses"
+  | "doc-glasses-filled"
+  | "doc-folder"
+  | "doc-folder-sync"
+  | "doc-folder-sync-filled"
+  | "doc-folder-plus"
+  | "doc-folder-plus-filled"
+  | "doc-folder-minus"
+  | "doc-folder-minus-filled"
+  | "doc-folder-home"
+  | "doc-folder-home-filled"
+  | "doc-folder-filled"
+  | "doc-folder-cross"
+  | "doc-folder-cross-filled"
+  | "doc-folder-check"
+  | "doc-folder-check-filled"
+  | "doc-file-zip"
+  | "doc-file-zip-filled"
+  | "doc-file-xls"
+  | "doc-file-xls-filled"
+  | "doc-file-video"
+  | "doc-file-video-filled"
+  | "doc-file-save"
+  | "doc-file-save-filled"
+  | "doc-file-refresh"
+  | "doc-file-refresh-filled"
+  | "doc-file-print"
+  | "doc-file-print-filled"
+  | "doc-file-prev"
+  | "doc-file-prev-filled"
+  | "doc-file-presentation"
+  | "doc-file-presentation-filled"
+  | "doc-file-ppt"
+  | "doc-file-ppt-filled"
+  | "doc-file-plus"
+  | "doc-file-plus-filled"
+  | "doc-file-next"
+  | "doc-file-next-filled"
+  | "doc-file-minus"
+  | "doc-file-minus-filled"
+  | "doc-file-line"
+  | "doc-file-line-filled"
+  | "doc-file-image"
+  | "doc-file-image-filled"
+  | "doc-file-graph"
+  | "doc-file-graph-filled"
+  | "doc-file-doc"
+  | "doc-file-doc-filled"
+  | "doc-file-cross"
+  | "doc-file-cross-filled"
+  | "doc-file-check"
+  | "doc-file-check-filled"
+  | "doc-file-bookmark"
+  | "doc-file-bookmark-filled"
+  | "doc-file-blank"
+  | "doc-file-blank-filled"
+  | "doc-file-audio"
+  | "doc-file-audio-filled"
+  | "doc-download"
+  | "doc-download-filled"
+  | "doc-diary"
+  | "doc-diary-filled"
+  | "doc-copy"
+  | "doc-copy-filled"
+  | "doc-compose"
+  | "doc-compose-filled"
+  | "doc-common-file-text-edit"
+  | "doc-common-file-text-edit-filled"
+  | "doc-common-file-home"
+  | "doc-common-file-home-filled"
+  | "doc-common-file-edit"
+  | "doc-common-file-edit-filled"
+  | "doc-camera"
+  | "doc-camera-filled"
+  | "doc-briefcase"
+  | "doc-briefcase-filled"
+  | "doc-box-p"
+  | "doc-box-p-filled"
+  | "doc-bookmark"
+  | "doc-bookmark-filled"
+  | "doc-book"
+  | "doc-book-upload"
+  | "doc-book-upload-filled"
+  | "doc-book-target"
+  | "doc-book-target-filled"
+  | "doc-book-settings"
+  | "doc-book-settings-filled"
+  | "doc-book-modules"
+  | "doc-book-modules-filled"
+  | "doc-book-library"
+  | "doc-book-library-filled"
+  | "doc-book-filled"
+  | "doc-book-download"
+  | "doc-book-download-filled"
+  | "doc-book-cash"
+  | "doc-book-cash-filled"
+  | "doc-book-b"
+  | "doc-book-b-filled"
+  | "doc-book-a"
+  | "doc-book-a-filled"
+  | "doc-attachment"
+  | "doc-attachment-filled"
+  | "doc-article"
+  | "doc-article-filled"
+  | "doc-archive"
+  | "doc-archive-upload"
+  | "doc-archive-upload-filled"
+  | "doc-archive-folder"
+  | "doc-archive-folder-filled"
+  | "doc-archive-filled"
+  | "doc-archive-empty"
+  | "doc-archive-empty-filled"
+  | "doc-archive-download"
+  | "doc-archive-download-filled"
+  | "doc-analytics-up"
+  | "doc-analytics-up-filled"
+  | "com-warning"
+  | "com-warning-filled"
+  | "com-voicemail"
+  | "com-voicemail-filled"
+  | "com-satellite"
+  | "com-satellite-filled"
+  | "com-postcard"
+  | "com-postcard-filled"
+  | "com-pictures"
+  | "com-pictures-filled"
+  | "com-phone"
+  | "com-phone-landline"
+  | "com-phone-landline-filled"
+  | "com-phone-filled"
+  | "com-paperplane"
+  | "com-paperplane-filled"
+  | "com-microphone-podcast"
+  | "com-microphone-podcast-filled"
+  | "com-mic"
+  | "com-mic-mute"
+  | "com-mic-mute-filled"
+  | "com-mic-filled"
+  | "com-megaphone"
+  | "com-megaphone-filled"
+  | "com-mail"
+  | "com-mail-warning"
+  | "com-mail-warning-filled"
+  | "com-mail-sync"
+  | "com-mail-sync-filled"
+  | "com-mail-receive"
+  | "com-mail-receive-filled"
+  | "com-mail-plus"
+  | "com-mail-plus-filled"
+  | "com-mail-open"
+  | "com-mail-open-warning"
+  | "com-mail-open-warning-filled"
+  | "com-mail-open-filled"
+  | "com-mail-minus"
+  | "com-mail-minus-filled"
+  | "com-mail-filled"
+  | "com-mail-download"
+  | "com-mail-download-filled"
+  | "com-mail-cross"
+  | "com-mail-cross-filled"
+  | "com-mail-clock"
+  | "com-mail-clock-filled"
+  | "com-mail-check"
+  | "com-mail-check-filled"
+  | "com-language"
+  | "com-language-filled"
+  | "com-help"
+  | "com-help-filled"
+  | "com-help-a"
+  | "com-help-a-filled"
+  | "com-bubble"
+  | "com-bubble-line"
+  | "com-bubble-line-filled"
+  | "com-bubble-line-a"
+  | "com-bubble-line-a-filled"
+  | "com-bubble-group"
+  | "com-bubble-group-filled"
+  | "com-bubble-group-a"
+  | "com-bubble-group-a-filled"
+  | "com-bubble-filled"
+  | "com-bubble-dot"
+  | "com-bubble-dot-filled"
+  | "com-bubble-dot-a"
+  | "com-bubble-dot-a-filled"
+  | "com-bubble-a"
+  | "com-bubble-a-filled"
+  | "com-bell"
+  | "com-bell-filled"
+  | "com-advertising-megaphone"
+  | "com-advertising-megaphone-filled"
+  | "building-view"
+  | "building-view-filled"
+  | "building-toilet"
+  | "building-toilet-filled"
+  | "building-sofa"
+  | "building-sofa-filled"
+  | "building-sofa-a"
+  | "building-sofa-a-filled"
+  | "building-safety-fire-shield"
+  | "building-safety-fire-shield-filled"
+  | "building-rocker-switch"
+  | "building-rocker-switch-filled"
+  | "building-real-estate-dimensions-plan"
+  | "building-real-estate-dimensions-plan-filled"
+  | "building-real-estate-dimensions-block"
+  | "building-real-estate-dimensions-block-filled"
+  | "building-plan-balcony"
+  | "building-plan-balcony-filled"
+  | "building-office"
+  | "building-office-settings-b"
+  | "building-office-settings-b-filled"
+  | "building-office-filled"
+  | "building-office-add-b"
+  | "building-office-add-b-filled"
+  | "building-office-a"
+  | "building-office-a-filled"
+  | "building-museum"
+  | "building-museum-filled"
+  | "building-lift"
+  | "building-lift-filled"
+  | "building-lamp"
+  | "building-lamp-filled"
+  | "building-lamp-a"
+  | "building-lamp-a-filled"
+  | "building-house"
+  | "building-house-filled"
+  | "building-heater"
+  | "building-heater-filled"
+  | "building-hanging-rack"
+  | "building-hanging-rack-filled"
+  | "building-fireplace"
+  | "building-fireplace-filled"
+  | "building-faucet"
+  | "building-faucet-filled"
+  | "building-exit"
+  | "building-exit-filled"
+  | "building-drawer"
+  | "building-drawer-filled"
+  | "building-door"
+  | "building-door-filled"
+  | "building-dimensions-ruler"
+  | "building-dimensions-ruler-filled"
+  | "building-desk"
+  | "building-desk-filled"
+  | "building-daylight"
+  | "building-daylight-filled"
+  | "building-chair"
+  | "building-chair-filled"
+  | "building-cabinet"
+  | "building-cabinet-filled"
+  | "building-blueprint"
+  | "building-blueprint-filled"
+  | "building-bed"
+  | "building-bed-filled";
 
 export type MyIconsKey =
-  | "RegularWebWebcam"
-  | "RegularWebWarning"
-  | "RegularWebTabs"
-  | "RegularWebTabsPlus"
-  | "RegularWebTabsMinus"
-  | "RegularWebTabsCross"
-  | "RegularWebTabsCheck"
-  | "RegularWebTabletIncrease"
-  | "RegularWebStatistic"
-  | "RegularWebShieldWarning"
-  | "RegularWebShare"
-  | "RegularWebServer"
-  | "RegularWebRss"
-  | "RegularWebRssSettings"
-  | "RegularWebLink"
-  | "RegularWebLinkB"
-  | "RegularWebLinkBCheck"
-  | "RegularWebIncreaseMail"
-  | "RegularWebGridUpload"
-  | "RegularWebGraphLinearSmall"
-  | "RegularWebGlobe"
-  | "RegularWebFlag"
-  | "RegularWebFlagC"
-  | "RegularWebDataFileBars"
-  | "RegularWebConsole"
-  | "RegularWebCollapseUp"
-  | "RegularWebCollapseRight"
-  | "RegularWebCollapseLeft"
-  | "RegularWebCollapseDown"
-  | "RegularWebCode"
-  | "RegularWebChart"
-  | "RegularWebBug"
-  | "RegularWebBrowser"
-  | "RegularWebBrowserWindow"
-  | "RegularWebBrowserGrid"
-  | "RegularWebBrokenLink"
-  | "RegularWebBarsHome"
-  | "RegularWebAtSign"
-  | "RegularWebAnalyticsNet"
-  | "RegularWebAnalyticsGraph"
-  | "RegularWeatherWindsock"
-  | "RegularWeatherWater"
-  | "RegularWeatherThermometer"
-  | "RegularWeatherSunrise"
-  | "RegularWeatherSun"
-  | "RegularWeatherSunCloudSnow"
-  | "RegularWeatherSnowflake"
-  | "RegularWeatherMoon"
-  | "RegularWeatherMoonA"
-  | "RegularWeatherFlash"
-  | "RegularWeatherFire"
-  | "RegularWeatherCloud"
-  | "RegularWeatherCloudSnow"
-  | "RegularWeatherCloudRain"
-  | "RegularWeatherCloudFlash"
-  | "RegularVideoPlayer"
-  | "RegularUser"
-  | "RegularUserWalking"
-  | "RegularUserToiletSign"
-  | "RegularUserSingleNeutralHome"
-  | "RegularUserSingleNeutralActionsEdit"
-  | "RegularUserSingleNeutralActionsBlock"
-  | "RegularUserShare"
-  | "RegularUserPlus"
-  | "RegularUserMultipleUsers"
-  | "RegularUserMinus"
-  | "RegularUserMessagesPeopleUserWarning"
-  | "RegularUserMale"
-  | "RegularUserMaleSign"
-  | "RegularUserMalePlus"
-  | "RegularUserMaleMinus"
-  | "RegularUserMaleList"
-  | "RegularUserMaleCross"
-  | "RegularUserMaleCheck"
-  | "RegularUserLock"
-  | "RegularUserLockUnlocked"
-  | "RegularUserLockUnlockedB"
-  | "RegularUserList"
-  | "RegularUserKey"
-  | "RegularUserHeadset"
-  | "RegularUserGroup"
-  | "RegularUserGroupFemale"
-  | "RegularUserGroupA"
-  | "RegularUserGear"
-  | "RegularUserForward"
-  | "RegularUserFemale"
-  | "RegularUserFemaleSign"
-  | "RegularUserFemalePlus"
-  | "RegularUserFemaleMinus"
-  | "RegularUserFemaleList"
-  | "RegularUserFemaleCross"
-  | "RegularUserFemaleCheck"
-  | "RegularUserCross"
-  | "RegularUserContactBook"
-  | "RegularUserContactBookA"
-  | "RegularUserCircle"
-  | "RegularUserCheck"
-  | "RegularUserBusinessDealCashExchange"
-  | "RegularUiZoomInPage"
-  | "RegularUiWindow"
-  | "RegularUiUndo"
-  | "RegularUiUndoB"
-  | "RegularUiUndoA"
-  | "RegularUiTriangleTop"
-  | "RegularUiTriangleRight"
-  | "RegularUiTriangleLeft"
-  | "RegularUiTriangleBottom"
-  | "RegularUiTreeSave"
-  | "RegularUiTreeLoad"
-  | "RegularUiTarget"
-  | "RegularUiSync"
-  | "RegularUiStar"
-  | "RegularUiSqareDashed"
-  | "RegularUiSplitVertical"
-  | "RegularUiSplitHorizontal"
-  | "RegularUiShrink"
-  | "RegularUiSearch"
-  | "RegularUiSearchPlus"
-  | "RegularUiSearchMinus"
-  | "RegularUiSearchCross"
-  | "RegularUiSearchCheck"
-  | "RegularUiScrollVertical"
-  | "RegularUiScrollHorizontal"
-  | "RegularUiResizeVertical"
-  | "RegularUiResizeTopRight"
-  | "RegularUiResizeTopLeft"
-  | "RegularUiResizeHorizontal"
-  | "RegularUiResizeDiagonal"
-  | "RegularUiResizeBottomRight"
-  | "RegularUiResizeBottomLeft"
-  | "RegularUiReply"
-  | "RegularUiRepeating"
-  | "RegularUiRemoveConnectionPoint"
-  | "RegularUiRefresh"
-  | "RegularUiRadiobutton"
-  | "RegularUiPropertyAnd"
-  | "RegularUiPrevious"
-  | "RegularUiPreviousA"
-  | "RegularUiPower"
-  | "RegularUiPopup"
-  | "RegularUiPlus"
-  | "RegularUiPlusSmall"
-  | "RegularUiPixel"
-  | "RegularUiOutLink"
-  | "RegularUiNumber"
-  | "RegularUiNext"
-  | "RegularUiNextA"
-  | "RegularUiMove"
-  | "RegularUiMoveUp"
-  | "RegularUiMoveUpFront"
-  | "RegularUiMoveDown"
-  | "RegularUiMoveDownBackground"
-  | "RegularUiMore"
-  | "RegularUiMoreVertical"
-  | "RegularUiMoreVerticalSmall"
-  | "RegularUiMoreSmall"
-  | "RegularUiMoreSmallCircle"
-  | "RegularUiMoreHorizontalSmall"
-  | "RegularUiMinus"
-  | "RegularUiMinusSmall"
-  | "RegularUiMethod"
-  | "RegularUiMethodInherited"
-  | "RegularUiLogout"
-  | "RegularUiLogin"
-  | "RegularUiListView"
-  | "RegularUiListUser"
-  | "RegularUiListShare"
-  | "RegularUiListForward"
-  | "RegularUiLayoutWireframe"
-  | "RegularUiLayoutThirdVertical"
-  | "RegularUiLayoutTableView"
-  | "RegularUiLayoutSidebarL"
-  | "RegularUiLayoutSidebarLHalf"
-  | "RegularUiLayoutHalf"
-  | "RegularUiLayoutHalfHorizontal"
-  | "RegularUiKeyboard"
-  | "RegularUiInLink"
-  | "RegularUiImport"
-  | "RegularUiHouse"
-  | "RegularUiHome"
-  | "RegularUiHomeA"
-  | "RegularUiHierarchy"
-  | "RegularUiHierarchyTree"
-  | "RegularUiHelp"
-  | "RegularUiHelpLife"
-  | "RegularUiHeart"
-  | "RegularUiHamburger"
-  | "RegularUiGridView"
-  | "RegularUiFullscreen"
-  | "RegularUiFullscreenA"
-  | "RegularUiFrame"
-  | "RegularUiForward"
-  | "RegularUiFilter"
-  | "RegularUiEye"
-  | "RegularUiEyeCross"
-  | "RegularUiExport"
-  | "RegularUiExpand"
-  | "RegularUiEnlarge"
-  | "RegularUiDragHandle"
-  | "RegularUiDot"
-  | "RegularUiDotLarge"
-  | "RegularUiCross"
-  | "RegularUiCrossSmall"
-  | "RegularUiCrop"
-  | "RegularUiCreateConnection"
-  | "RegularUiConnection"
-  | "RegularUiConnectionOpen"
-  | "RegularUiConnectionOpenInherited"
-  | "RegularUiConnectionInherited"
-  | "RegularUiCone"
-  | "RegularUiCondition"
-  | "RegularUiCombobox"
-  | "RegularUiCmd"
-  | "RegularUiCloudUpload"
-  | "RegularUiCloudDownload"
-  | "RegularUiCloseParallelConnection"
-  | "RegularUiCircle"
-  | "RegularUiCircleWarning"
-  | "RegularUiCirclePlus"
-  | "RegularUiCircleMinus"
-  | "RegularUiCircleInfo"
-  | "RegularUiCircleHelp"
-  | "RegularUiCircleCross"
-  | "RegularUiCircleChevronTop"
-  | "RegularUiCircleChevronRight"
-  | "RegularUiCircleChevronLeft"
-  | "RegularUiCircleChevronBottom"
-  | "RegularUiCircleCheck"
-  | "RegularUiCircleCheckA"
-  | "RegularUiCircleArrowTop"
-  | "RegularUiCircleArrowRight"
-  | "RegularUiCircleArrowLeft"
-  | "RegularUiCircleArrowBottom"
-  | "RegularUiChevronTop"
-  | "RegularUiChevronTopSmall"
-  | "RegularUiChevronRight"
-  | "RegularUiChevronRightTripple"
-  | "RegularUiChevronRightSmall"
-  | "RegularUiChevronLeft"
-  | "RegularUiChevronLeftSmall"
-  | "RegularUiChevronBottom"
-  | "RegularUiChevronBottomSmall"
-  | "RegularUiCheckbox"
-  | "RegularUiCheck"
-  | "RegularUiCheckSmall"
-  | "RegularUiCheckSmallCircle"
-  | "RegularUiCard"
-  | "RegularUiCardView"
-  | "RegularUiBulletView"
-  | "RegularUiBoxWarning"
-  | "RegularUiBoxHelp"
-  | "RegularUiBlock"
-  | "RegularUiBackspace"
-  | "RegularUiAttribute"
-  | "RegularUiAttributeInherited"
-  | "RegularUiArrowTop"
-  | "RegularUiArrowTopSmall"
-  | "RegularUiArrowTopRight"
-  | "RegularUiArrowTopLeft"
-  | "RegularUiArrowTopA"
-  | "RegularUiArrowRight"
-  | "RegularUiArrowRightSmall"
-  | "RegularUiArrowRightA"
-  | "RegularUiArrowLeft"
-  | "RegularUiArrowLeftSmall"
-  | "RegularUiArrowLeftA"
-  | "RegularUiArrowBottom"
-  | "RegularUiArrowBottomSmall"
-  | "RegularUiArrowBottomRight"
-  | "RegularUiArrowBottomLeft"
-  | "RegularUiArrowBottomA"
-  | "RegularUiAlignTop"
-  | "RegularUiAlignRight"
-  | "RegularUiAlignLeft"
-  | "RegularUiAlignCenterVertical"
-  | "RegularUiAlignCenterHorizontal"
-  | "RegularUiAlignBottom"
-  | "RegularUiAddConnectionPoint"
-  | "RegularTransportTruck"
-  | "RegularTransportTruckA"
-  | "RegularTransportTrain"
-  | "RegularTransportSignStop"
-  | "RegularTransportShip"
-  | "RegularTransportShipA"
-  | "RegularTransportCar"
-  | "RegularTransportCarA"
-  | "RegularTransportBus"
-  | "RegularTransportBusTicket"
-  | "RegularTransportBusA"
-  | "RegularTransportBicycle"
-  | "RegularToolUmbrella"
-  | "RegularToolToolsBox"
-  | "RegularToolTextType"
-  | "RegularToolSmartphonePay"
-  | "RegularToolScissors"
-  | "RegularToolSateliteType"
-  | "RegularToolRuler"
-  | "RegularToolRulerCorner"
-  | "RegularToolRulerB"
-  | "RegularToolRouterSignal"
-  | "RegularToolRazor"
-  | "RegularToolProtectionType"
-  | "RegularToolPropertyType"
-  | "RegularToolProjector"
-  | "RegularToolPlug"
-  | "RegularToolPhone"
-  | "RegularToolPhoneLandscape"
-  | "RegularToolMouse"
-  | "RegularToolModuleThree"
-  | "RegularToolMagnet"
-  | "RegularToolMagicWand"
-  | "RegularToolLaptop"
-  | "RegularToolIntType"
-  | "RegularToolHardwareType"
-  | "RegularToolHammer"
-  | "RegularToolHammerPlus"
-  | "RegularToolHammerAngle"
-  | "RegularToolHammerA"
-  | "RegularToolGrid"
-  | "RegularToolGearsType"
-  | "RegularToolFocus"
-  | "RegularToolFloppyEdit"
-  | "RegularToolFloppyDisks"
-  | "RegularToolFloppyDisk"
-  | "RegularToolFlashlight"
-  | "RegularToolFireExtinguisher"
-  | "RegularToolDisplay"
-  | "RegularToolDisplayUser"
-  | "RegularToolConsole"
-  | "RegularToolConsoleA"
-  | "RegularToolCompass"
-  | "RegularToolCamera"
-  | "RegularToolCalc"
-  | "RegularToolBinoculars"
-  | "RegularToolAreaType"
-  | "RegularToolAndroidType"
-  | "RegularTimeWatch"
-  | "RegularTimeTimer"
-  | "RegularTimeStopwatch"
-  | "RegularTimeSpeedMeter"
-  | "RegularTimeHourglass"
-  | "RegularTimeClockF"
-  | "RegularTimeClockCircle"
-  | "RegularTimeCalendar"
-  | "RegularTimeCalendarWeek"
-  | "RegularTimeCalendarSmall"
-  | "RegularTimeCalendarDots"
-  | "RegularTimeCalendarClock"
-  | "RegularTimeCalendarCash"
-  | "RegularTimeAlarm"
-  | "RegularSportTv"
-  | "RegularSportTrophy"
-  | "RegularSportPuzzle"
-  | "RegularSportMedicineLab"
-  | "RegularSportMedic"
-  | "RegularSportHeartPulse"
-  | "RegularSportGauge"
-  | "RegularSportFlag"
-  | "RegularSportDumbell"
-  | "RegularSportBadge"
-  | "RegularSportBadgeH"
-  | "RegularSportBadgeC"
-  | "RegularSportBadgeB"
-  | "RegularShopWallet"
-  | "RegularShopTracking"
-  | "RegularShopTie"
-  | "RegularShopTag"
-  | "RegularShopTagSearch"
-  | "RegularShopTagRefresh"
-  | "RegularShopTagPlus"
-  | "RegularShopTagMinus"
-  | "RegularShopTagLock"
-  | "RegularShopTagInfo"
-  | "RegularShopTagDatabase"
-  | "RegularShopTagCross"
-  | "RegularShopTagCheck"
-  | "RegularShopSuitcase"
-  | "RegularShopShipmentPackages"
-  | "RegularShopSavingPiggyBank"
-  | "RegularShopSafeBox"
-  | "RegularShopPresent"
-  | "RegularShopPound"
-  | "RegularShopPerformanceMoneyDecrease"
-  | "RegularShopMastercard"
-  | "RegularShopMarket"
-  | "RegularShopEuro"
-  | "RegularShopDolar"
-  | "RegularShopDiscountCoupon"
-  | "RegularShopDiscountCircle"
-  | "RegularShopDiamond"
-  | "RegularShopCreditcard"
-  | "RegularShopCoins"
-  | "RegularShopCash"
-  | "RegularShopCashDolar"
-  | "RegularShopCartFull"
-  | "RegularShopCartEmpty"
-  | "RegularShopCartEmptyAlt"
-  | "RegularShopCartDownload"
-  | "RegularShopBox"
-  | "RegularShopBoxPlus"
-  | "RegularShopBoxMinus"
-  | "RegularShopBoxEmpty"
-  | "RegularShopBill"
-  | "RegularShopBasket"
-  | "RegularShopBarcode"
-  | "RegularShopBag"
-  | "RegularShopAccountingBillStack"
-  | "RegularSettingsWrench"
-  | "RegularSettingsMachineTrack"
-  | "RegularSettingsHotspot"
-  | "RegularSettingsGear"
-  | "RegularSettingsGearA"
-  | "RegularSettingsEqualizer"
-  | "RegularSettingsComonent"
-  | "RegularSettingsColorMode"
-  | "RegularSettingsAutoFlash"
-  | "RegularSettingsAirplane"
-  | "RegularMusicVolumeMute"
-  | "RegularMusicVolumeMedium"
-  | "RegularMusicVolumeLow"
-  | "RegularMusicVolumeHigh"
-  | "RegularMusicStop"
-  | "RegularMusicSpeaker"
-  | "RegularMusicShuffle"
-  | "RegularMusicRepeat"
-  | "RegularMusicRepeatOne"
-  | "RegularMusicRadio"
-  | "RegularMusicPrevious"
-  | "RegularMusicPreviousA"
-  | "RegularMusicPlaylist"
-  | "RegularMusicPlay"
-  | "RegularMusicPause"
-  | "RegularMusicNote"
-  | "RegularMusicNoteA"
-  | "RegularMusicNext"
-  | "RegularMusicNextA"
-  | "RegularMusicMic"
-  | "RegularMusicList"
-  | "RegularMusicHeadphones"
-  | "RegularMusicHeadphonesA"
-  | "RegularMusicEqualiser"
-  | "RegularMusicEject"
-  | "RegularMusicCd"
-  | "RegularMusicAlbum"
-  | "RegularMiscWifi"
-  | "RegularMiscSmileSad"
-  | "RegularMiscSmileMeh"
-  | "RegularMiscSmileLaught"
-  | "RegularMiscSmileHappy"
-  | "RegularMiscSmileAngry"
-  | "RegularMiscReceptionHotelBell"
-  | "RegularMiscPuzzle"
-  | "RegularMiscModuleHandPuzzle"
-  | "RegularMiscMaleSign"
-  | "RegularMiscGridPerspective"
-  | "RegularMiscGlobe"
-  | "RegularMiscGesture"
-  | "RegularMiscGestureTap"
-  | "RegularMiscGestureSwipeRight"
-  | "RegularMiscGestureSwipeLeft"
-  | "RegularMiscGestureDoubleTap"
-  | "RegularMiscFemaleSign"
-  | "RegularMiscCursorHandOpen"
-  | "RegularMiscCube"
-  | "RegularMiscCrown"
-  | "RegularMiscBulletDiamond"
-  | "RegularLogoX"
-  | "RegularLogoWindows"
-  | "RegularLogoTwitter"
-  | "RegularLogoLinux"
-  | "RegularLogoLinkedin"
-  | "RegularLogoInstagram"
-  | "RegularLogoFacebook"
-  | "RegularLogoApple"
-  | "RegularLocationStreetSign"
-  | "RegularLocationStreetSignA"
-  | "RegularLocationPins"
-  | "RegularLocationPin"
-  | "RegularLocationPinPlus"
-  | "RegularLocationPinMinus"
-  | "RegularLocationPinMap"
-  | "RegularLocationPinCheck"
-  | "RegularLocationPinB"
-  | "RegularLocationPinA"
-  | "RegularLocationMap"
-  | "RegularLocationMapCross"
-  | "RegularLocationDirection"
-  | "RegularLocationDirectionSign"
-  | "RegularLocationCompass"
-  | "RegularEnvTree"
-  | "RegularEnvTreeA"
-  | "RegularEnvMountains"
-  | "RegularEnvLeaf"
-  | "RegularEnvFlower"
-  | "RegularEnvEarth"
-  | "RegularEnvAtomicBomb"
-  | "RegularEditorialUndo"
-  | "RegularEditorialTypingMachine"
-  | "RegularEditorialTrash"
-  | "RegularEditorialTextUnderline"
-  | "RegularEditorialTextStyle"
-  | "RegularEditorialTextStrikeThrough"
-  | "RegularEditorialTextItalic"
-  | "RegularEditorialTextFormat"
-  | "RegularEditorialTextBold"
-  | "RegularEditorialSortDesc"
-  | "RegularEditorialSortCancel"
-  | "RegularEditorialSortAsc"
-  | "RegularEditorialRedo"
-  | "RegularEditorialPencil"
-  | "RegularEditorialPencilSmall"
-  | "RegularEditorialPen"
-  | "RegularEditorialParagraph"
-  | "RegularEditorialParagraphFirstLetter"
-  | "RegularEditorialItalicOff"
-  | "RegularEditorialIndentRight"
-  | "RegularEditorialIndentLeft"
-  | "RegularEditorialHashtagSmall"
-  | "RegularEditorialHash"
-  | "RegularEditorialFontSize"
-  | "RegularEditorialCombineIntersect"
-  | "RegularEditorialColorPalette"
-  | "RegularEditorialBrush"
-  | "RegularEditorialBookmark"
-  | "RegularEditorialAlignRight"
-  | "RegularEditorialAlignLeft"
-  | "RegularEditorialAlignCenter"
-  | "RegularDocWboardSearch"
-  | "RegularDocWboardLine"
-  | "RegularDocWboardGear"
-  | "RegularDocWboardCheck"
-  | "RegularDocWboardArrowTop"
-  | "RegularDocUpload"
-  | "RegularDocTodoList"
-  | "RegularDocTodoListUser"
-  | "RegularDocTodoListSquare"
-  | "RegularDocTaskListQuestion"
-  | "RegularDocTaskChecklist"
-  | "RegularDocStack"
-  | "RegularDocProfile"
-  | "RegularDocPrinter"
-  | "RegularDocPlus"
-  | "RegularDocPin"
-  | "RegularDocPie"
-  | "RegularDocPapers"
-  | "RegularDocPaperStack"
-  | "RegularDocPaperLine"
-  | "RegularDocOfficeStampDocument"
-  | "RegularDocOfficeFolder"
-  | "RegularDocOfficeFilePdf"
-  | "RegularDocNotesUpload"
-  | "RegularDocNotesPaperText"
-  | "RegularDocNotesHome"
-  | "RegularDocNotesGive"
-  | "RegularDocNotesFlip"
-  | "RegularDocNewspaper"
-  | "RegularDocMinus"
-  | "RegularDocMailboxIn"
-  | "RegularDocList"
-  | "RegularDocListNumbers"
-  | "RegularDocInvoice"
-  | "RegularDocImage"
-  | "RegularDocImageA"
-  | "RegularDocIdCardVertical"
-  | "RegularDocGlasses"
-  | "RegularDocFolder"
-  | "RegularDocFolderSync"
-  | "RegularDocFolderPlus"
-  | "RegularDocFolderMinus"
-  | "RegularDocFolderHome"
-  | "RegularDocFolderCross"
-  | "RegularDocFolderCheck"
-  | "RegularDocFileZip"
-  | "RegularDocFileXls"
-  | "RegularDocFileVideo"
-  | "RegularDocFileSave"
-  | "RegularDocFileRefresh"
-  | "RegularDocFilePrint"
-  | "RegularDocFilePrev"
-  | "RegularDocFilePresentation"
-  | "RegularDocFilePpt"
-  | "RegularDocFilePlus"
-  | "RegularDocFileNext"
-  | "RegularDocFileMinus"
-  | "RegularDocFileLine"
-  | "RegularDocFileImage"
-  | "RegularDocFileGraph"
-  | "RegularDocFileDoc"
-  | "RegularDocFileCross"
-  | "RegularDocFileCheck"
-  | "RegularDocFileBookmark"
-  | "RegularDocFileBlank"
-  | "RegularDocFileAudio"
-  | "RegularDocDownload"
-  | "RegularDocDiary"
-  | "RegularDocCopy"
-  | "RegularDocCompose"
-  | "RegularDocCommonFileTextEdit"
-  | "RegularDocCommonFileHome"
-  | "RegularDocCommonFileEdit"
-  | "RegularDocCamera"
-  | "RegularDocBriefcase"
-  | "RegularDocBoxP"
-  | "RegularDocBookmark"
-  | "RegularDocBook"
-  | "RegularDocBookUpload"
-  | "RegularDocBookTarget"
-  | "RegularDocBookSettings"
-  | "RegularDocBookModules"
-  | "RegularDocBookLibrary"
-  | "RegularDocBookDownload"
-  | "RegularDocBookCash"
-  | "RegularDocBookB"
-  | "RegularDocBookA"
-  | "RegularDocAttachment"
-  | "RegularDocArticle"
-  | "RegularDocArchive"
-  | "RegularDocArchiveUpload"
-  | "RegularDocArchiveFolder"
-  | "RegularDocArchiveEmpty"
-  | "RegularDocArchiveDownload"
-  | "RegularDocAnalyticsUp"
-  | "RegularComWarning"
-  | "RegularComVoicemail"
-  | "RegularComSatellite"
-  | "RegularComPostcard"
-  | "RegularComPictures"
-  | "RegularComPhone"
-  | "RegularComPhoneLandline"
-  | "RegularComPaperplane"
-  | "RegularComMicrophonePodcast"
-  | "RegularComMic"
-  | "RegularComMicMute"
-  | "RegularComMegaphone"
-  | "RegularComMail"
-  | "RegularComMailWarning"
-  | "RegularComMailSync"
-  | "RegularComMailReceive"
-  | "RegularComMailPlus"
-  | "RegularComMailOpen"
-  | "RegularComMailOpenWarning"
-  | "RegularComMailMinus"
-  | "RegularComMailDownload"
-  | "RegularComMailCross"
-  | "RegularComMailClock"
-  | "RegularComMailCheck"
-  | "RegularComLanguage"
-  | "RegularComHelp"
-  | "RegularComHelpA"
-  | "RegularComBubble"
-  | "RegularComBubbleLine"
-  | "RegularComBubbleLineA"
-  | "RegularComBubbleGroup"
-  | "RegularComBubbleGroupA"
-  | "RegularComBubbleDot"
-  | "RegularComBubbleDotA"
-  | "RegularComBubbleA"
-  | "RegularComBell"
-  | "RegularComAdvertisingMegaphone"
-  | "RegularBuildingView"
-  | "RegularBuildingToilet"
-  | "RegularBuildingSofa"
-  | "RegularBuildingSofaA"
-  | "RegularBuildingSafetyFireShield"
-  | "RegularBuildingRockerSwitch"
-  | "RegularBuildingRealEstateDimensionsPlan"
-  | "RegularBuildingRealEstateDimensionsBlock"
-  | "RegularBuildingPlanBalcony"
-  | "RegularBuildingOffice"
-  | "RegularBuildingOfficeSettingsB"
-  | "RegularBuildingOfficeAddB"
-  | "RegularBuildingOfficeA"
-  | "RegularBuildingMuseum"
-  | "RegularBuildingLift"
-  | "RegularBuildingLamp"
-  | "RegularBuildingLampA"
-  | "RegularBuildingHouse"
-  | "RegularBuildingHeater"
-  | "RegularBuildingHangingRack"
-  | "RegularBuildingFireplace"
-  | "RegularBuildingFaucet"
-  | "RegularBuildingExit"
-  | "RegularBuildingDrawer"
-  | "RegularBuildingDoor"
-  | "RegularBuildingDimensionsRuler"
-  | "RegularBuildingDesk"
-  | "RegularBuildingDaylight"
-  | "RegularBuildingChair"
-  | "RegularBuildingCabinet"
-  | "RegularBuildingBlueprint"
-  | "RegularBuildingBed"
-  | "BoldWebWebcamFilled"
-  | "BoldWebWarningFilled"
-  | "BoldWebTabsPlusFilled"
-  | "BoldWebTabsMinusFilled"
-  | "BoldWebTabsFilled"
-  | "BoldWebTabsCrossFilled"
-  | "BoldWebTabsCheckFilled"
-  | "BoldWebTabletIncreaseFilled"
-  | "BoldWebStatisticFilled"
-  | "BoldWebShieldWarningFilled"
-  | "BoldWebShareFilled"
-  | "BoldWebServerFilled"
-  | "BoldWebRssSettingsFilled"
-  | "BoldWebRssFilled"
-  | "BoldWebLinkFilled"
-  | "BoldWebLinkBFilled"
-  | "BoldWebLinkBCheckFilled"
-  | "BoldWebIncreaseMailFilled"
-  | "BoldWebGridUploadFilled"
-  | "BoldWebGraphLinearSmallFilled"
-  | "BoldWebGlobeFilled"
-  | "BoldWebFlagFilled"
-  | "BoldWebFlagCFilled"
-  | "BoldWebDataFileBarsFilled"
-  | "BoldWebConsoleFilled"
-  | "BoldWebCollapseUpFilled"
-  | "BoldWebCollapseRightFilled"
-  | "BoldWebCollapseLeftFilled"
-  | "BoldWebCollapseDownFilled"
-  | "BoldWebCodeFilled"
-  | "BoldWebChartFilled"
-  | "BoldWebBugFilled"
-  | "BoldWebBrowserWindowFilled"
-  | "BoldWebBrowserGridFilled"
-  | "BoldWebBrowserFilled"
-  | "BoldWebBrokenLinkFilled"
-  | "BoldWebBarsHomeFilled"
-  | "BoldWebAtSignFilled"
-  | "BoldWebAnalyticsNetFilled"
-  | "BoldWebAnalyticsGraphFilled"
-  | "BoldWeatherWindsockFilled"
-  | "BoldWeatherWaterFilled"
-  | "BoldWeatherThermometerFilled"
-  | "BoldWeatherSunriseFilled"
-  | "BoldWeatherSunFilled"
-  | "BoldWeatherSunCloudSnowFilled"
-  | "BoldWeatherSnowflakeFilled"
-  | "BoldWeatherMoonFilled"
-  | "BoldWeatherMoonAFilled"
-  | "BoldWeatherFlashFilled"
-  | "BoldWeatherFireFilled"
-  | "BoldWeatherCloudSnowFilled"
-  | "BoldWeatherCloudRainFilled"
-  | "BoldWeatherCloudFlashFilled"
-  | "BoldWeatherCloudFilled"
-  | "BoldVideoPlayerFilled"
-  | "BoldUserWalkingFilled"
-  | "BoldUserToiletSignFilled"
-  | "BoldUserSingleNeutralHomeFilled"
-  | "BoldUserSingleNeutralActionsEditFilled"
-  | "BoldUserSingleNeutralActionsBlockFilled"
-  | "BoldUserShareFilled"
-  | "BoldUserPlusFilled"
-  | "BoldUserMultipleUsersFilled"
-  | "BoldUserMinusFilled"
-  | "BoldUserMessagesPeopleUserWarningFilled"
-  | "BoldUserMaleSignFilled"
-  | "BoldUserMalePlusFilled"
-  | "BoldUserMaleMinusFilled"
-  | "BoldUserMaleListFilled"
-  | "BoldUserMaleFilled"
-  | "BoldUserMaleCrossFilled"
-  | "BoldUserMaleCheckFilled"
-  | "BoldUserLockUnlockedFilled"
-  | "BoldUserLockUnlockedBFilled"
-  | "BoldUserLockFilled"
-  | "BoldUserListFilled"
-  | "BoldUserKeyFilled"
-  | "BoldUserHeadsetFilled"
-  | "BoldUserGroupFilled"
-  | "BoldUserGroupFemaleFilled"
-  | "BoldUserGroupAFilled"
-  | "BoldUserGearFilled"
-  | "BoldUserForwardFilled"
-  | "BoldUserFilled"
-  | "BoldUserFemaleSignFilled"
-  | "BoldUserFemalePlusFilled"
-  | "BoldUserFemaleMinusFilled"
-  | "BoldUserFemaleListFilled"
-  | "BoldUserFemaleFilled"
-  | "BoldUserFemaleCrossFilled"
-  | "BoldUserFemaleCheckFilled"
-  | "BoldUserCrossFilled"
-  | "BoldUserContactBookFilled"
-  | "BoldUserContactBookAFilled"
-  | "BoldUserCircleFilled"
-  | "BoldUserCheckFilled"
-  | "BoldUserBusinessDealCashExchangeFilled"
-  | "BoldUiZoomInPageFilled"
-  | "BoldUiWindowFilled"
-  | "BoldUiUndoFilled"
-  | "BoldUiUndoBFilled"
-  | "BoldUiUndoAFilled"
-  | "BoldUiTriangleTopFilled"
-  | "BoldUiTriangleRightFilled"
-  | "BoldUiTriangleLeftFilled"
-  | "BoldUiTriangleBottomFilled"
-  | "BoldUiTreeSaveFilled"
-  | "BoldUiTreeLoadFilled"
-  | "BoldUiTargetFilled"
-  | "BoldUiSyncFilled"
-  | "BoldUiStarFilled"
-  | "BoldUiSqareDashedFilled"
-  | "BoldUiSplitVerticalFilled"
-  | "BoldUiSplitHorizontalFilled"
-  | "BoldUiShrinkFilled"
-  | "BoldUiSearchPlusFilled"
-  | "BoldUiSearchMinusFilled"
-  | "BoldUiSearchFilled"
-  | "BoldUiSearchCrossFilled"
-  | "BoldUiSearchCheckFilled"
-  | "BoldUiScrollVerticalFilled"
-  | "BoldUiScrollHorizontalFilled"
-  | "BoldUiResizeVerticalFilled"
-  | "BoldUiResizeTopRightFilled"
-  | "BoldUiResizeTopLeftFilled"
-  | "BoldUiResizeHorizontalFilled"
-  | "BoldUiResizeDiagonalFilled"
-  | "BoldUiResizeBottomRightFilled"
-  | "BoldUiResizeBottomLeftFilled"
-  | "BoldUiReplyFilled"
-  | "BoldUiRepeatingFilled"
-  | "BoldUiRemoveConnectionPointFilled"
-  | "BoldUiRefreshFilled"
-  | "BoldUiRadiobuttonFilled"
-  | "BoldUiPropertyAndFilled"
-  | "BoldUiPreviousFilled"
-  | "BoldUiPreviousAFilled"
-  | "BoldUiPowerFilled"
-  | "BoldUiPopupFilled"
-  | "BoldUiPlusSmallFilled"
-  | "BoldUiPlusFilled"
-  | "BoldUiPixelFilled"
-  | "BoldUiOutLinkFilled"
-  | "BoldUiNumberFilled"
-  | "BoldUiNextFilled"
-  | "BoldUiNextAFilled"
-  | "BoldUiMoveUpFrontFilled"
-  | "BoldUiMoveUpFilled"
-  | "BoldUiMoveFilled"
-  | "BoldUiMoveDownFilled"
-  | "BoldUiMoveDownBackgroundFilled"
-  | "BoldUiMoreVerticalSmallFilled"
-  | "BoldUiMoreVerticalFilled"
-  | "BoldUiMoreSmallFilled"
-  | "BoldUiMoreSmallCircleFilled"
-  | "BoldUiMoreHorizontalSmallFilled"
-  | "BoldUiMoreFilled"
-  | "BoldUiMinusSmallFilled"
-  | "BoldUiMinusFilled"
-  | "BoldUiMethodInheritedFilled"
-  | "BoldUiMethodFilled"
-  | "BoldUiLogoutFilled"
-  | "BoldUiLoginFilled"
-  | "BoldUiListViewFilled"
-  | "BoldUiListUserFilled"
-  | "BoldUiListShareFilled"
-  | "BoldUiListForwardFilled"
-  | "BoldUiLayoutWireframeFilled"
-  | "BoldUiLayoutThirdVerticalFilled"
-  | "BoldUiLayoutTableViewFilled"
-  | "BoldUiLayoutSidebarLHalfFilled"
-  | "BoldUiLayoutSidebarLFilled"
-  | "BoldUiLayoutHalfHorizontalFilled"
-  | "BoldUiLayoutHalfFilled"
-  | "BoldUiKeyboardFilled"
-  | "BoldUiInLinkFilled"
-  | "BoldUiImportFilled"
-  | "BoldUiHouseFilled"
-  | "BoldUiHomeFilled"
-  | "BoldUiHomeAFilled"
-  | "BoldUiHierarchyTreeFilled"
-  | "BoldUiHierarchyFilled"
-  | "BoldUiHelpLifeFilled"
-  | "BoldUiHelpFilled"
-  | "BoldUiHeartFilled"
-  | "BoldUiHamburgerFilled"
-  | "BoldUiGridViewFilled"
-  | "BoldUiFullscreenFilled"
-  | "BoldUiFullscreenAFilled"
-  | "BoldUiFrameFilled"
-  | "BoldUiForwardFilled"
-  | "BoldUiFilterFilled"
-  | "BoldUiEyeFilled"
-  | "BoldUiEyeCrossFilled"
-  | "BoldUiExportFilled"
-  | "BoldUiExpandFilled"
-  | "BoldUiEnlargeFilled"
-  | "BoldUiDragHandleFilled"
-  | "BoldUiDotLargeFilled"
-  | "BoldUiDotFilled"
-  | "BoldUiCrossSmallFilled"
-  | "BoldUiCrossFilled"
-  | "BoldUiCropFilled"
-  | "BoldUiCreateConnectionFilled"
-  | "BoldUiConnectionOpenInheritedFilled"
-  | "BoldUiConnectionOpenFilled"
-  | "BoldUiConnectionInheritedFilled"
-  | "BoldUiConnectionFilled"
-  | "BoldUiConeFilled"
-  | "BoldUiConditionFilled"
-  | "BoldUiComboboxFilled"
-  | "BoldUiCmdFilled"
-  | "BoldUiCloudUploadFilled"
-  | "BoldUiCloudDownloadFilled"
-  | "BoldUiCloseParallelConnectionFilled"
-  | "BoldUiCircleWarningFilled"
-  | "BoldUiCirclePlusFilled"
-  | "BoldUiCircleMinusFilled"
-  | "BoldUiCircleInfoFilled"
-  | "BoldUiCircleHelpFilled"
-  | "BoldUiCircleFilled"
-  | "BoldUiCircleCrossFilled"
-  | "BoldUiCircleChevronTopFilled"
-  | "BoldUiCircleChevronRightFilled"
-  | "BoldUiCircleChevronLeftFilled"
-  | "BoldUiCircleChevronBottomFilled"
-  | "BoldUiCircleCheckFilled"
-  | "BoldUiCircleCheckAFilled"
-  | "BoldUiCircleArrowTopFilled"
-  | "BoldUiCircleArrowRightFilled"
-  | "BoldUiCircleArrowLeftFilled"
-  | "BoldUiCircleArrowBottomFilled"
-  | "BoldUiChevronTopSmallFilled"
-  | "BoldUiChevronTopFilled"
-  | "BoldUiChevronRightTrippleFilled"
-  | "BoldUiChevronRightSmallFilled"
-  | "BoldUiChevronRightFilled"
-  | "BoldUiChevronLeftSmallFilled"
-  | "BoldUiChevronLeftFilled"
-  | "BoldUiChevronBottomSmallFilled"
-  | "BoldUiChevronBottomFilled"
-  | "BoldUiCheckboxFilled"
-  | "BoldUiCheckSmallFilled"
-  | "BoldUiCheckSmallCircleFilled"
-  | "BoldUiCheckFilled"
-  | "BoldUiCardViewFilled"
-  | "BoldUiCardFilled"
-  | "BoldUiBulletViewFilled"
-  | "BoldUiBoxWarningFilled"
-  | "BoldUiBoxHelpFilled"
-  | "BoldUiBlockFilled"
-  | "BoldUiBackspaceFilled"
-  | "BoldUiAttributeInheritedFilled"
-  | "BoldUiAttributeFilled"
-  | "BoldUiArrowTopSmallFilled"
-  | "BoldUiArrowTopRightFilled"
-  | "BoldUiArrowTopLeftFilled"
-  | "BoldUiArrowTopFilled"
-  | "BoldUiArrowTopAFilled"
-  | "BoldUiArrowRightSmallFilled"
-  | "BoldUiArrowRightFilled"
-  | "BoldUiArrowRightAFilled"
-  | "BoldUiArrowLeftSmallFilled"
-  | "BoldUiArrowLeftFilled"
-  | "BoldUiArrowLeftAFilled"
-  | "BoldUiArrowBottomSmallFilled"
-  | "BoldUiArrowBottomRightFilled"
-  | "BoldUiArrowBottomLeftFilled"
-  | "BoldUiArrowBottomFilled"
-  | "BoldUiArrowBottomAFilled"
-  | "BoldUiAlignTopFilled"
-  | "BoldUiAlignRightFilled"
-  | "BoldUiAlignLeftFilled"
-  | "BoldUiAlignCenterVerticalFilled"
-  | "BoldUiAlignCenterHorizontalFilled"
-  | "BoldUiAlignBottomFilled"
-  | "BoldUiAddConnectionPointFilled"
-  | "BoldTransportTruckFilled"
-  | "BoldTransportTruckAFilled"
-  | "BoldTransportTrainFilled"
-  | "BoldTransportSignStopFilled"
-  | "BoldTransportShipFilled"
-  | "BoldTransportShipAFilled"
-  | "BoldTransportCarFilled"
-  | "BoldTransportCarAFilled"
-  | "BoldTransportBusTicketFilled"
-  | "BoldTransportBusFilled"
-  | "BoldTransportBusAFilled"
-  | "BoldTransportBicycleFilled"
-  | "BoldToolUmbrellaFilled"
-  | "BoldToolToolsBoxFilled"
-  | "BoldToolTextTypeFilled"
-  | "BoldToolSmartphonePayFilled"
-  | "BoldToolScissorsFilled"
-  | "BoldToolSateliteTypeFilled"
-  | "BoldToolRulerFilled"
-  | "BoldToolRulerCornerFilled"
-  | "BoldToolRulerBFilled"
-  | "BoldToolRouterSignalFilled"
-  | "BoldToolRazorFilled"
-  | "BoldToolProtectionTypeFilled"
-  | "BoldToolPropertyTypeFilled"
-  | "BoldToolProjectorFilled"
-  | "BoldToolPlugFilled"
-  | "BoldToolPhoneLandscapeFilled"
-  | "BoldToolPhoneFilled"
-  | "BoldToolMouseFilled"
-  | "BoldToolModuleThreeFilled"
-  | "BoldToolMagnetFilled"
-  | "BoldToolMagicWandFilled"
-  | "BoldToolLaptopFilled"
-  | "BoldToolIntTypeFilled"
-  | "BoldToolHardwareTypeFilled"
-  | "BoldToolHammerPlusFilled"
-  | "BoldToolHammerFilled"
-  | "BoldToolHammerAngleFilled"
-  | "BoldToolHammerAFilled"
-  | "BoldToolGridFilled"
-  | "BoldToolGearsTypeFilled"
-  | "BoldToolFocusFilled"
-  | "BoldToolFloppyEditFilled"
-  | "BoldToolFloppyDisksFilled"
-  | "BoldToolFloppyDiskFilled"
-  | "BoldToolFlashlightFilled"
-  | "BoldToolFireExtinguisherFilled"
-  | "BoldToolDisplayUserFilled"
-  | "BoldToolDisplayFilled"
-  | "BoldToolConsoleFilled"
-  | "BoldToolConsoleAFilled"
-  | "BoldToolCompassFilled"
-  | "BoldToolCameraFilled"
-  | "BoldToolCalcFilled"
-  | "BoldToolBinocularsFilled"
-  | "BoldToolAreaTypeFilled"
-  | "BoldToolAndroidTypeFilled"
-  | "BoldTimeWatchFilled"
-  | "BoldTimeTimerFilled"
-  | "BoldTimeStopwatchFilled"
-  | "BoldTimeSpeedMeterFilled"
-  | "BoldTimeHourglassFilled"
-  | "BoldTimeClockFFilled"
-  | "BoldTimeClockCircleFilled"
-  | "BoldTimeCalendarWeekFilled"
-  | "BoldTimeCalendarSmallFilled"
-  | "BoldTimeCalendarFilled"
-  | "BoldTimeCalendarDotsFilled"
-  | "BoldTimeCalendarClockFilled"
-  | "BoldTimeCalendarCashFilled"
-  | "BoldTimeAlarmFilled"
-  | "BoldSportTvFilled"
-  | "BoldSportTrophyFilled"
-  | "BoldSportPuzzleFilled"
-  | "BoldSportMedicineLabFilled"
-  | "BoldSportMedicFilled"
-  | "BoldSportHeartPulseFilled"
-  | "BoldSportGaugeFilled"
-  | "BoldSportFlagFilled"
-  | "BoldSportDumbellFilled"
-  | "BoldSportBadgeHFilled"
-  | "BoldSportBadgeFilled"
-  | "BoldSportBadgeCFilled"
-  | "BoldSportBadgeBFilled"
-  | "BoldShopWalletFilled"
-  | "BoldShopTrackingFilled"
-  | "BoldShopTieFilled"
-  | "BoldShopTagSearchFilled"
-  | "BoldShopTagRefreshFilled"
-  | "BoldShopTagPlusFilled"
-  | "BoldShopTagMinusFilled"
-  | "BoldShopTagLockFilled"
-  | "BoldShopTagInfoFilled"
-  | "BoldShopTagFilled"
-  | "BoldShopTagDatabaseFilled"
-  | "BoldShopTagCrossFilled"
-  | "BoldShopTagCheckFilled"
-  | "BoldShopSuitcaseFilled"
-  | "BoldShopShipmentPackagesFilled"
-  | "BoldShopSavingPiggyBankFilled"
-  | "BoldShopSafeBoxFilled"
-  | "BoldShopPresentFilled"
-  | "BoldShopPoundFilled"
-  | "BoldShopPerformanceMoneyDecreaseFilled"
-  | "BoldShopMastercardFilled"
-  | "BoldShopMarketFilled"
-  | "BoldShopEuroFilled"
-  | "BoldShopDolarFilled"
-  | "BoldShopDiscountCouponFilled"
-  | "BoldShopDiscountCircleFilled"
-  | "BoldShopDiamondFilled"
-  | "BoldShopCreditcardFilled"
-  | "BoldShopCoinsFilled"
-  | "BoldShopCashFilled"
-  | "BoldShopCashDolarFilled"
-  | "BoldShopCartFullFilled"
-  | "BoldShopCartEmptyFilled"
-  | "BoldShopCartEmptyAltFilled"
-  | "BoldShopCartDownloadFilled"
-  | "BoldShopBoxPlusFilled"
-  | "BoldShopBoxMinusFilled"
-  | "BoldShopBoxFilled"
-  | "BoldShopBoxEmptyFilled"
-  | "BoldShopBillFilled"
-  | "BoldShopBasketFilled"
-  | "BoldShopBarcodeFilled"
-  | "BoldShopBagFilled"
-  | "BoldShopAccountingBillStackFilled"
-  | "BoldSettingsWrenchFilled"
-  | "BoldSettingsMachineTrackFilled"
-  | "BoldSettingsHotspotFilled"
-  | "BoldSettingsGearFilled"
-  | "BoldSettingsGearAFilled"
-  | "BoldSettingsEqualizerFilled"
-  | "BoldSettingsComonentFilled"
-  | "BoldSettingsColorModeFilled"
-  | "BoldSettingsAutoFlashFilled"
-  | "BoldSettingsAirplaneFilled"
-  | "BoldMusicVolumeMuteFilled"
-  | "BoldMusicVolumeMediumFilled"
-  | "BoldMusicVolumeLowFilled"
-  | "BoldMusicVolumeHighFilled"
-  | "BoldMusicStopFilled"
-  | "BoldMusicSpeakerFilled"
-  | "BoldMusicShuffleFilled"
-  | "BoldMusicRepeatOneFilled"
-  | "BoldMusicRepeatFilled"
-  | "BoldMusicRadioFilled"
-  | "BoldMusicPreviousFilled"
-  | "BoldMusicPreviousAFilled"
-  | "BoldMusicPlaylistFilled"
-  | "BoldMusicPlayFilled"
-  | "BoldMusicPauseFilled"
-  | "BoldMusicNoteFilled"
-  | "BoldMusicNoteAFilled"
-  | "BoldMusicNextFilled"
-  | "BoldMusicNextAFilled"
-  | "BoldMusicMicFilled"
-  | "BoldMusicListFilled"
-  | "BoldMusicHeadphonesFilled"
-  | "BoldMusicHeadphonesAFilled"
-  | "BoldMusicEqualiserFilled"
-  | "BoldMusicEjectFilled"
-  | "BoldMusicCdFilled"
-  | "BoldMusicAlbumFilled"
-  | "BoldMiscWifiFilled"
-  | "BoldMiscSmileSadFilled"
-  | "BoldMiscSmileMehFilled"
-  | "BoldMiscSmileLaughtFilled"
-  | "BoldMiscSmileHappyFilled"
-  | "BoldMiscSmileAngryFilled"
-  | "BoldMiscReceptionHotelBellFilled"
-  | "BoldMiscPuzzleFilled"
-  | "BoldMiscModuleHandPuzzleFilled"
-  | "BoldMiscMaleSignFilled"
-  | "BoldMiscGridPerspectiveFilled"
-  | "BoldMiscGlobeFilled"
-  | "BoldMiscGestureTapFilled"
-  | "BoldMiscGestureSwipeRightFilled"
-  | "BoldMiscGestureSwipeLeftFilled"
-  | "BoldMiscGestureFilled"
-  | "BoldMiscGestureDoubleTapFilled"
-  | "BoldMiscFemaleSignFilled"
-  | "BoldMiscCursorHandOpenFilled"
-  | "BoldMiscCubeFilled"
-  | "BoldMiscCrownFilled"
-  | "BoldMiscBulletDiamondFilled"
-  | "BoldLogoXFilled"
-  | "BoldLogoWindowsFilled"
-  | "BoldLogoTwitterFilled"
-  | "BoldLogoLinuxFilled"
-  | "BoldLogoLinkedinFilled"
-  | "BoldLogoInstagramFilled"
-  | "BoldLogoFacebookFilled"
-  | "BoldLogoAppleFilled"
-  | "BoldLocationStreetSignFilled"
-  | "BoldLocationStreetSignAFilled"
-  | "BoldLocationPinsFilled"
-  | "BoldLocationPinPlusFilled"
-  | "BoldLocationPinMinusFilled"
-  | "BoldLocationPinMapFilled"
-  | "BoldLocationPinFilled"
-  | "BoldLocationPinCheckFilled"
-  | "BoldLocationPinBFilled"
-  | "BoldLocationPinAFilled"
-  | "BoldLocationMapFilled"
-  | "BoldLocationMapCrossFilled"
-  | "BoldLocationDirectionSignFilled"
-  | "BoldLocationDirectionFilled"
-  | "BoldLocationCompassFilled"
-  | "BoldEnvTreeFilled"
-  | "BoldEnvTreeAFilled"
-  | "BoldEnvMountainsFilled"
-  | "BoldEnvLeafFilled"
-  | "BoldEnvFlowerFilled"
-  | "BoldEnvEarthFilled"
-  | "BoldEnvAtomicBombFilled"
-  | "BoldEditorialUndoFilled"
-  | "BoldEditorialTypingMachineFilled"
-  | "BoldEditorialTrashFilled"
-  | "BoldEditorialTextUnderlineFilled"
-  | "BoldEditorialTextStyleFilled"
-  | "BoldEditorialTextStrikeThroughFilled"
-  | "BoldEditorialTextItalicFilled"
-  | "BoldEditorialTextFormatFilled"
-  | "BoldEditorialTextBoldFilled"
-  | "BoldEditorialSortDescFilled"
-  | "BoldEditorialSortCancelFilled"
-  | "BoldEditorialSortAscFilled"
-  | "BoldEditorialRedoFilled"
-  | "BoldEditorialPencilSmallFilled"
-  | "BoldEditorialPencilFilled"
-  | "BoldEditorialPenFilled"
-  | "BoldEditorialParagraphFirstLetterFilled"
-  | "BoldEditorialParagraphFilled"
-  | "BoldEditorialItalicOffFilled"
-  | "BoldEditorialIndentRightFilled"
-  | "BoldEditorialIndentLeftFilled"
-  | "BoldEditorialHashtagSmallFilled"
-  | "BoldEditorialHashFilled"
-  | "BoldEditorialFontSizeFilled"
-  | "BoldEditorialCombineIntersectFilled"
-  | "BoldEditorialColorPaletteFilled"
-  | "BoldEditorialBrushFilled"
-  | "BoldEditorialBookmarkFilled"
-  | "BoldEditorialAlignRightFilled"
-  | "BoldEditorialAlignLeftFilled"
-  | "BoldEditorialAlignCenterFilled"
-  | "BoldDocWboardSearchFilled"
-  | "BoldDocWboardLineFilled"
-  | "BoldDocWboardGearFilled"
-  | "BoldDocWboardCheckFilled"
-  | "BoldDocWboardArrowTopFilled"
-  | "BoldDocUploadFilled"
-  | "BoldDocTodoListUserFilled"
-  | "BoldDocTodoListSquareFilled"
-  | "BoldDocTodoListFilled"
-  | "BoldDocTaskListQuestionFilled"
-  | "BoldDocTaskChecklistFilled"
-  | "BoldDocStackFilled"
-  | "BoldDocProfileFilled"
-  | "BoldDocPrinterFilled"
-  | "BoldDocPlusFilled"
-  | "BoldDocPinFilled"
-  | "BoldDocPieFilled"
-  | "BoldDocPapersFilled"
-  | "BoldDocPaperStackFilled"
-  | "BoldDocPaperLineFilled"
-  | "BoldDocOfficeStampDocumentFilled"
-  | "BoldDocOfficeFolderFilled"
-  | "BoldDocOfficeFilePdfFilled"
-  | "BoldDocNotesUploadFilled"
-  | "BoldDocNotesPaperTextFilled"
-  | "BoldDocNotesHomeFilled"
-  | "BoldDocNotesGiveFilled"
-  | "BoldDocNotesFlipFilled"
-  | "BoldDocNewspaperFilled"
-  | "BoldDocMinusFilled"
-  | "BoldDocMailboxInFilled"
-  | "BoldDocListNumbersFilled"
-  | "BoldDocListFilled"
-  | "BoldDocInvoiceFilled"
-  | "BoldDocImageFilled"
-  | "BoldDocImageAFilled"
-  | "BoldDocIdCardVerticalFilled"
-  | "BoldDocGlassesFilled"
-  | "BoldDocFolderSyncFilled"
-  | "BoldDocFolderPlusFilled"
-  | "BoldDocFolderMinusFilled"
-  | "BoldDocFolderHomeFilled"
-  | "BoldDocFolderFilled"
-  | "BoldDocFolderCrossFilled"
-  | "BoldDocFolderCheckFilled"
-  | "BoldDocFileZipFilled"
-  | "BoldDocFileXlsFilled"
-  | "BoldDocFileVideoFilled"
-  | "BoldDocFileSaveFilled"
-  | "BoldDocFileRefreshFilled"
-  | "BoldDocFilePrintFilled"
-  | "BoldDocFilePrevFilled"
-  | "BoldDocFilePresentationFilled"
-  | "BoldDocFilePptFilled"
-  | "BoldDocFilePlusFilled"
-  | "BoldDocFileNextFilled"
-  | "BoldDocFileMinusFilled"
-  | "BoldDocFileLineFilled"
-  | "BoldDocFileImageFilled"
-  | "BoldDocFileGraphFilled"
-  | "BoldDocFileDocFilled"
-  | "BoldDocFileCrossFilled"
-  | "BoldDocFileCheckFilled"
-  | "BoldDocFileBookmarkFilled"
-  | "BoldDocFileBlankFilled"
-  | "BoldDocFileAudioFilled"
-  | "BoldDocDownloadFilled"
-  | "BoldDocDiaryFilled"
-  | "BoldDocCopyFilled"
-  | "BoldDocComposeFilled"
-  | "BoldDocCommonFileTextEditFilled"
-  | "BoldDocCommonFileHomeFilled"
-  | "BoldDocCommonFileEditFilled"
-  | "BoldDocCameraFilled"
-  | "BoldDocBriefcaseFilled"
-  | "BoldDocBoxPFilled"
-  | "BoldDocBookmarkFilled"
-  | "BoldDocBookUploadFilled"
-  | "BoldDocBookTargetFilled"
-  | "BoldDocBookSettingsFilled"
-  | "BoldDocBookModulesFilled"
-  | "BoldDocBookLibraryFilled"
-  | "BoldDocBookFilled"
-  | "BoldDocBookDownloadFilled"
-  | "BoldDocBookCashFilled"
-  | "BoldDocBookBFilled"
-  | "BoldDocBookAFilled"
-  | "BoldDocAttachmentFilled"
-  | "BoldDocArticleFilled"
-  | "BoldDocArchiveUploadFilled"
-  | "BoldDocArchiveFolderFilled"
-  | "BoldDocArchiveFilled"
-  | "BoldDocArchiveEmptyFilled"
-  | "BoldDocArchiveDownloadFilled"
-  | "BoldDocAnalyticsUpFilled"
-  | "BoldComWarningFilled"
-  | "BoldComVoicemailFilled"
-  | "BoldComSatelliteFilled"
-  | "BoldComPostcardFilled"
-  | "BoldComPicturesFilled"
-  | "BoldComPhoneLandlineFilled"
-  | "BoldComPhoneFilled"
-  | "BoldComPaperplaneFilled"
-  | "BoldComMicrophonePodcastFilled"
-  | "BoldComMicMuteFilled"
-  | "BoldComMicFilled"
-  | "BoldComMegaphoneFilled"
-  | "BoldComMailWarningFilled"
-  | "BoldComMailSyncFilled"
-  | "BoldComMailReceiveFilled"
-  | "BoldComMailPlusFilled"
-  | "BoldComMailOpenWarningFilled"
-  | "BoldComMailOpenFilled"
-  | "BoldComMailMinusFilled"
-  | "BoldComMailFilled"
-  | "BoldComMailDownloadFilled"
-  | "BoldComMailCrossFilled"
-  | "BoldComMailClockFilled"
-  | "BoldComMailCheckFilled"
-  | "BoldComLanguageFilled"
-  | "BoldComHelpFilled"
-  | "BoldComHelpAFilled"
-  | "BoldComBubbleLineFilled"
-  | "BoldComBubbleLineAFilled"
-  | "BoldComBubbleGroupFilled"
-  | "BoldComBubbleGroupAFilled"
-  | "BoldComBubbleFilled"
-  | "BoldComBubbleDotFilled"
-  | "BoldComBubbleDotAFilled"
-  | "BoldComBubbleAFilled"
-  | "BoldComBellFilled"
-  | "BoldComAdvertisingMegaphoneFilled"
-  | "BoldBuildingViewFilled"
-  | "BoldBuildingToiletFilled"
-  | "BoldBuildingSofaFilled"
-  | "BoldBuildingSofaAFilled"
-  | "BoldBuildingSafetyFireShieldFilled"
-  | "BoldBuildingRockerSwitchFilled"
-  | "BoldBuildingRealEstateDimensionsPlanFilled"
-  | "BoldBuildingRealEstateDimensionsBlockFilled"
-  | "BoldBuildingPlanBalconyFilled"
-  | "BoldBuildingOfficeSettingsBFilled"
-  | "BoldBuildingOfficeFilled"
-  | "BoldBuildingOfficeAddBFilled"
-  | "BoldBuildingOfficeAFilled"
-  | "BoldBuildingMuseumFilled"
-  | "BoldBuildingLiftFilled"
-  | "BoldBuildingLampFilled"
-  | "BoldBuildingLampAFilled"
-  | "BoldBuildingHouseFilled"
-  | "BoldBuildingHeaterFilled"
-  | "BoldBuildingHangingRackFilled"
-  | "BoldBuildingFireplaceFilled"
-  | "BoldBuildingFaucetFilled"
-  | "BoldBuildingExitFilled"
-  | "BoldBuildingDrawerFilled"
-  | "BoldBuildingDoorFilled"
-  | "BoldBuildingDimensionsRulerFilled"
-  | "BoldBuildingDeskFilled"
-  | "BoldBuildingDaylightFilled"
-  | "BoldBuildingChairFilled"
-  | "BoldBuildingCabinetFilled"
-  | "BoldBuildingBlueprintFilled"
-  | "BoldBuildingBedFilled";
+  | "WebWebcam"
+  | "WebWebcamFilled"
+  | "WebWarning"
+  | "WebWarningFilled"
+  | "WebTabs"
+  | "WebTabsPlus"
+  | "WebTabsPlusFilled"
+  | "WebTabsMinus"
+  | "WebTabsMinusFilled"
+  | "WebTabsFilled"
+  | "WebTabsCross"
+  | "WebTabsCrossFilled"
+  | "WebTabsCheck"
+  | "WebTabsCheckFilled"
+  | "WebTabletIncrease"
+  | "WebTabletIncreaseFilled"
+  | "WebStatistic"
+  | "WebStatisticFilled"
+  | "WebShieldWarning"
+  | "WebShieldWarningFilled"
+  | "WebShare"
+  | "WebShareFilled"
+  | "WebServer"
+  | "WebServerFilled"
+  | "WebRss"
+  | "WebRssSettings"
+  | "WebRssSettingsFilled"
+  | "WebRssFilled"
+  | "WebLink"
+  | "WebLinkFilled"
+  | "WebLinkB"
+  | "WebLinkBFilled"
+  | "WebLinkBCheck"
+  | "WebLinkBCheckFilled"
+  | "WebIncreaseMail"
+  | "WebIncreaseMailFilled"
+  | "WebGridUpload"
+  | "WebGridUploadFilled"
+  | "WebGraphLinearSmall"
+  | "WebGraphLinearSmallFilled"
+  | "WebGlobe"
+  | "WebGlobeFilled"
+  | "WebFlag"
+  | "WebFlagFilled"
+  | "WebFlagC"
+  | "WebFlagCFilled"
+  | "WebDataFileBars"
+  | "WebDataFileBarsFilled"
+  | "WebConsole"
+  | "WebConsoleFilled"
+  | "WebCollapseUp"
+  | "WebCollapseUpFilled"
+  | "WebCollapseRight"
+  | "WebCollapseRightFilled"
+  | "WebCollapseLeft"
+  | "WebCollapseLeftFilled"
+  | "WebCollapseDown"
+  | "WebCollapseDownFilled"
+  | "WebCode"
+  | "WebCodeFilled"
+  | "WebChart"
+  | "WebChartFilled"
+  | "WebBug"
+  | "WebBugFilled"
+  | "WebBrowser"
+  | "WebBrowserWindow"
+  | "WebBrowserWindowFilled"
+  | "WebBrowserGrid"
+  | "WebBrowserGridFilled"
+  | "WebBrowserFilled"
+  | "WebBrokenLink"
+  | "WebBrokenLinkFilled"
+  | "WebBarsHome"
+  | "WebBarsHomeFilled"
+  | "WebAtSign"
+  | "WebAtSignFilled"
+  | "WebAnalyticsNet"
+  | "WebAnalyticsNetFilled"
+  | "WebAnalyticsGraph"
+  | "WebAnalyticsGraphFilled"
+  | "WeatherWindsock"
+  | "WeatherWindsockFilled"
+  | "WeatherWater"
+  | "WeatherWaterFilled"
+  | "WeatherThermometer"
+  | "WeatherThermometerFilled"
+  | "WeatherSunrise"
+  | "WeatherSunriseFilled"
+  | "WeatherSun"
+  | "WeatherSunFilled"
+  | "WeatherSunCloudSnow"
+  | "WeatherSunCloudSnowFilled"
+  | "WeatherSnowflake"
+  | "WeatherSnowflakeFilled"
+  | "WeatherMoon"
+  | "WeatherMoonFilled"
+  | "WeatherMoonA"
+  | "WeatherMoonAFilled"
+  | "WeatherFlash"
+  | "WeatherFlashFilled"
+  | "WeatherFire"
+  | "WeatherFireFilled"
+  | "WeatherCloud"
+  | "WeatherCloudSnow"
+  | "WeatherCloudSnowFilled"
+  | "WeatherCloudRain"
+  | "WeatherCloudRainFilled"
+  | "WeatherCloudFlash"
+  | "WeatherCloudFlashFilled"
+  | "WeatherCloudFilled"
+  | "VideoPlayer"
+  | "VideoPlayerFilled"
+  | "User"
+  | "UserWalking"
+  | "UserWalkingFilled"
+  | "UserToiletSign"
+  | "UserToiletSignFilled"
+  | "UserSingleNeutralHome"
+  | "UserSingleNeutralHomeFilled"
+  | "UserSingleNeutralActionsEdit"
+  | "UserSingleNeutralActionsEditFilled"
+  | "UserSingleNeutralActionsBlock"
+  | "UserSingleNeutralActionsBlockFilled"
+  | "UserShare"
+  | "UserShareFilled"
+  | "UserPlus"
+  | "UserPlusFilled"
+  | "UserMultipleUsers"
+  | "UserMultipleUsersFilled"
+  | "UserMinus"
+  | "UserMinusFilled"
+  | "UserMessagesPeopleUserWarning"
+  | "UserMessagesPeopleUserWarningFilled"
+  | "UserMale"
+  | "UserMaleSign"
+  | "UserMaleSignFilled"
+  | "UserMalePlus"
+  | "UserMalePlusFilled"
+  | "UserMaleMinus"
+  | "UserMaleMinusFilled"
+  | "UserMaleList"
+  | "UserMaleListFilled"
+  | "UserMaleFilled"
+  | "UserMaleCross"
+  | "UserMaleCrossFilled"
+  | "UserMaleCheck"
+  | "UserMaleCheckFilled"
+  | "UserLock"
+  | "UserLockUnlocked"
+  | "UserLockUnlockedFilled"
+  | "UserLockUnlockedB"
+  | "UserLockUnlockedBFilled"
+  | "UserLockFilled"
+  | "UserList"
+  | "UserListFilled"
+  | "UserKey"
+  | "UserKeyFilled"
+  | "UserHeadset"
+  | "UserHeadsetFilled"
+  | "UserGroup"
+  | "UserGroupFilled"
+  | "UserGroupFemale"
+  | "UserGroupFemaleFilled"
+  | "UserGroupA"
+  | "UserGroupAFilled"
+  | "UserGear"
+  | "UserGearFilled"
+  | "UserForward"
+  | "UserForwardFilled"
+  | "UserFilled"
+  | "UserFemale"
+  | "UserFemaleSign"
+  | "UserFemaleSignFilled"
+  | "UserFemalePlus"
+  | "UserFemalePlusFilled"
+  | "UserFemaleMinus"
+  | "UserFemaleMinusFilled"
+  | "UserFemaleList"
+  | "UserFemaleListFilled"
+  | "UserFemaleFilled"
+  | "UserFemaleCross"
+  | "UserFemaleCrossFilled"
+  | "UserFemaleCheck"
+  | "UserFemaleCheckFilled"
+  | "UserCross"
+  | "UserCrossFilled"
+  | "UserContactBook"
+  | "UserContactBookFilled"
+  | "UserContactBookA"
+  | "UserContactBookAFilled"
+  | "UserCircle"
+  | "UserCircleFilled"
+  | "UserCheck"
+  | "UserCheckFilled"
+  | "UserBusinessDealCashExchange"
+  | "UserBusinessDealCashExchangeFilled"
+  | "UiZoomInPage"
+  | "UiZoomInPageFilled"
+  | "UiWindow"
+  | "UiWindowFilled"
+  | "UiUndo"
+  | "UiUndoFilled"
+  | "UiUndoB"
+  | "UiUndoBFilled"
+  | "UiUndoA"
+  | "UiUndoAFilled"
+  | "UiTriangleTop"
+  | "UiTriangleTopFilled"
+  | "UiTriangleRight"
+  | "UiTriangleRightFilled"
+  | "UiTriangleLeft"
+  | "UiTriangleLeftFilled"
+  | "UiTriangleBottom"
+  | "UiTriangleBottomFilled"
+  | "UiTreeSave"
+  | "UiTreeSaveFilled"
+  | "UiTreeLoad"
+  | "UiTreeLoadFilled"
+  | "UiTarget"
+  | "UiTargetFilled"
+  | "UiSync"
+  | "UiSyncFilled"
+  | "UiStar"
+  | "UiStarFilled"
+  | "UiSqareDashed"
+  | "UiSqareDashedFilled"
+  | "UiSplitVertical"
+  | "UiSplitVerticalFilled"
+  | "UiSplitHorizontal"
+  | "UiSplitHorizontalFilled"
+  | "UiShrink"
+  | "UiShrinkFilled"
+  | "UiSearch"
+  | "UiSearchPlus"
+  | "UiSearchPlusFilled"
+  | "UiSearchMinus"
+  | "UiSearchMinusFilled"
+  | "UiSearchFilled"
+  | "UiSearchCross"
+  | "UiSearchCrossFilled"
+  | "UiSearchCheck"
+  | "UiSearchCheckFilled"
+  | "UiScrollVertical"
+  | "UiScrollVerticalFilled"
+  | "UiScrollHorizontal"
+  | "UiScrollHorizontalFilled"
+  | "UiResizeVertical"
+  | "UiResizeVerticalFilled"
+  | "UiResizeTopRight"
+  | "UiResizeTopRightFilled"
+  | "UiResizeTopLeft"
+  | "UiResizeTopLeftFilled"
+  | "UiResizeHorizontal"
+  | "UiResizeHorizontalFilled"
+  | "UiResizeDiagonal"
+  | "UiResizeDiagonalFilled"
+  | "UiResizeBottomRight"
+  | "UiResizeBottomRightFilled"
+  | "UiResizeBottomLeft"
+  | "UiResizeBottomLeftFilled"
+  | "UiReply"
+  | "UiReplyFilled"
+  | "UiRepeating"
+  | "UiRepeatingFilled"
+  | "UiRemoveConnectionPoint"
+  | "UiRemoveConnectionPointFilled"
+  | "UiRefresh"
+  | "UiRefreshFilled"
+  | "UiRadiobutton"
+  | "UiRadiobuttonFilled"
+  | "UiPropertyAnd"
+  | "UiPropertyAndFilled"
+  | "UiPrevious"
+  | "UiPreviousFilled"
+  | "UiPreviousA"
+  | "UiPreviousAFilled"
+  | "UiPower"
+  | "UiPowerFilled"
+  | "UiPopup"
+  | "UiPopupFilled"
+  | "UiPlus"
+  | "UiPlusSmall"
+  | "UiPlusSmallFilled"
+  | "UiPlusFilled"
+  | "UiPixel"
+  | "UiPixelFilled"
+  | "UiOutLink"
+  | "UiOutLinkFilled"
+  | "UiNumber"
+  | "UiNumberFilled"
+  | "UiNext"
+  | "UiNextFilled"
+  | "UiNextA"
+  | "UiNextAFilled"
+  | "UiMove"
+  | "UiMoveUp"
+  | "UiMoveUpFront"
+  | "UiMoveUpFrontFilled"
+  | "UiMoveUpFilled"
+  | "UiMoveFilled"
+  | "UiMoveDown"
+  | "UiMoveDownFilled"
+  | "UiMoveDownBackground"
+  | "UiMoveDownBackgroundFilled"
+  | "UiMore"
+  | "UiMoreVertical"
+  | "UiMoreVerticalSmall"
+  | "UiMoreVerticalSmallFilled"
+  | "UiMoreVerticalFilled"
+  | "UiMoreSmall"
+  | "UiMoreSmallFilled"
+  | "UiMoreSmallCircle"
+  | "UiMoreSmallCircleFilled"
+  | "UiMoreHorizontalSmall"
+  | "UiMoreHorizontalSmallFilled"
+  | "UiMoreFilled"
+  | "UiMinus"
+  | "UiMinusSmall"
+  | "UiMinusSmallFilled"
+  | "UiMinusFilled"
+  | "UiMethod"
+  | "UiMethodInherited"
+  | "UiMethodInheritedFilled"
+  | "UiMethodFilled"
+  | "UiLogout"
+  | "UiLogoutFilled"
+  | "UiLogin"
+  | "UiLoginFilled"
+  | "UiListView"
+  | "UiListViewFilled"
+  | "UiListUser"
+  | "UiListUserFilled"
+  | "UiListShare"
+  | "UiListShareFilled"
+  | "UiListForward"
+  | "UiListForwardFilled"
+  | "UiLayoutWireframe"
+  | "UiLayoutWireframeFilled"
+  | "UiLayoutThirdVertical"
+  | "UiLayoutThirdVerticalFilled"
+  | "UiLayoutTableView"
+  | "UiLayoutTableViewFilled"
+  | "UiLayoutSidebarL"
+  | "UiLayoutSidebarLHalf"
+  | "UiLayoutSidebarLHalfFilled"
+  | "UiLayoutSidebarLFilled"
+  | "UiLayoutHalf"
+  | "UiLayoutHalfHorizontal"
+  | "UiLayoutHalfHorizontalFilled"
+  | "UiLayoutHalfFilled"
+  | "UiKeyboard"
+  | "UiKeyboardFilled"
+  | "UiInLink"
+  | "UiInLinkFilled"
+  | "UiImport"
+  | "UiImportFilled"
+  | "UiHouse"
+  | "UiHouseFilled"
+  | "UiHome"
+  | "UiHomeFilled"
+  | "UiHomeA"
+  | "UiHomeAFilled"
+  | "UiHierarchy"
+  | "UiHierarchyTree"
+  | "UiHierarchyTreeFilled"
+  | "UiHierarchyFilled"
+  | "UiHelp"
+  | "UiHelpLife"
+  | "UiHelpLifeFilled"
+  | "UiHelpFilled"
+  | "UiHeart"
+  | "UiHeartFilled"
+  | "UiHamburger"
+  | "UiHamburgerFilled"
+  | "UiGridView"
+  | "UiGridViewFilled"
+  | "UiFullscreen"
+  | "UiFullscreenFilled"
+  | "UiFullscreenA"
+  | "UiFullscreenAFilled"
+  | "UiFrame"
+  | "UiFrameFilled"
+  | "UiForward"
+  | "UiForwardFilled"
+  | "UiFilter"
+  | "UiFilterFilled"
+  | "UiEye"
+  | "UiEyeFilled"
+  | "UiEyeCross"
+  | "UiEyeCrossFilled"
+  | "UiExport"
+  | "UiExportFilled"
+  | "UiExpand"
+  | "UiExpandFilled"
+  | "UiEnlarge"
+  | "UiEnlargeFilled"
+  | "UiDragHandle"
+  | "UiDragHandleFilled"
+  | "UiDot"
+  | "UiDotLarge"
+  | "UiDotLargeFilled"
+  | "UiDotFilled"
+  | "UiCross"
+  | "UiCrossSmall"
+  | "UiCrossSmallFilled"
+  | "UiCrossFilled"
+  | "UiCrop"
+  | "UiCropFilled"
+  | "UiCreateConnection"
+  | "UiCreateConnectionFilled"
+  | "UiConnection"
+  | "UiConnectionOpen"
+  | "UiConnectionOpenInherited"
+  | "UiConnectionOpenInheritedFilled"
+  | "UiConnectionOpenFilled"
+  | "UiConnectionInherited"
+  | "UiConnectionInheritedFilled"
+  | "UiConnectionFilled"
+  | "UiCone"
+  | "UiConeFilled"
+  | "UiCondition"
+  | "UiConditionFilled"
+  | "UiCombobox"
+  | "UiComboboxFilled"
+  | "UiCmd"
+  | "UiCmdFilled"
+  | "UiCloudUpload"
+  | "UiCloudUploadFilled"
+  | "UiCloudDownload"
+  | "UiCloudDownloadFilled"
+  | "UiCloseParallelConnection"
+  | "UiCloseParallelConnectionFilled"
+  | "UiCircle"
+  | "UiCircleWarning"
+  | "UiCircleWarningFilled"
+  | "UiCirclePlus"
+  | "UiCirclePlusFilled"
+  | "UiCircleMinus"
+  | "UiCircleMinusFilled"
+  | "UiCircleInfo"
+  | "UiCircleInfoFilled"
+  | "UiCircleHelp"
+  | "UiCircleHelpFilled"
+  | "UiCircleFilled"
+  | "UiCircleCross"
+  | "UiCircleCrossFilled"
+  | "UiCircleChevronTop"
+  | "UiCircleChevronTopFilled"
+  | "UiCircleChevronRight"
+  | "UiCircleChevronRightFilled"
+  | "UiCircleChevronLeft"
+  | "UiCircleChevronLeftFilled"
+  | "UiCircleChevronBottom"
+  | "UiCircleChevronBottomFilled"
+  | "UiCircleCheck"
+  | "UiCircleCheckFilled"
+  | "UiCircleCheckA"
+  | "UiCircleCheckAFilled"
+  | "UiCircleArrowTop"
+  | "UiCircleArrowTopFilled"
+  | "UiCircleArrowRight"
+  | "UiCircleArrowRightFilled"
+  | "UiCircleArrowLeft"
+  | "UiCircleArrowLeftFilled"
+  | "UiCircleArrowBottom"
+  | "UiCircleArrowBottomFilled"
+  | "UiChevronTop"
+  | "UiChevronTopSmall"
+  | "UiChevronTopSmallFilled"
+  | "UiChevronTopFilled"
+  | "UiChevronRight"
+  | "UiChevronRightTripple"
+  | "UiChevronRightTrippleFilled"
+  | "UiChevronRightSmall"
+  | "UiChevronRightSmallFilled"
+  | "UiChevronRightFilled"
+  | "UiChevronLeft"
+  | "UiChevronLeftSmall"
+  | "UiChevronLeftSmallFilled"
+  | "UiChevronLeftFilled"
+  | "UiChevronBottom"
+  | "UiChevronBottomSmall"
+  | "UiChevronBottomSmallFilled"
+  | "UiChevronBottomFilled"
+  | "UiCheckbox"
+  | "UiCheckboxFilled"
+  | "UiCheck"
+  | "UiCheckSmall"
+  | "UiCheckSmallFilled"
+  | "UiCheckSmallCircle"
+  | "UiCheckSmallCircleFilled"
+  | "UiCheckFilled"
+  | "UiCard"
+  | "UiCardView"
+  | "UiCardViewFilled"
+  | "UiCardFilled"
+  | "UiBulletView"
+  | "UiBulletViewFilled"
+  | "UiBoxWarning"
+  | "UiBoxWarningFilled"
+  | "UiBoxHelp"
+  | "UiBoxHelpFilled"
+  | "UiBlock"
+  | "UiBlockFilled"
+  | "UiBackspace"
+  | "UiBackspaceFilled"
+  | "UiAttribute"
+  | "UiAttributeInherited"
+  | "UiAttributeInheritedFilled"
+  | "UiAttributeFilled"
+  | "UiArrowTop"
+  | "UiArrowTopSmall"
+  | "UiArrowTopSmallFilled"
+  | "UiArrowTopRight"
+  | "UiArrowTopRightFilled"
+  | "UiArrowTopLeft"
+  | "UiArrowTopLeftFilled"
+  | "UiArrowTopFilled"
+  | "UiArrowTopA"
+  | "UiArrowTopAFilled"
+  | "UiArrowRight"
+  | "UiArrowRightSmall"
+  | "UiArrowRightSmallFilled"
+  | "UiArrowRightFilled"
+  | "UiArrowRightA"
+  | "UiArrowRightAFilled"
+  | "UiArrowLeft"
+  | "UiArrowLeftSmall"
+  | "UiArrowLeftSmallFilled"
+  | "UiArrowLeftFilled"
+  | "UiArrowLeftA"
+  | "UiArrowLeftAFilled"
+  | "UiArrowBottom"
+  | "UiArrowBottomSmall"
+  | "UiArrowBottomSmallFilled"
+  | "UiArrowBottomRight"
+  | "UiArrowBottomRightFilled"
+  | "UiArrowBottomLeft"
+  | "UiArrowBottomLeftFilled"
+  | "UiArrowBottomFilled"
+  | "UiArrowBottomA"
+  | "UiArrowBottomAFilled"
+  | "UiAlignTop"
+  | "UiAlignTopFilled"
+  | "UiAlignRight"
+  | "UiAlignRightFilled"
+  | "UiAlignLeft"
+  | "UiAlignLeftFilled"
+  | "UiAlignCenterVertical"
+  | "UiAlignCenterVerticalFilled"
+  | "UiAlignCenterHorizontal"
+  | "UiAlignCenterHorizontalFilled"
+  | "UiAlignBottom"
+  | "UiAlignBottomFilled"
+  | "UiAddConnectionPoint"
+  | "UiAddConnectionPointFilled"
+  | "TransportTruck"
+  | "TransportTruckFilled"
+  | "TransportTruckA"
+  | "TransportTruckAFilled"
+  | "TransportTrain"
+  | "TransportTrainFilled"
+  | "TransportSignStop"
+  | "TransportSignStopFilled"
+  | "TransportShip"
+  | "TransportShipFilled"
+  | "TransportShipA"
+  | "TransportShipAFilled"
+  | "TransportCar"
+  | "TransportCarFilled"
+  | "TransportCarA"
+  | "TransportCarAFilled"
+  | "TransportBus"
+  | "TransportBusTicket"
+  | "TransportBusTicketFilled"
+  | "TransportBusFilled"
+  | "TransportBusA"
+  | "TransportBusAFilled"
+  | "TransportBicycle"
+  | "TransportBicycleFilled"
+  | "ToolUmbrella"
+  | "ToolUmbrellaFilled"
+  | "ToolToolsBox"
+  | "ToolToolsBoxFilled"
+  | "ToolTextType"
+  | "ToolTextTypeFilled"
+  | "ToolSmartphonePay"
+  | "ToolSmartphonePayFilled"
+  | "ToolScissors"
+  | "ToolScissorsFilled"
+  | "ToolSateliteType"
+  | "ToolSateliteTypeFilled"
+  | "ToolRuler"
+  | "ToolRulerFilled"
+  | "ToolRulerCorner"
+  | "ToolRulerCornerFilled"
+  | "ToolRulerB"
+  | "ToolRulerBFilled"
+  | "ToolRouterSignal"
+  | "ToolRouterSignalFilled"
+  | "ToolRazor"
+  | "ToolRazorFilled"
+  | "ToolProtectionType"
+  | "ToolProtectionTypeFilled"
+  | "ToolPropertyType"
+  | "ToolPropertyTypeFilled"
+  | "ToolProjector"
+  | "ToolProjectorFilled"
+  | "ToolPlug"
+  | "ToolPlugFilled"
+  | "ToolPhone"
+  | "ToolPhoneLandscape"
+  | "ToolPhoneLandscapeFilled"
+  | "ToolPhoneFilled"
+  | "ToolMouse"
+  | "ToolMouseFilled"
+  | "ToolModuleThree"
+  | "ToolModuleThreeFilled"
+  | "ToolMagnet"
+  | "ToolMagnetFilled"
+  | "ToolMagicWand"
+  | "ToolMagicWandFilled"
+  | "ToolLaptop"
+  | "ToolLaptopFilled"
+  | "ToolIntType"
+  | "ToolIntTypeFilled"
+  | "ToolHardwareType"
+  | "ToolHardwareTypeFilled"
+  | "ToolHammer"
+  | "ToolHammerPlus"
+  | "ToolHammerPlusFilled"
+  | "ToolHammerFilled"
+  | "ToolHammerAngle"
+  | "ToolHammerAngleFilled"
+  | "ToolHammerA"
+  | "ToolHammerAFilled"
+  | "ToolGrid"
+  | "ToolGridFilled"
+  | "ToolGearsType"
+  | "ToolGearsTypeFilled"
+  | "ToolFocus"
+  | "ToolFocusFilled"
+  | "ToolFloppyEdit"
+  | "ToolFloppyEditFilled"
+  | "ToolFloppyDisks"
+  | "ToolFloppyDisksFilled"
+  | "ToolFloppyDisk"
+  | "ToolFloppyDiskFilled"
+  | "ToolFlashlight"
+  | "ToolFlashlightFilled"
+  | "ToolFireExtinguisher"
+  | "ToolFireExtinguisherFilled"
+  | "ToolDisplay"
+  | "ToolDisplayUser"
+  | "ToolDisplayUserFilled"
+  | "ToolDisplayFilled"
+  | "ToolConsole"
+  | "ToolConsoleFilled"
+  | "ToolConsoleA"
+  | "ToolConsoleAFilled"
+  | "ToolCompass"
+  | "ToolCompassFilled"
+  | "ToolCamera"
+  | "ToolCameraFilled"
+  | "ToolCalc"
+  | "ToolCalcFilled"
+  | "ToolBinoculars"
+  | "ToolBinocularsFilled"
+  | "ToolAreaType"
+  | "ToolAreaTypeFilled"
+  | "ToolAndroidType"
+  | "ToolAndroidTypeFilled"
+  | "TimeWatch"
+  | "TimeWatchFilled"
+  | "TimeTimer"
+  | "TimeTimerFilled"
+  | "TimeStopwatch"
+  | "TimeStopwatchFilled"
+  | "TimeSpeedMeter"
+  | "TimeSpeedMeterFilled"
+  | "TimeHourglass"
+  | "TimeHourglassFilled"
+  | "TimeClockF"
+  | "TimeClockFFilled"
+  | "TimeClockCircle"
+  | "TimeClockCircleFilled"
+  | "TimeCalendar"
+  | "TimeCalendarWeek"
+  | "TimeCalendarWeekFilled"
+  | "TimeCalendarSmall"
+  | "TimeCalendarSmallFilled"
+  | "TimeCalendarFilled"
+  | "TimeCalendarDots"
+  | "TimeCalendarDotsFilled"
+  | "TimeCalendarClock"
+  | "TimeCalendarClockFilled"
+  | "TimeCalendarCash"
+  | "TimeCalendarCashFilled"
+  | "TimeAlarm"
+  | "TimeAlarmFilled"
+  | "SportTv"
+  | "SportTvFilled"
+  | "SportTrophy"
+  | "SportTrophyFilled"
+  | "SportPuzzle"
+  | "SportPuzzleFilled"
+  | "SportMedicineLab"
+  | "SportMedicineLabFilled"
+  | "SportMedic"
+  | "SportMedicFilled"
+  | "SportHeartPulse"
+  | "SportHeartPulseFilled"
+  | "SportGauge"
+  | "SportGaugeFilled"
+  | "SportFlag"
+  | "SportFlagFilled"
+  | "SportDumbell"
+  | "SportDumbellFilled"
+  | "SportBadge"
+  | "SportBadgeH"
+  | "SportBadgeHFilled"
+  | "SportBadgeFilled"
+  | "SportBadgeC"
+  | "SportBadgeCFilled"
+  | "SportBadgeB"
+  | "SportBadgeBFilled"
+  | "ShopWallet"
+  | "ShopWalletFilled"
+  | "ShopTracking"
+  | "ShopTrackingFilled"
+  | "ShopTie"
+  | "ShopTieFilled"
+  | "ShopTag"
+  | "ShopTagSearch"
+  | "ShopTagSearchFilled"
+  | "ShopTagRefresh"
+  | "ShopTagRefreshFilled"
+  | "ShopTagPlus"
+  | "ShopTagPlusFilled"
+  | "ShopTagMinus"
+  | "ShopTagMinusFilled"
+  | "ShopTagLock"
+  | "ShopTagLockFilled"
+  | "ShopTagInfo"
+  | "ShopTagInfoFilled"
+  | "ShopTagFilled"
+  | "ShopTagDatabase"
+  | "ShopTagDatabaseFilled"
+  | "ShopTagCross"
+  | "ShopTagCrossFilled"
+  | "ShopTagCheck"
+  | "ShopTagCheckFilled"
+  | "ShopSuitcase"
+  | "ShopSuitcaseFilled"
+  | "ShopShipmentPackages"
+  | "ShopShipmentPackagesFilled"
+  | "ShopSavingPiggyBank"
+  | "ShopSavingPiggyBankFilled"
+  | "ShopSafeBox"
+  | "ShopSafeBoxFilled"
+  | "ShopPresent"
+  | "ShopPresentFilled"
+  | "ShopPound"
+  | "ShopPoundFilled"
+  | "ShopPerformanceMoneyDecrease"
+  | "ShopPerformanceMoneyDecreaseFilled"
+  | "ShopMastercard"
+  | "ShopMastercardFilled"
+  | "ShopMarket"
+  | "ShopMarketFilled"
+  | "ShopEuro"
+  | "ShopEuroFilled"
+  | "ShopDolar"
+  | "ShopDolarFilled"
+  | "ShopDiscountCoupon"
+  | "ShopDiscountCouponFilled"
+  | "ShopDiscountCircle"
+  | "ShopDiscountCircleFilled"
+  | "ShopDiamond"
+  | "ShopDiamondFilled"
+  | "ShopCreditcard"
+  | "ShopCreditcardFilled"
+  | "ShopCoins"
+  | "ShopCoinsFilled"
+  | "ShopCash"
+  | "ShopCashFilled"
+  | "ShopCashDolar"
+  | "ShopCashDolarFilled"
+  | "ShopCartFull"
+  | "ShopCartFullFilled"
+  | "ShopCartEmpty"
+  | "ShopCartEmptyFilled"
+  | "ShopCartEmptyAlt"
+  | "ShopCartEmptyAltFilled"
+  | "ShopCartDownload"
+  | "ShopCartDownloadFilled"
+  | "ShopBox"
+  | "ShopBoxPlus"
+  | "ShopBoxPlusFilled"
+  | "ShopBoxMinus"
+  | "ShopBoxMinusFilled"
+  | "ShopBoxFilled"
+  | "ShopBoxEmpty"
+  | "ShopBoxEmptyFilled"
+  | "ShopBill"
+  | "ShopBillFilled"
+  | "ShopBasket"
+  | "ShopBasketFilled"
+  | "ShopBarcode"
+  | "ShopBarcodeFilled"
+  | "ShopBag"
+  | "ShopBagFilled"
+  | "ShopAccountingBillStack"
+  | "ShopAccountingBillStackFilled"
+  | "SettingsWrench"
+  | "SettingsWrenchFilled"
+  | "SettingsMachineTrack"
+  | "SettingsMachineTrackFilled"
+  | "SettingsHotspot"
+  | "SettingsHotspotFilled"
+  | "SettingsGear"
+  | "SettingsGearFilled"
+  | "SettingsGearA"
+  | "SettingsGearAFilled"
+  | "SettingsEqualizer"
+  | "SettingsEqualizerFilled"
+  | "SettingsComonent"
+  | "SettingsComonentFilled"
+  | "SettingsColorMode"
+  | "SettingsColorModeFilled"
+  | "SettingsAutoFlash"
+  | "SettingsAutoFlashFilled"
+  | "SettingsAirplane"
+  | "SettingsAirplaneFilled"
+  | "MusicVolumeMute"
+  | "MusicVolumeMuteFilled"
+  | "MusicVolumeMedium"
+  | "MusicVolumeMediumFilled"
+  | "MusicVolumeLow"
+  | "MusicVolumeLowFilled"
+  | "MusicVolumeHigh"
+  | "MusicVolumeHighFilled"
+  | "MusicStop"
+  | "MusicStopFilled"
+  | "MusicSpeaker"
+  | "MusicSpeakerFilled"
+  | "MusicShuffle"
+  | "MusicShuffleFilled"
+  | "MusicRepeat"
+  | "MusicRepeatOne"
+  | "MusicRepeatOneFilled"
+  | "MusicRepeatFilled"
+  | "MusicRadio"
+  | "MusicRadioFilled"
+  | "MusicPrevious"
+  | "MusicPreviousFilled"
+  | "MusicPreviousA"
+  | "MusicPreviousAFilled"
+  | "MusicPlaylist"
+  | "MusicPlaylistFilled"
+  | "MusicPlay"
+  | "MusicPlayFilled"
+  | "MusicPause"
+  | "MusicPauseFilled"
+  | "MusicNote"
+  | "MusicNoteFilled"
+  | "MusicNoteA"
+  | "MusicNoteAFilled"
+  | "MusicNext"
+  | "MusicNextFilled"
+  | "MusicNextA"
+  | "MusicNextAFilled"
+  | "MusicMic"
+  | "MusicMicFilled"
+  | "MusicList"
+  | "MusicListFilled"
+  | "MusicHeadphones"
+  | "MusicHeadphonesFilled"
+  | "MusicHeadphonesA"
+  | "MusicHeadphonesAFilled"
+  | "MusicEqualiser"
+  | "MusicEqualiserFilled"
+  | "MusicEject"
+  | "MusicEjectFilled"
+  | "MusicCd"
+  | "MusicCdFilled"
+  | "MusicAlbum"
+  | "MusicAlbumFilled"
+  | "MiscWifi"
+  | "MiscWifiFilled"
+  | "MiscSmileSad"
+  | "MiscSmileSadFilled"
+  | "MiscSmileMeh"
+  | "MiscSmileMehFilled"
+  | "MiscSmileLaught"
+  | "MiscSmileLaughtFilled"
+  | "MiscSmileHappy"
+  | "MiscSmileHappyFilled"
+  | "MiscSmileAngry"
+  | "MiscSmileAngryFilled"
+  | "MiscReceptionHotelBell"
+  | "MiscReceptionHotelBellFilled"
+  | "MiscPuzzle"
+  | "MiscPuzzleFilled"
+  | "MiscModuleHandPuzzle"
+  | "MiscModuleHandPuzzleFilled"
+  | "MiscMaleSign"
+  | "MiscMaleSignFilled"
+  | "MiscGridPerspective"
+  | "MiscGridPerspectiveFilled"
+  | "MiscGlobe"
+  | "MiscGlobeFilled"
+  | "MiscGesture"
+  | "MiscGestureTap"
+  | "MiscGestureTapFilled"
+  | "MiscGestureSwipeRight"
+  | "MiscGestureSwipeRightFilled"
+  | "MiscGestureSwipeLeft"
+  | "MiscGestureSwipeLeftFilled"
+  | "MiscGestureFilled"
+  | "MiscGestureDoubleTap"
+  | "MiscGestureDoubleTapFilled"
+  | "MiscFemaleSign"
+  | "MiscFemaleSignFilled"
+  | "MiscCursorHandOpen"
+  | "MiscCursorHandOpenFilled"
+  | "MiscCube"
+  | "MiscCubeFilled"
+  | "MiscCrown"
+  | "MiscCrownFilled"
+  | "MiscBulletDiamond"
+  | "MiscBulletDiamondFilled"
+  | "LogoX"
+  | "LogoXFilled"
+  | "LogoWindows"
+  | "LogoWindowsFilled"
+  | "LogoTwitter"
+  | "LogoTwitterFilled"
+  | "LogoLinux"
+  | "LogoLinuxFilled"
+  | "LogoLinkedin"
+  | "LogoLinkedinFilled"
+  | "LogoInstagram"
+  | "LogoInstagramFilled"
+  | "LogoFacebook"
+  | "LogoFacebookFilled"
+  | "LogoApple"
+  | "LogoAppleFilled"
+  | "LocationStreetSign"
+  | "LocationStreetSignFilled"
+  | "LocationStreetSignA"
+  | "LocationStreetSignAFilled"
+  | "LocationPins"
+  | "LocationPinsFilled"
+  | "LocationPin"
+  | "LocationPinPlus"
+  | "LocationPinPlusFilled"
+  | "LocationPinMinus"
+  | "LocationPinMinusFilled"
+  | "LocationPinMap"
+  | "LocationPinMapFilled"
+  | "LocationPinFilled"
+  | "LocationPinCheck"
+  | "LocationPinCheckFilled"
+  | "LocationPinB"
+  | "LocationPinBFilled"
+  | "LocationPinA"
+  | "LocationPinAFilled"
+  | "LocationMap"
+  | "LocationMapFilled"
+  | "LocationMapCross"
+  | "LocationMapCrossFilled"
+  | "LocationDirection"
+  | "LocationDirectionSign"
+  | "LocationDirectionSignFilled"
+  | "LocationDirectionFilled"
+  | "LocationCompass"
+  | "LocationCompassFilled"
+  | "EnvTree"
+  | "EnvTreeFilled"
+  | "EnvTreeA"
+  | "EnvTreeAFilled"
+  | "EnvMountains"
+  | "EnvMountainsFilled"
+  | "EnvLeaf"
+  | "EnvLeafFilled"
+  | "EnvFlower"
+  | "EnvFlowerFilled"
+  | "EnvEarth"
+  | "EnvEarthFilled"
+  | "EnvAtomicBomb"
+  | "EnvAtomicBombFilled"
+  | "EditorialUndo"
+  | "EditorialUndoFilled"
+  | "EditorialTypingMachine"
+  | "EditorialTypingMachineFilled"
+  | "EditorialTrash"
+  | "EditorialTrashFilled"
+  | "EditorialTextUnderline"
+  | "EditorialTextUnderlineFilled"
+  | "EditorialTextStyle"
+  | "EditorialTextStyleFilled"
+  | "EditorialTextStrikeThrough"
+  | "EditorialTextStrikeThroughFilled"
+  | "EditorialTextItalic"
+  | "EditorialTextItalicFilled"
+  | "EditorialTextFormat"
+  | "EditorialTextFormatFilled"
+  | "EditorialTextBold"
+  | "EditorialTextBoldFilled"
+  | "EditorialSortDesc"
+  | "EditorialSortDescFilled"
+  | "EditorialSortCancel"
+  | "EditorialSortCancelFilled"
+  | "EditorialSortAsc"
+  | "EditorialSortAscFilled"
+  | "EditorialRedo"
+  | "EditorialRedoFilled"
+  | "EditorialPencil"
+  | "EditorialPencilSmall"
+  | "EditorialPencilSmallFilled"
+  | "EditorialPencilFilled"
+  | "EditorialPen"
+  | "EditorialPenFilled"
+  | "EditorialParagraph"
+  | "EditorialParagraphFirstLetter"
+  | "EditorialParagraphFirstLetterFilled"
+  | "EditorialParagraphFilled"
+  | "EditorialItalicOff"
+  | "EditorialItalicOffFilled"
+  | "EditorialIndentRight"
+  | "EditorialIndentRightFilled"
+  | "EditorialIndentLeft"
+  | "EditorialIndentLeftFilled"
+  | "EditorialHashtagSmall"
+  | "EditorialHashtagSmallFilled"
+  | "EditorialHash"
+  | "EditorialHashFilled"
+  | "EditorialFontSize"
+  | "EditorialFontSizeFilled"
+  | "EditorialCombineIntersect"
+  | "EditorialCombineIntersectFilled"
+  | "EditorialColorPalette"
+  | "EditorialColorPaletteFilled"
+  | "EditorialBrush"
+  | "EditorialBrushFilled"
+  | "EditorialBookmark"
+  | "EditorialBookmarkFilled"
+  | "EditorialAlignRight"
+  | "EditorialAlignRightFilled"
+  | "EditorialAlignLeft"
+  | "EditorialAlignLeftFilled"
+  | "EditorialAlignCenter"
+  | "EditorialAlignCenterFilled"
+  | "DocWboardSearch"
+  | "DocWboardSearchFilled"
+  | "DocWboardLine"
+  | "DocWboardLineFilled"
+  | "DocWboardGear"
+  | "DocWboardGearFilled"
+  | "DocWboardCheck"
+  | "DocWboardCheckFilled"
+  | "DocWboardArrowTop"
+  | "DocWboardArrowTopFilled"
+  | "DocUpload"
+  | "DocUploadFilled"
+  | "DocTodoList"
+  | "DocTodoListUser"
+  | "DocTodoListUserFilled"
+  | "DocTodoListSquare"
+  | "DocTodoListSquareFilled"
+  | "DocTodoListFilled"
+  | "DocTaskListQuestion"
+  | "DocTaskListQuestionFilled"
+  | "DocTaskChecklist"
+  | "DocTaskChecklistFilled"
+  | "DocStack"
+  | "DocStackFilled"
+  | "DocProfile"
+  | "DocProfileFilled"
+  | "DocPrinter"
+  | "DocPrinterFilled"
+  | "DocPlus"
+  | "DocPlusFilled"
+  | "DocPin"
+  | "DocPinFilled"
+  | "DocPie"
+  | "DocPieFilled"
+  | "DocPapers"
+  | "DocPapersFilled"
+  | "DocPaperStack"
+  | "DocPaperStackFilled"
+  | "DocPaperLine"
+  | "DocPaperLineFilled"
+  | "DocOfficeStampDocument"
+  | "DocOfficeStampDocumentFilled"
+  | "DocOfficeFolder"
+  | "DocOfficeFolderFilled"
+  | "DocOfficeFilePdf"
+  | "DocOfficeFilePdfFilled"
+  | "DocNotesUpload"
+  | "DocNotesUploadFilled"
+  | "DocNotesPaperText"
+  | "DocNotesPaperTextFilled"
+  | "DocNotesHome"
+  | "DocNotesHomeFilled"
+  | "DocNotesGive"
+  | "DocNotesGiveFilled"
+  | "DocNotesFlip"
+  | "DocNotesFlipFilled"
+  | "DocNewspaper"
+  | "DocNewspaperFilled"
+  | "DocMinus"
+  | "DocMinusFilled"
+  | "DocMailboxIn"
+  | "DocMailboxInFilled"
+  | "DocList"
+  | "DocListNumbers"
+  | "DocListNumbersFilled"
+  | "DocListFilled"
+  | "DocInvoice"
+  | "DocInvoiceFilled"
+  | "DocImage"
+  | "DocImageFilled"
+  | "DocImageA"
+  | "DocImageAFilled"
+  | "DocIdCardVertical"
+  | "DocIdCardVerticalFilled"
+  | "DocGlasses"
+  | "DocGlassesFilled"
+  | "DocFolder"
+  | "DocFolderSync"
+  | "DocFolderSyncFilled"
+  | "DocFolderPlus"
+  | "DocFolderPlusFilled"
+  | "DocFolderMinus"
+  | "DocFolderMinusFilled"
+  | "DocFolderHome"
+  | "DocFolderHomeFilled"
+  | "DocFolderFilled"
+  | "DocFolderCross"
+  | "DocFolderCrossFilled"
+  | "DocFolderCheck"
+  | "DocFolderCheckFilled"
+  | "DocFileZip"
+  | "DocFileZipFilled"
+  | "DocFileXls"
+  | "DocFileXlsFilled"
+  | "DocFileVideo"
+  | "DocFileVideoFilled"
+  | "DocFileSave"
+  | "DocFileSaveFilled"
+  | "DocFileRefresh"
+  | "DocFileRefreshFilled"
+  | "DocFilePrint"
+  | "DocFilePrintFilled"
+  | "DocFilePrev"
+  | "DocFilePrevFilled"
+  | "DocFilePresentation"
+  | "DocFilePresentationFilled"
+  | "DocFilePpt"
+  | "DocFilePptFilled"
+  | "DocFilePlus"
+  | "DocFilePlusFilled"
+  | "DocFileNext"
+  | "DocFileNextFilled"
+  | "DocFileMinus"
+  | "DocFileMinusFilled"
+  | "DocFileLine"
+  | "DocFileLineFilled"
+  | "DocFileImage"
+  | "DocFileImageFilled"
+  | "DocFileGraph"
+  | "DocFileGraphFilled"
+  | "DocFileDoc"
+  | "DocFileDocFilled"
+  | "DocFileCross"
+  | "DocFileCrossFilled"
+  | "DocFileCheck"
+  | "DocFileCheckFilled"
+  | "DocFileBookmark"
+  | "DocFileBookmarkFilled"
+  | "DocFileBlank"
+  | "DocFileBlankFilled"
+  | "DocFileAudio"
+  | "DocFileAudioFilled"
+  | "DocDownload"
+  | "DocDownloadFilled"
+  | "DocDiary"
+  | "DocDiaryFilled"
+  | "DocCopy"
+  | "DocCopyFilled"
+  | "DocCompose"
+  | "DocComposeFilled"
+  | "DocCommonFileTextEdit"
+  | "DocCommonFileTextEditFilled"
+  | "DocCommonFileHome"
+  | "DocCommonFileHomeFilled"
+  | "DocCommonFileEdit"
+  | "DocCommonFileEditFilled"
+  | "DocCamera"
+  | "DocCameraFilled"
+  | "DocBriefcase"
+  | "DocBriefcaseFilled"
+  | "DocBoxP"
+  | "DocBoxPFilled"
+  | "DocBookmark"
+  | "DocBookmarkFilled"
+  | "DocBook"
+  | "DocBookUpload"
+  | "DocBookUploadFilled"
+  | "DocBookTarget"
+  | "DocBookTargetFilled"
+  | "DocBookSettings"
+  | "DocBookSettingsFilled"
+  | "DocBookModules"
+  | "DocBookModulesFilled"
+  | "DocBookLibrary"
+  | "DocBookLibraryFilled"
+  | "DocBookFilled"
+  | "DocBookDownload"
+  | "DocBookDownloadFilled"
+  | "DocBookCash"
+  | "DocBookCashFilled"
+  | "DocBookB"
+  | "DocBookBFilled"
+  | "DocBookA"
+  | "DocBookAFilled"
+  | "DocAttachment"
+  | "DocAttachmentFilled"
+  | "DocArticle"
+  | "DocArticleFilled"
+  | "DocArchive"
+  | "DocArchiveUpload"
+  | "DocArchiveUploadFilled"
+  | "DocArchiveFolder"
+  | "DocArchiveFolderFilled"
+  | "DocArchiveFilled"
+  | "DocArchiveEmpty"
+  | "DocArchiveEmptyFilled"
+  | "DocArchiveDownload"
+  | "DocArchiveDownloadFilled"
+  | "DocAnalyticsUp"
+  | "DocAnalyticsUpFilled"
+  | "ComWarning"
+  | "ComWarningFilled"
+  | "ComVoicemail"
+  | "ComVoicemailFilled"
+  | "ComSatellite"
+  | "ComSatelliteFilled"
+  | "ComPostcard"
+  | "ComPostcardFilled"
+  | "ComPictures"
+  | "ComPicturesFilled"
+  | "ComPhone"
+  | "ComPhoneLandline"
+  | "ComPhoneLandlineFilled"
+  | "ComPhoneFilled"
+  | "ComPaperplane"
+  | "ComPaperplaneFilled"
+  | "ComMicrophonePodcast"
+  | "ComMicrophonePodcastFilled"
+  | "ComMic"
+  | "ComMicMute"
+  | "ComMicMuteFilled"
+  | "ComMicFilled"
+  | "ComMegaphone"
+  | "ComMegaphoneFilled"
+  | "ComMail"
+  | "ComMailWarning"
+  | "ComMailWarningFilled"
+  | "ComMailSync"
+  | "ComMailSyncFilled"
+  | "ComMailReceive"
+  | "ComMailReceiveFilled"
+  | "ComMailPlus"
+  | "ComMailPlusFilled"
+  | "ComMailOpen"
+  | "ComMailOpenWarning"
+  | "ComMailOpenWarningFilled"
+  | "ComMailOpenFilled"
+  | "ComMailMinus"
+  | "ComMailMinusFilled"
+  | "ComMailFilled"
+  | "ComMailDownload"
+  | "ComMailDownloadFilled"
+  | "ComMailCross"
+  | "ComMailCrossFilled"
+  | "ComMailClock"
+  | "ComMailClockFilled"
+  | "ComMailCheck"
+  | "ComMailCheckFilled"
+  | "ComLanguage"
+  | "ComLanguageFilled"
+  | "ComHelp"
+  | "ComHelpFilled"
+  | "ComHelpA"
+  | "ComHelpAFilled"
+  | "ComBubble"
+  | "ComBubbleLine"
+  | "ComBubbleLineFilled"
+  | "ComBubbleLineA"
+  | "ComBubbleLineAFilled"
+  | "ComBubbleGroup"
+  | "ComBubbleGroupFilled"
+  | "ComBubbleGroupA"
+  | "ComBubbleGroupAFilled"
+  | "ComBubbleFilled"
+  | "ComBubbleDot"
+  | "ComBubbleDotFilled"
+  | "ComBubbleDotA"
+  | "ComBubbleDotAFilled"
+  | "ComBubbleA"
+  | "ComBubbleAFilled"
+  | "ComBell"
+  | "ComBellFilled"
+  | "ComAdvertisingMegaphone"
+  | "ComAdvertisingMegaphoneFilled"
+  | "BuildingView"
+  | "BuildingViewFilled"
+  | "BuildingToilet"
+  | "BuildingToiletFilled"
+  | "BuildingSofa"
+  | "BuildingSofaFilled"
+  | "BuildingSofaA"
+  | "BuildingSofaAFilled"
+  | "BuildingSafetyFireShield"
+  | "BuildingSafetyFireShieldFilled"
+  | "BuildingRockerSwitch"
+  | "BuildingRockerSwitchFilled"
+  | "BuildingRealEstateDimensionsPlan"
+  | "BuildingRealEstateDimensionsPlanFilled"
+  | "BuildingRealEstateDimensionsBlock"
+  | "BuildingRealEstateDimensionsBlockFilled"
+  | "BuildingPlanBalcony"
+  | "BuildingPlanBalconyFilled"
+  | "BuildingOffice"
+  | "BuildingOfficeSettingsB"
+  | "BuildingOfficeSettingsBFilled"
+  | "BuildingOfficeFilled"
+  | "BuildingOfficeAddB"
+  | "BuildingOfficeAddBFilled"
+  | "BuildingOfficeA"
+  | "BuildingOfficeAFilled"
+  | "BuildingMuseum"
+  | "BuildingMuseumFilled"
+  | "BuildingLift"
+  | "BuildingLiftFilled"
+  | "BuildingLamp"
+  | "BuildingLampFilled"
+  | "BuildingLampA"
+  | "BuildingLampAFilled"
+  | "BuildingHouse"
+  | "BuildingHouseFilled"
+  | "BuildingHeater"
+  | "BuildingHeaterFilled"
+  | "BuildingHangingRack"
+  | "BuildingHangingRackFilled"
+  | "BuildingFireplace"
+  | "BuildingFireplaceFilled"
+  | "BuildingFaucet"
+  | "BuildingFaucetFilled"
+  | "BuildingExit"
+  | "BuildingExitFilled"
+  | "BuildingDrawer"
+  | "BuildingDrawerFilled"
+  | "BuildingDoor"
+  | "BuildingDoorFilled"
+  | "BuildingDimensionsRuler"
+  | "BuildingDimensionsRulerFilled"
+  | "BuildingDesk"
+  | "BuildingDeskFilled"
+  | "BuildingDaylight"
+  | "BuildingDaylightFilled"
+  | "BuildingChair"
+  | "BuildingChairFilled"
+  | "BuildingCabinet"
+  | "BuildingCabinetFilled"
+  | "BuildingBlueprint"
+  | "BuildingBlueprintFilled"
+  | "BuildingBed"
+  | "BuildingBedFilled";
 
 export enum MyIcons {
-  RegularWebWebcam = "regular-web-webcam",
-  RegularWebWarning = "regular-web-warning",
-  RegularWebTabs = "regular-web-tabs",
-  RegularWebTabsPlus = "regular-web-tabs-plus",
-  RegularWebTabsMinus = "regular-web-tabs-minus",
-  RegularWebTabsCross = "regular-web-tabs-cross",
-  RegularWebTabsCheck = "regular-web-tabs-check",
-  RegularWebTabletIncrease = "regular-web-tablet-increase",
-  RegularWebStatistic = "regular-web-statistic",
-  RegularWebShieldWarning = "regular-web-shield-warning",
-  RegularWebShare = "regular-web-share",
-  RegularWebServer = "regular-web-server",
-  RegularWebRss = "regular-web-rss",
-  RegularWebRssSettings = "regular-web-rss-settings",
-  RegularWebLink = "regular-web-link",
-  RegularWebLinkB = "regular-web-link-b",
-  RegularWebLinkBCheck = "regular-web-link-b-check",
-  RegularWebIncreaseMail = "regular-web-increase-mail",
-  RegularWebGridUpload = "regular-web-grid-upload",
-  RegularWebGraphLinearSmall = "regular-web-graph-linear-small",
-  RegularWebGlobe = "regular-web-globe",
-  RegularWebFlag = "regular-web-flag",
-  RegularWebFlagC = "regular-web-flag-c",
-  RegularWebDataFileBars = "regular-web-data-file-bars",
-  RegularWebConsole = "regular-web-console",
-  RegularWebCollapseUp = "regular-web-collapse-up",
-  RegularWebCollapseRight = "regular-web-collapse-right",
-  RegularWebCollapseLeft = "regular-web-collapse-left",
-  RegularWebCollapseDown = "regular-web-collapse-down",
-  RegularWebCode = "regular-web-code",
-  RegularWebChart = "regular-web-chart",
-  RegularWebBug = "regular-web-bug",
-  RegularWebBrowser = "regular-web-browser",
-  RegularWebBrowserWindow = "regular-web-browser-window",
-  RegularWebBrowserGrid = "regular-web-browser-grid",
-  RegularWebBrokenLink = "regular-web-broken-link",
-  RegularWebBarsHome = "regular-web-bars-home",
-  RegularWebAtSign = "regular-web-at-sign",
-  RegularWebAnalyticsNet = "regular-web-analytics-net",
-  RegularWebAnalyticsGraph = "regular-web-analytics-graph",
-  RegularWeatherWindsock = "regular-weather-windsock",
-  RegularWeatherWater = "regular-weather-water",
-  RegularWeatherThermometer = "regular-weather-thermometer",
-  RegularWeatherSunrise = "regular-weather-sunrise",
-  RegularWeatherSun = "regular-weather-sun",
-  RegularWeatherSunCloudSnow = "regular-weather-sun-cloud-snow",
-  RegularWeatherSnowflake = "regular-weather-snowflake",
-  RegularWeatherMoon = "regular-weather-moon",
-  RegularWeatherMoonA = "regular-weather-moon-a",
-  RegularWeatherFlash = "regular-weather-flash",
-  RegularWeatherFire = "regular-weather-fire",
-  RegularWeatherCloud = "regular-weather-cloud",
-  RegularWeatherCloudSnow = "regular-weather-cloud-snow",
-  RegularWeatherCloudRain = "regular-weather-cloud-rain",
-  RegularWeatherCloudFlash = "regular-weather-cloud-flash",
-  RegularVideoPlayer = "regular-video-player",
-  RegularUser = "regular-user",
-  RegularUserWalking = "regular-user-walking",
-  RegularUserToiletSign = "regular-user-toilet-sign",
-  RegularUserSingleNeutralHome = "regular-user-single-neutral-home",
-  RegularUserSingleNeutralActionsEdit = "regular-user-single-neutral-actions-edit",
-  RegularUserSingleNeutralActionsBlock = "regular-user-single-neutral-actions-block",
-  RegularUserShare = "regular-user-share",
-  RegularUserPlus = "regular-user-plus",
-  RegularUserMultipleUsers = "regular-user-multiple-users",
-  RegularUserMinus = "regular-user-minus",
-  RegularUserMessagesPeopleUserWarning = "regular-user-messages-people-user-warning",
-  RegularUserMale = "regular-user-male",
-  RegularUserMaleSign = "regular-user-male-sign",
-  RegularUserMalePlus = "regular-user-male-plus",
-  RegularUserMaleMinus = "regular-user-male-minus",
-  RegularUserMaleList = "regular-user-male-list",
-  RegularUserMaleCross = "regular-user-male-cross",
-  RegularUserMaleCheck = "regular-user-male-check",
-  RegularUserLock = "regular-user-lock",
-  RegularUserLockUnlocked = "regular-user-lock-unlocked",
-  RegularUserLockUnlockedB = "regular-user-lock-unlocked-b",
-  RegularUserList = "regular-user-list",
-  RegularUserKey = "regular-user-key",
-  RegularUserHeadset = "regular-user-headset",
-  RegularUserGroup = "regular-user-group",
-  RegularUserGroupFemale = "regular-user-group-female",
-  RegularUserGroupA = "regular-user-group-a",
-  RegularUserGear = "regular-user-gear",
-  RegularUserForward = "regular-user-forward",
-  RegularUserFemale = "regular-user-female",
-  RegularUserFemaleSign = "regular-user-female-sign",
-  RegularUserFemalePlus = "regular-user-female-plus",
-  RegularUserFemaleMinus = "regular-user-female-minus",
-  RegularUserFemaleList = "regular-user-female-list",
-  RegularUserFemaleCross = "regular-user-female-cross",
-  RegularUserFemaleCheck = "regular-user-female-check",
-  RegularUserCross = "regular-user-cross",
-  RegularUserContactBook = "regular-user-contact-book",
-  RegularUserContactBookA = "regular-user-contact-book-a",
-  RegularUserCircle = "regular-user-circle",
-  RegularUserCheck = "regular-user-check",
-  RegularUserBusinessDealCashExchange = "regular-user-business-deal-cash-exchange",
-  RegularUiZoomInPage = "regular-ui-zoom-in-page",
-  RegularUiWindow = "regular-ui-window",
-  RegularUiUndo = "regular-ui-undo",
-  RegularUiUndoB = "regular-ui-undo-b",
-  RegularUiUndoA = "regular-ui-undo-a",
-  RegularUiTriangleTop = "regular-ui-triangle-top",
-  RegularUiTriangleRight = "regular-ui-triangle-right",
-  RegularUiTriangleLeft = "regular-ui-triangle-left",
-  RegularUiTriangleBottom = "regular-ui-triangle-bottom",
-  RegularUiTreeSave = "regular-ui-tree-save",
-  RegularUiTreeLoad = "regular-ui-tree-load",
-  RegularUiTarget = "regular-ui-target",
-  RegularUiSync = "regular-ui-sync",
-  RegularUiStar = "regular-ui-star",
-  RegularUiSqareDashed = "regular-ui-sqare-dashed",
-  RegularUiSplitVertical = "regular-ui-split-vertical",
-  RegularUiSplitHorizontal = "regular-ui-split-horizontal",
-  RegularUiShrink = "regular-ui-shrink",
-  RegularUiSearch = "regular-ui-search",
-  RegularUiSearchPlus = "regular-ui-search-plus",
-  RegularUiSearchMinus = "regular-ui-search-minus",
-  RegularUiSearchCross = "regular-ui-search-cross",
-  RegularUiSearchCheck = "regular-ui-search-check",
-  RegularUiScrollVertical = "regular-ui-scroll-vertical",
-  RegularUiScrollHorizontal = "regular-ui-scroll-horizontal",
-  RegularUiResizeVertical = "regular-ui-resize-vertical",
-  RegularUiResizeTopRight = "regular-ui-resize-top-right",
-  RegularUiResizeTopLeft = "regular-ui-resize-top-left",
-  RegularUiResizeHorizontal = "regular-ui-resize-horizontal",
-  RegularUiResizeDiagonal = "regular-ui-resize-diagonal",
-  RegularUiResizeBottomRight = "regular-ui-resize-bottom-right",
-  RegularUiResizeBottomLeft = "regular-ui-resize-bottom-left",
-  RegularUiReply = "regular-ui-reply",
-  RegularUiRepeating = "regular-ui-repeating",
-  RegularUiRemoveConnectionPoint = "regular-ui-remove-connection-point",
-  RegularUiRefresh = "regular-ui-refresh",
-  RegularUiRadiobutton = "regular-ui-radiobutton",
-  RegularUiPropertyAnd = "regular-ui-property-and",
-  RegularUiPrevious = "regular-ui-previous",
-  RegularUiPreviousA = "regular-ui-previous-a",
-  RegularUiPower = "regular-ui-power",
-  RegularUiPopup = "regular-ui-popup",
-  RegularUiPlus = "regular-ui-plus",
-  RegularUiPlusSmall = "regular-ui-plus-small",
-  RegularUiPixel = "regular-ui-pixel",
-  RegularUiOutLink = "regular-ui-out-link",
-  RegularUiNumber = "regular-ui-number",
-  RegularUiNext = "regular-ui-next",
-  RegularUiNextA = "regular-ui-next-a",
-  RegularUiMove = "regular-ui-move",
-  RegularUiMoveUp = "regular-ui-move-up",
-  RegularUiMoveUpFront = "regular-ui-move-up-front",
-  RegularUiMoveDown = "regular-ui-move-down",
-  RegularUiMoveDownBackground = "regular-ui-move-down-background",
-  RegularUiMore = "regular-ui-more",
-  RegularUiMoreVertical = "regular-ui-more-vertical",
-  RegularUiMoreVerticalSmall = "regular-ui-more-vertical-small",
-  RegularUiMoreSmall = "regular-ui-more-small",
-  RegularUiMoreSmallCircle = "regular-ui-more-small-circle",
-  RegularUiMoreHorizontalSmall = "regular-ui-more-horizontal-small",
-  RegularUiMinus = "regular-ui-minus",
-  RegularUiMinusSmall = "regular-ui-minus-small",
-  RegularUiMethod = "regular-ui-method",
-  RegularUiMethodInherited = "regular-ui-method-inherited",
-  RegularUiLogout = "regular-ui-logout",
-  RegularUiLogin = "regular-ui-login",
-  RegularUiListView = "regular-ui-list-view",
-  RegularUiListUser = "regular-ui-list-user",
-  RegularUiListShare = "regular-ui-list-share",
-  RegularUiListForward = "regular-ui-list-forward",
-  RegularUiLayoutWireframe = "regular-ui-layout-wireframe",
-  RegularUiLayoutThirdVertical = "regular-ui-layout-third-vertical",
-  RegularUiLayoutTableView = "regular-ui-layout-table-view",
-  RegularUiLayoutSidebarL = "regular-ui-layout-sidebar-l",
-  RegularUiLayoutSidebarLHalf = "regular-ui-layout-sidebar-l-half",
-  RegularUiLayoutHalf = "regular-ui-layout-half",
-  RegularUiLayoutHalfHorizontal = "regular-ui-layout-half-horizontal",
-  RegularUiKeyboard = "regular-ui-keyboard",
-  RegularUiInLink = "regular-ui-in-link",
-  RegularUiImport = "regular-ui-import",
-  RegularUiHouse = "regular-ui-house",
-  RegularUiHome = "regular-ui-home",
-  RegularUiHomeA = "regular-ui-home-a",
-  RegularUiHierarchy = "regular-ui-hierarchy",
-  RegularUiHierarchyTree = "regular-ui-hierarchy-tree",
-  RegularUiHelp = "regular-ui-help",
-  RegularUiHelpLife = "regular-ui-help-life",
-  RegularUiHeart = "regular-ui-heart",
-  RegularUiHamburger = "regular-ui-hamburger",
-  RegularUiGridView = "regular-ui-grid-view",
-  RegularUiFullscreen = "regular-ui-fullscreen",
-  RegularUiFullscreenA = "regular-ui-fullscreen-a",
-  RegularUiFrame = "regular-ui-frame",
-  RegularUiForward = "regular-ui-forward",
-  RegularUiFilter = "regular-ui-filter",
-  RegularUiEye = "regular-ui-eye",
-  RegularUiEyeCross = "regular-ui-eye-cross",
-  RegularUiExport = "regular-ui-export",
-  RegularUiExpand = "regular-ui-expand",
-  RegularUiEnlarge = "regular-ui-enlarge",
-  RegularUiDragHandle = "regular-ui-drag-handle",
-  RegularUiDot = "regular-ui-dot",
-  RegularUiDotLarge = "regular-ui-dot-large",
-  RegularUiCross = "regular-ui-cross",
-  RegularUiCrossSmall = "regular-ui-cross-small",
-  RegularUiCrop = "regular-ui-crop",
-  RegularUiCreateConnection = "regular-ui-create-connection",
-  RegularUiConnection = "regular-ui-connection",
-  RegularUiConnectionOpen = "regular-ui-connection-open",
-  RegularUiConnectionOpenInherited = "regular-ui-connection-open-inherited",
-  RegularUiConnectionInherited = "regular-ui-connection-inherited",
-  RegularUiCone = "regular-ui-cone",
-  RegularUiCondition = "regular-ui-condition",
-  RegularUiCombobox = "regular-ui-combobox",
-  RegularUiCmd = "regular-ui-cmd",
-  RegularUiCloudUpload = "regular-ui-cloud-upload",
-  RegularUiCloudDownload = "regular-ui-cloud-download",
-  RegularUiCloseParallelConnection = "regular-ui-close-parallel-connection",
-  RegularUiCircle = "regular-ui-circle",
-  RegularUiCircleWarning = "regular-ui-circle-warning",
-  RegularUiCirclePlus = "regular-ui-circle-plus",
-  RegularUiCircleMinus = "regular-ui-circle-minus",
-  RegularUiCircleInfo = "regular-ui-circle-info",
-  RegularUiCircleHelp = "regular-ui-circle-help",
-  RegularUiCircleCross = "regular-ui-circle-cross",
-  RegularUiCircleChevronTop = "regular-ui-circle-chevron-top",
-  RegularUiCircleChevronRight = "regular-ui-circle-chevron-right",
-  RegularUiCircleChevronLeft = "regular-ui-circle-chevron-left",
-  RegularUiCircleChevronBottom = "regular-ui-circle-chevron-bottom",
-  RegularUiCircleCheck = "regular-ui-circle-check",
-  RegularUiCircleCheckA = "regular-ui-circle-check-a",
-  RegularUiCircleArrowTop = "regular-ui-circle-arrow-top",
-  RegularUiCircleArrowRight = "regular-ui-circle-arrow-right",
-  RegularUiCircleArrowLeft = "regular-ui-circle-arrow-left",
-  RegularUiCircleArrowBottom = "regular-ui-circle-arrow-bottom",
-  RegularUiChevronTop = "regular-ui-chevron-top",
-  RegularUiChevronTopSmall = "regular-ui-chevron-top-small",
-  RegularUiChevronRight = "regular-ui-chevron-right",
-  RegularUiChevronRightTripple = "regular-ui-chevron-right-tripple",
-  RegularUiChevronRightSmall = "regular-ui-chevron-right-small",
-  RegularUiChevronLeft = "regular-ui-chevron-left",
-  RegularUiChevronLeftSmall = "regular-ui-chevron-left-small",
-  RegularUiChevronBottom = "regular-ui-chevron-bottom",
-  RegularUiChevronBottomSmall = "regular-ui-chevron-bottom-small",
-  RegularUiCheckbox = "regular-ui-checkbox",
-  RegularUiCheck = "regular-ui-check",
-  RegularUiCheckSmall = "regular-ui-check-small",
-  RegularUiCheckSmallCircle = "regular-ui-check-small-circle",
-  RegularUiCard = "regular-ui-card",
-  RegularUiCardView = "regular-ui-card-view",
-  RegularUiBulletView = "regular-ui-bullet-view",
-  RegularUiBoxWarning = "regular-ui-box-warning",
-  RegularUiBoxHelp = "regular-ui-box-help",
-  RegularUiBlock = "regular-ui-block",
-  RegularUiBackspace = "regular-ui-backspace",
-  RegularUiAttribute = "regular-ui-attribute",
-  RegularUiAttributeInherited = "regular-ui-attribute-inherited",
-  RegularUiArrowTop = "regular-ui-arrow-top",
-  RegularUiArrowTopSmall = "regular-ui-arrow-top-small",
-  RegularUiArrowTopRight = "regular-ui-arrow-top-right",
-  RegularUiArrowTopLeft = "regular-ui-arrow-top-left",
-  RegularUiArrowTopA = "regular-ui-arrow-top-a",
-  RegularUiArrowRight = "regular-ui-arrow-right",
-  RegularUiArrowRightSmall = "regular-ui-arrow-right-small",
-  RegularUiArrowRightA = "regular-ui-arrow-right-a",
-  RegularUiArrowLeft = "regular-ui-arrow-left",
-  RegularUiArrowLeftSmall = "regular-ui-arrow-left-small",
-  RegularUiArrowLeftA = "regular-ui-arrow-left-a",
-  RegularUiArrowBottom = "regular-ui-arrow-bottom",
-  RegularUiArrowBottomSmall = "regular-ui-arrow-bottom-small",
-  RegularUiArrowBottomRight = "regular-ui-arrow-bottom-right",
-  RegularUiArrowBottomLeft = "regular-ui-arrow-bottom-left",
-  RegularUiArrowBottomA = "regular-ui-arrow-bottom-a",
-  RegularUiAlignTop = "regular-ui-align-top",
-  RegularUiAlignRight = "regular-ui-align-right",
-  RegularUiAlignLeft = "regular-ui-align-left",
-  RegularUiAlignCenterVertical = "regular-ui-align-center-vertical",
-  RegularUiAlignCenterHorizontal = "regular-ui-align-center-horizontal",
-  RegularUiAlignBottom = "regular-ui-align-bottom",
-  RegularUiAddConnectionPoint = "regular-ui-add-connection-point",
-  RegularTransportTruck = "regular-transport-truck",
-  RegularTransportTruckA = "regular-transport-truck-a",
-  RegularTransportTrain = "regular-transport-train",
-  RegularTransportSignStop = "regular-transport-sign-stop",
-  RegularTransportShip = "regular-transport-ship",
-  RegularTransportShipA = "regular-transport-ship-a",
-  RegularTransportCar = "regular-transport-car",
-  RegularTransportCarA = "regular-transport-car-a",
-  RegularTransportBus = "regular-transport-bus",
-  RegularTransportBusTicket = "regular-transport-bus-ticket",
-  RegularTransportBusA = "regular-transport-bus-a",
-  RegularTransportBicycle = "regular-transport-bicycle",
-  RegularToolUmbrella = "regular-tool-umbrella",
-  RegularToolToolsBox = "regular-tool-tools-box",
-  RegularToolTextType = "regular-tool-text-type",
-  RegularToolSmartphonePay = "regular-tool-smartphone-pay",
-  RegularToolScissors = "regular-tool-scissors",
-  RegularToolSateliteType = "regular-tool-satelite-type",
-  RegularToolRuler = "regular-tool-ruler",
-  RegularToolRulerCorner = "regular-tool-ruler-corner",
-  RegularToolRulerB = "regular-tool-ruler-b",
-  RegularToolRouterSignal = "regular-tool-router-signal",
-  RegularToolRazor = "regular-tool-razor",
-  RegularToolProtectionType = "regular-tool-protection-type",
-  RegularToolPropertyType = "regular-tool-property-type",
-  RegularToolProjector = "regular-tool-projector",
-  RegularToolPlug = "regular-tool-plug",
-  RegularToolPhone = "regular-tool-phone",
-  RegularToolPhoneLandscape = "regular-tool-phone-landscape",
-  RegularToolMouse = "regular-tool-mouse",
-  RegularToolModuleThree = "regular-tool-module-three",
-  RegularToolMagnet = "regular-tool-magnet",
-  RegularToolMagicWand = "regular-tool-magic-wand",
-  RegularToolLaptop = "regular-tool-laptop",
-  RegularToolIntType = "regular-tool-int-type",
-  RegularToolHardwareType = "regular-tool-hardware-type",
-  RegularToolHammer = "regular-tool-hammer",
-  RegularToolHammerPlus = "regular-tool-hammer-plus",
-  RegularToolHammerAngle = "regular-tool-hammer-angle",
-  RegularToolHammerA = "regular-tool-hammer-a",
-  RegularToolGrid = "regular-tool-grid",
-  RegularToolGearsType = "regular-tool-gears-type",
-  RegularToolFocus = "regular-tool-focus",
-  RegularToolFloppyEdit = "regular-tool-floppy-edit",
-  RegularToolFloppyDisks = "regular-tool-floppy-disks",
-  RegularToolFloppyDisk = "regular-tool-floppy-disk",
-  RegularToolFlashlight = "regular-tool-flashlight",
-  RegularToolFireExtinguisher = "regular-tool-fire-extinguisher",
-  RegularToolDisplay = "regular-tool-display",
-  RegularToolDisplayUser = "regular-tool-display-user",
-  RegularToolConsole = "regular-tool-console",
-  RegularToolConsoleA = "regular-tool-console-a",
-  RegularToolCompass = "regular-tool-compass",
-  RegularToolCamera = "regular-tool-camera",
-  RegularToolCalc = "regular-tool-calc",
-  RegularToolBinoculars = "regular-tool-binoculars",
-  RegularToolAreaType = "regular-tool-area-type",
-  RegularToolAndroidType = "regular-tool-android-type",
-  RegularTimeWatch = "regular-time-watch",
-  RegularTimeTimer = "regular-time-timer",
-  RegularTimeStopwatch = "regular-time-stopwatch",
-  RegularTimeSpeedMeter = "regular-time-speed-meter",
-  RegularTimeHourglass = "regular-time-hourglass",
-  RegularTimeClockF = "regular-time-clock-f",
-  RegularTimeClockCircle = "regular-time-clock-circle",
-  RegularTimeCalendar = "regular-time-calendar",
-  RegularTimeCalendarWeek = "regular-time-calendar-week",
-  RegularTimeCalendarSmall = "regular-time-calendar-small",
-  RegularTimeCalendarDots = "regular-time-calendar-dots",
-  RegularTimeCalendarClock = "regular-time-calendar-clock",
-  RegularTimeCalendarCash = "regular-time-calendar-cash",
-  RegularTimeAlarm = "regular-time-alarm",
-  RegularSportTv = "regular-sport-tv",
-  RegularSportTrophy = "regular-sport-trophy",
-  RegularSportPuzzle = "regular-sport-puzzle",
-  RegularSportMedicineLab = "regular-sport-medicine-lab",
-  RegularSportMedic = "regular-sport-medic",
-  RegularSportHeartPulse = "regular-sport-heart-pulse",
-  RegularSportGauge = "regular-sport-gauge",
-  RegularSportFlag = "regular-sport-flag",
-  RegularSportDumbell = "regular-sport-dumbell",
-  RegularSportBadge = "regular-sport-badge",
-  RegularSportBadgeH = "regular-sport-badge-h",
-  RegularSportBadgeC = "regular-sport-badge-c",
-  RegularSportBadgeB = "regular-sport-badge-b",
-  RegularShopWallet = "regular-shop-wallet",
-  RegularShopTracking = "regular-shop-tracking",
-  RegularShopTie = "regular-shop-tie",
-  RegularShopTag = "regular-shop-tag",
-  RegularShopTagSearch = "regular-shop-tag-search",
-  RegularShopTagRefresh = "regular-shop-tag-refresh",
-  RegularShopTagPlus = "regular-shop-tag-plus",
-  RegularShopTagMinus = "regular-shop-tag-minus",
-  RegularShopTagLock = "regular-shop-tag-lock",
-  RegularShopTagInfo = "regular-shop-tag-info",
-  RegularShopTagDatabase = "regular-shop-tag-database",
-  RegularShopTagCross = "regular-shop-tag-cross",
-  RegularShopTagCheck = "regular-shop-tag-check",
-  RegularShopSuitcase = "regular-shop-suitcase",
-  RegularShopShipmentPackages = "regular-shop-shipment-packages",
-  RegularShopSavingPiggyBank = "regular-shop-saving-piggy-bank",
-  RegularShopSafeBox = "regular-shop-safe-box",
-  RegularShopPresent = "regular-shop-present",
-  RegularShopPound = "regular-shop-pound",
-  RegularShopPerformanceMoneyDecrease = "regular-shop-performance-money-decrease",
-  RegularShopMastercard = "regular-shop-mastercard",
-  RegularShopMarket = "regular-shop-market",
-  RegularShopEuro = "regular-shop-euro",
-  RegularShopDolar = "regular-shop-dolar",
-  RegularShopDiscountCoupon = "regular-shop-discount-coupon",
-  RegularShopDiscountCircle = "regular-shop-discount-circle",
-  RegularShopDiamond = "regular-shop-diamond",
-  RegularShopCreditcard = "regular-shop-creditcard",
-  RegularShopCoins = "regular-shop-coins",
-  RegularShopCash = "regular-shop-cash",
-  RegularShopCashDolar = "regular-shop-cash-dolar",
-  RegularShopCartFull = "regular-shop-cart-full",
-  RegularShopCartEmpty = "regular-shop-cart-empty",
-  RegularShopCartEmptyAlt = "regular-shop-cart-empty-alt",
-  RegularShopCartDownload = "regular-shop-cart-download",
-  RegularShopBox = "regular-shop-box",
-  RegularShopBoxPlus = "regular-shop-box-plus",
-  RegularShopBoxMinus = "regular-shop-box-minus",
-  RegularShopBoxEmpty = "regular-shop-box-empty",
-  RegularShopBill = "regular-shop-bill",
-  RegularShopBasket = "regular-shop-basket",
-  RegularShopBarcode = "regular-shop-barcode",
-  RegularShopBag = "regular-shop-bag",
-  RegularShopAccountingBillStack = "regular-shop-accounting-bill-stack",
-  RegularSettingsWrench = "regular-settings-wrench",
-  RegularSettingsMachineTrack = "regular-settings-machine-track",
-  RegularSettingsHotspot = "regular-settings-hotspot",
-  RegularSettingsGear = "regular-settings-gear",
-  RegularSettingsGearA = "regular-settings-gear-a",
-  RegularSettingsEqualizer = "regular-settings-equalizer",
-  RegularSettingsComonent = "regular-settings-comonent",
-  RegularSettingsColorMode = "regular-settings-color-mode",
-  RegularSettingsAutoFlash = "regular-settings-auto-flash",
-  RegularSettingsAirplane = "regular-settings-airplane",
-  RegularMusicVolumeMute = "regular-music-volume-mute",
-  RegularMusicVolumeMedium = "regular-music-volume-medium",
-  RegularMusicVolumeLow = "regular-music-volume-low",
-  RegularMusicVolumeHigh = "regular-music-volume-high",
-  RegularMusicStop = "regular-music-stop",
-  RegularMusicSpeaker = "regular-music-speaker",
-  RegularMusicShuffle = "regular-music-shuffle",
-  RegularMusicRepeat = "regular-music-repeat",
-  RegularMusicRepeatOne = "regular-music-repeat-one",
-  RegularMusicRadio = "regular-music-radio",
-  RegularMusicPrevious = "regular-music-previous",
-  RegularMusicPreviousA = "regular-music-previous-a",
-  RegularMusicPlaylist = "regular-music-playlist",
-  RegularMusicPlay = "regular-music-play",
-  RegularMusicPause = "regular-music-pause",
-  RegularMusicNote = "regular-music-note",
-  RegularMusicNoteA = "regular-music-note-a",
-  RegularMusicNext = "regular-music-next",
-  RegularMusicNextA = "regular-music-next-a",
-  RegularMusicMic = "regular-music-mic",
-  RegularMusicList = "regular-music-list",
-  RegularMusicHeadphones = "regular-music-headphones",
-  RegularMusicHeadphonesA = "regular-music-headphones-a",
-  RegularMusicEqualiser = "regular-music-equaliser",
-  RegularMusicEject = "regular-music-eject",
-  RegularMusicCd = "regular-music-cd",
-  RegularMusicAlbum = "regular-music-album",
-  RegularMiscWifi = "regular-misc-wifi",
-  RegularMiscSmileSad = "regular-misc-smile-sad",
-  RegularMiscSmileMeh = "regular-misc-smile-meh",
-  RegularMiscSmileLaught = "regular-misc-smile-laught",
-  RegularMiscSmileHappy = "regular-misc-smile-happy",
-  RegularMiscSmileAngry = "regular-misc-smile-angry",
-  RegularMiscReceptionHotelBell = "regular-misc-reception-hotel-bell",
-  RegularMiscPuzzle = "regular-misc-puzzle",
-  RegularMiscModuleHandPuzzle = "regular-misc-module-hand-puzzle",
-  RegularMiscMaleSign = "regular-misc-male-sign",
-  RegularMiscGridPerspective = "regular-misc-grid-perspective",
-  RegularMiscGlobe = "regular-misc-globe",
-  RegularMiscGesture = "regular-misc-gesture",
-  RegularMiscGestureTap = "regular-misc-gesture-tap",
-  RegularMiscGestureSwipeRight = "regular-misc-gesture-swipe-right",
-  RegularMiscGestureSwipeLeft = "regular-misc-gesture-swipe-left",
-  RegularMiscGestureDoubleTap = "regular-misc-gesture-double-tap",
-  RegularMiscFemaleSign = "regular-misc-female-sign",
-  RegularMiscCursorHandOpen = "regular-misc-cursor-hand-open",
-  RegularMiscCube = "regular-misc-cube",
-  RegularMiscCrown = "regular-misc-crown",
-  RegularMiscBulletDiamond = "regular-misc-bullet-diamond",
-  RegularLogoX = "regular-logo-x",
-  RegularLogoWindows = "regular-logo-windows",
-  RegularLogoTwitter = "regular-logo-twitter",
-  RegularLogoLinux = "regular-logo-linux",
-  RegularLogoLinkedin = "regular-logo-linkedin",
-  RegularLogoInstagram = "regular-logo-instagram",
-  RegularLogoFacebook = "regular-logo-facebook",
-  RegularLogoApple = "regular-logo-apple",
-  RegularLocationStreetSign = "regular-location-street-sign",
-  RegularLocationStreetSignA = "regular-location-street-sign-a",
-  RegularLocationPins = "regular-location-pins",
-  RegularLocationPin = "regular-location-pin",
-  RegularLocationPinPlus = "regular-location-pin-plus",
-  RegularLocationPinMinus = "regular-location-pin-minus",
-  RegularLocationPinMap = "regular-location-pin-map",
-  RegularLocationPinCheck = "regular-location-pin-check",
-  RegularLocationPinB = "regular-location-pin-b",
-  RegularLocationPinA = "regular-location-pin-a",
-  RegularLocationMap = "regular-location-map",
-  RegularLocationMapCross = "regular-location-map-cross",
-  RegularLocationDirection = "regular-location-direction",
-  RegularLocationDirectionSign = "regular-location-direction-sign",
-  RegularLocationCompass = "regular-location-compass",
-  RegularEnvTree = "regular-env-tree",
-  RegularEnvTreeA = "regular-env-tree-a",
-  RegularEnvMountains = "regular-env-mountains",
-  RegularEnvLeaf = "regular-env-leaf",
-  RegularEnvFlower = "regular-env-flower",
-  RegularEnvEarth = "regular-env-earth",
-  RegularEnvAtomicBomb = "regular-env-atomic-bomb",
-  RegularEditorialUndo = "regular-editorial-undo",
-  RegularEditorialTypingMachine = "regular-editorial-typing-machine",
-  RegularEditorialTrash = "regular-editorial-trash",
-  RegularEditorialTextUnderline = "regular-editorial-text-underline",
-  RegularEditorialTextStyle = "regular-editorial-text-style",
-  RegularEditorialTextStrikeThrough = "regular-editorial-text-strike-through",
-  RegularEditorialTextItalic = "regular-editorial-text-italic",
-  RegularEditorialTextFormat = "regular-editorial-text-format",
-  RegularEditorialTextBold = "regular-editorial-text-bold",
-  RegularEditorialSortDesc = "regular-editorial-sort-desc",
-  RegularEditorialSortCancel = "regular-editorial-sort-cancel",
-  RegularEditorialSortAsc = "regular-editorial-sort-asc",
-  RegularEditorialRedo = "regular-editorial-redo",
-  RegularEditorialPencil = "regular-editorial-pencil",
-  RegularEditorialPencilSmall = "regular-editorial-pencil-small",
-  RegularEditorialPen = "regular-editorial-pen",
-  RegularEditorialParagraph = "regular-editorial-paragraph",
-  RegularEditorialParagraphFirstLetter = "regular-editorial-paragraph-first-letter",
-  RegularEditorialItalicOff = "regular-editorial-italic-off",
-  RegularEditorialIndentRight = "regular-editorial-indent-right",
-  RegularEditorialIndentLeft = "regular-editorial-indent-left",
-  RegularEditorialHashtagSmall = "regular-editorial-hashtag-small",
-  RegularEditorialHash = "regular-editorial-hash",
-  RegularEditorialFontSize = "regular-editorial-font-size",
-  RegularEditorialCombineIntersect = "regular-editorial-combine-intersect",
-  RegularEditorialColorPalette = "regular-editorial-color-palette",
-  RegularEditorialBrush = "regular-editorial-brush",
-  RegularEditorialBookmark = "regular-editorial-bookmark",
-  RegularEditorialAlignRight = "regular-editorial-align-right",
-  RegularEditorialAlignLeft = "regular-editorial-align-left",
-  RegularEditorialAlignCenter = "regular-editorial-align-center",
-  RegularDocWboardSearch = "regular-doc-wboard-search",
-  RegularDocWboardLine = "regular-doc-wboard-line",
-  RegularDocWboardGear = "regular-doc-wboard-gear",
-  RegularDocWboardCheck = "regular-doc-wboard-check",
-  RegularDocWboardArrowTop = "regular-doc-wboard-arrow-top",
-  RegularDocUpload = "regular-doc-upload",
-  RegularDocTodoList = "regular-doc-todo-list",
-  RegularDocTodoListUser = "regular-doc-todo-list-user",
-  RegularDocTodoListSquare = "regular-doc-todo-list-square",
-  RegularDocTaskListQuestion = "regular-doc-task-list-question",
-  RegularDocTaskChecklist = "regular-doc-task-checklist",
-  RegularDocStack = "regular-doc-stack",
-  RegularDocProfile = "regular-doc-profile",
-  RegularDocPrinter = "regular-doc-printer",
-  RegularDocPlus = "regular-doc-plus",
-  RegularDocPin = "regular-doc-pin",
-  RegularDocPie = "regular-doc-pie",
-  RegularDocPapers = "regular-doc-papers",
-  RegularDocPaperStack = "regular-doc-paper-stack",
-  RegularDocPaperLine = "regular-doc-paper-line",
-  RegularDocOfficeStampDocument = "regular-doc-office-stamp-document",
-  RegularDocOfficeFolder = "regular-doc-office-folder",
-  RegularDocOfficeFilePdf = "regular-doc-office-file-pdf",
-  RegularDocNotesUpload = "regular-doc-notes-upload",
-  RegularDocNotesPaperText = "regular-doc-notes-paper-text",
-  RegularDocNotesHome = "regular-doc-notes-home",
-  RegularDocNotesGive = "regular-doc-notes-give",
-  RegularDocNotesFlip = "regular-doc-notes-flip",
-  RegularDocNewspaper = "regular-doc-newspaper",
-  RegularDocMinus = "regular-doc-minus",
-  RegularDocMailboxIn = "regular-doc-mailbox-in",
-  RegularDocList = "regular-doc-list",
-  RegularDocListNumbers = "regular-doc-list-numbers",
-  RegularDocInvoice = "regular-doc-invoice",
-  RegularDocImage = "regular-doc-image",
-  RegularDocImageA = "regular-doc-image-a",
-  RegularDocIdCardVertical = "regular-doc-id-card-vertical",
-  RegularDocGlasses = "regular-doc-glasses",
-  RegularDocFolder = "regular-doc-folder",
-  RegularDocFolderSync = "regular-doc-folder-sync",
-  RegularDocFolderPlus = "regular-doc-folder-plus",
-  RegularDocFolderMinus = "regular-doc-folder-minus",
-  RegularDocFolderHome = "regular-doc-folder-home",
-  RegularDocFolderCross = "regular-doc-folder-cross",
-  RegularDocFolderCheck = "regular-doc-folder-check",
-  RegularDocFileZip = "regular-doc-file-zip",
-  RegularDocFileXls = "regular-doc-file-xls",
-  RegularDocFileVideo = "regular-doc-file-video",
-  RegularDocFileSave = "regular-doc-file-save",
-  RegularDocFileRefresh = "regular-doc-file-refresh",
-  RegularDocFilePrint = "regular-doc-file-print",
-  RegularDocFilePrev = "regular-doc-file-prev",
-  RegularDocFilePresentation = "regular-doc-file-presentation",
-  RegularDocFilePpt = "regular-doc-file-ppt",
-  RegularDocFilePlus = "regular-doc-file-plus",
-  RegularDocFileNext = "regular-doc-file-next",
-  RegularDocFileMinus = "regular-doc-file-minus",
-  RegularDocFileLine = "regular-doc-file-line",
-  RegularDocFileImage = "regular-doc-file-image",
-  RegularDocFileGraph = "regular-doc-file-graph",
-  RegularDocFileDoc = "regular-doc-file-doc",
-  RegularDocFileCross = "regular-doc-file-cross",
-  RegularDocFileCheck = "regular-doc-file-check",
-  RegularDocFileBookmark = "regular-doc-file-bookmark",
-  RegularDocFileBlank = "regular-doc-file-blank",
-  RegularDocFileAudio = "regular-doc-file-audio",
-  RegularDocDownload = "regular-doc-download",
-  RegularDocDiary = "regular-doc-diary",
-  RegularDocCopy = "regular-doc-copy",
-  RegularDocCompose = "regular-doc-compose",
-  RegularDocCommonFileTextEdit = "regular-doc-common-file-text-edit",
-  RegularDocCommonFileHome = "regular-doc-common-file-home",
-  RegularDocCommonFileEdit = "regular-doc-common-file-edit",
-  RegularDocCamera = "regular-doc-camera",
-  RegularDocBriefcase = "regular-doc-briefcase",
-  RegularDocBoxP = "regular-doc-box-p",
-  RegularDocBookmark = "regular-doc-bookmark",
-  RegularDocBook = "regular-doc-book",
-  RegularDocBookUpload = "regular-doc-book-upload",
-  RegularDocBookTarget = "regular-doc-book-target",
-  RegularDocBookSettings = "regular-doc-book-settings",
-  RegularDocBookModules = "regular-doc-book-modules",
-  RegularDocBookLibrary = "regular-doc-book-library",
-  RegularDocBookDownload = "regular-doc-book-download",
-  RegularDocBookCash = "regular-doc-book-cash",
-  RegularDocBookB = "regular-doc-book-b",
-  RegularDocBookA = "regular-doc-book-a",
-  RegularDocAttachment = "regular-doc-attachment",
-  RegularDocArticle = "regular-doc-article",
-  RegularDocArchive = "regular-doc-archive",
-  RegularDocArchiveUpload = "regular-doc-archive-upload",
-  RegularDocArchiveFolder = "regular-doc-archive-folder",
-  RegularDocArchiveEmpty = "regular-doc-archive-empty",
-  RegularDocArchiveDownload = "regular-doc-archive-download",
-  RegularDocAnalyticsUp = "regular-doc-analytics-up",
-  RegularComWarning = "regular-com-warning",
-  RegularComVoicemail = "regular-com-voicemail",
-  RegularComSatellite = "regular-com-satellite",
-  RegularComPostcard = "regular-com-postcard",
-  RegularComPictures = "regular-com-pictures",
-  RegularComPhone = "regular-com-phone",
-  RegularComPhoneLandline = "regular-com-phone-landline",
-  RegularComPaperplane = "regular-com-paperplane",
-  RegularComMicrophonePodcast = "regular-com-microphone-podcast",
-  RegularComMic = "regular-com-mic",
-  RegularComMicMute = "regular-com-mic-mute",
-  RegularComMegaphone = "regular-com-megaphone",
-  RegularComMail = "regular-com-mail",
-  RegularComMailWarning = "regular-com-mail-warning",
-  RegularComMailSync = "regular-com-mail-sync",
-  RegularComMailReceive = "regular-com-mail-receive",
-  RegularComMailPlus = "regular-com-mail-plus",
-  RegularComMailOpen = "regular-com-mail-open",
-  RegularComMailOpenWarning = "regular-com-mail-open-warning",
-  RegularComMailMinus = "regular-com-mail-minus",
-  RegularComMailDownload = "regular-com-mail-download",
-  RegularComMailCross = "regular-com-mail-cross",
-  RegularComMailClock = "regular-com-mail-clock",
-  RegularComMailCheck = "regular-com-mail-check",
-  RegularComLanguage = "regular-com-language",
-  RegularComHelp = "regular-com-help",
-  RegularComHelpA = "regular-com-help-a",
-  RegularComBubble = "regular-com-bubble",
-  RegularComBubbleLine = "regular-com-bubble-line",
-  RegularComBubbleLineA = "regular-com-bubble-line-a",
-  RegularComBubbleGroup = "regular-com-bubble-group",
-  RegularComBubbleGroupA = "regular-com-bubble-group-a",
-  RegularComBubbleDot = "regular-com-bubble-dot",
-  RegularComBubbleDotA = "regular-com-bubble-dot-a",
-  RegularComBubbleA = "regular-com-bubble-a",
-  RegularComBell = "regular-com-bell",
-  RegularComAdvertisingMegaphone = "regular-com-advertising-megaphone",
-  RegularBuildingView = "regular-building-view",
-  RegularBuildingToilet = "regular-building-toilet",
-  RegularBuildingSofa = "regular-building-sofa",
-  RegularBuildingSofaA = "regular-building-sofa-a",
-  RegularBuildingSafetyFireShield = "regular-building-safety-fire-shield",
-  RegularBuildingRockerSwitch = "regular-building-rocker-switch",
-  RegularBuildingRealEstateDimensionsPlan = "regular-building-real-estate-dimensions-plan",
-  RegularBuildingRealEstateDimensionsBlock = "regular-building-real-estate-dimensions-block",
-  RegularBuildingPlanBalcony = "regular-building-plan-balcony",
-  RegularBuildingOffice = "regular-building-office",
-  RegularBuildingOfficeSettingsB = "regular-building-office-settings-b",
-  RegularBuildingOfficeAddB = "regular-building-office-add-b",
-  RegularBuildingOfficeA = "regular-building-office-a",
-  RegularBuildingMuseum = "regular-building-museum",
-  RegularBuildingLift = "regular-building-lift",
-  RegularBuildingLamp = "regular-building-lamp",
-  RegularBuildingLampA = "regular-building-lamp-a",
-  RegularBuildingHouse = "regular-building-house",
-  RegularBuildingHeater = "regular-building-heater",
-  RegularBuildingHangingRack = "regular-building-hanging-rack",
-  RegularBuildingFireplace = "regular-building-fireplace",
-  RegularBuildingFaucet = "regular-building-faucet",
-  RegularBuildingExit = "regular-building-exit",
-  RegularBuildingDrawer = "regular-building-drawer",
-  RegularBuildingDoor = "regular-building-door",
-  RegularBuildingDimensionsRuler = "regular-building-dimensions-ruler",
-  RegularBuildingDesk = "regular-building-desk",
-  RegularBuildingDaylight = "regular-building-daylight",
-  RegularBuildingChair = "regular-building-chair",
-  RegularBuildingCabinet = "regular-building-cabinet",
-  RegularBuildingBlueprint = "regular-building-blueprint",
-  RegularBuildingBed = "regular-building-bed",
-  BoldWebWebcamFilled = "bold-web-webcam-filled",
-  BoldWebWarningFilled = "bold-web-warning-filled",
-  BoldWebTabsPlusFilled = "bold-web-tabs-plus-filled",
-  BoldWebTabsMinusFilled = "bold-web-tabs-minus-filled",
-  BoldWebTabsFilled = "bold-web-tabs-filled",
-  BoldWebTabsCrossFilled = "bold-web-tabs-cross-filled",
-  BoldWebTabsCheckFilled = "bold-web-tabs-check-filled",
-  BoldWebTabletIncreaseFilled = "bold-web-tablet-increase-filled",
-  BoldWebStatisticFilled = "bold-web-statistic-filled",
-  BoldWebShieldWarningFilled = "bold-web-shield-warning-filled",
-  BoldWebShareFilled = "bold-web-share-filled",
-  BoldWebServerFilled = "bold-web-server-filled",
-  BoldWebRssSettingsFilled = "bold-web-rss-settings-filled",
-  BoldWebRssFilled = "bold-web-rss-filled",
-  BoldWebLinkFilled = "bold-web-link-filled",
-  BoldWebLinkBFilled = "bold-web-link-b-filled",
-  BoldWebLinkBCheckFilled = "bold-web-link-b-check-filled",
-  BoldWebIncreaseMailFilled = "bold-web-increase-mail-filled",
-  BoldWebGridUploadFilled = "bold-web-grid-upload-filled",
-  BoldWebGraphLinearSmallFilled = "bold-web-graph-linear-small-filled",
-  BoldWebGlobeFilled = "bold-web-globe-filled",
-  BoldWebFlagFilled = "bold-web-flag-filled",
-  BoldWebFlagCFilled = "bold-web-flag-c-filled",
-  BoldWebDataFileBarsFilled = "bold-web-data-file-bars-filled",
-  BoldWebConsoleFilled = "bold-web-console-filled",
-  BoldWebCollapseUpFilled = "bold-web-collapse-up-filled",
-  BoldWebCollapseRightFilled = "bold-web-collapse-right-filled",
-  BoldWebCollapseLeftFilled = "bold-web-collapse-left-filled",
-  BoldWebCollapseDownFilled = "bold-web-collapse-down-filled",
-  BoldWebCodeFilled = "bold-web-code-filled",
-  BoldWebChartFilled = "bold-web-chart-filled",
-  BoldWebBugFilled = "bold-web-bug-filled",
-  BoldWebBrowserWindowFilled = "bold-web-browser-window-filled",
-  BoldWebBrowserGridFilled = "bold-web-browser-grid-filled",
-  BoldWebBrowserFilled = "bold-web-browser-filled",
-  BoldWebBrokenLinkFilled = "bold-web-broken-link-filled",
-  BoldWebBarsHomeFilled = "bold-web-bars-home-filled",
-  BoldWebAtSignFilled = "bold-web-at-sign-filled",
-  BoldWebAnalyticsNetFilled = "bold-web-analytics-net-filled",
-  BoldWebAnalyticsGraphFilled = "bold-web-analytics-graph-filled",
-  BoldWeatherWindsockFilled = "bold-weather-windsock-filled",
-  BoldWeatherWaterFilled = "bold-weather-water-filled",
-  BoldWeatherThermometerFilled = "bold-weather-thermometer-filled",
-  BoldWeatherSunriseFilled = "bold-weather-sunrise-filled",
-  BoldWeatherSunFilled = "bold-weather-sun-filled",
-  BoldWeatherSunCloudSnowFilled = "bold-weather-sun-cloud-snow-filled",
-  BoldWeatherSnowflakeFilled = "bold-weather-snowflake-filled",
-  BoldWeatherMoonFilled = "bold-weather-moon-filled",
-  BoldWeatherMoonAFilled = "bold-weather-moon-a-filled",
-  BoldWeatherFlashFilled = "bold-weather-flash-filled",
-  BoldWeatherFireFilled = "bold-weather-fire-filled",
-  BoldWeatherCloudSnowFilled = "bold-weather-cloud-snow-filled",
-  BoldWeatherCloudRainFilled = "bold-weather-cloud-rain-filled",
-  BoldWeatherCloudFlashFilled = "bold-weather-cloud-flash-filled",
-  BoldWeatherCloudFilled = "bold-weather-cloud-filled",
-  BoldVideoPlayerFilled = "bold-video-player-filled",
-  BoldUserWalkingFilled = "bold-user-walking-filled",
-  BoldUserToiletSignFilled = "bold-user-toilet-sign-filled",
-  BoldUserSingleNeutralHomeFilled = "bold-user-single-neutral-home-filled",
-  BoldUserSingleNeutralActionsEditFilled = "bold-user-single-neutral-actions-edit-filled",
-  BoldUserSingleNeutralActionsBlockFilled = "bold-user-single-neutral-actions-block-filled",
-  BoldUserShareFilled = "bold-user-share-filled",
-  BoldUserPlusFilled = "bold-user-plus-filled",
-  BoldUserMultipleUsersFilled = "bold-user-multiple-users-filled",
-  BoldUserMinusFilled = "bold-user-minus-filled",
-  BoldUserMessagesPeopleUserWarningFilled = "bold-user-messages-people-user-warning-filled",
-  BoldUserMaleSignFilled = "bold-user-male-sign-filled",
-  BoldUserMalePlusFilled = "bold-user-male-plus-filled",
-  BoldUserMaleMinusFilled = "bold-user-male-minus-filled",
-  BoldUserMaleListFilled = "bold-user-male-list-filled",
-  BoldUserMaleFilled = "bold-user-male-filled",
-  BoldUserMaleCrossFilled = "bold-user-male-cross-filled",
-  BoldUserMaleCheckFilled = "bold-user-male-check-filled",
-  BoldUserLockUnlockedFilled = "bold-user-lock-unlocked-filled",
-  BoldUserLockUnlockedBFilled = "bold-user-lock-unlocked-b-filled",
-  BoldUserLockFilled = "bold-user-lock-filled",
-  BoldUserListFilled = "bold-user-list-filled",
-  BoldUserKeyFilled = "bold-user-key-filled",
-  BoldUserHeadsetFilled = "bold-user-headset-filled",
-  BoldUserGroupFilled = "bold-user-group-filled",
-  BoldUserGroupFemaleFilled = "bold-user-group-female-filled",
-  BoldUserGroupAFilled = "bold-user-group-a-filled",
-  BoldUserGearFilled = "bold-user-gear-filled",
-  BoldUserForwardFilled = "bold-user-forward-filled",
-  BoldUserFilled = "bold-user-filled",
-  BoldUserFemaleSignFilled = "bold-user-female-sign-filled",
-  BoldUserFemalePlusFilled = "bold-user-female-plus-filled",
-  BoldUserFemaleMinusFilled = "bold-user-female-minus-filled",
-  BoldUserFemaleListFilled = "bold-user-female-list-filled",
-  BoldUserFemaleFilled = "bold-user-female-filled",
-  BoldUserFemaleCrossFilled = "bold-user-female-cross-filled",
-  BoldUserFemaleCheckFilled = "bold-user-female-check-filled",
-  BoldUserCrossFilled = "bold-user-cross-filled",
-  BoldUserContactBookFilled = "bold-user-contact-book-filled",
-  BoldUserContactBookAFilled = "bold-user-contact-book-a-filled",
-  BoldUserCircleFilled = "bold-user-circle-filled",
-  BoldUserCheckFilled = "bold-user-check-filled",
-  BoldUserBusinessDealCashExchangeFilled = "bold-user-business-deal-cash-exchange-filled",
-  BoldUiZoomInPageFilled = "bold-ui-zoom-in-page-filled",
-  BoldUiWindowFilled = "bold-ui-window-filled",
-  BoldUiUndoFilled = "bold-ui-undo-filled",
-  BoldUiUndoBFilled = "bold-ui-undo-b-filled",
-  BoldUiUndoAFilled = "bold-ui-undo-a-filled",
-  BoldUiTriangleTopFilled = "bold-ui-triangle-top-filled",
-  BoldUiTriangleRightFilled = "bold-ui-triangle-right-filled",
-  BoldUiTriangleLeftFilled = "bold-ui-triangle-left-filled",
-  BoldUiTriangleBottomFilled = "bold-ui-triangle-bottom-filled",
-  BoldUiTreeSaveFilled = "bold-ui-tree-save-filled",
-  BoldUiTreeLoadFilled = "bold-ui-tree-load-filled",
-  BoldUiTargetFilled = "bold-ui-target-filled",
-  BoldUiSyncFilled = "bold-ui-sync-filled",
-  BoldUiStarFilled = "bold-ui-star-filled",
-  BoldUiSqareDashedFilled = "bold-ui-sqare-dashed-filled",
-  BoldUiSplitVerticalFilled = "bold-ui-split-vertical-filled",
-  BoldUiSplitHorizontalFilled = "bold-ui-split-horizontal-filled",
-  BoldUiShrinkFilled = "bold-ui-shrink-filled",
-  BoldUiSearchPlusFilled = "bold-ui-search-plus-filled",
-  BoldUiSearchMinusFilled = "bold-ui-search-minus-filled",
-  BoldUiSearchFilled = "bold-ui-search-filled",
-  BoldUiSearchCrossFilled = "bold-ui-search-cross-filled",
-  BoldUiSearchCheckFilled = "bold-ui-search-check-filled",
-  BoldUiScrollVerticalFilled = "bold-ui-scroll-vertical-filled",
-  BoldUiScrollHorizontalFilled = "bold-ui-scroll-horizontal-filled",
-  BoldUiResizeVerticalFilled = "bold-ui-resize-vertical-filled",
-  BoldUiResizeTopRightFilled = "bold-ui-resize-top-right-filled",
-  BoldUiResizeTopLeftFilled = "bold-ui-resize-top-left-filled",
-  BoldUiResizeHorizontalFilled = "bold-ui-resize-horizontal-filled",
-  BoldUiResizeDiagonalFilled = "bold-ui-resize-diagonal-filled",
-  BoldUiResizeBottomRightFilled = "bold-ui-resize-bottom-right-filled",
-  BoldUiResizeBottomLeftFilled = "bold-ui-resize-bottom-left-filled",
-  BoldUiReplyFilled = "bold-ui-reply-filled",
-  BoldUiRepeatingFilled = "bold-ui-repeating-filled",
-  BoldUiRemoveConnectionPointFilled = "bold-ui-remove-connection-point-filled",
-  BoldUiRefreshFilled = "bold-ui-refresh-filled",
-  BoldUiRadiobuttonFilled = "bold-ui-radiobutton-filled",
-  BoldUiPropertyAndFilled = "bold-ui-property-and-filled",
-  BoldUiPreviousFilled = "bold-ui-previous-filled",
-  BoldUiPreviousAFilled = "bold-ui-previous-a-filled",
-  BoldUiPowerFilled = "bold-ui-power-filled",
-  BoldUiPopupFilled = "bold-ui-popup-filled",
-  BoldUiPlusSmallFilled = "bold-ui-plus-small-filled",
-  BoldUiPlusFilled = "bold-ui-plus-filled",
-  BoldUiPixelFilled = "bold-ui-pixel-filled",
-  BoldUiOutLinkFilled = "bold-ui-out-link-filled",
-  BoldUiNumberFilled = "bold-ui-number-filled",
-  BoldUiNextFilled = "bold-ui-next-filled",
-  BoldUiNextAFilled = "bold-ui-next-a-filled",
-  BoldUiMoveUpFrontFilled = "bold-ui-move-up-front-filled",
-  BoldUiMoveUpFilled = "bold-ui-move-up-filled",
-  BoldUiMoveFilled = "bold-ui-move-filled",
-  BoldUiMoveDownFilled = "bold-ui-move-down-filled",
-  BoldUiMoveDownBackgroundFilled = "bold-ui-move-down-background-filled",
-  BoldUiMoreVerticalSmallFilled = "bold-ui-more-vertical-small-filled",
-  BoldUiMoreVerticalFilled = "bold-ui-more-vertical-filled",
-  BoldUiMoreSmallFilled = "bold-ui-more-small-filled",
-  BoldUiMoreSmallCircleFilled = "bold-ui-more-small-circle-filled",
-  BoldUiMoreHorizontalSmallFilled = "bold-ui-more-horizontal-small-filled",
-  BoldUiMoreFilled = "bold-ui-more-filled",
-  BoldUiMinusSmallFilled = "bold-ui-minus-small-filled",
-  BoldUiMinusFilled = "bold-ui-minus-filled",
-  BoldUiMethodInheritedFilled = "bold-ui-method-inherited-filled",
-  BoldUiMethodFilled = "bold-ui-method-filled",
-  BoldUiLogoutFilled = "bold-ui-logout-filled",
-  BoldUiLoginFilled = "bold-ui-login-filled",
-  BoldUiListViewFilled = "bold-ui-list-view-filled",
-  BoldUiListUserFilled = "bold-ui-list-user-filled",
-  BoldUiListShareFilled = "bold-ui-list-share-filled",
-  BoldUiListForwardFilled = "bold-ui-list-forward-filled",
-  BoldUiLayoutWireframeFilled = "bold-ui-layout-wireframe-filled",
-  BoldUiLayoutThirdVerticalFilled = "bold-ui-layout-third-vertical-filled",
-  BoldUiLayoutTableViewFilled = "bold-ui-layout-table-view-filled",
-  BoldUiLayoutSidebarLHalfFilled = "bold-ui-layout-sidebar-l-half-filled",
-  BoldUiLayoutSidebarLFilled = "bold-ui-layout-sidebar-l-filled",
-  BoldUiLayoutHalfHorizontalFilled = "bold-ui-layout-half-horizontal-filled",
-  BoldUiLayoutHalfFilled = "bold-ui-layout-half-filled",
-  BoldUiKeyboardFilled = "bold-ui-keyboard-filled",
-  BoldUiInLinkFilled = "bold-ui-in-link-filled",
-  BoldUiImportFilled = "bold-ui-import-filled",
-  BoldUiHouseFilled = "bold-ui-house-filled",
-  BoldUiHomeFilled = "bold-ui-home-filled",
-  BoldUiHomeAFilled = "bold-ui-home-a-filled",
-  BoldUiHierarchyTreeFilled = "bold-ui-hierarchy-tree-filled",
-  BoldUiHierarchyFilled = "bold-ui-hierarchy-filled",
-  BoldUiHelpLifeFilled = "bold-ui-help-life-filled",
-  BoldUiHelpFilled = "bold-ui-help-filled",
-  BoldUiHeartFilled = "bold-ui-heart-filled",
-  BoldUiHamburgerFilled = "bold-ui-hamburger-filled",
-  BoldUiGridViewFilled = "bold-ui-grid-view-filled",
-  BoldUiFullscreenFilled = "bold-ui-fullscreen-filled",
-  BoldUiFullscreenAFilled = "bold-ui-fullscreen-a-filled",
-  BoldUiFrameFilled = "bold-ui-frame-filled",
-  BoldUiForwardFilled = "bold-ui-forward-filled",
-  BoldUiFilterFilled = "bold-ui-filter-filled",
-  BoldUiEyeFilled = "bold-ui-eye-filled",
-  BoldUiEyeCrossFilled = "bold-ui-eye-cross-filled",
-  BoldUiExportFilled = "bold-ui-export-filled",
-  BoldUiExpandFilled = "bold-ui-expand-filled",
-  BoldUiEnlargeFilled = "bold-ui-enlarge-filled",
-  BoldUiDragHandleFilled = "bold-ui-drag-handle-filled",
-  BoldUiDotLargeFilled = "bold-ui-dot-large-filled",
-  BoldUiDotFilled = "bold-ui-dot-filled",
-  BoldUiCrossSmallFilled = "bold-ui-cross-small-filled",
-  BoldUiCrossFilled = "bold-ui-cross-filled",
-  BoldUiCropFilled = "bold-ui-crop-filled",
-  BoldUiCreateConnectionFilled = "bold-ui-create-connection-filled",
-  BoldUiConnectionOpenInheritedFilled = "bold-ui-connection-open-inherited-filled",
-  BoldUiConnectionOpenFilled = "bold-ui-connection-open-filled",
-  BoldUiConnectionInheritedFilled = "bold-ui-connection-inherited-filled",
-  BoldUiConnectionFilled = "bold-ui-connection-filled",
-  BoldUiConeFilled = "bold-ui-cone-filled",
-  BoldUiConditionFilled = "bold-ui-condition-filled",
-  BoldUiComboboxFilled = "bold-ui-combobox-filled",
-  BoldUiCmdFilled = "bold-ui-cmd-filled",
-  BoldUiCloudUploadFilled = "bold-ui-cloud-upload-filled",
-  BoldUiCloudDownloadFilled = "bold-ui-cloud-download-filled",
-  BoldUiCloseParallelConnectionFilled = "bold-ui-close-parallel-connection-filled",
-  BoldUiCircleWarningFilled = "bold-ui-circle-warning-filled",
-  BoldUiCirclePlusFilled = "bold-ui-circle-plus-filled",
-  BoldUiCircleMinusFilled = "bold-ui-circle-minus-filled",
-  BoldUiCircleInfoFilled = "bold-ui-circle-info-filled",
-  BoldUiCircleHelpFilled = "bold-ui-circle-help-filled",
-  BoldUiCircleFilled = "bold-ui-circle-filled",
-  BoldUiCircleCrossFilled = "bold-ui-circle-cross-filled",
-  BoldUiCircleChevronTopFilled = "bold-ui-circle-chevron-top-filled",
-  BoldUiCircleChevronRightFilled = "bold-ui-circle-chevron-right-filled",
-  BoldUiCircleChevronLeftFilled = "bold-ui-circle-chevron-left-filled",
-  BoldUiCircleChevronBottomFilled = "bold-ui-circle-chevron-bottom-filled",
-  BoldUiCircleCheckFilled = "bold-ui-circle-check-filled",
-  BoldUiCircleCheckAFilled = "bold-ui-circle-check-a-filled",
-  BoldUiCircleArrowTopFilled = "bold-ui-circle-arrow-top-filled",
-  BoldUiCircleArrowRightFilled = "bold-ui-circle-arrow-right-filled",
-  BoldUiCircleArrowLeftFilled = "bold-ui-circle-arrow-left-filled",
-  BoldUiCircleArrowBottomFilled = "bold-ui-circle-arrow-bottom-filled",
-  BoldUiChevronTopSmallFilled = "bold-ui-chevron-top-small-filled",
-  BoldUiChevronTopFilled = "bold-ui-chevron-top-filled",
-  BoldUiChevronRightTrippleFilled = "bold-ui-chevron-right-tripple-filled",
-  BoldUiChevronRightSmallFilled = "bold-ui-chevron-right-small-filled",
-  BoldUiChevronRightFilled = "bold-ui-chevron-right-filled",
-  BoldUiChevronLeftSmallFilled = "bold-ui-chevron-left-small-filled",
-  BoldUiChevronLeftFilled = "bold-ui-chevron-left-filled",
-  BoldUiChevronBottomSmallFilled = "bold-ui-chevron-bottom-small-filled",
-  BoldUiChevronBottomFilled = "bold-ui-chevron-bottom-filled",
-  BoldUiCheckboxFilled = "bold-ui-checkbox-filled",
-  BoldUiCheckSmallFilled = "bold-ui-check-small-filled",
-  BoldUiCheckSmallCircleFilled = "bold-ui-check-small-circle-filled",
-  BoldUiCheckFilled = "bold-ui-check-filled",
-  BoldUiCardViewFilled = "bold-ui-card-view-filled",
-  BoldUiCardFilled = "bold-ui-card-filled",
-  BoldUiBulletViewFilled = "bold-ui-bullet-view-filled",
-  BoldUiBoxWarningFilled = "bold-ui-box-warning-filled",
-  BoldUiBoxHelpFilled = "bold-ui-box-help-filled",
-  BoldUiBlockFilled = "bold-ui-block-filled",
-  BoldUiBackspaceFilled = "bold-ui-backspace-filled",
-  BoldUiAttributeInheritedFilled = "bold-ui-attribute-inherited-filled",
-  BoldUiAttributeFilled = "bold-ui-attribute-filled",
-  BoldUiArrowTopSmallFilled = "bold-ui-arrow-top-small-filled",
-  BoldUiArrowTopRightFilled = "bold-ui-arrow-top-right-filled",
-  BoldUiArrowTopLeftFilled = "bold-ui-arrow-top-left-filled",
-  BoldUiArrowTopFilled = "bold-ui-arrow-top-filled",
-  BoldUiArrowTopAFilled = "bold-ui-arrow-top-a-filled",
-  BoldUiArrowRightSmallFilled = "bold-ui-arrow-right-small-filled",
-  BoldUiArrowRightFilled = "bold-ui-arrow-right-filled",
-  BoldUiArrowRightAFilled = "bold-ui-arrow-right-a-filled",
-  BoldUiArrowLeftSmallFilled = "bold-ui-arrow-left-small-filled",
-  BoldUiArrowLeftFilled = "bold-ui-arrow-left-filled",
-  BoldUiArrowLeftAFilled = "bold-ui-arrow-left-a-filled",
-  BoldUiArrowBottomSmallFilled = "bold-ui-arrow-bottom-small-filled",
-  BoldUiArrowBottomRightFilled = "bold-ui-arrow-bottom-right-filled",
-  BoldUiArrowBottomLeftFilled = "bold-ui-arrow-bottom-left-filled",
-  BoldUiArrowBottomFilled = "bold-ui-arrow-bottom-filled",
-  BoldUiArrowBottomAFilled = "bold-ui-arrow-bottom-a-filled",
-  BoldUiAlignTopFilled = "bold-ui-align-top-filled",
-  BoldUiAlignRightFilled = "bold-ui-align-right-filled",
-  BoldUiAlignLeftFilled = "bold-ui-align-left-filled",
-  BoldUiAlignCenterVerticalFilled = "bold-ui-align-center-vertical-filled",
-  BoldUiAlignCenterHorizontalFilled = "bold-ui-align-center-horizontal-filled",
-  BoldUiAlignBottomFilled = "bold-ui-align-bottom-filled",
-  BoldUiAddConnectionPointFilled = "bold-ui-add-connection-point-filled",
-  BoldTransportTruckFilled = "bold-transport-truck-filled",
-  BoldTransportTruckAFilled = "bold-transport-truck-a-filled",
-  BoldTransportTrainFilled = "bold-transport-train-filled",
-  BoldTransportSignStopFilled = "bold-transport-sign-stop-filled",
-  BoldTransportShipFilled = "bold-transport-ship-filled",
-  BoldTransportShipAFilled = "bold-transport-ship-a-filled",
-  BoldTransportCarFilled = "bold-transport-car-filled",
-  BoldTransportCarAFilled = "bold-transport-car-a-filled",
-  BoldTransportBusTicketFilled = "bold-transport-bus-ticket-filled",
-  BoldTransportBusFilled = "bold-transport-bus-filled",
-  BoldTransportBusAFilled = "bold-transport-bus-a-filled",
-  BoldTransportBicycleFilled = "bold-transport-bicycle-filled",
-  BoldToolUmbrellaFilled = "bold-tool-umbrella-filled",
-  BoldToolToolsBoxFilled = "bold-tool-tools-box-filled",
-  BoldToolTextTypeFilled = "bold-tool-text-type-filled",
-  BoldToolSmartphonePayFilled = "bold-tool-smartphone-pay-filled",
-  BoldToolScissorsFilled = "bold-tool-scissors-filled",
-  BoldToolSateliteTypeFilled = "bold-tool-satelite-type-filled",
-  BoldToolRulerFilled = "bold-tool-ruler-filled",
-  BoldToolRulerCornerFilled = "bold-tool-ruler-corner-filled",
-  BoldToolRulerBFilled = "bold-tool-ruler-b-filled",
-  BoldToolRouterSignalFilled = "bold-tool-router-signal-filled",
-  BoldToolRazorFilled = "bold-tool-razor-filled",
-  BoldToolProtectionTypeFilled = "bold-tool-protection-type-filled",
-  BoldToolPropertyTypeFilled = "bold-tool-property-type-filled",
-  BoldToolProjectorFilled = "bold-tool-projector-filled",
-  BoldToolPlugFilled = "bold-tool-plug-filled",
-  BoldToolPhoneLandscapeFilled = "bold-tool-phone-landscape-filled",
-  BoldToolPhoneFilled = "bold-tool-phone-filled",
-  BoldToolMouseFilled = "bold-tool-mouse-filled",
-  BoldToolModuleThreeFilled = "bold-tool-module-three-filled",
-  BoldToolMagnetFilled = "bold-tool-magnet-filled",
-  BoldToolMagicWandFilled = "bold-tool-magic-wand-filled",
-  BoldToolLaptopFilled = "bold-tool-laptop-filled",
-  BoldToolIntTypeFilled = "bold-tool-int-type-filled",
-  BoldToolHardwareTypeFilled = "bold-tool-hardware-type-filled",
-  BoldToolHammerPlusFilled = "bold-tool-hammer-plus-filled",
-  BoldToolHammerFilled = "bold-tool-hammer-filled",
-  BoldToolHammerAngleFilled = "bold-tool-hammer-angle-filled",
-  BoldToolHammerAFilled = "bold-tool-hammer-a-filled",
-  BoldToolGridFilled = "bold-tool-grid-filled",
-  BoldToolGearsTypeFilled = "bold-tool-gears-type-filled",
-  BoldToolFocusFilled = "bold-tool-focus-filled",
-  BoldToolFloppyEditFilled = "bold-tool-floppy-edit-filled",
-  BoldToolFloppyDisksFilled = "bold-tool-floppy-disks-filled",
-  BoldToolFloppyDiskFilled = "bold-tool-floppy-disk-filled",
-  BoldToolFlashlightFilled = "bold-tool-flashlight-filled",
-  BoldToolFireExtinguisherFilled = "bold-tool-fire-extinguisher-filled",
-  BoldToolDisplayUserFilled = "bold-tool-display-user-filled",
-  BoldToolDisplayFilled = "bold-tool-display-filled",
-  BoldToolConsoleFilled = "bold-tool-console-filled",
-  BoldToolConsoleAFilled = "bold-tool-console-a-filled",
-  BoldToolCompassFilled = "bold-tool-compass-filled",
-  BoldToolCameraFilled = "bold-tool-camera-filled",
-  BoldToolCalcFilled = "bold-tool-calc-filled",
-  BoldToolBinocularsFilled = "bold-tool-binoculars-filled",
-  BoldToolAreaTypeFilled = "bold-tool-area-type-filled",
-  BoldToolAndroidTypeFilled = "bold-tool-android-type-filled",
-  BoldTimeWatchFilled = "bold-time-watch-filled",
-  BoldTimeTimerFilled = "bold-time-timer-filled",
-  BoldTimeStopwatchFilled = "bold-time-stopwatch-filled",
-  BoldTimeSpeedMeterFilled = "bold-time-speed-meter-filled",
-  BoldTimeHourglassFilled = "bold-time-hourglass-filled",
-  BoldTimeClockFFilled = "bold-time-clock-f-filled",
-  BoldTimeClockCircleFilled = "bold-time-clock-circle-filled",
-  BoldTimeCalendarWeekFilled = "bold-time-calendar-week-filled",
-  BoldTimeCalendarSmallFilled = "bold-time-calendar-small-filled",
-  BoldTimeCalendarFilled = "bold-time-calendar-filled",
-  BoldTimeCalendarDotsFilled = "bold-time-calendar-dots-filled",
-  BoldTimeCalendarClockFilled = "bold-time-calendar-clock-filled",
-  BoldTimeCalendarCashFilled = "bold-time-calendar-cash-filled",
-  BoldTimeAlarmFilled = "bold-time-alarm-filled",
-  BoldSportTvFilled = "bold-sport-tv-filled",
-  BoldSportTrophyFilled = "bold-sport-trophy-filled",
-  BoldSportPuzzleFilled = "bold-sport-puzzle-filled",
-  BoldSportMedicineLabFilled = "bold-sport-medicine-lab-filled",
-  BoldSportMedicFilled = "bold-sport-medic-filled",
-  BoldSportHeartPulseFilled = "bold-sport-heart-pulse-filled",
-  BoldSportGaugeFilled = "bold-sport-gauge-filled",
-  BoldSportFlagFilled = "bold-sport-flag-filled",
-  BoldSportDumbellFilled = "bold-sport-dumbell-filled",
-  BoldSportBadgeHFilled = "bold-sport-badge-h-filled",
-  BoldSportBadgeFilled = "bold-sport-badge-filled",
-  BoldSportBadgeCFilled = "bold-sport-badge-c-filled",
-  BoldSportBadgeBFilled = "bold-sport-badge-b-filled",
-  BoldShopWalletFilled = "bold-shop-wallet-filled",
-  BoldShopTrackingFilled = "bold-shop-tracking-filled",
-  BoldShopTieFilled = "bold-shop-tie-filled",
-  BoldShopTagSearchFilled = "bold-shop-tag-search-filled",
-  BoldShopTagRefreshFilled = "bold-shop-tag-refresh-filled",
-  BoldShopTagPlusFilled = "bold-shop-tag-plus-filled",
-  BoldShopTagMinusFilled = "bold-shop-tag-minus-filled",
-  BoldShopTagLockFilled = "bold-shop-tag-lock-filled",
-  BoldShopTagInfoFilled = "bold-shop-tag-info-filled",
-  BoldShopTagFilled = "bold-shop-tag-filled",
-  BoldShopTagDatabaseFilled = "bold-shop-tag-database-filled",
-  BoldShopTagCrossFilled = "bold-shop-tag-cross-filled",
-  BoldShopTagCheckFilled = "bold-shop-tag-check-filled",
-  BoldShopSuitcaseFilled = "bold-shop-suitcase-filled",
-  BoldShopShipmentPackagesFilled = "bold-shop-shipment-packages-filled",
-  BoldShopSavingPiggyBankFilled = "bold-shop-saving-piggy-bank-filled",
-  BoldShopSafeBoxFilled = "bold-shop-safe-box-filled",
-  BoldShopPresentFilled = "bold-shop-present-filled",
-  BoldShopPoundFilled = "bold-shop-pound-filled",
-  BoldShopPerformanceMoneyDecreaseFilled = "bold-shop-performance-money-decrease-filled",
-  BoldShopMastercardFilled = "bold-shop-mastercard-filled",
-  BoldShopMarketFilled = "bold-shop-market-filled",
-  BoldShopEuroFilled = "bold-shop-euro-filled",
-  BoldShopDolarFilled = "bold-shop-dolar-filled",
-  BoldShopDiscountCouponFilled = "bold-shop-discount-coupon-filled",
-  BoldShopDiscountCircleFilled = "bold-shop-discount-circle-filled",
-  BoldShopDiamondFilled = "bold-shop-diamond-filled",
-  BoldShopCreditcardFilled = "bold-shop-creditcard-filled",
-  BoldShopCoinsFilled = "bold-shop-coins-filled",
-  BoldShopCashFilled = "bold-shop-cash-filled",
-  BoldShopCashDolarFilled = "bold-shop-cash-dolar-filled",
-  BoldShopCartFullFilled = "bold-shop-cart-full-filled",
-  BoldShopCartEmptyFilled = "bold-shop-cart-empty-filled",
-  BoldShopCartEmptyAltFilled = "bold-shop-cart-empty-alt-filled",
-  BoldShopCartDownloadFilled = "bold-shop-cart-download-filled",
-  BoldShopBoxPlusFilled = "bold-shop-box-plus-filled",
-  BoldShopBoxMinusFilled = "bold-shop-box-minus-filled",
-  BoldShopBoxFilled = "bold-shop-box-filled",
-  BoldShopBoxEmptyFilled = "bold-shop-box-empty-filled",
-  BoldShopBillFilled = "bold-shop-bill-filled",
-  BoldShopBasketFilled = "bold-shop-basket-filled",
-  BoldShopBarcodeFilled = "bold-shop-barcode-filled",
-  BoldShopBagFilled = "bold-shop-bag-filled",
-  BoldShopAccountingBillStackFilled = "bold-shop-accounting-bill-stack-filled",
-  BoldSettingsWrenchFilled = "bold-settings-wrench-filled",
-  BoldSettingsMachineTrackFilled = "bold-settings-machine-track-filled",
-  BoldSettingsHotspotFilled = "bold-settings-hotspot-filled",
-  BoldSettingsGearFilled = "bold-settings-gear-filled",
-  BoldSettingsGearAFilled = "bold-settings-gear-a-filled",
-  BoldSettingsEqualizerFilled = "bold-settings-equalizer-filled",
-  BoldSettingsComonentFilled = "bold-settings-comonent-filled",
-  BoldSettingsColorModeFilled = "bold-settings-color-mode-filled",
-  BoldSettingsAutoFlashFilled = "bold-settings-auto-flash-filled",
-  BoldSettingsAirplaneFilled = "bold-settings-airplane-filled",
-  BoldMusicVolumeMuteFilled = "bold-music-volume-mute-filled",
-  BoldMusicVolumeMediumFilled = "bold-music-volume-medium-filled",
-  BoldMusicVolumeLowFilled = "bold-music-volume-low-filled",
-  BoldMusicVolumeHighFilled = "bold-music-volume-high-filled",
-  BoldMusicStopFilled = "bold-music-stop-filled",
-  BoldMusicSpeakerFilled = "bold-music-speaker-filled",
-  BoldMusicShuffleFilled = "bold-music-shuffle-filled",
-  BoldMusicRepeatOneFilled = "bold-music-repeat-one-filled",
-  BoldMusicRepeatFilled = "bold-music-repeat-filled",
-  BoldMusicRadioFilled = "bold-music-radio-filled",
-  BoldMusicPreviousFilled = "bold-music-previous-filled",
-  BoldMusicPreviousAFilled = "bold-music-previous-a-filled",
-  BoldMusicPlaylistFilled = "bold-music-playlist-filled",
-  BoldMusicPlayFilled = "bold-music-play-filled",
-  BoldMusicPauseFilled = "bold-music-pause-filled",
-  BoldMusicNoteFilled = "bold-music-note-filled",
-  BoldMusicNoteAFilled = "bold-music-note-a-filled",
-  BoldMusicNextFilled = "bold-music-next-filled",
-  BoldMusicNextAFilled = "bold-music-next-a-filled",
-  BoldMusicMicFilled = "bold-music-mic-filled",
-  BoldMusicListFilled = "bold-music-list-filled",
-  BoldMusicHeadphonesFilled = "bold-music-headphones-filled",
-  BoldMusicHeadphonesAFilled = "bold-music-headphones-a-filled",
-  BoldMusicEqualiserFilled = "bold-music-equaliser-filled",
-  BoldMusicEjectFilled = "bold-music-eject-filled",
-  BoldMusicCdFilled = "bold-music-cd-filled",
-  BoldMusicAlbumFilled = "bold-music-album-filled",
-  BoldMiscWifiFilled = "bold-misc-wifi-filled",
-  BoldMiscSmileSadFilled = "bold-misc-smile-sad-filled",
-  BoldMiscSmileMehFilled = "bold-misc-smile-meh-filled",
-  BoldMiscSmileLaughtFilled = "bold-misc-smile-laught-filled",
-  BoldMiscSmileHappyFilled = "bold-misc-smile-happy-filled",
-  BoldMiscSmileAngryFilled = "bold-misc-smile-angry-filled",
-  BoldMiscReceptionHotelBellFilled = "bold-misc-reception-hotel-bell-filled",
-  BoldMiscPuzzleFilled = "bold-misc-puzzle-filled",
-  BoldMiscModuleHandPuzzleFilled = "bold-misc-module-hand-puzzle-filled",
-  BoldMiscMaleSignFilled = "bold-misc-male-sign-filled",
-  BoldMiscGridPerspectiveFilled = "bold-misc-grid-perspective-filled",
-  BoldMiscGlobeFilled = "bold-misc-globe-filled",
-  BoldMiscGestureTapFilled = "bold-misc-gesture-tap-filled",
-  BoldMiscGestureSwipeRightFilled = "bold-misc-gesture-swipe-right-filled",
-  BoldMiscGestureSwipeLeftFilled = "bold-misc-gesture-swipe-left-filled",
-  BoldMiscGestureFilled = "bold-misc-gesture-filled",
-  BoldMiscGestureDoubleTapFilled = "bold-misc-gesture-double-tap-filled",
-  BoldMiscFemaleSignFilled = "bold-misc-female-sign-filled",
-  BoldMiscCursorHandOpenFilled = "bold-misc-cursor-hand-open-filled",
-  BoldMiscCubeFilled = "bold-misc-cube-filled",
-  BoldMiscCrownFilled = "bold-misc-crown-filled",
-  BoldMiscBulletDiamondFilled = "bold-misc-bullet-diamond-filled",
-  BoldLogoXFilled = "bold-logo-x-filled",
-  BoldLogoWindowsFilled = "bold-logo-windows-filled",
-  BoldLogoTwitterFilled = "bold-logo-twitter-filled",
-  BoldLogoLinuxFilled = "bold-logo-linux-filled",
-  BoldLogoLinkedinFilled = "bold-logo-linkedin-filled",
-  BoldLogoInstagramFilled = "bold-logo-instagram-filled",
-  BoldLogoFacebookFilled = "bold-logo-facebook-filled",
-  BoldLogoAppleFilled = "bold-logo-apple-filled",
-  BoldLocationStreetSignFilled = "bold-location-street-sign-filled",
-  BoldLocationStreetSignAFilled = "bold-location-street-sign-a-filled",
-  BoldLocationPinsFilled = "bold-location-pins-filled",
-  BoldLocationPinPlusFilled = "bold-location-pin-plus-filled",
-  BoldLocationPinMinusFilled = "bold-location-pin-minus-filled",
-  BoldLocationPinMapFilled = "bold-location-pin-map-filled",
-  BoldLocationPinFilled = "bold-location-pin-filled",
-  BoldLocationPinCheckFilled = "bold-location-pin-check-filled",
-  BoldLocationPinBFilled = "bold-location-pin-b-filled",
-  BoldLocationPinAFilled = "bold-location-pin-a-filled",
-  BoldLocationMapFilled = "bold-location-map-filled",
-  BoldLocationMapCrossFilled = "bold-location-map-cross-filled",
-  BoldLocationDirectionSignFilled = "bold-location-direction-sign-filled",
-  BoldLocationDirectionFilled = "bold-location-direction-filled",
-  BoldLocationCompassFilled = "bold-location-compass-filled",
-  BoldEnvTreeFilled = "bold-env-tree-filled",
-  BoldEnvTreeAFilled = "bold-env-tree-a-filled",
-  BoldEnvMountainsFilled = "bold-env-mountains-filled",
-  BoldEnvLeafFilled = "bold-env-leaf-filled",
-  BoldEnvFlowerFilled = "bold-env-flower-filled",
-  BoldEnvEarthFilled = "bold-env-earth-filled",
-  BoldEnvAtomicBombFilled = "bold-env-atomic-bomb-filled",
-  BoldEditorialUndoFilled = "bold-editorial-undo-filled",
-  BoldEditorialTypingMachineFilled = "bold-editorial-typing-machine-filled",
-  BoldEditorialTrashFilled = "bold-editorial-trash-filled",
-  BoldEditorialTextUnderlineFilled = "bold-editorial-text-underline-filled",
-  BoldEditorialTextStyleFilled = "bold-editorial-text-style-filled",
-  BoldEditorialTextStrikeThroughFilled = "bold-editorial-text-strike-through-filled",
-  BoldEditorialTextItalicFilled = "bold-editorial-text-italic-filled",
-  BoldEditorialTextFormatFilled = "bold-editorial-text-format-filled",
-  BoldEditorialTextBoldFilled = "bold-editorial-text-bold-filled",
-  BoldEditorialSortDescFilled = "bold-editorial-sort-desc-filled",
-  BoldEditorialSortCancelFilled = "bold-editorial-sort-cancel-filled",
-  BoldEditorialSortAscFilled = "bold-editorial-sort-asc-filled",
-  BoldEditorialRedoFilled = "bold-editorial-redo-filled",
-  BoldEditorialPencilSmallFilled = "bold-editorial-pencil-small-filled",
-  BoldEditorialPencilFilled = "bold-editorial-pencil-filled",
-  BoldEditorialPenFilled = "bold-editorial-pen-filled",
-  BoldEditorialParagraphFirstLetterFilled = "bold-editorial-paragraph-first-letter-filled",
-  BoldEditorialParagraphFilled = "bold-editorial-paragraph-filled",
-  BoldEditorialItalicOffFilled = "bold-editorial-italic-off-filled",
-  BoldEditorialIndentRightFilled = "bold-editorial-indent-right-filled",
-  BoldEditorialIndentLeftFilled = "bold-editorial-indent-left-filled",
-  BoldEditorialHashtagSmallFilled = "bold-editorial-hashtag-small-filled",
-  BoldEditorialHashFilled = "bold-editorial-hash-filled",
-  BoldEditorialFontSizeFilled = "bold-editorial-font-size-filled",
-  BoldEditorialCombineIntersectFilled = "bold-editorial-combine-intersect-filled",
-  BoldEditorialColorPaletteFilled = "bold-editorial-color-palette-filled",
-  BoldEditorialBrushFilled = "bold-editorial-brush-filled",
-  BoldEditorialBookmarkFilled = "bold-editorial-bookmark-filled",
-  BoldEditorialAlignRightFilled = "bold-editorial-align-right-filled",
-  BoldEditorialAlignLeftFilled = "bold-editorial-align-left-filled",
-  BoldEditorialAlignCenterFilled = "bold-editorial-align-center-filled",
-  BoldDocWboardSearchFilled = "bold-doc-wboard-search-filled",
-  BoldDocWboardLineFilled = "bold-doc-wboard-line-filled",
-  BoldDocWboardGearFilled = "bold-doc-wboard-gear-filled",
-  BoldDocWboardCheckFilled = "bold-doc-wboard-check-filled",
-  BoldDocWboardArrowTopFilled = "bold-doc-wboard-arrow-top-filled",
-  BoldDocUploadFilled = "bold-doc-upload-filled",
-  BoldDocTodoListUserFilled = "bold-doc-todo-list-user-filled",
-  BoldDocTodoListSquareFilled = "bold-doc-todo-list-square-filled",
-  BoldDocTodoListFilled = "bold-doc-todo-list-filled",
-  BoldDocTaskListQuestionFilled = "bold-doc-task-list-question-filled",
-  BoldDocTaskChecklistFilled = "bold-doc-task-checklist-filled",
-  BoldDocStackFilled = "bold-doc-stack-filled",
-  BoldDocProfileFilled = "bold-doc-profile-filled",
-  BoldDocPrinterFilled = "bold-doc-printer-filled",
-  BoldDocPlusFilled = "bold-doc-plus-filled",
-  BoldDocPinFilled = "bold-doc-pin-filled",
-  BoldDocPieFilled = "bold-doc-pie-filled",
-  BoldDocPapersFilled = "bold-doc-papers-filled",
-  BoldDocPaperStackFilled = "bold-doc-paper-stack-filled",
-  BoldDocPaperLineFilled = "bold-doc-paper-line-filled",
-  BoldDocOfficeStampDocumentFilled = "bold-doc-office-stamp-document-filled",
-  BoldDocOfficeFolderFilled = "bold-doc-office-folder-filled",
-  BoldDocOfficeFilePdfFilled = "bold-doc-office-file-pdf-filled",
-  BoldDocNotesUploadFilled = "bold-doc-notes-upload-filled",
-  BoldDocNotesPaperTextFilled = "bold-doc-notes-paper-text-filled",
-  BoldDocNotesHomeFilled = "bold-doc-notes-home-filled",
-  BoldDocNotesGiveFilled = "bold-doc-notes-give-filled",
-  BoldDocNotesFlipFilled = "bold-doc-notes-flip-filled",
-  BoldDocNewspaperFilled = "bold-doc-newspaper-filled",
-  BoldDocMinusFilled = "bold-doc-minus-filled",
-  BoldDocMailboxInFilled = "bold-doc-mailbox-in-filled",
-  BoldDocListNumbersFilled = "bold-doc-list-numbers-filled",
-  BoldDocListFilled = "bold-doc-list-filled",
-  BoldDocInvoiceFilled = "bold-doc-invoice-filled",
-  BoldDocImageFilled = "bold-doc-image-filled",
-  BoldDocImageAFilled = "bold-doc-image-a-filled",
-  BoldDocIdCardVerticalFilled = "bold-doc-id-card-vertical-filled",
-  BoldDocGlassesFilled = "bold-doc-glasses-filled",
-  BoldDocFolderSyncFilled = "bold-doc-folder-sync-filled",
-  BoldDocFolderPlusFilled = "bold-doc-folder-plus-filled",
-  BoldDocFolderMinusFilled = "bold-doc-folder-minus-filled",
-  BoldDocFolderHomeFilled = "bold-doc-folder-home-filled",
-  BoldDocFolderFilled = "bold-doc-folder-filled",
-  BoldDocFolderCrossFilled = "bold-doc-folder-cross-filled",
-  BoldDocFolderCheckFilled = "bold-doc-folder-check-filled",
-  BoldDocFileZipFilled = "bold-doc-file-zip-filled",
-  BoldDocFileXlsFilled = "bold-doc-file-xls-filled",
-  BoldDocFileVideoFilled = "bold-doc-file-video-filled",
-  BoldDocFileSaveFilled = "bold-doc-file-save-filled",
-  BoldDocFileRefreshFilled = "bold-doc-file-refresh-filled",
-  BoldDocFilePrintFilled = "bold-doc-file-print-filled",
-  BoldDocFilePrevFilled = "bold-doc-file-prev-filled",
-  BoldDocFilePresentationFilled = "bold-doc-file-presentation-filled",
-  BoldDocFilePptFilled = "bold-doc-file-ppt-filled",
-  BoldDocFilePlusFilled = "bold-doc-file-plus-filled",
-  BoldDocFileNextFilled = "bold-doc-file-next-filled",
-  BoldDocFileMinusFilled = "bold-doc-file-minus-filled",
-  BoldDocFileLineFilled = "bold-doc-file-line-filled",
-  BoldDocFileImageFilled = "bold-doc-file-image-filled",
-  BoldDocFileGraphFilled = "bold-doc-file-graph-filled",
-  BoldDocFileDocFilled = "bold-doc-file-doc-filled",
-  BoldDocFileCrossFilled = "bold-doc-file-cross-filled",
-  BoldDocFileCheckFilled = "bold-doc-file-check-filled",
-  BoldDocFileBookmarkFilled = "bold-doc-file-bookmark-filled",
-  BoldDocFileBlankFilled = "bold-doc-file-blank-filled",
-  BoldDocFileAudioFilled = "bold-doc-file-audio-filled",
-  BoldDocDownloadFilled = "bold-doc-download-filled",
-  BoldDocDiaryFilled = "bold-doc-diary-filled",
-  BoldDocCopyFilled = "bold-doc-copy-filled",
-  BoldDocComposeFilled = "bold-doc-compose-filled",
-  BoldDocCommonFileTextEditFilled = "bold-doc-common-file-text-edit-filled",
-  BoldDocCommonFileHomeFilled = "bold-doc-common-file-home-filled",
-  BoldDocCommonFileEditFilled = "bold-doc-common-file-edit-filled",
-  BoldDocCameraFilled = "bold-doc-camera-filled",
-  BoldDocBriefcaseFilled = "bold-doc-briefcase-filled",
-  BoldDocBoxPFilled = "bold-doc-box-p-filled",
-  BoldDocBookmarkFilled = "bold-doc-bookmark-filled",
-  BoldDocBookUploadFilled = "bold-doc-book-upload-filled",
-  BoldDocBookTargetFilled = "bold-doc-book-target-filled",
-  BoldDocBookSettingsFilled = "bold-doc-book-settings-filled",
-  BoldDocBookModulesFilled = "bold-doc-book-modules-filled",
-  BoldDocBookLibraryFilled = "bold-doc-book-library-filled",
-  BoldDocBookFilled = "bold-doc-book-filled",
-  BoldDocBookDownloadFilled = "bold-doc-book-download-filled",
-  BoldDocBookCashFilled = "bold-doc-book-cash-filled",
-  BoldDocBookBFilled = "bold-doc-book-b-filled",
-  BoldDocBookAFilled = "bold-doc-book-a-filled",
-  BoldDocAttachmentFilled = "bold-doc-attachment-filled",
-  BoldDocArticleFilled = "bold-doc-article-filled",
-  BoldDocArchiveUploadFilled = "bold-doc-archive-upload-filled",
-  BoldDocArchiveFolderFilled = "bold-doc-archive-folder-filled",
-  BoldDocArchiveFilled = "bold-doc-archive-filled",
-  BoldDocArchiveEmptyFilled = "bold-doc-archive-empty-filled",
-  BoldDocArchiveDownloadFilled = "bold-doc-archive-download-filled",
-  BoldDocAnalyticsUpFilled = "bold-doc-analytics-up-filled",
-  BoldComWarningFilled = "bold-com-warning-filled",
-  BoldComVoicemailFilled = "bold-com-voicemail-filled",
-  BoldComSatelliteFilled = "bold-com-satellite-filled",
-  BoldComPostcardFilled = "bold-com-postcard-filled",
-  BoldComPicturesFilled = "bold-com-pictures-filled",
-  BoldComPhoneLandlineFilled = "bold-com-phone-landline-filled",
-  BoldComPhoneFilled = "bold-com-phone-filled",
-  BoldComPaperplaneFilled = "bold-com-paperplane-filled",
-  BoldComMicrophonePodcastFilled = "bold-com-microphone-podcast-filled",
-  BoldComMicMuteFilled = "bold-com-mic-mute-filled",
-  BoldComMicFilled = "bold-com-mic-filled",
-  BoldComMegaphoneFilled = "bold-com-megaphone-filled",
-  BoldComMailWarningFilled = "bold-com-mail-warning-filled",
-  BoldComMailSyncFilled = "bold-com-mail-sync-filled",
-  BoldComMailReceiveFilled = "bold-com-mail-receive-filled",
-  BoldComMailPlusFilled = "bold-com-mail-plus-filled",
-  BoldComMailOpenWarningFilled = "bold-com-mail-open-warning-filled",
-  BoldComMailOpenFilled = "bold-com-mail-open-filled",
-  BoldComMailMinusFilled = "bold-com-mail-minus-filled",
-  BoldComMailFilled = "bold-com-mail-filled",
-  BoldComMailDownloadFilled = "bold-com-mail-download-filled",
-  BoldComMailCrossFilled = "bold-com-mail-cross-filled",
-  BoldComMailClockFilled = "bold-com-mail-clock-filled",
-  BoldComMailCheckFilled = "bold-com-mail-check-filled",
-  BoldComLanguageFilled = "bold-com-language-filled",
-  BoldComHelpFilled = "bold-com-help-filled",
-  BoldComHelpAFilled = "bold-com-help-a-filled",
-  BoldComBubbleLineFilled = "bold-com-bubble-line-filled",
-  BoldComBubbleLineAFilled = "bold-com-bubble-line-a-filled",
-  BoldComBubbleGroupFilled = "bold-com-bubble-group-filled",
-  BoldComBubbleGroupAFilled = "bold-com-bubble-group-a-filled",
-  BoldComBubbleFilled = "bold-com-bubble-filled",
-  BoldComBubbleDotFilled = "bold-com-bubble-dot-filled",
-  BoldComBubbleDotAFilled = "bold-com-bubble-dot-a-filled",
-  BoldComBubbleAFilled = "bold-com-bubble-a-filled",
-  BoldComBellFilled = "bold-com-bell-filled",
-  BoldComAdvertisingMegaphoneFilled = "bold-com-advertising-megaphone-filled",
-  BoldBuildingViewFilled = "bold-building-view-filled",
-  BoldBuildingToiletFilled = "bold-building-toilet-filled",
-  BoldBuildingSofaFilled = "bold-building-sofa-filled",
-  BoldBuildingSofaAFilled = "bold-building-sofa-a-filled",
-  BoldBuildingSafetyFireShieldFilled = "bold-building-safety-fire-shield-filled",
-  BoldBuildingRockerSwitchFilled = "bold-building-rocker-switch-filled",
-  BoldBuildingRealEstateDimensionsPlanFilled = "bold-building-real-estate-dimensions-plan-filled",
-  BoldBuildingRealEstateDimensionsBlockFilled = "bold-building-real-estate-dimensions-block-filled",
-  BoldBuildingPlanBalconyFilled = "bold-building-plan-balcony-filled",
-  BoldBuildingOfficeSettingsBFilled = "bold-building-office-settings-b-filled",
-  BoldBuildingOfficeFilled = "bold-building-office-filled",
-  BoldBuildingOfficeAddBFilled = "bold-building-office-add-b-filled",
-  BoldBuildingOfficeAFilled = "bold-building-office-a-filled",
-  BoldBuildingMuseumFilled = "bold-building-museum-filled",
-  BoldBuildingLiftFilled = "bold-building-lift-filled",
-  BoldBuildingLampFilled = "bold-building-lamp-filled",
-  BoldBuildingLampAFilled = "bold-building-lamp-a-filled",
-  BoldBuildingHouseFilled = "bold-building-house-filled",
-  BoldBuildingHeaterFilled = "bold-building-heater-filled",
-  BoldBuildingHangingRackFilled = "bold-building-hanging-rack-filled",
-  BoldBuildingFireplaceFilled = "bold-building-fireplace-filled",
-  BoldBuildingFaucetFilled = "bold-building-faucet-filled",
-  BoldBuildingExitFilled = "bold-building-exit-filled",
-  BoldBuildingDrawerFilled = "bold-building-drawer-filled",
-  BoldBuildingDoorFilled = "bold-building-door-filled",
-  BoldBuildingDimensionsRulerFilled = "bold-building-dimensions-ruler-filled",
-  BoldBuildingDeskFilled = "bold-building-desk-filled",
-  BoldBuildingDaylightFilled = "bold-building-daylight-filled",
-  BoldBuildingChairFilled = "bold-building-chair-filled",
-  BoldBuildingCabinetFilled = "bold-building-cabinet-filled",
-  BoldBuildingBlueprintFilled = "bold-building-blueprint-filled",
-  BoldBuildingBedFilled = "bold-building-bed-filled",
+  WebWebcam = "web-webcam",
+  WebWebcamFilled = "web-webcam-filled",
+  WebWarning = "web-warning",
+  WebWarningFilled = "web-warning-filled",
+  WebTabs = "web-tabs",
+  WebTabsPlus = "web-tabs-plus",
+  WebTabsPlusFilled = "web-tabs-plus-filled",
+  WebTabsMinus = "web-tabs-minus",
+  WebTabsMinusFilled = "web-tabs-minus-filled",
+  WebTabsFilled = "web-tabs-filled",
+  WebTabsCross = "web-tabs-cross",
+  WebTabsCrossFilled = "web-tabs-cross-filled",
+  WebTabsCheck = "web-tabs-check",
+  WebTabsCheckFilled = "web-tabs-check-filled",
+  WebTabletIncrease = "web-tablet-increase",
+  WebTabletIncreaseFilled = "web-tablet-increase-filled",
+  WebStatistic = "web-statistic",
+  WebStatisticFilled = "web-statistic-filled",
+  WebShieldWarning = "web-shield-warning",
+  WebShieldWarningFilled = "web-shield-warning-filled",
+  WebShare = "web-share",
+  WebShareFilled = "web-share-filled",
+  WebServer = "web-server",
+  WebServerFilled = "web-server-filled",
+  WebRss = "web-rss",
+  WebRssSettings = "web-rss-settings",
+  WebRssSettingsFilled = "web-rss-settings-filled",
+  WebRssFilled = "web-rss-filled",
+  WebLink = "web-link",
+  WebLinkFilled = "web-link-filled",
+  WebLinkB = "web-link-b",
+  WebLinkBFilled = "web-link-b-filled",
+  WebLinkBCheck = "web-link-b-check",
+  WebLinkBCheckFilled = "web-link-b-check-filled",
+  WebIncreaseMail = "web-increase-mail",
+  WebIncreaseMailFilled = "web-increase-mail-filled",
+  WebGridUpload = "web-grid-upload",
+  WebGridUploadFilled = "web-grid-upload-filled",
+  WebGraphLinearSmall = "web-graph-linear-small",
+  WebGraphLinearSmallFilled = "web-graph-linear-small-filled",
+  WebGlobe = "web-globe",
+  WebGlobeFilled = "web-globe-filled",
+  WebFlag = "web-flag",
+  WebFlagFilled = "web-flag-filled",
+  WebFlagC = "web-flag-c",
+  WebFlagCFilled = "web-flag-c-filled",
+  WebDataFileBars = "web-data-file-bars",
+  WebDataFileBarsFilled = "web-data-file-bars-filled",
+  WebConsole = "web-console",
+  WebConsoleFilled = "web-console-filled",
+  WebCollapseUp = "web-collapse-up",
+  WebCollapseUpFilled = "web-collapse-up-filled",
+  WebCollapseRight = "web-collapse-right",
+  WebCollapseRightFilled = "web-collapse-right-filled",
+  WebCollapseLeft = "web-collapse-left",
+  WebCollapseLeftFilled = "web-collapse-left-filled",
+  WebCollapseDown = "web-collapse-down",
+  WebCollapseDownFilled = "web-collapse-down-filled",
+  WebCode = "web-code",
+  WebCodeFilled = "web-code-filled",
+  WebChart = "web-chart",
+  WebChartFilled = "web-chart-filled",
+  WebBug = "web-bug",
+  WebBugFilled = "web-bug-filled",
+  WebBrowser = "web-browser",
+  WebBrowserWindow = "web-browser-window",
+  WebBrowserWindowFilled = "web-browser-window-filled",
+  WebBrowserGrid = "web-browser-grid",
+  WebBrowserGridFilled = "web-browser-grid-filled",
+  WebBrowserFilled = "web-browser-filled",
+  WebBrokenLink = "web-broken-link",
+  WebBrokenLinkFilled = "web-broken-link-filled",
+  WebBarsHome = "web-bars-home",
+  WebBarsHomeFilled = "web-bars-home-filled",
+  WebAtSign = "web-at-sign",
+  WebAtSignFilled = "web-at-sign-filled",
+  WebAnalyticsNet = "web-analytics-net",
+  WebAnalyticsNetFilled = "web-analytics-net-filled",
+  WebAnalyticsGraph = "web-analytics-graph",
+  WebAnalyticsGraphFilled = "web-analytics-graph-filled",
+  WeatherWindsock = "weather-windsock",
+  WeatherWindsockFilled = "weather-windsock-filled",
+  WeatherWater = "weather-water",
+  WeatherWaterFilled = "weather-water-filled",
+  WeatherThermometer = "weather-thermometer",
+  WeatherThermometerFilled = "weather-thermometer-filled",
+  WeatherSunrise = "weather-sunrise",
+  WeatherSunriseFilled = "weather-sunrise-filled",
+  WeatherSun = "weather-sun",
+  WeatherSunFilled = "weather-sun-filled",
+  WeatherSunCloudSnow = "weather-sun-cloud-snow",
+  WeatherSunCloudSnowFilled = "weather-sun-cloud-snow-filled",
+  WeatherSnowflake = "weather-snowflake",
+  WeatherSnowflakeFilled = "weather-snowflake-filled",
+  WeatherMoon = "weather-moon",
+  WeatherMoonFilled = "weather-moon-filled",
+  WeatherMoonA = "weather-moon-a",
+  WeatherMoonAFilled = "weather-moon-a-filled",
+  WeatherFlash = "weather-flash",
+  WeatherFlashFilled = "weather-flash-filled",
+  WeatherFire = "weather-fire",
+  WeatherFireFilled = "weather-fire-filled",
+  WeatherCloud = "weather-cloud",
+  WeatherCloudSnow = "weather-cloud-snow",
+  WeatherCloudSnowFilled = "weather-cloud-snow-filled",
+  WeatherCloudRain = "weather-cloud-rain",
+  WeatherCloudRainFilled = "weather-cloud-rain-filled",
+  WeatherCloudFlash = "weather-cloud-flash",
+  WeatherCloudFlashFilled = "weather-cloud-flash-filled",
+  WeatherCloudFilled = "weather-cloud-filled",
+  VideoPlayer = "video-player",
+  VideoPlayerFilled = "video-player-filled",
+  User = "user",
+  UserWalking = "user-walking",
+  UserWalkingFilled = "user-walking-filled",
+  UserToiletSign = "user-toilet-sign",
+  UserToiletSignFilled = "user-toilet-sign-filled",
+  UserSingleNeutralHome = "user-single-neutral-home",
+  UserSingleNeutralHomeFilled = "user-single-neutral-home-filled",
+  UserSingleNeutralActionsEdit = "user-single-neutral-actions-edit",
+  UserSingleNeutralActionsEditFilled = "user-single-neutral-actions-edit-filled",
+  UserSingleNeutralActionsBlock = "user-single-neutral-actions-block",
+  UserSingleNeutralActionsBlockFilled = "user-single-neutral-actions-block-filled",
+  UserShare = "user-share",
+  UserShareFilled = "user-share-filled",
+  UserPlus = "user-plus",
+  UserPlusFilled = "user-plus-filled",
+  UserMultipleUsers = "user-multiple-users",
+  UserMultipleUsersFilled = "user-multiple-users-filled",
+  UserMinus = "user-minus",
+  UserMinusFilled = "user-minus-filled",
+  UserMessagesPeopleUserWarning = "user-messages-people-user-warning",
+  UserMessagesPeopleUserWarningFilled = "user-messages-people-user-warning-filled",
+  UserMale = "user-male",
+  UserMaleSign = "user-male-sign",
+  UserMaleSignFilled = "user-male-sign-filled",
+  UserMalePlus = "user-male-plus",
+  UserMalePlusFilled = "user-male-plus-filled",
+  UserMaleMinus = "user-male-minus",
+  UserMaleMinusFilled = "user-male-minus-filled",
+  UserMaleList = "user-male-list",
+  UserMaleListFilled = "user-male-list-filled",
+  UserMaleFilled = "user-male-filled",
+  UserMaleCross = "user-male-cross",
+  UserMaleCrossFilled = "user-male-cross-filled",
+  UserMaleCheck = "user-male-check",
+  UserMaleCheckFilled = "user-male-check-filled",
+  UserLock = "user-lock",
+  UserLockUnlocked = "user-lock-unlocked",
+  UserLockUnlockedFilled = "user-lock-unlocked-filled",
+  UserLockUnlockedB = "user-lock-unlocked-b",
+  UserLockUnlockedBFilled = "user-lock-unlocked-b-filled",
+  UserLockFilled = "user-lock-filled",
+  UserList = "user-list",
+  UserListFilled = "user-list-filled",
+  UserKey = "user-key",
+  UserKeyFilled = "user-key-filled",
+  UserHeadset = "user-headset",
+  UserHeadsetFilled = "user-headset-filled",
+  UserGroup = "user-group",
+  UserGroupFilled = "user-group-filled",
+  UserGroupFemale = "user-group-female",
+  UserGroupFemaleFilled = "user-group-female-filled",
+  UserGroupA = "user-group-a",
+  UserGroupAFilled = "user-group-a-filled",
+  UserGear = "user-gear",
+  UserGearFilled = "user-gear-filled",
+  UserForward = "user-forward",
+  UserForwardFilled = "user-forward-filled",
+  UserFilled = "user-filled",
+  UserFemale = "user-female",
+  UserFemaleSign = "user-female-sign",
+  UserFemaleSignFilled = "user-female-sign-filled",
+  UserFemalePlus = "user-female-plus",
+  UserFemalePlusFilled = "user-female-plus-filled",
+  UserFemaleMinus = "user-female-minus",
+  UserFemaleMinusFilled = "user-female-minus-filled",
+  UserFemaleList = "user-female-list",
+  UserFemaleListFilled = "user-female-list-filled",
+  UserFemaleFilled = "user-female-filled",
+  UserFemaleCross = "user-female-cross",
+  UserFemaleCrossFilled = "user-female-cross-filled",
+  UserFemaleCheck = "user-female-check",
+  UserFemaleCheckFilled = "user-female-check-filled",
+  UserCross = "user-cross",
+  UserCrossFilled = "user-cross-filled",
+  UserContactBook = "user-contact-book",
+  UserContactBookFilled = "user-contact-book-filled",
+  UserContactBookA = "user-contact-book-a",
+  UserContactBookAFilled = "user-contact-book-a-filled",
+  UserCircle = "user-circle",
+  UserCircleFilled = "user-circle-filled",
+  UserCheck = "user-check",
+  UserCheckFilled = "user-check-filled",
+  UserBusinessDealCashExchange = "user-business-deal-cash-exchange",
+  UserBusinessDealCashExchangeFilled = "user-business-deal-cash-exchange-filled",
+  UiZoomInPage = "ui-zoom-in-page",
+  UiZoomInPageFilled = "ui-zoom-in-page-filled",
+  UiWindow = "ui-window",
+  UiWindowFilled = "ui-window-filled",
+  UiUndo = "ui-undo",
+  UiUndoFilled = "ui-undo-filled",
+  UiUndoB = "ui-undo-b",
+  UiUndoBFilled = "ui-undo-b-filled",
+  UiUndoA = "ui-undo-a",
+  UiUndoAFilled = "ui-undo-a-filled",
+  UiTriangleTop = "ui-triangle-top",
+  UiTriangleTopFilled = "ui-triangle-top-filled",
+  UiTriangleRight = "ui-triangle-right",
+  UiTriangleRightFilled = "ui-triangle-right-filled",
+  UiTriangleLeft = "ui-triangle-left",
+  UiTriangleLeftFilled = "ui-triangle-left-filled",
+  UiTriangleBottom = "ui-triangle-bottom",
+  UiTriangleBottomFilled = "ui-triangle-bottom-filled",
+  UiTreeSave = "ui-tree-save",
+  UiTreeSaveFilled = "ui-tree-save-filled",
+  UiTreeLoad = "ui-tree-load",
+  UiTreeLoadFilled = "ui-tree-load-filled",
+  UiTarget = "ui-target",
+  UiTargetFilled = "ui-target-filled",
+  UiSync = "ui-sync",
+  UiSyncFilled = "ui-sync-filled",
+  UiStar = "ui-star",
+  UiStarFilled = "ui-star-filled",
+  UiSqareDashed = "ui-sqare-dashed",
+  UiSqareDashedFilled = "ui-sqare-dashed-filled",
+  UiSplitVertical = "ui-split-vertical",
+  UiSplitVerticalFilled = "ui-split-vertical-filled",
+  UiSplitHorizontal = "ui-split-horizontal",
+  UiSplitHorizontalFilled = "ui-split-horizontal-filled",
+  UiShrink = "ui-shrink",
+  UiShrinkFilled = "ui-shrink-filled",
+  UiSearch = "ui-search",
+  UiSearchPlus = "ui-search-plus",
+  UiSearchPlusFilled = "ui-search-plus-filled",
+  UiSearchMinus = "ui-search-minus",
+  UiSearchMinusFilled = "ui-search-minus-filled",
+  UiSearchFilled = "ui-search-filled",
+  UiSearchCross = "ui-search-cross",
+  UiSearchCrossFilled = "ui-search-cross-filled",
+  UiSearchCheck = "ui-search-check",
+  UiSearchCheckFilled = "ui-search-check-filled",
+  UiScrollVertical = "ui-scroll-vertical",
+  UiScrollVerticalFilled = "ui-scroll-vertical-filled",
+  UiScrollHorizontal = "ui-scroll-horizontal",
+  UiScrollHorizontalFilled = "ui-scroll-horizontal-filled",
+  UiResizeVertical = "ui-resize-vertical",
+  UiResizeVerticalFilled = "ui-resize-vertical-filled",
+  UiResizeTopRight = "ui-resize-top-right",
+  UiResizeTopRightFilled = "ui-resize-top-right-filled",
+  UiResizeTopLeft = "ui-resize-top-left",
+  UiResizeTopLeftFilled = "ui-resize-top-left-filled",
+  UiResizeHorizontal = "ui-resize-horizontal",
+  UiResizeHorizontalFilled = "ui-resize-horizontal-filled",
+  UiResizeDiagonal = "ui-resize-diagonal",
+  UiResizeDiagonalFilled = "ui-resize-diagonal-filled",
+  UiResizeBottomRight = "ui-resize-bottom-right",
+  UiResizeBottomRightFilled = "ui-resize-bottom-right-filled",
+  UiResizeBottomLeft = "ui-resize-bottom-left",
+  UiResizeBottomLeftFilled = "ui-resize-bottom-left-filled",
+  UiReply = "ui-reply",
+  UiReplyFilled = "ui-reply-filled",
+  UiRepeating = "ui-repeating",
+  UiRepeatingFilled = "ui-repeating-filled",
+  UiRemoveConnectionPoint = "ui-remove-connection-point",
+  UiRemoveConnectionPointFilled = "ui-remove-connection-point-filled",
+  UiRefresh = "ui-refresh",
+  UiRefreshFilled = "ui-refresh-filled",
+  UiRadiobutton = "ui-radiobutton",
+  UiRadiobuttonFilled = "ui-radiobutton-filled",
+  UiPropertyAnd = "ui-property-and",
+  UiPropertyAndFilled = "ui-property-and-filled",
+  UiPrevious = "ui-previous",
+  UiPreviousFilled = "ui-previous-filled",
+  UiPreviousA = "ui-previous-a",
+  UiPreviousAFilled = "ui-previous-a-filled",
+  UiPower = "ui-power",
+  UiPowerFilled = "ui-power-filled",
+  UiPopup = "ui-popup",
+  UiPopupFilled = "ui-popup-filled",
+  UiPlus = "ui-plus",
+  UiPlusSmall = "ui-plus-small",
+  UiPlusSmallFilled = "ui-plus-small-filled",
+  UiPlusFilled = "ui-plus-filled",
+  UiPixel = "ui-pixel",
+  UiPixelFilled = "ui-pixel-filled",
+  UiOutLink = "ui-out-link",
+  UiOutLinkFilled = "ui-out-link-filled",
+  UiNumber = "ui-number",
+  UiNumberFilled = "ui-number-filled",
+  UiNext = "ui-next",
+  UiNextFilled = "ui-next-filled",
+  UiNextA = "ui-next-a",
+  UiNextAFilled = "ui-next-a-filled",
+  UiMove = "ui-move",
+  UiMoveUp = "ui-move-up",
+  UiMoveUpFront = "ui-move-up-front",
+  UiMoveUpFrontFilled = "ui-move-up-front-filled",
+  UiMoveUpFilled = "ui-move-up-filled",
+  UiMoveFilled = "ui-move-filled",
+  UiMoveDown = "ui-move-down",
+  UiMoveDownFilled = "ui-move-down-filled",
+  UiMoveDownBackground = "ui-move-down-background",
+  UiMoveDownBackgroundFilled = "ui-move-down-background-filled",
+  UiMore = "ui-more",
+  UiMoreVertical = "ui-more-vertical",
+  UiMoreVerticalSmall = "ui-more-vertical-small",
+  UiMoreVerticalSmallFilled = "ui-more-vertical-small-filled",
+  UiMoreVerticalFilled = "ui-more-vertical-filled",
+  UiMoreSmall = "ui-more-small",
+  UiMoreSmallFilled = "ui-more-small-filled",
+  UiMoreSmallCircle = "ui-more-small-circle",
+  UiMoreSmallCircleFilled = "ui-more-small-circle-filled",
+  UiMoreHorizontalSmall = "ui-more-horizontal-small",
+  UiMoreHorizontalSmallFilled = "ui-more-horizontal-small-filled",
+  UiMoreFilled = "ui-more-filled",
+  UiMinus = "ui-minus",
+  UiMinusSmall = "ui-minus-small",
+  UiMinusSmallFilled = "ui-minus-small-filled",
+  UiMinusFilled = "ui-minus-filled",
+  UiMethod = "ui-method",
+  UiMethodInherited = "ui-method-inherited",
+  UiMethodInheritedFilled = "ui-method-inherited-filled",
+  UiMethodFilled = "ui-method-filled",
+  UiLogout = "ui-logout",
+  UiLogoutFilled = "ui-logout-filled",
+  UiLogin = "ui-login",
+  UiLoginFilled = "ui-login-filled",
+  UiListView = "ui-list-view",
+  UiListViewFilled = "ui-list-view-filled",
+  UiListUser = "ui-list-user",
+  UiListUserFilled = "ui-list-user-filled",
+  UiListShare = "ui-list-share",
+  UiListShareFilled = "ui-list-share-filled",
+  UiListForward = "ui-list-forward",
+  UiListForwardFilled = "ui-list-forward-filled",
+  UiLayoutWireframe = "ui-layout-wireframe",
+  UiLayoutWireframeFilled = "ui-layout-wireframe-filled",
+  UiLayoutThirdVertical = "ui-layout-third-vertical",
+  UiLayoutThirdVerticalFilled = "ui-layout-third-vertical-filled",
+  UiLayoutTableView = "ui-layout-table-view",
+  UiLayoutTableViewFilled = "ui-layout-table-view-filled",
+  UiLayoutSidebarL = "ui-layout-sidebar-l",
+  UiLayoutSidebarLHalf = "ui-layout-sidebar-l-half",
+  UiLayoutSidebarLHalfFilled = "ui-layout-sidebar-l-half-filled",
+  UiLayoutSidebarLFilled = "ui-layout-sidebar-l-filled",
+  UiLayoutHalf = "ui-layout-half",
+  UiLayoutHalfHorizontal = "ui-layout-half-horizontal",
+  UiLayoutHalfHorizontalFilled = "ui-layout-half-horizontal-filled",
+  UiLayoutHalfFilled = "ui-layout-half-filled",
+  UiKeyboard = "ui-keyboard",
+  UiKeyboardFilled = "ui-keyboard-filled",
+  UiInLink = "ui-in-link",
+  UiInLinkFilled = "ui-in-link-filled",
+  UiImport = "ui-import",
+  UiImportFilled = "ui-import-filled",
+  UiHouse = "ui-house",
+  UiHouseFilled = "ui-house-filled",
+  UiHome = "ui-home",
+  UiHomeFilled = "ui-home-filled",
+  UiHomeA = "ui-home-a",
+  UiHomeAFilled = "ui-home-a-filled",
+  UiHierarchy = "ui-hierarchy",
+  UiHierarchyTree = "ui-hierarchy-tree",
+  UiHierarchyTreeFilled = "ui-hierarchy-tree-filled",
+  UiHierarchyFilled = "ui-hierarchy-filled",
+  UiHelp = "ui-help",
+  UiHelpLife = "ui-help-life",
+  UiHelpLifeFilled = "ui-help-life-filled",
+  UiHelpFilled = "ui-help-filled",
+  UiHeart = "ui-heart",
+  UiHeartFilled = "ui-heart-filled",
+  UiHamburger = "ui-hamburger",
+  UiHamburgerFilled = "ui-hamburger-filled",
+  UiGridView = "ui-grid-view",
+  UiGridViewFilled = "ui-grid-view-filled",
+  UiFullscreen = "ui-fullscreen",
+  UiFullscreenFilled = "ui-fullscreen-filled",
+  UiFullscreenA = "ui-fullscreen-a",
+  UiFullscreenAFilled = "ui-fullscreen-a-filled",
+  UiFrame = "ui-frame",
+  UiFrameFilled = "ui-frame-filled",
+  UiForward = "ui-forward",
+  UiForwardFilled = "ui-forward-filled",
+  UiFilter = "ui-filter",
+  UiFilterFilled = "ui-filter-filled",
+  UiEye = "ui-eye",
+  UiEyeFilled = "ui-eye-filled",
+  UiEyeCross = "ui-eye-cross",
+  UiEyeCrossFilled = "ui-eye-cross-filled",
+  UiExport = "ui-export",
+  UiExportFilled = "ui-export-filled",
+  UiExpand = "ui-expand",
+  UiExpandFilled = "ui-expand-filled",
+  UiEnlarge = "ui-enlarge",
+  UiEnlargeFilled = "ui-enlarge-filled",
+  UiDragHandle = "ui-drag-handle",
+  UiDragHandleFilled = "ui-drag-handle-filled",
+  UiDot = "ui-dot",
+  UiDotLarge = "ui-dot-large",
+  UiDotLargeFilled = "ui-dot-large-filled",
+  UiDotFilled = "ui-dot-filled",
+  UiCross = "ui-cross",
+  UiCrossSmall = "ui-cross-small",
+  UiCrossSmallFilled = "ui-cross-small-filled",
+  UiCrossFilled = "ui-cross-filled",
+  UiCrop = "ui-crop",
+  UiCropFilled = "ui-crop-filled",
+  UiCreateConnection = "ui-create-connection",
+  UiCreateConnectionFilled = "ui-create-connection-filled",
+  UiConnection = "ui-connection",
+  UiConnectionOpen = "ui-connection-open",
+  UiConnectionOpenInherited = "ui-connection-open-inherited",
+  UiConnectionOpenInheritedFilled = "ui-connection-open-inherited-filled",
+  UiConnectionOpenFilled = "ui-connection-open-filled",
+  UiConnectionInherited = "ui-connection-inherited",
+  UiConnectionInheritedFilled = "ui-connection-inherited-filled",
+  UiConnectionFilled = "ui-connection-filled",
+  UiCone = "ui-cone",
+  UiConeFilled = "ui-cone-filled",
+  UiCondition = "ui-condition",
+  UiConditionFilled = "ui-condition-filled",
+  UiCombobox = "ui-combobox",
+  UiComboboxFilled = "ui-combobox-filled",
+  UiCmd = "ui-cmd",
+  UiCmdFilled = "ui-cmd-filled",
+  UiCloudUpload = "ui-cloud-upload",
+  UiCloudUploadFilled = "ui-cloud-upload-filled",
+  UiCloudDownload = "ui-cloud-download",
+  UiCloudDownloadFilled = "ui-cloud-download-filled",
+  UiCloseParallelConnection = "ui-close-parallel-connection",
+  UiCloseParallelConnectionFilled = "ui-close-parallel-connection-filled",
+  UiCircle = "ui-circle",
+  UiCircleWarning = "ui-circle-warning",
+  UiCircleWarningFilled = "ui-circle-warning-filled",
+  UiCirclePlus = "ui-circle-plus",
+  UiCirclePlusFilled = "ui-circle-plus-filled",
+  UiCircleMinus = "ui-circle-minus",
+  UiCircleMinusFilled = "ui-circle-minus-filled",
+  UiCircleInfo = "ui-circle-info",
+  UiCircleInfoFilled = "ui-circle-info-filled",
+  UiCircleHelp = "ui-circle-help",
+  UiCircleHelpFilled = "ui-circle-help-filled",
+  UiCircleFilled = "ui-circle-filled",
+  UiCircleCross = "ui-circle-cross",
+  UiCircleCrossFilled = "ui-circle-cross-filled",
+  UiCircleChevronTop = "ui-circle-chevron-top",
+  UiCircleChevronTopFilled = "ui-circle-chevron-top-filled",
+  UiCircleChevronRight = "ui-circle-chevron-right",
+  UiCircleChevronRightFilled = "ui-circle-chevron-right-filled",
+  UiCircleChevronLeft = "ui-circle-chevron-left",
+  UiCircleChevronLeftFilled = "ui-circle-chevron-left-filled",
+  UiCircleChevronBottom = "ui-circle-chevron-bottom",
+  UiCircleChevronBottomFilled = "ui-circle-chevron-bottom-filled",
+  UiCircleCheck = "ui-circle-check",
+  UiCircleCheckFilled = "ui-circle-check-filled",
+  UiCircleCheckA = "ui-circle-check-a",
+  UiCircleCheckAFilled = "ui-circle-check-a-filled",
+  UiCircleArrowTop = "ui-circle-arrow-top",
+  UiCircleArrowTopFilled = "ui-circle-arrow-top-filled",
+  UiCircleArrowRight = "ui-circle-arrow-right",
+  UiCircleArrowRightFilled = "ui-circle-arrow-right-filled",
+  UiCircleArrowLeft = "ui-circle-arrow-left",
+  UiCircleArrowLeftFilled = "ui-circle-arrow-left-filled",
+  UiCircleArrowBottom = "ui-circle-arrow-bottom",
+  UiCircleArrowBottomFilled = "ui-circle-arrow-bottom-filled",
+  UiChevronTop = "ui-chevron-top",
+  UiChevronTopSmall = "ui-chevron-top-small",
+  UiChevronTopSmallFilled = "ui-chevron-top-small-filled",
+  UiChevronTopFilled = "ui-chevron-top-filled",
+  UiChevronRight = "ui-chevron-right",
+  UiChevronRightTripple = "ui-chevron-right-tripple",
+  UiChevronRightTrippleFilled = "ui-chevron-right-tripple-filled",
+  UiChevronRightSmall = "ui-chevron-right-small",
+  UiChevronRightSmallFilled = "ui-chevron-right-small-filled",
+  UiChevronRightFilled = "ui-chevron-right-filled",
+  UiChevronLeft = "ui-chevron-left",
+  UiChevronLeftSmall = "ui-chevron-left-small",
+  UiChevronLeftSmallFilled = "ui-chevron-left-small-filled",
+  UiChevronLeftFilled = "ui-chevron-left-filled",
+  UiChevronBottom = "ui-chevron-bottom",
+  UiChevronBottomSmall = "ui-chevron-bottom-small",
+  UiChevronBottomSmallFilled = "ui-chevron-bottom-small-filled",
+  UiChevronBottomFilled = "ui-chevron-bottom-filled",
+  UiCheckbox = "ui-checkbox",
+  UiCheckboxFilled = "ui-checkbox-filled",
+  UiCheck = "ui-check",
+  UiCheckSmall = "ui-check-small",
+  UiCheckSmallFilled = "ui-check-small-filled",
+  UiCheckSmallCircle = "ui-check-small-circle",
+  UiCheckSmallCircleFilled = "ui-check-small-circle-filled",
+  UiCheckFilled = "ui-check-filled",
+  UiCard = "ui-card",
+  UiCardView = "ui-card-view",
+  UiCardViewFilled = "ui-card-view-filled",
+  UiCardFilled = "ui-card-filled",
+  UiBulletView = "ui-bullet-view",
+  UiBulletViewFilled = "ui-bullet-view-filled",
+  UiBoxWarning = "ui-box-warning",
+  UiBoxWarningFilled = "ui-box-warning-filled",
+  UiBoxHelp = "ui-box-help",
+  UiBoxHelpFilled = "ui-box-help-filled",
+  UiBlock = "ui-block",
+  UiBlockFilled = "ui-block-filled",
+  UiBackspace = "ui-backspace",
+  UiBackspaceFilled = "ui-backspace-filled",
+  UiAttribute = "ui-attribute",
+  UiAttributeInherited = "ui-attribute-inherited",
+  UiAttributeInheritedFilled = "ui-attribute-inherited-filled",
+  UiAttributeFilled = "ui-attribute-filled",
+  UiArrowTop = "ui-arrow-top",
+  UiArrowTopSmall = "ui-arrow-top-small",
+  UiArrowTopSmallFilled = "ui-arrow-top-small-filled",
+  UiArrowTopRight = "ui-arrow-top-right",
+  UiArrowTopRightFilled = "ui-arrow-top-right-filled",
+  UiArrowTopLeft = "ui-arrow-top-left",
+  UiArrowTopLeftFilled = "ui-arrow-top-left-filled",
+  UiArrowTopFilled = "ui-arrow-top-filled",
+  UiArrowTopA = "ui-arrow-top-a",
+  UiArrowTopAFilled = "ui-arrow-top-a-filled",
+  UiArrowRight = "ui-arrow-right",
+  UiArrowRightSmall = "ui-arrow-right-small",
+  UiArrowRightSmallFilled = "ui-arrow-right-small-filled",
+  UiArrowRightFilled = "ui-arrow-right-filled",
+  UiArrowRightA = "ui-arrow-right-a",
+  UiArrowRightAFilled = "ui-arrow-right-a-filled",
+  UiArrowLeft = "ui-arrow-left",
+  UiArrowLeftSmall = "ui-arrow-left-small",
+  UiArrowLeftSmallFilled = "ui-arrow-left-small-filled",
+  UiArrowLeftFilled = "ui-arrow-left-filled",
+  UiArrowLeftA = "ui-arrow-left-a",
+  UiArrowLeftAFilled = "ui-arrow-left-a-filled",
+  UiArrowBottom = "ui-arrow-bottom",
+  UiArrowBottomSmall = "ui-arrow-bottom-small",
+  UiArrowBottomSmallFilled = "ui-arrow-bottom-small-filled",
+  UiArrowBottomRight = "ui-arrow-bottom-right",
+  UiArrowBottomRightFilled = "ui-arrow-bottom-right-filled",
+  UiArrowBottomLeft = "ui-arrow-bottom-left",
+  UiArrowBottomLeftFilled = "ui-arrow-bottom-left-filled",
+  UiArrowBottomFilled = "ui-arrow-bottom-filled",
+  UiArrowBottomA = "ui-arrow-bottom-a",
+  UiArrowBottomAFilled = "ui-arrow-bottom-a-filled",
+  UiAlignTop = "ui-align-top",
+  UiAlignTopFilled = "ui-align-top-filled",
+  UiAlignRight = "ui-align-right",
+  UiAlignRightFilled = "ui-align-right-filled",
+  UiAlignLeft = "ui-align-left",
+  UiAlignLeftFilled = "ui-align-left-filled",
+  UiAlignCenterVertical = "ui-align-center-vertical",
+  UiAlignCenterVerticalFilled = "ui-align-center-vertical-filled",
+  UiAlignCenterHorizontal = "ui-align-center-horizontal",
+  UiAlignCenterHorizontalFilled = "ui-align-center-horizontal-filled",
+  UiAlignBottom = "ui-align-bottom",
+  UiAlignBottomFilled = "ui-align-bottom-filled",
+  UiAddConnectionPoint = "ui-add-connection-point",
+  UiAddConnectionPointFilled = "ui-add-connection-point-filled",
+  TransportTruck = "transport-truck",
+  TransportTruckFilled = "transport-truck-filled",
+  TransportTruckA = "transport-truck-a",
+  TransportTruckAFilled = "transport-truck-a-filled",
+  TransportTrain = "transport-train",
+  TransportTrainFilled = "transport-train-filled",
+  TransportSignStop = "transport-sign-stop",
+  TransportSignStopFilled = "transport-sign-stop-filled",
+  TransportShip = "transport-ship",
+  TransportShipFilled = "transport-ship-filled",
+  TransportShipA = "transport-ship-a",
+  TransportShipAFilled = "transport-ship-a-filled",
+  TransportCar = "transport-car",
+  TransportCarFilled = "transport-car-filled",
+  TransportCarA = "transport-car-a",
+  TransportCarAFilled = "transport-car-a-filled",
+  TransportBus = "transport-bus",
+  TransportBusTicket = "transport-bus-ticket",
+  TransportBusTicketFilled = "transport-bus-ticket-filled",
+  TransportBusFilled = "transport-bus-filled",
+  TransportBusA = "transport-bus-a",
+  TransportBusAFilled = "transport-bus-a-filled",
+  TransportBicycle = "transport-bicycle",
+  TransportBicycleFilled = "transport-bicycle-filled",
+  ToolUmbrella = "tool-umbrella",
+  ToolUmbrellaFilled = "tool-umbrella-filled",
+  ToolToolsBox = "tool-tools-box",
+  ToolToolsBoxFilled = "tool-tools-box-filled",
+  ToolTextType = "tool-text-type",
+  ToolTextTypeFilled = "tool-text-type-filled",
+  ToolSmartphonePay = "tool-smartphone-pay",
+  ToolSmartphonePayFilled = "tool-smartphone-pay-filled",
+  ToolScissors = "tool-scissors",
+  ToolScissorsFilled = "tool-scissors-filled",
+  ToolSateliteType = "tool-satelite-type",
+  ToolSateliteTypeFilled = "tool-satelite-type-filled",
+  ToolRuler = "tool-ruler",
+  ToolRulerFilled = "tool-ruler-filled",
+  ToolRulerCorner = "tool-ruler-corner",
+  ToolRulerCornerFilled = "tool-ruler-corner-filled",
+  ToolRulerB = "tool-ruler-b",
+  ToolRulerBFilled = "tool-ruler-b-filled",
+  ToolRouterSignal = "tool-router-signal",
+  ToolRouterSignalFilled = "tool-router-signal-filled",
+  ToolRazor = "tool-razor",
+  ToolRazorFilled = "tool-razor-filled",
+  ToolProtectionType = "tool-protection-type",
+  ToolProtectionTypeFilled = "tool-protection-type-filled",
+  ToolPropertyType = "tool-property-type",
+  ToolPropertyTypeFilled = "tool-property-type-filled",
+  ToolProjector = "tool-projector",
+  ToolProjectorFilled = "tool-projector-filled",
+  ToolPlug = "tool-plug",
+  ToolPlugFilled = "tool-plug-filled",
+  ToolPhone = "tool-phone",
+  ToolPhoneLandscape = "tool-phone-landscape",
+  ToolPhoneLandscapeFilled = "tool-phone-landscape-filled",
+  ToolPhoneFilled = "tool-phone-filled",
+  ToolMouse = "tool-mouse",
+  ToolMouseFilled = "tool-mouse-filled",
+  ToolModuleThree = "tool-module-three",
+  ToolModuleThreeFilled = "tool-module-three-filled",
+  ToolMagnet = "tool-magnet",
+  ToolMagnetFilled = "tool-magnet-filled",
+  ToolMagicWand = "tool-magic-wand",
+  ToolMagicWandFilled = "tool-magic-wand-filled",
+  ToolLaptop = "tool-laptop",
+  ToolLaptopFilled = "tool-laptop-filled",
+  ToolIntType = "tool-int-type",
+  ToolIntTypeFilled = "tool-int-type-filled",
+  ToolHardwareType = "tool-hardware-type",
+  ToolHardwareTypeFilled = "tool-hardware-type-filled",
+  ToolHammer = "tool-hammer",
+  ToolHammerPlus = "tool-hammer-plus",
+  ToolHammerPlusFilled = "tool-hammer-plus-filled",
+  ToolHammerFilled = "tool-hammer-filled",
+  ToolHammerAngle = "tool-hammer-angle",
+  ToolHammerAngleFilled = "tool-hammer-angle-filled",
+  ToolHammerA = "tool-hammer-a",
+  ToolHammerAFilled = "tool-hammer-a-filled",
+  ToolGrid = "tool-grid",
+  ToolGridFilled = "tool-grid-filled",
+  ToolGearsType = "tool-gears-type",
+  ToolGearsTypeFilled = "tool-gears-type-filled",
+  ToolFocus = "tool-focus",
+  ToolFocusFilled = "tool-focus-filled",
+  ToolFloppyEdit = "tool-floppy-edit",
+  ToolFloppyEditFilled = "tool-floppy-edit-filled",
+  ToolFloppyDisks = "tool-floppy-disks",
+  ToolFloppyDisksFilled = "tool-floppy-disks-filled",
+  ToolFloppyDisk = "tool-floppy-disk",
+  ToolFloppyDiskFilled = "tool-floppy-disk-filled",
+  ToolFlashlight = "tool-flashlight",
+  ToolFlashlightFilled = "tool-flashlight-filled",
+  ToolFireExtinguisher = "tool-fire-extinguisher",
+  ToolFireExtinguisherFilled = "tool-fire-extinguisher-filled",
+  ToolDisplay = "tool-display",
+  ToolDisplayUser = "tool-display-user",
+  ToolDisplayUserFilled = "tool-display-user-filled",
+  ToolDisplayFilled = "tool-display-filled",
+  ToolConsole = "tool-console",
+  ToolConsoleFilled = "tool-console-filled",
+  ToolConsoleA = "tool-console-a",
+  ToolConsoleAFilled = "tool-console-a-filled",
+  ToolCompass = "tool-compass",
+  ToolCompassFilled = "tool-compass-filled",
+  ToolCamera = "tool-camera",
+  ToolCameraFilled = "tool-camera-filled",
+  ToolCalc = "tool-calc",
+  ToolCalcFilled = "tool-calc-filled",
+  ToolBinoculars = "tool-binoculars",
+  ToolBinocularsFilled = "tool-binoculars-filled",
+  ToolAreaType = "tool-area-type",
+  ToolAreaTypeFilled = "tool-area-type-filled",
+  ToolAndroidType = "tool-android-type",
+  ToolAndroidTypeFilled = "tool-android-type-filled",
+  TimeWatch = "time-watch",
+  TimeWatchFilled = "time-watch-filled",
+  TimeTimer = "time-timer",
+  TimeTimerFilled = "time-timer-filled",
+  TimeStopwatch = "time-stopwatch",
+  TimeStopwatchFilled = "time-stopwatch-filled",
+  TimeSpeedMeter = "time-speed-meter",
+  TimeSpeedMeterFilled = "time-speed-meter-filled",
+  TimeHourglass = "time-hourglass",
+  TimeHourglassFilled = "time-hourglass-filled",
+  TimeClockF = "time-clock-f",
+  TimeClockFFilled = "time-clock-f-filled",
+  TimeClockCircle = "time-clock-circle",
+  TimeClockCircleFilled = "time-clock-circle-filled",
+  TimeCalendar = "time-calendar",
+  TimeCalendarWeek = "time-calendar-week",
+  TimeCalendarWeekFilled = "time-calendar-week-filled",
+  TimeCalendarSmall = "time-calendar-small",
+  TimeCalendarSmallFilled = "time-calendar-small-filled",
+  TimeCalendarFilled = "time-calendar-filled",
+  TimeCalendarDots = "time-calendar-dots",
+  TimeCalendarDotsFilled = "time-calendar-dots-filled",
+  TimeCalendarClock = "time-calendar-clock",
+  TimeCalendarClockFilled = "time-calendar-clock-filled",
+  TimeCalendarCash = "time-calendar-cash",
+  TimeCalendarCashFilled = "time-calendar-cash-filled",
+  TimeAlarm = "time-alarm",
+  TimeAlarmFilled = "time-alarm-filled",
+  SportTv = "sport-tv",
+  SportTvFilled = "sport-tv-filled",
+  SportTrophy = "sport-trophy",
+  SportTrophyFilled = "sport-trophy-filled",
+  SportPuzzle = "sport-puzzle",
+  SportPuzzleFilled = "sport-puzzle-filled",
+  SportMedicineLab = "sport-medicine-lab",
+  SportMedicineLabFilled = "sport-medicine-lab-filled",
+  SportMedic = "sport-medic",
+  SportMedicFilled = "sport-medic-filled",
+  SportHeartPulse = "sport-heart-pulse",
+  SportHeartPulseFilled = "sport-heart-pulse-filled",
+  SportGauge = "sport-gauge",
+  SportGaugeFilled = "sport-gauge-filled",
+  SportFlag = "sport-flag",
+  SportFlagFilled = "sport-flag-filled",
+  SportDumbell = "sport-dumbell",
+  SportDumbellFilled = "sport-dumbell-filled",
+  SportBadge = "sport-badge",
+  SportBadgeH = "sport-badge-h",
+  SportBadgeHFilled = "sport-badge-h-filled",
+  SportBadgeFilled = "sport-badge-filled",
+  SportBadgeC = "sport-badge-c",
+  SportBadgeCFilled = "sport-badge-c-filled",
+  SportBadgeB = "sport-badge-b",
+  SportBadgeBFilled = "sport-badge-b-filled",
+  ShopWallet = "shop-wallet",
+  ShopWalletFilled = "shop-wallet-filled",
+  ShopTracking = "shop-tracking",
+  ShopTrackingFilled = "shop-tracking-filled",
+  ShopTie = "shop-tie",
+  ShopTieFilled = "shop-tie-filled",
+  ShopTag = "shop-tag",
+  ShopTagSearch = "shop-tag-search",
+  ShopTagSearchFilled = "shop-tag-search-filled",
+  ShopTagRefresh = "shop-tag-refresh",
+  ShopTagRefreshFilled = "shop-tag-refresh-filled",
+  ShopTagPlus = "shop-tag-plus",
+  ShopTagPlusFilled = "shop-tag-plus-filled",
+  ShopTagMinus = "shop-tag-minus",
+  ShopTagMinusFilled = "shop-tag-minus-filled",
+  ShopTagLock = "shop-tag-lock",
+  ShopTagLockFilled = "shop-tag-lock-filled",
+  ShopTagInfo = "shop-tag-info",
+  ShopTagInfoFilled = "shop-tag-info-filled",
+  ShopTagFilled = "shop-tag-filled",
+  ShopTagDatabase = "shop-tag-database",
+  ShopTagDatabaseFilled = "shop-tag-database-filled",
+  ShopTagCross = "shop-tag-cross",
+  ShopTagCrossFilled = "shop-tag-cross-filled",
+  ShopTagCheck = "shop-tag-check",
+  ShopTagCheckFilled = "shop-tag-check-filled",
+  ShopSuitcase = "shop-suitcase",
+  ShopSuitcaseFilled = "shop-suitcase-filled",
+  ShopShipmentPackages = "shop-shipment-packages",
+  ShopShipmentPackagesFilled = "shop-shipment-packages-filled",
+  ShopSavingPiggyBank = "shop-saving-piggy-bank",
+  ShopSavingPiggyBankFilled = "shop-saving-piggy-bank-filled",
+  ShopSafeBox = "shop-safe-box",
+  ShopSafeBoxFilled = "shop-safe-box-filled",
+  ShopPresent = "shop-present",
+  ShopPresentFilled = "shop-present-filled",
+  ShopPound = "shop-pound",
+  ShopPoundFilled = "shop-pound-filled",
+  ShopPerformanceMoneyDecrease = "shop-performance-money-decrease",
+  ShopPerformanceMoneyDecreaseFilled = "shop-performance-money-decrease-filled",
+  ShopMastercard = "shop-mastercard",
+  ShopMastercardFilled = "shop-mastercard-filled",
+  ShopMarket = "shop-market",
+  ShopMarketFilled = "shop-market-filled",
+  ShopEuro = "shop-euro",
+  ShopEuroFilled = "shop-euro-filled",
+  ShopDolar = "shop-dolar",
+  ShopDolarFilled = "shop-dolar-filled",
+  ShopDiscountCoupon = "shop-discount-coupon",
+  ShopDiscountCouponFilled = "shop-discount-coupon-filled",
+  ShopDiscountCircle = "shop-discount-circle",
+  ShopDiscountCircleFilled = "shop-discount-circle-filled",
+  ShopDiamond = "shop-diamond",
+  ShopDiamondFilled = "shop-diamond-filled",
+  ShopCreditcard = "shop-creditcard",
+  ShopCreditcardFilled = "shop-creditcard-filled",
+  ShopCoins = "shop-coins",
+  ShopCoinsFilled = "shop-coins-filled",
+  ShopCash = "shop-cash",
+  ShopCashFilled = "shop-cash-filled",
+  ShopCashDolar = "shop-cash-dolar",
+  ShopCashDolarFilled = "shop-cash-dolar-filled",
+  ShopCartFull = "shop-cart-full",
+  ShopCartFullFilled = "shop-cart-full-filled",
+  ShopCartEmpty = "shop-cart-empty",
+  ShopCartEmptyFilled = "shop-cart-empty-filled",
+  ShopCartEmptyAlt = "shop-cart-empty-alt",
+  ShopCartEmptyAltFilled = "shop-cart-empty-alt-filled",
+  ShopCartDownload = "shop-cart-download",
+  ShopCartDownloadFilled = "shop-cart-download-filled",
+  ShopBox = "shop-box",
+  ShopBoxPlus = "shop-box-plus",
+  ShopBoxPlusFilled = "shop-box-plus-filled",
+  ShopBoxMinus = "shop-box-minus",
+  ShopBoxMinusFilled = "shop-box-minus-filled",
+  ShopBoxFilled = "shop-box-filled",
+  ShopBoxEmpty = "shop-box-empty",
+  ShopBoxEmptyFilled = "shop-box-empty-filled",
+  ShopBill = "shop-bill",
+  ShopBillFilled = "shop-bill-filled",
+  ShopBasket = "shop-basket",
+  ShopBasketFilled = "shop-basket-filled",
+  ShopBarcode = "shop-barcode",
+  ShopBarcodeFilled = "shop-barcode-filled",
+  ShopBag = "shop-bag",
+  ShopBagFilled = "shop-bag-filled",
+  ShopAccountingBillStack = "shop-accounting-bill-stack",
+  ShopAccountingBillStackFilled = "shop-accounting-bill-stack-filled",
+  SettingsWrench = "settings-wrench",
+  SettingsWrenchFilled = "settings-wrench-filled",
+  SettingsMachineTrack = "settings-machine-track",
+  SettingsMachineTrackFilled = "settings-machine-track-filled",
+  SettingsHotspot = "settings-hotspot",
+  SettingsHotspotFilled = "settings-hotspot-filled",
+  SettingsGear = "settings-gear",
+  SettingsGearFilled = "settings-gear-filled",
+  SettingsGearA = "settings-gear-a",
+  SettingsGearAFilled = "settings-gear-a-filled",
+  SettingsEqualizer = "settings-equalizer",
+  SettingsEqualizerFilled = "settings-equalizer-filled",
+  SettingsComonent = "settings-comonent",
+  SettingsComonentFilled = "settings-comonent-filled",
+  SettingsColorMode = "settings-color-mode",
+  SettingsColorModeFilled = "settings-color-mode-filled",
+  SettingsAutoFlash = "settings-auto-flash",
+  SettingsAutoFlashFilled = "settings-auto-flash-filled",
+  SettingsAirplane = "settings-airplane",
+  SettingsAirplaneFilled = "settings-airplane-filled",
+  MusicVolumeMute = "music-volume-mute",
+  MusicVolumeMuteFilled = "music-volume-mute-filled",
+  MusicVolumeMedium = "music-volume-medium",
+  MusicVolumeMediumFilled = "music-volume-medium-filled",
+  MusicVolumeLow = "music-volume-low",
+  MusicVolumeLowFilled = "music-volume-low-filled",
+  MusicVolumeHigh = "music-volume-high",
+  MusicVolumeHighFilled = "music-volume-high-filled",
+  MusicStop = "music-stop",
+  MusicStopFilled = "music-stop-filled",
+  MusicSpeaker = "music-speaker",
+  MusicSpeakerFilled = "music-speaker-filled",
+  MusicShuffle = "music-shuffle",
+  MusicShuffleFilled = "music-shuffle-filled",
+  MusicRepeat = "music-repeat",
+  MusicRepeatOne = "music-repeat-one",
+  MusicRepeatOneFilled = "music-repeat-one-filled",
+  MusicRepeatFilled = "music-repeat-filled",
+  MusicRadio = "music-radio",
+  MusicRadioFilled = "music-radio-filled",
+  MusicPrevious = "music-previous",
+  MusicPreviousFilled = "music-previous-filled",
+  MusicPreviousA = "music-previous-a",
+  MusicPreviousAFilled = "music-previous-a-filled",
+  MusicPlaylist = "music-playlist",
+  MusicPlaylistFilled = "music-playlist-filled",
+  MusicPlay = "music-play",
+  MusicPlayFilled = "music-play-filled",
+  MusicPause = "music-pause",
+  MusicPauseFilled = "music-pause-filled",
+  MusicNote = "music-note",
+  MusicNoteFilled = "music-note-filled",
+  MusicNoteA = "music-note-a",
+  MusicNoteAFilled = "music-note-a-filled",
+  MusicNext = "music-next",
+  MusicNextFilled = "music-next-filled",
+  MusicNextA = "music-next-a",
+  MusicNextAFilled = "music-next-a-filled",
+  MusicMic = "music-mic",
+  MusicMicFilled = "music-mic-filled",
+  MusicList = "music-list",
+  MusicListFilled = "music-list-filled",
+  MusicHeadphones = "music-headphones",
+  MusicHeadphonesFilled = "music-headphones-filled",
+  MusicHeadphonesA = "music-headphones-a",
+  MusicHeadphonesAFilled = "music-headphones-a-filled",
+  MusicEqualiser = "music-equaliser",
+  MusicEqualiserFilled = "music-equaliser-filled",
+  MusicEject = "music-eject",
+  MusicEjectFilled = "music-eject-filled",
+  MusicCd = "music-cd",
+  MusicCdFilled = "music-cd-filled",
+  MusicAlbum = "music-album",
+  MusicAlbumFilled = "music-album-filled",
+  MiscWifi = "misc-wifi",
+  MiscWifiFilled = "misc-wifi-filled",
+  MiscSmileSad = "misc-smile-sad",
+  MiscSmileSadFilled = "misc-smile-sad-filled",
+  MiscSmileMeh = "misc-smile-meh",
+  MiscSmileMehFilled = "misc-smile-meh-filled",
+  MiscSmileLaught = "misc-smile-laught",
+  MiscSmileLaughtFilled = "misc-smile-laught-filled",
+  MiscSmileHappy = "misc-smile-happy",
+  MiscSmileHappyFilled = "misc-smile-happy-filled",
+  MiscSmileAngry = "misc-smile-angry",
+  MiscSmileAngryFilled = "misc-smile-angry-filled",
+  MiscReceptionHotelBell = "misc-reception-hotel-bell",
+  MiscReceptionHotelBellFilled = "misc-reception-hotel-bell-filled",
+  MiscPuzzle = "misc-puzzle",
+  MiscPuzzleFilled = "misc-puzzle-filled",
+  MiscModuleHandPuzzle = "misc-module-hand-puzzle",
+  MiscModuleHandPuzzleFilled = "misc-module-hand-puzzle-filled",
+  MiscMaleSign = "misc-male-sign",
+  MiscMaleSignFilled = "misc-male-sign-filled",
+  MiscGridPerspective = "misc-grid-perspective",
+  MiscGridPerspectiveFilled = "misc-grid-perspective-filled",
+  MiscGlobe = "misc-globe",
+  MiscGlobeFilled = "misc-globe-filled",
+  MiscGesture = "misc-gesture",
+  MiscGestureTap = "misc-gesture-tap",
+  MiscGestureTapFilled = "misc-gesture-tap-filled",
+  MiscGestureSwipeRight = "misc-gesture-swipe-right",
+  MiscGestureSwipeRightFilled = "misc-gesture-swipe-right-filled",
+  MiscGestureSwipeLeft = "misc-gesture-swipe-left",
+  MiscGestureSwipeLeftFilled = "misc-gesture-swipe-left-filled",
+  MiscGestureFilled = "misc-gesture-filled",
+  MiscGestureDoubleTap = "misc-gesture-double-tap",
+  MiscGestureDoubleTapFilled = "misc-gesture-double-tap-filled",
+  MiscFemaleSign = "misc-female-sign",
+  MiscFemaleSignFilled = "misc-female-sign-filled",
+  MiscCursorHandOpen = "misc-cursor-hand-open",
+  MiscCursorHandOpenFilled = "misc-cursor-hand-open-filled",
+  MiscCube = "misc-cube",
+  MiscCubeFilled = "misc-cube-filled",
+  MiscCrown = "misc-crown",
+  MiscCrownFilled = "misc-crown-filled",
+  MiscBulletDiamond = "misc-bullet-diamond",
+  MiscBulletDiamondFilled = "misc-bullet-diamond-filled",
+  LogoX = "logo-x",
+  LogoXFilled = "logo-x-filled",
+  LogoWindows = "logo-windows",
+  LogoWindowsFilled = "logo-windows-filled",
+  LogoTwitter = "logo-twitter",
+  LogoTwitterFilled = "logo-twitter-filled",
+  LogoLinux = "logo-linux",
+  LogoLinuxFilled = "logo-linux-filled",
+  LogoLinkedin = "logo-linkedin",
+  LogoLinkedinFilled = "logo-linkedin-filled",
+  LogoInstagram = "logo-instagram",
+  LogoInstagramFilled = "logo-instagram-filled",
+  LogoFacebook = "logo-facebook",
+  LogoFacebookFilled = "logo-facebook-filled",
+  LogoApple = "logo-apple",
+  LogoAppleFilled = "logo-apple-filled",
+  LocationStreetSign = "location-street-sign",
+  LocationStreetSignFilled = "location-street-sign-filled",
+  LocationStreetSignA = "location-street-sign-a",
+  LocationStreetSignAFilled = "location-street-sign-a-filled",
+  LocationPins = "location-pins",
+  LocationPinsFilled = "location-pins-filled",
+  LocationPin = "location-pin",
+  LocationPinPlus = "location-pin-plus",
+  LocationPinPlusFilled = "location-pin-plus-filled",
+  LocationPinMinus = "location-pin-minus",
+  LocationPinMinusFilled = "location-pin-minus-filled",
+  LocationPinMap = "location-pin-map",
+  LocationPinMapFilled = "location-pin-map-filled",
+  LocationPinFilled = "location-pin-filled",
+  LocationPinCheck = "location-pin-check",
+  LocationPinCheckFilled = "location-pin-check-filled",
+  LocationPinB = "location-pin-b",
+  LocationPinBFilled = "location-pin-b-filled",
+  LocationPinA = "location-pin-a",
+  LocationPinAFilled = "location-pin-a-filled",
+  LocationMap = "location-map",
+  LocationMapFilled = "location-map-filled",
+  LocationMapCross = "location-map-cross",
+  LocationMapCrossFilled = "location-map-cross-filled",
+  LocationDirection = "location-direction",
+  LocationDirectionSign = "location-direction-sign",
+  LocationDirectionSignFilled = "location-direction-sign-filled",
+  LocationDirectionFilled = "location-direction-filled",
+  LocationCompass = "location-compass",
+  LocationCompassFilled = "location-compass-filled",
+  EnvTree = "env-tree",
+  EnvTreeFilled = "env-tree-filled",
+  EnvTreeA = "env-tree-a",
+  EnvTreeAFilled = "env-tree-a-filled",
+  EnvMountains = "env-mountains",
+  EnvMountainsFilled = "env-mountains-filled",
+  EnvLeaf = "env-leaf",
+  EnvLeafFilled = "env-leaf-filled",
+  EnvFlower = "env-flower",
+  EnvFlowerFilled = "env-flower-filled",
+  EnvEarth = "env-earth",
+  EnvEarthFilled = "env-earth-filled",
+  EnvAtomicBomb = "env-atomic-bomb",
+  EnvAtomicBombFilled = "env-atomic-bomb-filled",
+  EditorialUndo = "editorial-undo",
+  EditorialUndoFilled = "editorial-undo-filled",
+  EditorialTypingMachine = "editorial-typing-machine",
+  EditorialTypingMachineFilled = "editorial-typing-machine-filled",
+  EditorialTrash = "editorial-trash",
+  EditorialTrashFilled = "editorial-trash-filled",
+  EditorialTextUnderline = "editorial-text-underline",
+  EditorialTextUnderlineFilled = "editorial-text-underline-filled",
+  EditorialTextStyle = "editorial-text-style",
+  EditorialTextStyleFilled = "editorial-text-style-filled",
+  EditorialTextStrikeThrough = "editorial-text-strike-through",
+  EditorialTextStrikeThroughFilled = "editorial-text-strike-through-filled",
+  EditorialTextItalic = "editorial-text-italic",
+  EditorialTextItalicFilled = "editorial-text-italic-filled",
+  EditorialTextFormat = "editorial-text-format",
+  EditorialTextFormatFilled = "editorial-text-format-filled",
+  EditorialTextBold = "editorial-text-bold",
+  EditorialTextBoldFilled = "editorial-text-bold-filled",
+  EditorialSortDesc = "editorial-sort-desc",
+  EditorialSortDescFilled = "editorial-sort-desc-filled",
+  EditorialSortCancel = "editorial-sort-cancel",
+  EditorialSortCancelFilled = "editorial-sort-cancel-filled",
+  EditorialSortAsc = "editorial-sort-asc",
+  EditorialSortAscFilled = "editorial-sort-asc-filled",
+  EditorialRedo = "editorial-redo",
+  EditorialRedoFilled = "editorial-redo-filled",
+  EditorialPencil = "editorial-pencil",
+  EditorialPencilSmall = "editorial-pencil-small",
+  EditorialPencilSmallFilled = "editorial-pencil-small-filled",
+  EditorialPencilFilled = "editorial-pencil-filled",
+  EditorialPen = "editorial-pen",
+  EditorialPenFilled = "editorial-pen-filled",
+  EditorialParagraph = "editorial-paragraph",
+  EditorialParagraphFirstLetter = "editorial-paragraph-first-letter",
+  EditorialParagraphFirstLetterFilled = "editorial-paragraph-first-letter-filled",
+  EditorialParagraphFilled = "editorial-paragraph-filled",
+  EditorialItalicOff = "editorial-italic-off",
+  EditorialItalicOffFilled = "editorial-italic-off-filled",
+  EditorialIndentRight = "editorial-indent-right",
+  EditorialIndentRightFilled = "editorial-indent-right-filled",
+  EditorialIndentLeft = "editorial-indent-left",
+  EditorialIndentLeftFilled = "editorial-indent-left-filled",
+  EditorialHashtagSmall = "editorial-hashtag-small",
+  EditorialHashtagSmallFilled = "editorial-hashtag-small-filled",
+  EditorialHash = "editorial-hash",
+  EditorialHashFilled = "editorial-hash-filled",
+  EditorialFontSize = "editorial-font-size",
+  EditorialFontSizeFilled = "editorial-font-size-filled",
+  EditorialCombineIntersect = "editorial-combine-intersect",
+  EditorialCombineIntersectFilled = "editorial-combine-intersect-filled",
+  EditorialColorPalette = "editorial-color-palette",
+  EditorialColorPaletteFilled = "editorial-color-palette-filled",
+  EditorialBrush = "editorial-brush",
+  EditorialBrushFilled = "editorial-brush-filled",
+  EditorialBookmark = "editorial-bookmark",
+  EditorialBookmarkFilled = "editorial-bookmark-filled",
+  EditorialAlignRight = "editorial-align-right",
+  EditorialAlignRightFilled = "editorial-align-right-filled",
+  EditorialAlignLeft = "editorial-align-left",
+  EditorialAlignLeftFilled = "editorial-align-left-filled",
+  EditorialAlignCenter = "editorial-align-center",
+  EditorialAlignCenterFilled = "editorial-align-center-filled",
+  DocWboardSearch = "doc-wboard-search",
+  DocWboardSearchFilled = "doc-wboard-search-filled",
+  DocWboardLine = "doc-wboard-line",
+  DocWboardLineFilled = "doc-wboard-line-filled",
+  DocWboardGear = "doc-wboard-gear",
+  DocWboardGearFilled = "doc-wboard-gear-filled",
+  DocWboardCheck = "doc-wboard-check",
+  DocWboardCheckFilled = "doc-wboard-check-filled",
+  DocWboardArrowTop = "doc-wboard-arrow-top",
+  DocWboardArrowTopFilled = "doc-wboard-arrow-top-filled",
+  DocUpload = "doc-upload",
+  DocUploadFilled = "doc-upload-filled",
+  DocTodoList = "doc-todo-list",
+  DocTodoListUser = "doc-todo-list-user",
+  DocTodoListUserFilled = "doc-todo-list-user-filled",
+  DocTodoListSquare = "doc-todo-list-square",
+  DocTodoListSquareFilled = "doc-todo-list-square-filled",
+  DocTodoListFilled = "doc-todo-list-filled",
+  DocTaskListQuestion = "doc-task-list-question",
+  DocTaskListQuestionFilled = "doc-task-list-question-filled",
+  DocTaskChecklist = "doc-task-checklist",
+  DocTaskChecklistFilled = "doc-task-checklist-filled",
+  DocStack = "doc-stack",
+  DocStackFilled = "doc-stack-filled",
+  DocProfile = "doc-profile",
+  DocProfileFilled = "doc-profile-filled",
+  DocPrinter = "doc-printer",
+  DocPrinterFilled = "doc-printer-filled",
+  DocPlus = "doc-plus",
+  DocPlusFilled = "doc-plus-filled",
+  DocPin = "doc-pin",
+  DocPinFilled = "doc-pin-filled",
+  DocPie = "doc-pie",
+  DocPieFilled = "doc-pie-filled",
+  DocPapers = "doc-papers",
+  DocPapersFilled = "doc-papers-filled",
+  DocPaperStack = "doc-paper-stack",
+  DocPaperStackFilled = "doc-paper-stack-filled",
+  DocPaperLine = "doc-paper-line",
+  DocPaperLineFilled = "doc-paper-line-filled",
+  DocOfficeStampDocument = "doc-office-stamp-document",
+  DocOfficeStampDocumentFilled = "doc-office-stamp-document-filled",
+  DocOfficeFolder = "doc-office-folder",
+  DocOfficeFolderFilled = "doc-office-folder-filled",
+  DocOfficeFilePdf = "doc-office-file-pdf",
+  DocOfficeFilePdfFilled = "doc-office-file-pdf-filled",
+  DocNotesUpload = "doc-notes-upload",
+  DocNotesUploadFilled = "doc-notes-upload-filled",
+  DocNotesPaperText = "doc-notes-paper-text",
+  DocNotesPaperTextFilled = "doc-notes-paper-text-filled",
+  DocNotesHome = "doc-notes-home",
+  DocNotesHomeFilled = "doc-notes-home-filled",
+  DocNotesGive = "doc-notes-give",
+  DocNotesGiveFilled = "doc-notes-give-filled",
+  DocNotesFlip = "doc-notes-flip",
+  DocNotesFlipFilled = "doc-notes-flip-filled",
+  DocNewspaper = "doc-newspaper",
+  DocNewspaperFilled = "doc-newspaper-filled",
+  DocMinus = "doc-minus",
+  DocMinusFilled = "doc-minus-filled",
+  DocMailboxIn = "doc-mailbox-in",
+  DocMailboxInFilled = "doc-mailbox-in-filled",
+  DocList = "doc-list",
+  DocListNumbers = "doc-list-numbers",
+  DocListNumbersFilled = "doc-list-numbers-filled",
+  DocListFilled = "doc-list-filled",
+  DocInvoice = "doc-invoice",
+  DocInvoiceFilled = "doc-invoice-filled",
+  DocImage = "doc-image",
+  DocImageFilled = "doc-image-filled",
+  DocImageA = "doc-image-a",
+  DocImageAFilled = "doc-image-a-filled",
+  DocIdCardVertical = "doc-id-card-vertical",
+  DocIdCardVerticalFilled = "doc-id-card-vertical-filled",
+  DocGlasses = "doc-glasses",
+  DocGlassesFilled = "doc-glasses-filled",
+  DocFolder = "doc-folder",
+  DocFolderSync = "doc-folder-sync",
+  DocFolderSyncFilled = "doc-folder-sync-filled",
+  DocFolderPlus = "doc-folder-plus",
+  DocFolderPlusFilled = "doc-folder-plus-filled",
+  DocFolderMinus = "doc-folder-minus",
+  DocFolderMinusFilled = "doc-folder-minus-filled",
+  DocFolderHome = "doc-folder-home",
+  DocFolderHomeFilled = "doc-folder-home-filled",
+  DocFolderFilled = "doc-folder-filled",
+  DocFolderCross = "doc-folder-cross",
+  DocFolderCrossFilled = "doc-folder-cross-filled",
+  DocFolderCheck = "doc-folder-check",
+  DocFolderCheckFilled = "doc-folder-check-filled",
+  DocFileZip = "doc-file-zip",
+  DocFileZipFilled = "doc-file-zip-filled",
+  DocFileXls = "doc-file-xls",
+  DocFileXlsFilled = "doc-file-xls-filled",
+  DocFileVideo = "doc-file-video",
+  DocFileVideoFilled = "doc-file-video-filled",
+  DocFileSave = "doc-file-save",
+  DocFileSaveFilled = "doc-file-save-filled",
+  DocFileRefresh = "doc-file-refresh",
+  DocFileRefreshFilled = "doc-file-refresh-filled",
+  DocFilePrint = "doc-file-print",
+  DocFilePrintFilled = "doc-file-print-filled",
+  DocFilePrev = "doc-file-prev",
+  DocFilePrevFilled = "doc-file-prev-filled",
+  DocFilePresentation = "doc-file-presentation",
+  DocFilePresentationFilled = "doc-file-presentation-filled",
+  DocFilePpt = "doc-file-ppt",
+  DocFilePptFilled = "doc-file-ppt-filled",
+  DocFilePlus = "doc-file-plus",
+  DocFilePlusFilled = "doc-file-plus-filled",
+  DocFileNext = "doc-file-next",
+  DocFileNextFilled = "doc-file-next-filled",
+  DocFileMinus = "doc-file-minus",
+  DocFileMinusFilled = "doc-file-minus-filled",
+  DocFileLine = "doc-file-line",
+  DocFileLineFilled = "doc-file-line-filled",
+  DocFileImage = "doc-file-image",
+  DocFileImageFilled = "doc-file-image-filled",
+  DocFileGraph = "doc-file-graph",
+  DocFileGraphFilled = "doc-file-graph-filled",
+  DocFileDoc = "doc-file-doc",
+  DocFileDocFilled = "doc-file-doc-filled",
+  DocFileCross = "doc-file-cross",
+  DocFileCrossFilled = "doc-file-cross-filled",
+  DocFileCheck = "doc-file-check",
+  DocFileCheckFilled = "doc-file-check-filled",
+  DocFileBookmark = "doc-file-bookmark",
+  DocFileBookmarkFilled = "doc-file-bookmark-filled",
+  DocFileBlank = "doc-file-blank",
+  DocFileBlankFilled = "doc-file-blank-filled",
+  DocFileAudio = "doc-file-audio",
+  DocFileAudioFilled = "doc-file-audio-filled",
+  DocDownload = "doc-download",
+  DocDownloadFilled = "doc-download-filled",
+  DocDiary = "doc-diary",
+  DocDiaryFilled = "doc-diary-filled",
+  DocCopy = "doc-copy",
+  DocCopyFilled = "doc-copy-filled",
+  DocCompose = "doc-compose",
+  DocComposeFilled = "doc-compose-filled",
+  DocCommonFileTextEdit = "doc-common-file-text-edit",
+  DocCommonFileTextEditFilled = "doc-common-file-text-edit-filled",
+  DocCommonFileHome = "doc-common-file-home",
+  DocCommonFileHomeFilled = "doc-common-file-home-filled",
+  DocCommonFileEdit = "doc-common-file-edit",
+  DocCommonFileEditFilled = "doc-common-file-edit-filled",
+  DocCamera = "doc-camera",
+  DocCameraFilled = "doc-camera-filled",
+  DocBriefcase = "doc-briefcase",
+  DocBriefcaseFilled = "doc-briefcase-filled",
+  DocBoxP = "doc-box-p",
+  DocBoxPFilled = "doc-box-p-filled",
+  DocBookmark = "doc-bookmark",
+  DocBookmarkFilled = "doc-bookmark-filled",
+  DocBook = "doc-book",
+  DocBookUpload = "doc-book-upload",
+  DocBookUploadFilled = "doc-book-upload-filled",
+  DocBookTarget = "doc-book-target",
+  DocBookTargetFilled = "doc-book-target-filled",
+  DocBookSettings = "doc-book-settings",
+  DocBookSettingsFilled = "doc-book-settings-filled",
+  DocBookModules = "doc-book-modules",
+  DocBookModulesFilled = "doc-book-modules-filled",
+  DocBookLibrary = "doc-book-library",
+  DocBookLibraryFilled = "doc-book-library-filled",
+  DocBookFilled = "doc-book-filled",
+  DocBookDownload = "doc-book-download",
+  DocBookDownloadFilled = "doc-book-download-filled",
+  DocBookCash = "doc-book-cash",
+  DocBookCashFilled = "doc-book-cash-filled",
+  DocBookB = "doc-book-b",
+  DocBookBFilled = "doc-book-b-filled",
+  DocBookA = "doc-book-a",
+  DocBookAFilled = "doc-book-a-filled",
+  DocAttachment = "doc-attachment",
+  DocAttachmentFilled = "doc-attachment-filled",
+  DocArticle = "doc-article",
+  DocArticleFilled = "doc-article-filled",
+  DocArchive = "doc-archive",
+  DocArchiveUpload = "doc-archive-upload",
+  DocArchiveUploadFilled = "doc-archive-upload-filled",
+  DocArchiveFolder = "doc-archive-folder",
+  DocArchiveFolderFilled = "doc-archive-folder-filled",
+  DocArchiveFilled = "doc-archive-filled",
+  DocArchiveEmpty = "doc-archive-empty",
+  DocArchiveEmptyFilled = "doc-archive-empty-filled",
+  DocArchiveDownload = "doc-archive-download",
+  DocArchiveDownloadFilled = "doc-archive-download-filled",
+  DocAnalyticsUp = "doc-analytics-up",
+  DocAnalyticsUpFilled = "doc-analytics-up-filled",
+  ComWarning = "com-warning",
+  ComWarningFilled = "com-warning-filled",
+  ComVoicemail = "com-voicemail",
+  ComVoicemailFilled = "com-voicemail-filled",
+  ComSatellite = "com-satellite",
+  ComSatelliteFilled = "com-satellite-filled",
+  ComPostcard = "com-postcard",
+  ComPostcardFilled = "com-postcard-filled",
+  ComPictures = "com-pictures",
+  ComPicturesFilled = "com-pictures-filled",
+  ComPhone = "com-phone",
+  ComPhoneLandline = "com-phone-landline",
+  ComPhoneLandlineFilled = "com-phone-landline-filled",
+  ComPhoneFilled = "com-phone-filled",
+  ComPaperplane = "com-paperplane",
+  ComPaperplaneFilled = "com-paperplane-filled",
+  ComMicrophonePodcast = "com-microphone-podcast",
+  ComMicrophonePodcastFilled = "com-microphone-podcast-filled",
+  ComMic = "com-mic",
+  ComMicMute = "com-mic-mute",
+  ComMicMuteFilled = "com-mic-mute-filled",
+  ComMicFilled = "com-mic-filled",
+  ComMegaphone = "com-megaphone",
+  ComMegaphoneFilled = "com-megaphone-filled",
+  ComMail = "com-mail",
+  ComMailWarning = "com-mail-warning",
+  ComMailWarningFilled = "com-mail-warning-filled",
+  ComMailSync = "com-mail-sync",
+  ComMailSyncFilled = "com-mail-sync-filled",
+  ComMailReceive = "com-mail-receive",
+  ComMailReceiveFilled = "com-mail-receive-filled",
+  ComMailPlus = "com-mail-plus",
+  ComMailPlusFilled = "com-mail-plus-filled",
+  ComMailOpen = "com-mail-open",
+  ComMailOpenWarning = "com-mail-open-warning",
+  ComMailOpenWarningFilled = "com-mail-open-warning-filled",
+  ComMailOpenFilled = "com-mail-open-filled",
+  ComMailMinus = "com-mail-minus",
+  ComMailMinusFilled = "com-mail-minus-filled",
+  ComMailFilled = "com-mail-filled",
+  ComMailDownload = "com-mail-download",
+  ComMailDownloadFilled = "com-mail-download-filled",
+  ComMailCross = "com-mail-cross",
+  ComMailCrossFilled = "com-mail-cross-filled",
+  ComMailClock = "com-mail-clock",
+  ComMailClockFilled = "com-mail-clock-filled",
+  ComMailCheck = "com-mail-check",
+  ComMailCheckFilled = "com-mail-check-filled",
+  ComLanguage = "com-language",
+  ComLanguageFilled = "com-language-filled",
+  ComHelp = "com-help",
+  ComHelpFilled = "com-help-filled",
+  ComHelpA = "com-help-a",
+  ComHelpAFilled = "com-help-a-filled",
+  ComBubble = "com-bubble",
+  ComBubbleLine = "com-bubble-line",
+  ComBubbleLineFilled = "com-bubble-line-filled",
+  ComBubbleLineA = "com-bubble-line-a",
+  ComBubbleLineAFilled = "com-bubble-line-a-filled",
+  ComBubbleGroup = "com-bubble-group",
+  ComBubbleGroupFilled = "com-bubble-group-filled",
+  ComBubbleGroupA = "com-bubble-group-a",
+  ComBubbleGroupAFilled = "com-bubble-group-a-filled",
+  ComBubbleFilled = "com-bubble-filled",
+  ComBubbleDot = "com-bubble-dot",
+  ComBubbleDotFilled = "com-bubble-dot-filled",
+  ComBubbleDotA = "com-bubble-dot-a",
+  ComBubbleDotAFilled = "com-bubble-dot-a-filled",
+  ComBubbleA = "com-bubble-a",
+  ComBubbleAFilled = "com-bubble-a-filled",
+  ComBell = "com-bell",
+  ComBellFilled = "com-bell-filled",
+  ComAdvertisingMegaphone = "com-advertising-megaphone",
+  ComAdvertisingMegaphoneFilled = "com-advertising-megaphone-filled",
+  BuildingView = "building-view",
+  BuildingViewFilled = "building-view-filled",
+  BuildingToilet = "building-toilet",
+  BuildingToiletFilled = "building-toilet-filled",
+  BuildingSofa = "building-sofa",
+  BuildingSofaFilled = "building-sofa-filled",
+  BuildingSofaA = "building-sofa-a",
+  BuildingSofaAFilled = "building-sofa-a-filled",
+  BuildingSafetyFireShield = "building-safety-fire-shield",
+  BuildingSafetyFireShieldFilled = "building-safety-fire-shield-filled",
+  BuildingRockerSwitch = "building-rocker-switch",
+  BuildingRockerSwitchFilled = "building-rocker-switch-filled",
+  BuildingRealEstateDimensionsPlan = "building-real-estate-dimensions-plan",
+  BuildingRealEstateDimensionsPlanFilled = "building-real-estate-dimensions-plan-filled",
+  BuildingRealEstateDimensionsBlock = "building-real-estate-dimensions-block",
+  BuildingRealEstateDimensionsBlockFilled = "building-real-estate-dimensions-block-filled",
+  BuildingPlanBalcony = "building-plan-balcony",
+  BuildingPlanBalconyFilled = "building-plan-balcony-filled",
+  BuildingOffice = "building-office",
+  BuildingOfficeSettingsB = "building-office-settings-b",
+  BuildingOfficeSettingsBFilled = "building-office-settings-b-filled",
+  BuildingOfficeFilled = "building-office-filled",
+  BuildingOfficeAddB = "building-office-add-b",
+  BuildingOfficeAddBFilled = "building-office-add-b-filled",
+  BuildingOfficeA = "building-office-a",
+  BuildingOfficeAFilled = "building-office-a-filled",
+  BuildingMuseum = "building-museum",
+  BuildingMuseumFilled = "building-museum-filled",
+  BuildingLift = "building-lift",
+  BuildingLiftFilled = "building-lift-filled",
+  BuildingLamp = "building-lamp",
+  BuildingLampFilled = "building-lamp-filled",
+  BuildingLampA = "building-lamp-a",
+  BuildingLampAFilled = "building-lamp-a-filled",
+  BuildingHouse = "building-house",
+  BuildingHouseFilled = "building-house-filled",
+  BuildingHeater = "building-heater",
+  BuildingHeaterFilled = "building-heater-filled",
+  BuildingHangingRack = "building-hanging-rack",
+  BuildingHangingRackFilled = "building-hanging-rack-filled",
+  BuildingFireplace = "building-fireplace",
+  BuildingFireplaceFilled = "building-fireplace-filled",
+  BuildingFaucet = "building-faucet",
+  BuildingFaucetFilled = "building-faucet-filled",
+  BuildingExit = "building-exit",
+  BuildingExitFilled = "building-exit-filled",
+  BuildingDrawer = "building-drawer",
+  BuildingDrawerFilled = "building-drawer-filled",
+  BuildingDoor = "building-door",
+  BuildingDoorFilled = "building-door-filled",
+  BuildingDimensionsRuler = "building-dimensions-ruler",
+  BuildingDimensionsRulerFilled = "building-dimensions-ruler-filled",
+  BuildingDesk = "building-desk",
+  BuildingDeskFilled = "building-desk-filled",
+  BuildingDaylight = "building-daylight",
+  BuildingDaylightFilled = "building-daylight-filled",
+  BuildingChair = "building-chair",
+  BuildingChairFilled = "building-chair-filled",
+  BuildingCabinet = "building-cabinet",
+  BuildingCabinetFilled = "building-cabinet-filled",
+  BuildingBlueprint = "building-blueprint",
+  BuildingBlueprintFilled = "building-blueprint-filled",
+  BuildingBed = "building-bed",
+  BuildingBedFilled = "building-bed-filled",
 }
 
 export const MY_ICONS_CODEPOINTS: { [key in MyIcons]: string } = {
-  [MyIcons.RegularWebWebcam]: "61697",
-  [MyIcons.RegularWebWarning]: "61698",
-  [MyIcons.RegularWebTabs]: "61699",
-  [MyIcons.RegularWebTabsPlus]: "61700",
-  [MyIcons.RegularWebTabsMinus]: "61701",
-  [MyIcons.RegularWebTabsCross]: "61702",
-  [MyIcons.RegularWebTabsCheck]: "61703",
-  [MyIcons.RegularWebTabletIncrease]: "61704",
-  [MyIcons.RegularWebStatistic]: "61705",
-  [MyIcons.RegularWebShieldWarning]: "61706",
-  [MyIcons.RegularWebShare]: "61707",
-  [MyIcons.RegularWebServer]: "61708",
-  [MyIcons.RegularWebRss]: "61709",
-  [MyIcons.RegularWebRssSettings]: "61710",
-  [MyIcons.RegularWebLink]: "61711",
-  [MyIcons.RegularWebLinkB]: "61712",
-  [MyIcons.RegularWebLinkBCheck]: "61713",
-  [MyIcons.RegularWebIncreaseMail]: "61714",
-  [MyIcons.RegularWebGridUpload]: "61715",
-  [MyIcons.RegularWebGraphLinearSmall]: "61716",
-  [MyIcons.RegularWebGlobe]: "61717",
-  [MyIcons.RegularWebFlag]: "61718",
-  [MyIcons.RegularWebFlagC]: "61719",
-  [MyIcons.RegularWebDataFileBars]: "61720",
-  [MyIcons.RegularWebConsole]: "61721",
-  [MyIcons.RegularWebCollapseUp]: "61722",
-  [MyIcons.RegularWebCollapseRight]: "61723",
-  [MyIcons.RegularWebCollapseLeft]: "61724",
-  [MyIcons.RegularWebCollapseDown]: "61725",
-  [MyIcons.RegularWebCode]: "61726",
-  [MyIcons.RegularWebChart]: "61727",
-  [MyIcons.RegularWebBug]: "61728",
-  [MyIcons.RegularWebBrowser]: "61729",
-  [MyIcons.RegularWebBrowserWindow]: "61730",
-  [MyIcons.RegularWebBrowserGrid]: "61731",
-  [MyIcons.RegularWebBrokenLink]: "61732",
-  [MyIcons.RegularWebBarsHome]: "61733",
-  [MyIcons.RegularWebAtSign]: "61734",
-  [MyIcons.RegularWebAnalyticsNet]: "61735",
-  [MyIcons.RegularWebAnalyticsGraph]: "61736",
-  [MyIcons.RegularWeatherWindsock]: "61737",
-  [MyIcons.RegularWeatherWater]: "61738",
-  [MyIcons.RegularWeatherThermometer]: "61739",
-  [MyIcons.RegularWeatherSunrise]: "61740",
-  [MyIcons.RegularWeatherSun]: "61741",
-  [MyIcons.RegularWeatherSunCloudSnow]: "61742",
-  [MyIcons.RegularWeatherSnowflake]: "61743",
-  [MyIcons.RegularWeatherMoon]: "61744",
-  [MyIcons.RegularWeatherMoonA]: "61745",
-  [MyIcons.RegularWeatherFlash]: "61746",
-  [MyIcons.RegularWeatherFire]: "61747",
-  [MyIcons.RegularWeatherCloud]: "61748",
-  [MyIcons.RegularWeatherCloudSnow]: "61749",
-  [MyIcons.RegularWeatherCloudRain]: "61750",
-  [MyIcons.RegularWeatherCloudFlash]: "61751",
-  [MyIcons.RegularVideoPlayer]: "61752",
-  [MyIcons.RegularUser]: "61753",
-  [MyIcons.RegularUserWalking]: "61754",
-  [MyIcons.RegularUserToiletSign]: "61755",
-  [MyIcons.RegularUserSingleNeutralHome]: "61756",
-  [MyIcons.RegularUserSingleNeutralActionsEdit]: "61757",
-  [MyIcons.RegularUserSingleNeutralActionsBlock]: "61758",
-  [MyIcons.RegularUserShare]: "61759",
-  [MyIcons.RegularUserPlus]: "61760",
-  [MyIcons.RegularUserMultipleUsers]: "61761",
-  [MyIcons.RegularUserMinus]: "61762",
-  [MyIcons.RegularUserMessagesPeopleUserWarning]: "61763",
-  [MyIcons.RegularUserMale]: "61764",
-  [MyIcons.RegularUserMaleSign]: "61765",
-  [MyIcons.RegularUserMalePlus]: "61766",
-  [MyIcons.RegularUserMaleMinus]: "61767",
-  [MyIcons.RegularUserMaleList]: "61768",
-  [MyIcons.RegularUserMaleCross]: "61769",
-  [MyIcons.RegularUserMaleCheck]: "61770",
-  [MyIcons.RegularUserLock]: "61771",
-  [MyIcons.RegularUserLockUnlocked]: "61772",
-  [MyIcons.RegularUserLockUnlockedB]: "61773",
-  [MyIcons.RegularUserList]: "61774",
-  [MyIcons.RegularUserKey]: "61775",
-  [MyIcons.RegularUserHeadset]: "61776",
-  [MyIcons.RegularUserGroup]: "61777",
-  [MyIcons.RegularUserGroupFemale]: "61778",
-  [MyIcons.RegularUserGroupA]: "61779",
-  [MyIcons.RegularUserGear]: "61780",
-  [MyIcons.RegularUserForward]: "61781",
-  [MyIcons.RegularUserFemale]: "61782",
-  [MyIcons.RegularUserFemaleSign]: "61783",
-  [MyIcons.RegularUserFemalePlus]: "61784",
-  [MyIcons.RegularUserFemaleMinus]: "61785",
-  [MyIcons.RegularUserFemaleList]: "61786",
-  [MyIcons.RegularUserFemaleCross]: "61787",
-  [MyIcons.RegularUserFemaleCheck]: "61788",
-  [MyIcons.RegularUserCross]: "61789",
-  [MyIcons.RegularUserContactBook]: "61790",
-  [MyIcons.RegularUserContactBookA]: "61791",
-  [MyIcons.RegularUserCircle]: "61792",
-  [MyIcons.RegularUserCheck]: "61793",
-  [MyIcons.RegularUserBusinessDealCashExchange]: "61794",
-  [MyIcons.RegularUiZoomInPage]: "61795",
-  [MyIcons.RegularUiWindow]: "61796",
-  [MyIcons.RegularUiUndo]: "61797",
-  [MyIcons.RegularUiUndoB]: "61798",
-  [MyIcons.RegularUiUndoA]: "61799",
-  [MyIcons.RegularUiTriangleTop]: "61800",
-  [MyIcons.RegularUiTriangleRight]: "61801",
-  [MyIcons.RegularUiTriangleLeft]: "61802",
-  [MyIcons.RegularUiTriangleBottom]: "61803",
-  [MyIcons.RegularUiTreeSave]: "61804",
-  [MyIcons.RegularUiTreeLoad]: "61805",
-  [MyIcons.RegularUiTarget]: "61806",
-  [MyIcons.RegularUiSync]: "61807",
-  [MyIcons.RegularUiStar]: "61808",
-  [MyIcons.RegularUiSqareDashed]: "61809",
-  [MyIcons.RegularUiSplitVertical]: "61810",
-  [MyIcons.RegularUiSplitHorizontal]: "61811",
-  [MyIcons.RegularUiShrink]: "61812",
-  [MyIcons.RegularUiSearch]: "61813",
-  [MyIcons.RegularUiSearchPlus]: "61814",
-  [MyIcons.RegularUiSearchMinus]: "61815",
-  [MyIcons.RegularUiSearchCross]: "61816",
-  [MyIcons.RegularUiSearchCheck]: "61817",
-  [MyIcons.RegularUiScrollVertical]: "61818",
-  [MyIcons.RegularUiScrollHorizontal]: "61819",
-  [MyIcons.RegularUiResizeVertical]: "61820",
-  [MyIcons.RegularUiResizeTopRight]: "61821",
-  [MyIcons.RegularUiResizeTopLeft]: "61822",
-  [MyIcons.RegularUiResizeHorizontal]: "61823",
-  [MyIcons.RegularUiResizeDiagonal]: "61824",
-  [MyIcons.RegularUiResizeBottomRight]: "61825",
-  [MyIcons.RegularUiResizeBottomLeft]: "61826",
-  [MyIcons.RegularUiReply]: "61827",
-  [MyIcons.RegularUiRepeating]: "61828",
-  [MyIcons.RegularUiRemoveConnectionPoint]: "61829",
-  [MyIcons.RegularUiRefresh]: "61830",
-  [MyIcons.RegularUiRadiobutton]: "61831",
-  [MyIcons.RegularUiPropertyAnd]: "61832",
-  [MyIcons.RegularUiPrevious]: "61833",
-  [MyIcons.RegularUiPreviousA]: "61834",
-  [MyIcons.RegularUiPower]: "61835",
-  [MyIcons.RegularUiPopup]: "61836",
-  [MyIcons.RegularUiPlus]: "61837",
-  [MyIcons.RegularUiPlusSmall]: "61838",
-  [MyIcons.RegularUiPixel]: "61839",
-  [MyIcons.RegularUiOutLink]: "61840",
-  [MyIcons.RegularUiNumber]: "61841",
-  [MyIcons.RegularUiNext]: "61842",
-  [MyIcons.RegularUiNextA]: "61843",
-  [MyIcons.RegularUiMove]: "61844",
-  [MyIcons.RegularUiMoveUp]: "61845",
-  [MyIcons.RegularUiMoveUpFront]: "61846",
-  [MyIcons.RegularUiMoveDown]: "61847",
-  [MyIcons.RegularUiMoveDownBackground]: "61848",
-  [MyIcons.RegularUiMore]: "61849",
-  [MyIcons.RegularUiMoreVertical]: "61850",
-  [MyIcons.RegularUiMoreVerticalSmall]: "61851",
-  [MyIcons.RegularUiMoreSmall]: "61852",
-  [MyIcons.RegularUiMoreSmallCircle]: "61853",
-  [MyIcons.RegularUiMoreHorizontalSmall]: "61854",
-  [MyIcons.RegularUiMinus]: "61855",
-  [MyIcons.RegularUiMinusSmall]: "61856",
-  [MyIcons.RegularUiMethod]: "61857",
-  [MyIcons.RegularUiMethodInherited]: "61858",
-  [MyIcons.RegularUiLogout]: "61859",
-  [MyIcons.RegularUiLogin]: "61860",
-  [MyIcons.RegularUiListView]: "61861",
-  [MyIcons.RegularUiListUser]: "61862",
-  [MyIcons.RegularUiListShare]: "61863",
-  [MyIcons.RegularUiListForward]: "61864",
-  [MyIcons.RegularUiLayoutWireframe]: "61865",
-  [MyIcons.RegularUiLayoutThirdVertical]: "61866",
-  [MyIcons.RegularUiLayoutTableView]: "61867",
-  [MyIcons.RegularUiLayoutSidebarL]: "61868",
-  [MyIcons.RegularUiLayoutSidebarLHalf]: "61869",
-  [MyIcons.RegularUiLayoutHalf]: "61870",
-  [MyIcons.RegularUiLayoutHalfHorizontal]: "61871",
-  [MyIcons.RegularUiKeyboard]: "61872",
-  [MyIcons.RegularUiInLink]: "61873",
-  [MyIcons.RegularUiImport]: "61874",
-  [MyIcons.RegularUiHouse]: "61875",
-  [MyIcons.RegularUiHome]: "61876",
-  [MyIcons.RegularUiHomeA]: "61877",
-  [MyIcons.RegularUiHierarchy]: "61878",
-  [MyIcons.RegularUiHierarchyTree]: "61879",
-  [MyIcons.RegularUiHelp]: "61880",
-  [MyIcons.RegularUiHelpLife]: "61881",
-  [MyIcons.RegularUiHeart]: "61882",
-  [MyIcons.RegularUiHamburger]: "61883",
-  [MyIcons.RegularUiGridView]: "61884",
-  [MyIcons.RegularUiFullscreen]: "61885",
-  [MyIcons.RegularUiFullscreenA]: "61886",
-  [MyIcons.RegularUiFrame]: "61887",
-  [MyIcons.RegularUiForward]: "61888",
-  [MyIcons.RegularUiFilter]: "61889",
-  [MyIcons.RegularUiEye]: "61890",
-  [MyIcons.RegularUiEyeCross]: "61891",
-  [MyIcons.RegularUiExport]: "61892",
-  [MyIcons.RegularUiExpand]: "61893",
-  [MyIcons.RegularUiEnlarge]: "61894",
-  [MyIcons.RegularUiDragHandle]: "61895",
-  [MyIcons.RegularUiDot]: "61896",
-  [MyIcons.RegularUiDotLarge]: "61897",
-  [MyIcons.RegularUiCross]: "61898",
-  [MyIcons.RegularUiCrossSmall]: "61899",
-  [MyIcons.RegularUiCrop]: "61900",
-  [MyIcons.RegularUiCreateConnection]: "61901",
-  [MyIcons.RegularUiConnection]: "61902",
-  [MyIcons.RegularUiConnectionOpen]: "61903",
-  [MyIcons.RegularUiConnectionOpenInherited]: "61904",
-  [MyIcons.RegularUiConnectionInherited]: "61905",
-  [MyIcons.RegularUiCone]: "61906",
-  [MyIcons.RegularUiCondition]: "61907",
-  [MyIcons.RegularUiCombobox]: "61908",
-  [MyIcons.RegularUiCmd]: "61909",
-  [MyIcons.RegularUiCloudUpload]: "61910",
-  [MyIcons.RegularUiCloudDownload]: "61911",
-  [MyIcons.RegularUiCloseParallelConnection]: "61912",
-  [MyIcons.RegularUiCircle]: "61913",
-  [MyIcons.RegularUiCircleWarning]: "61914",
-  [MyIcons.RegularUiCirclePlus]: "61915",
-  [MyIcons.RegularUiCircleMinus]: "61916",
-  [MyIcons.RegularUiCircleInfo]: "61917",
-  [MyIcons.RegularUiCircleHelp]: "61918",
-  [MyIcons.RegularUiCircleCross]: "61919",
-  [MyIcons.RegularUiCircleChevronTop]: "61920",
-  [MyIcons.RegularUiCircleChevronRight]: "61921",
-  [MyIcons.RegularUiCircleChevronLeft]: "61922",
-  [MyIcons.RegularUiCircleChevronBottom]: "61923",
-  [MyIcons.RegularUiCircleCheck]: "61924",
-  [MyIcons.RegularUiCircleCheckA]: "61925",
-  [MyIcons.RegularUiCircleArrowTop]: "61926",
-  [MyIcons.RegularUiCircleArrowRight]: "61927",
-  [MyIcons.RegularUiCircleArrowLeft]: "61928",
-  [MyIcons.RegularUiCircleArrowBottom]: "61929",
-  [MyIcons.RegularUiChevronTop]: "61930",
-  [MyIcons.RegularUiChevronTopSmall]: "61931",
-  [MyIcons.RegularUiChevronRight]: "61932",
-  [MyIcons.RegularUiChevronRightTripple]: "61933",
-  [MyIcons.RegularUiChevronRightSmall]: "61934",
-  [MyIcons.RegularUiChevronLeft]: "61935",
-  [MyIcons.RegularUiChevronLeftSmall]: "61936",
-  [MyIcons.RegularUiChevronBottom]: "61937",
-  [MyIcons.RegularUiChevronBottomSmall]: "61938",
-  [MyIcons.RegularUiCheckbox]: "61939",
-  [MyIcons.RegularUiCheck]: "61940",
-  [MyIcons.RegularUiCheckSmall]: "61941",
-  [MyIcons.RegularUiCheckSmallCircle]: "61942",
-  [MyIcons.RegularUiCard]: "61943",
-  [MyIcons.RegularUiCardView]: "61944",
-  [MyIcons.RegularUiBulletView]: "61945",
-  [MyIcons.RegularUiBoxWarning]: "61946",
-  [MyIcons.RegularUiBoxHelp]: "61947",
-  [MyIcons.RegularUiBlock]: "61948",
-  [MyIcons.RegularUiBackspace]: "61949",
-  [MyIcons.RegularUiAttribute]: "61950",
-  [MyIcons.RegularUiAttributeInherited]: "61951",
-  [MyIcons.RegularUiArrowTop]: "61952",
-  [MyIcons.RegularUiArrowTopSmall]: "61953",
-  [MyIcons.RegularUiArrowTopRight]: "61954",
-  [MyIcons.RegularUiArrowTopLeft]: "61955",
-  [MyIcons.RegularUiArrowTopA]: "61956",
-  [MyIcons.RegularUiArrowRight]: "61957",
-  [MyIcons.RegularUiArrowRightSmall]: "61958",
-  [MyIcons.RegularUiArrowRightA]: "61959",
-  [MyIcons.RegularUiArrowLeft]: "61960",
-  [MyIcons.RegularUiArrowLeftSmall]: "61961",
-  [MyIcons.RegularUiArrowLeftA]: "61962",
-  [MyIcons.RegularUiArrowBottom]: "61963",
-  [MyIcons.RegularUiArrowBottomSmall]: "61964",
-  [MyIcons.RegularUiArrowBottomRight]: "61965",
-  [MyIcons.RegularUiArrowBottomLeft]: "61966",
-  [MyIcons.RegularUiArrowBottomA]: "61967",
-  [MyIcons.RegularUiAlignTop]: "61968",
-  [MyIcons.RegularUiAlignRight]: "61969",
-  [MyIcons.RegularUiAlignLeft]: "61970",
-  [MyIcons.RegularUiAlignCenterVertical]: "61971",
-  [MyIcons.RegularUiAlignCenterHorizontal]: "61972",
-  [MyIcons.RegularUiAlignBottom]: "61973",
-  [MyIcons.RegularUiAddConnectionPoint]: "61974",
-  [MyIcons.RegularTransportTruck]: "61975",
-  [MyIcons.RegularTransportTruckA]: "61976",
-  [MyIcons.RegularTransportTrain]: "61977",
-  [MyIcons.RegularTransportSignStop]: "61978",
-  [MyIcons.RegularTransportShip]: "61979",
-  [MyIcons.RegularTransportShipA]: "61980",
-  [MyIcons.RegularTransportCar]: "61981",
-  [MyIcons.RegularTransportCarA]: "61982",
-  [MyIcons.RegularTransportBus]: "61983",
-  [MyIcons.RegularTransportBusTicket]: "61984",
-  [MyIcons.RegularTransportBusA]: "61985",
-  [MyIcons.RegularTransportBicycle]: "61986",
-  [MyIcons.RegularToolUmbrella]: "61987",
-  [MyIcons.RegularToolToolsBox]: "61988",
-  [MyIcons.RegularToolTextType]: "61989",
-  [MyIcons.RegularToolSmartphonePay]: "61990",
-  [MyIcons.RegularToolScissors]: "61991",
-  [MyIcons.RegularToolSateliteType]: "61992",
-  [MyIcons.RegularToolRuler]: "61993",
-  [MyIcons.RegularToolRulerCorner]: "61994",
-  [MyIcons.RegularToolRulerB]: "61995",
-  [MyIcons.RegularToolRouterSignal]: "61996",
-  [MyIcons.RegularToolRazor]: "61997",
-  [MyIcons.RegularToolProtectionType]: "61998",
-  [MyIcons.RegularToolPropertyType]: "61999",
-  [MyIcons.RegularToolProjector]: "62000",
-  [MyIcons.RegularToolPlug]: "62001",
-  [MyIcons.RegularToolPhone]: "62002",
-  [MyIcons.RegularToolPhoneLandscape]: "62003",
-  [MyIcons.RegularToolMouse]: "62004",
-  [MyIcons.RegularToolModuleThree]: "62005",
-  [MyIcons.RegularToolMagnet]: "62006",
-  [MyIcons.RegularToolMagicWand]: "62007",
-  [MyIcons.RegularToolLaptop]: "62008",
-  [MyIcons.RegularToolIntType]: "62009",
-  [MyIcons.RegularToolHardwareType]: "62010",
-  [MyIcons.RegularToolHammer]: "62011",
-  [MyIcons.RegularToolHammerPlus]: "62012",
-  [MyIcons.RegularToolHammerAngle]: "62013",
-  [MyIcons.RegularToolHammerA]: "62014",
-  [MyIcons.RegularToolGrid]: "62015",
-  [MyIcons.RegularToolGearsType]: "62016",
-  [MyIcons.RegularToolFocus]: "62017",
-  [MyIcons.RegularToolFloppyEdit]: "62018",
-  [MyIcons.RegularToolFloppyDisks]: "62019",
-  [MyIcons.RegularToolFloppyDisk]: "62020",
-  [MyIcons.RegularToolFlashlight]: "62021",
-  [MyIcons.RegularToolFireExtinguisher]: "62022",
-  [MyIcons.RegularToolDisplay]: "62023",
-  [MyIcons.RegularToolDisplayUser]: "62024",
-  [MyIcons.RegularToolConsole]: "62025",
-  [MyIcons.RegularToolConsoleA]: "62026",
-  [MyIcons.RegularToolCompass]: "62027",
-  [MyIcons.RegularToolCamera]: "62028",
-  [MyIcons.RegularToolCalc]: "62029",
-  [MyIcons.RegularToolBinoculars]: "62030",
-  [MyIcons.RegularToolAreaType]: "62031",
-  [MyIcons.RegularToolAndroidType]: "62032",
-  [MyIcons.RegularTimeWatch]: "62033",
-  [MyIcons.RegularTimeTimer]: "62034",
-  [MyIcons.RegularTimeStopwatch]: "62035",
-  [MyIcons.RegularTimeSpeedMeter]: "62036",
-  [MyIcons.RegularTimeHourglass]: "62037",
-  [MyIcons.RegularTimeClockF]: "62038",
-  [MyIcons.RegularTimeClockCircle]: "62039",
-  [MyIcons.RegularTimeCalendar]: "62040",
-  [MyIcons.RegularTimeCalendarWeek]: "62041",
-  [MyIcons.RegularTimeCalendarSmall]: "62042",
-  [MyIcons.RegularTimeCalendarDots]: "62043",
-  [MyIcons.RegularTimeCalendarClock]: "62044",
-  [MyIcons.RegularTimeCalendarCash]: "62045",
-  [MyIcons.RegularTimeAlarm]: "62046",
-  [MyIcons.RegularSportTv]: "62047",
-  [MyIcons.RegularSportTrophy]: "62048",
-  [MyIcons.RegularSportPuzzle]: "62049",
-  [MyIcons.RegularSportMedicineLab]: "62050",
-  [MyIcons.RegularSportMedic]: "62051",
-  [MyIcons.RegularSportHeartPulse]: "62052",
-  [MyIcons.RegularSportGauge]: "62053",
-  [MyIcons.RegularSportFlag]: "62054",
-  [MyIcons.RegularSportDumbell]: "62055",
-  [MyIcons.RegularSportBadge]: "62056",
-  [MyIcons.RegularSportBadgeH]: "62057",
-  [MyIcons.RegularSportBadgeC]: "62058",
-  [MyIcons.RegularSportBadgeB]: "62059",
-  [MyIcons.RegularShopWallet]: "62060",
-  [MyIcons.RegularShopTracking]: "62061",
-  [MyIcons.RegularShopTie]: "62062",
-  [MyIcons.RegularShopTag]: "62063",
-  [MyIcons.RegularShopTagSearch]: "62064",
-  [MyIcons.RegularShopTagRefresh]: "62065",
-  [MyIcons.RegularShopTagPlus]: "62066",
-  [MyIcons.RegularShopTagMinus]: "62067",
-  [MyIcons.RegularShopTagLock]: "62068",
-  [MyIcons.RegularShopTagInfo]: "62069",
-  [MyIcons.RegularShopTagDatabase]: "62070",
-  [MyIcons.RegularShopTagCross]: "62071",
-  [MyIcons.RegularShopTagCheck]: "62072",
-  [MyIcons.RegularShopSuitcase]: "62073",
-  [MyIcons.RegularShopShipmentPackages]: "62074",
-  [MyIcons.RegularShopSavingPiggyBank]: "62075",
-  [MyIcons.RegularShopSafeBox]: "62076",
-  [MyIcons.RegularShopPresent]: "62077",
-  [MyIcons.RegularShopPound]: "62078",
-  [MyIcons.RegularShopPerformanceMoneyDecrease]: "62079",
-  [MyIcons.RegularShopMastercard]: "62080",
-  [MyIcons.RegularShopMarket]: "62081",
-  [MyIcons.RegularShopEuro]: "62082",
-  [MyIcons.RegularShopDolar]: "62083",
-  [MyIcons.RegularShopDiscountCoupon]: "62084",
-  [MyIcons.RegularShopDiscountCircle]: "62085",
-  [MyIcons.RegularShopDiamond]: "62086",
-  [MyIcons.RegularShopCreditcard]: "62087",
-  [MyIcons.RegularShopCoins]: "62088",
-  [MyIcons.RegularShopCash]: "62089",
-  [MyIcons.RegularShopCashDolar]: "62090",
-  [MyIcons.RegularShopCartFull]: "62091",
-  [MyIcons.RegularShopCartEmpty]: "62092",
-  [MyIcons.RegularShopCartEmptyAlt]: "62093",
-  [MyIcons.RegularShopCartDownload]: "62094",
-  [MyIcons.RegularShopBox]: "62095",
-  [MyIcons.RegularShopBoxPlus]: "62096",
-  [MyIcons.RegularShopBoxMinus]: "62097",
-  [MyIcons.RegularShopBoxEmpty]: "62098",
-  [MyIcons.RegularShopBill]: "62099",
-  [MyIcons.RegularShopBasket]: "62100",
-  [MyIcons.RegularShopBarcode]: "62101",
-  [MyIcons.RegularShopBag]: "62102",
-  [MyIcons.RegularShopAccountingBillStack]: "62103",
-  [MyIcons.RegularSettingsWrench]: "62104",
-  [MyIcons.RegularSettingsMachineTrack]: "62105",
-  [MyIcons.RegularSettingsHotspot]: "62106",
-  [MyIcons.RegularSettingsGear]: "62107",
-  [MyIcons.RegularSettingsGearA]: "62108",
-  [MyIcons.RegularSettingsEqualizer]: "62109",
-  [MyIcons.RegularSettingsComonent]: "62110",
-  [MyIcons.RegularSettingsColorMode]: "62111",
-  [MyIcons.RegularSettingsAutoFlash]: "62112",
-  [MyIcons.RegularSettingsAirplane]: "62113",
-  [MyIcons.RegularMusicVolumeMute]: "62114",
-  [MyIcons.RegularMusicVolumeMedium]: "62115",
-  [MyIcons.RegularMusicVolumeLow]: "62116",
-  [MyIcons.RegularMusicVolumeHigh]: "62117",
-  [MyIcons.RegularMusicStop]: "62118",
-  [MyIcons.RegularMusicSpeaker]: "62119",
-  [MyIcons.RegularMusicShuffle]: "62120",
-  [MyIcons.RegularMusicRepeat]: "62121",
-  [MyIcons.RegularMusicRepeatOne]: "62122",
-  [MyIcons.RegularMusicRadio]: "62123",
-  [MyIcons.RegularMusicPrevious]: "62124",
-  [MyIcons.RegularMusicPreviousA]: "62125",
-  [MyIcons.RegularMusicPlaylist]: "62126",
-  [MyIcons.RegularMusicPlay]: "62127",
-  [MyIcons.RegularMusicPause]: "62128",
-  [MyIcons.RegularMusicNote]: "62129",
-  [MyIcons.RegularMusicNoteA]: "62130",
-  [MyIcons.RegularMusicNext]: "62131",
-  [MyIcons.RegularMusicNextA]: "62132",
-  [MyIcons.RegularMusicMic]: "62133",
-  [MyIcons.RegularMusicList]: "62134",
-  [MyIcons.RegularMusicHeadphones]: "62135",
-  [MyIcons.RegularMusicHeadphonesA]: "62136",
-  [MyIcons.RegularMusicEqualiser]: "62137",
-  [MyIcons.RegularMusicEject]: "62138",
-  [MyIcons.RegularMusicCd]: "62139",
-  [MyIcons.RegularMusicAlbum]: "62140",
-  [MyIcons.RegularMiscWifi]: "62141",
-  [MyIcons.RegularMiscSmileSad]: "62142",
-  [MyIcons.RegularMiscSmileMeh]: "62143",
-  [MyIcons.RegularMiscSmileLaught]: "62144",
-  [MyIcons.RegularMiscSmileHappy]: "62145",
-  [MyIcons.RegularMiscSmileAngry]: "62146",
-  [MyIcons.RegularMiscReceptionHotelBell]: "62147",
-  [MyIcons.RegularMiscPuzzle]: "62148",
-  [MyIcons.RegularMiscModuleHandPuzzle]: "62149",
-  [MyIcons.RegularMiscMaleSign]: "62150",
-  [MyIcons.RegularMiscGridPerspective]: "62151",
-  [MyIcons.RegularMiscGlobe]: "62152",
-  [MyIcons.RegularMiscGesture]: "62153",
-  [MyIcons.RegularMiscGestureTap]: "62154",
-  [MyIcons.RegularMiscGestureSwipeRight]: "62155",
-  [MyIcons.RegularMiscGestureSwipeLeft]: "62156",
-  [MyIcons.RegularMiscGestureDoubleTap]: "62157",
-  [MyIcons.RegularMiscFemaleSign]: "62158",
-  [MyIcons.RegularMiscCursorHandOpen]: "62159",
-  [MyIcons.RegularMiscCube]: "62160",
-  [MyIcons.RegularMiscCrown]: "62161",
-  [MyIcons.RegularMiscBulletDiamond]: "62162",
-  [MyIcons.RegularLogoX]: "62163",
-  [MyIcons.RegularLogoWindows]: "62164",
-  [MyIcons.RegularLogoTwitter]: "62165",
-  [MyIcons.RegularLogoLinux]: "62166",
-  [MyIcons.RegularLogoLinkedin]: "62167",
-  [MyIcons.RegularLogoInstagram]: "62168",
-  [MyIcons.RegularLogoFacebook]: "62169",
-  [MyIcons.RegularLogoApple]: "62170",
-  [MyIcons.RegularLocationStreetSign]: "62171",
-  [MyIcons.RegularLocationStreetSignA]: "62172",
-  [MyIcons.RegularLocationPins]: "62173",
-  [MyIcons.RegularLocationPin]: "62174",
-  [MyIcons.RegularLocationPinPlus]: "62175",
-  [MyIcons.RegularLocationPinMinus]: "62176",
-  [MyIcons.RegularLocationPinMap]: "62177",
-  [MyIcons.RegularLocationPinCheck]: "62178",
-  [MyIcons.RegularLocationPinB]: "62179",
-  [MyIcons.RegularLocationPinA]: "62180",
-  [MyIcons.RegularLocationMap]: "62181",
-  [MyIcons.RegularLocationMapCross]: "62182",
-  [MyIcons.RegularLocationDirection]: "62183",
-  [MyIcons.RegularLocationDirectionSign]: "62184",
-  [MyIcons.RegularLocationCompass]: "62185",
-  [MyIcons.RegularEnvTree]: "62186",
-  [MyIcons.RegularEnvTreeA]: "62187",
-  [MyIcons.RegularEnvMountains]: "62188",
-  [MyIcons.RegularEnvLeaf]: "62189",
-  [MyIcons.RegularEnvFlower]: "62190",
-  [MyIcons.RegularEnvEarth]: "62191",
-  [MyIcons.RegularEnvAtomicBomb]: "62192",
-  [MyIcons.RegularEditorialUndo]: "62193",
-  [MyIcons.RegularEditorialTypingMachine]: "62194",
-  [MyIcons.RegularEditorialTrash]: "62195",
-  [MyIcons.RegularEditorialTextUnderline]: "62196",
-  [MyIcons.RegularEditorialTextStyle]: "62197",
-  [MyIcons.RegularEditorialTextStrikeThrough]: "62198",
-  [MyIcons.RegularEditorialTextItalic]: "62199",
-  [MyIcons.RegularEditorialTextFormat]: "62200",
-  [MyIcons.RegularEditorialTextBold]: "62201",
-  [MyIcons.RegularEditorialSortDesc]: "62202",
-  [MyIcons.RegularEditorialSortCancel]: "62203",
-  [MyIcons.RegularEditorialSortAsc]: "62204",
-  [MyIcons.RegularEditorialRedo]: "62205",
-  [MyIcons.RegularEditorialPencil]: "62206",
-  [MyIcons.RegularEditorialPencilSmall]: "62207",
-  [MyIcons.RegularEditorialPen]: "62208",
-  [MyIcons.RegularEditorialParagraph]: "62209",
-  [MyIcons.RegularEditorialParagraphFirstLetter]: "62210",
-  [MyIcons.RegularEditorialItalicOff]: "62211",
-  [MyIcons.RegularEditorialIndentRight]: "62212",
-  [MyIcons.RegularEditorialIndentLeft]: "62213",
-  [MyIcons.RegularEditorialHashtagSmall]: "62214",
-  [MyIcons.RegularEditorialHash]: "62215",
-  [MyIcons.RegularEditorialFontSize]: "62216",
-  [MyIcons.RegularEditorialCombineIntersect]: "62217",
-  [MyIcons.RegularEditorialColorPalette]: "62218",
-  [MyIcons.RegularEditorialBrush]: "62219",
-  [MyIcons.RegularEditorialBookmark]: "62220",
-  [MyIcons.RegularEditorialAlignRight]: "62221",
-  [MyIcons.RegularEditorialAlignLeft]: "62222",
-  [MyIcons.RegularEditorialAlignCenter]: "62223",
-  [MyIcons.RegularDocWboardSearch]: "62224",
-  [MyIcons.RegularDocWboardLine]: "62225",
-  [MyIcons.RegularDocWboardGear]: "62226",
-  [MyIcons.RegularDocWboardCheck]: "62227",
-  [MyIcons.RegularDocWboardArrowTop]: "62228",
-  [MyIcons.RegularDocUpload]: "62229",
-  [MyIcons.RegularDocTodoList]: "62230",
-  [MyIcons.RegularDocTodoListUser]: "62231",
-  [MyIcons.RegularDocTodoListSquare]: "62232",
-  [MyIcons.RegularDocTaskListQuestion]: "62233",
-  [MyIcons.RegularDocTaskChecklist]: "62234",
-  [MyIcons.RegularDocStack]: "62235",
-  [MyIcons.RegularDocProfile]: "62236",
-  [MyIcons.RegularDocPrinter]: "62237",
-  [MyIcons.RegularDocPlus]: "62238",
-  [MyIcons.RegularDocPin]: "62239",
-  [MyIcons.RegularDocPie]: "62240",
-  [MyIcons.RegularDocPapers]: "62241",
-  [MyIcons.RegularDocPaperStack]: "62242",
-  [MyIcons.RegularDocPaperLine]: "62243",
-  [MyIcons.RegularDocOfficeStampDocument]: "62244",
-  [MyIcons.RegularDocOfficeFolder]: "62245",
-  [MyIcons.RegularDocOfficeFilePdf]: "62246",
-  [MyIcons.RegularDocNotesUpload]: "62247",
-  [MyIcons.RegularDocNotesPaperText]: "62248",
-  [MyIcons.RegularDocNotesHome]: "62249",
-  [MyIcons.RegularDocNotesGive]: "62250",
-  [MyIcons.RegularDocNotesFlip]: "62251",
-  [MyIcons.RegularDocNewspaper]: "62252",
-  [MyIcons.RegularDocMinus]: "62253",
-  [MyIcons.RegularDocMailboxIn]: "62254",
-  [MyIcons.RegularDocList]: "62255",
-  [MyIcons.RegularDocListNumbers]: "62256",
-  [MyIcons.RegularDocInvoice]: "62257",
-  [MyIcons.RegularDocImage]: "62258",
-  [MyIcons.RegularDocImageA]: "62259",
-  [MyIcons.RegularDocIdCardVertical]: "62260",
-  [MyIcons.RegularDocGlasses]: "62261",
-  [MyIcons.RegularDocFolder]: "62262",
-  [MyIcons.RegularDocFolderSync]: "62263",
-  [MyIcons.RegularDocFolderPlus]: "62264",
-  [MyIcons.RegularDocFolderMinus]: "62265",
-  [MyIcons.RegularDocFolderHome]: "62266",
-  [MyIcons.RegularDocFolderCross]: "62267",
-  [MyIcons.RegularDocFolderCheck]: "62268",
-  [MyIcons.RegularDocFileZip]: "62269",
-  [MyIcons.RegularDocFileXls]: "62270",
-  [MyIcons.RegularDocFileVideo]: "62271",
-  [MyIcons.RegularDocFileSave]: "62272",
-  [MyIcons.RegularDocFileRefresh]: "62273",
-  [MyIcons.RegularDocFilePrint]: "62274",
-  [MyIcons.RegularDocFilePrev]: "62275",
-  [MyIcons.RegularDocFilePresentation]: "62276",
-  [MyIcons.RegularDocFilePpt]: "62277",
-  [MyIcons.RegularDocFilePlus]: "62278",
-  [MyIcons.RegularDocFileNext]: "62279",
-  [MyIcons.RegularDocFileMinus]: "62280",
-  [MyIcons.RegularDocFileLine]: "62281",
-  [MyIcons.RegularDocFileImage]: "62282",
-  [MyIcons.RegularDocFileGraph]: "62283",
-  [MyIcons.RegularDocFileDoc]: "62284",
-  [MyIcons.RegularDocFileCross]: "62285",
-  [MyIcons.RegularDocFileCheck]: "62286",
-  [MyIcons.RegularDocFileBookmark]: "62287",
-  [MyIcons.RegularDocFileBlank]: "62288",
-  [MyIcons.RegularDocFileAudio]: "62289",
-  [MyIcons.RegularDocDownload]: "62290",
-  [MyIcons.RegularDocDiary]: "62291",
-  [MyIcons.RegularDocCopy]: "62292",
-  [MyIcons.RegularDocCompose]: "62293",
-  [MyIcons.RegularDocCommonFileTextEdit]: "62294",
-  [MyIcons.RegularDocCommonFileHome]: "62295",
-  [MyIcons.RegularDocCommonFileEdit]: "62296",
-  [MyIcons.RegularDocCamera]: "62297",
-  [MyIcons.RegularDocBriefcase]: "62298",
-  [MyIcons.RegularDocBoxP]: "62299",
-  [MyIcons.RegularDocBookmark]: "62300",
-  [MyIcons.RegularDocBook]: "62301",
-  [MyIcons.RegularDocBookUpload]: "62302",
-  [MyIcons.RegularDocBookTarget]: "62303",
-  [MyIcons.RegularDocBookSettings]: "62304",
-  [MyIcons.RegularDocBookModules]: "62305",
-  [MyIcons.RegularDocBookLibrary]: "62306",
-  [MyIcons.RegularDocBookDownload]: "62307",
-  [MyIcons.RegularDocBookCash]: "62308",
-  [MyIcons.RegularDocBookB]: "62309",
-  [MyIcons.RegularDocBookA]: "62310",
-  [MyIcons.RegularDocAttachment]: "62311",
-  [MyIcons.RegularDocArticle]: "62312",
-  [MyIcons.RegularDocArchive]: "62313",
-  [MyIcons.RegularDocArchiveUpload]: "62314",
-  [MyIcons.RegularDocArchiveFolder]: "62315",
-  [MyIcons.RegularDocArchiveEmpty]: "62316",
-  [MyIcons.RegularDocArchiveDownload]: "62317",
-  [MyIcons.RegularDocAnalyticsUp]: "62318",
-  [MyIcons.RegularComWarning]: "62319",
-  [MyIcons.RegularComVoicemail]: "62320",
-  [MyIcons.RegularComSatellite]: "62321",
-  [MyIcons.RegularComPostcard]: "62322",
-  [MyIcons.RegularComPictures]: "62323",
-  [MyIcons.RegularComPhone]: "62324",
-  [MyIcons.RegularComPhoneLandline]: "62325",
-  [MyIcons.RegularComPaperplane]: "62326",
-  [MyIcons.RegularComMicrophonePodcast]: "62327",
-  [MyIcons.RegularComMic]: "62328",
-  [MyIcons.RegularComMicMute]: "62329",
-  [MyIcons.RegularComMegaphone]: "62330",
-  [MyIcons.RegularComMail]: "62331",
-  [MyIcons.RegularComMailWarning]: "62332",
-  [MyIcons.RegularComMailSync]: "62333",
-  [MyIcons.RegularComMailReceive]: "62334",
-  [MyIcons.RegularComMailPlus]: "62335",
-  [MyIcons.RegularComMailOpen]: "62336",
-  [MyIcons.RegularComMailOpenWarning]: "62337",
-  [MyIcons.RegularComMailMinus]: "62338",
-  [MyIcons.RegularComMailDownload]: "62339",
-  [MyIcons.RegularComMailCross]: "62340",
-  [MyIcons.RegularComMailClock]: "62341",
-  [MyIcons.RegularComMailCheck]: "62342",
-  [MyIcons.RegularComLanguage]: "62343",
-  [MyIcons.RegularComHelp]: "62344",
-  [MyIcons.RegularComHelpA]: "62345",
-  [MyIcons.RegularComBubble]: "62346",
-  [MyIcons.RegularComBubbleLine]: "62347",
-  [MyIcons.RegularComBubbleLineA]: "62348",
-  [MyIcons.RegularComBubbleGroup]: "62349",
-  [MyIcons.RegularComBubbleGroupA]: "62350",
-  [MyIcons.RegularComBubbleDot]: "62351",
-  [MyIcons.RegularComBubbleDotA]: "62352",
-  [MyIcons.RegularComBubbleA]: "62353",
-  [MyIcons.RegularComBell]: "62354",
-  [MyIcons.RegularComAdvertisingMegaphone]: "62355",
-  [MyIcons.RegularBuildingView]: "62356",
-  [MyIcons.RegularBuildingToilet]: "62357",
-  [MyIcons.RegularBuildingSofa]: "62358",
-  [MyIcons.RegularBuildingSofaA]: "62359",
-  [MyIcons.RegularBuildingSafetyFireShield]: "62360",
-  [MyIcons.RegularBuildingRockerSwitch]: "62361",
-  [MyIcons.RegularBuildingRealEstateDimensionsPlan]: "62362",
-  [MyIcons.RegularBuildingRealEstateDimensionsBlock]: "62363",
-  [MyIcons.RegularBuildingPlanBalcony]: "62364",
-  [MyIcons.RegularBuildingOffice]: "62365",
-  [MyIcons.RegularBuildingOfficeSettingsB]: "62366",
-  [MyIcons.RegularBuildingOfficeAddB]: "62367",
-  [MyIcons.RegularBuildingOfficeA]: "62368",
-  [MyIcons.RegularBuildingMuseum]: "62369",
-  [MyIcons.RegularBuildingLift]: "62370",
-  [MyIcons.RegularBuildingLamp]: "62371",
-  [MyIcons.RegularBuildingLampA]: "62372",
-  [MyIcons.RegularBuildingHouse]: "62373",
-  [MyIcons.RegularBuildingHeater]: "62374",
-  [MyIcons.RegularBuildingHangingRack]: "62375",
-  [MyIcons.RegularBuildingFireplace]: "62376",
-  [MyIcons.RegularBuildingFaucet]: "62377",
-  [MyIcons.RegularBuildingExit]: "62378",
-  [MyIcons.RegularBuildingDrawer]: "62379",
-  [MyIcons.RegularBuildingDoor]: "62380",
-  [MyIcons.RegularBuildingDimensionsRuler]: "62381",
-  [MyIcons.RegularBuildingDesk]: "62382",
-  [MyIcons.RegularBuildingDaylight]: "62383",
-  [MyIcons.RegularBuildingChair]: "62384",
-  [MyIcons.RegularBuildingCabinet]: "62385",
-  [MyIcons.RegularBuildingBlueprint]: "62386",
-  [MyIcons.RegularBuildingBed]: "62387",
-  [MyIcons.BoldWebWebcamFilled]: "62388",
-  [MyIcons.BoldWebWarningFilled]: "62389",
-  [MyIcons.BoldWebTabsPlusFilled]: "62390",
-  [MyIcons.BoldWebTabsMinusFilled]: "62391",
-  [MyIcons.BoldWebTabsFilled]: "62392",
-  [MyIcons.BoldWebTabsCrossFilled]: "62393",
-  [MyIcons.BoldWebTabsCheckFilled]: "62394",
-  [MyIcons.BoldWebTabletIncreaseFilled]: "62395",
-  [MyIcons.BoldWebStatisticFilled]: "62396",
-  [MyIcons.BoldWebShieldWarningFilled]: "62397",
-  [MyIcons.BoldWebShareFilled]: "62398",
-  [MyIcons.BoldWebServerFilled]: "62399",
-  [MyIcons.BoldWebRssSettingsFilled]: "62400",
-  [MyIcons.BoldWebRssFilled]: "62401",
-  [MyIcons.BoldWebLinkFilled]: "62402",
-  [MyIcons.BoldWebLinkBFilled]: "62403",
-  [MyIcons.BoldWebLinkBCheckFilled]: "62404",
-  [MyIcons.BoldWebIncreaseMailFilled]: "62405",
-  [MyIcons.BoldWebGridUploadFilled]: "62406",
-  [MyIcons.BoldWebGraphLinearSmallFilled]: "62407",
-  [MyIcons.BoldWebGlobeFilled]: "62408",
-  [MyIcons.BoldWebFlagFilled]: "62409",
-  [MyIcons.BoldWebFlagCFilled]: "62410",
-  [MyIcons.BoldWebDataFileBarsFilled]: "62411",
-  [MyIcons.BoldWebConsoleFilled]: "62412",
-  [MyIcons.BoldWebCollapseUpFilled]: "62413",
-  [MyIcons.BoldWebCollapseRightFilled]: "62414",
-  [MyIcons.BoldWebCollapseLeftFilled]: "62415",
-  [MyIcons.BoldWebCollapseDownFilled]: "62416",
-  [MyIcons.BoldWebCodeFilled]: "62417",
-  [MyIcons.BoldWebChartFilled]: "62418",
-  [MyIcons.BoldWebBugFilled]: "62419",
-  [MyIcons.BoldWebBrowserWindowFilled]: "62420",
-  [MyIcons.BoldWebBrowserGridFilled]: "62421",
-  [MyIcons.BoldWebBrowserFilled]: "62422",
-  [MyIcons.BoldWebBrokenLinkFilled]: "62423",
-  [MyIcons.BoldWebBarsHomeFilled]: "62424",
-  [MyIcons.BoldWebAtSignFilled]: "62425",
-  [MyIcons.BoldWebAnalyticsNetFilled]: "62426",
-  [MyIcons.BoldWebAnalyticsGraphFilled]: "62427",
-  [MyIcons.BoldWeatherWindsockFilled]: "62428",
-  [MyIcons.BoldWeatherWaterFilled]: "62429",
-  [MyIcons.BoldWeatherThermometerFilled]: "62430",
-  [MyIcons.BoldWeatherSunriseFilled]: "62431",
-  [MyIcons.BoldWeatherSunFilled]: "62432",
-  [MyIcons.BoldWeatherSunCloudSnowFilled]: "62433",
-  [MyIcons.BoldWeatherSnowflakeFilled]: "62434",
-  [MyIcons.BoldWeatherMoonFilled]: "62435",
-  [MyIcons.BoldWeatherMoonAFilled]: "62436",
-  [MyIcons.BoldWeatherFlashFilled]: "62437",
-  [MyIcons.BoldWeatherFireFilled]: "62438",
-  [MyIcons.BoldWeatherCloudSnowFilled]: "62439",
-  [MyIcons.BoldWeatherCloudRainFilled]: "62440",
-  [MyIcons.BoldWeatherCloudFlashFilled]: "62441",
-  [MyIcons.BoldWeatherCloudFilled]: "62442",
-  [MyIcons.BoldVideoPlayerFilled]: "62443",
-  [MyIcons.BoldUserWalkingFilled]: "62444",
-  [MyIcons.BoldUserToiletSignFilled]: "62445",
-  [MyIcons.BoldUserSingleNeutralHomeFilled]: "62446",
-  [MyIcons.BoldUserSingleNeutralActionsEditFilled]: "62447",
-  [MyIcons.BoldUserSingleNeutralActionsBlockFilled]: "62448",
-  [MyIcons.BoldUserShareFilled]: "62449",
-  [MyIcons.BoldUserPlusFilled]: "62450",
-  [MyIcons.BoldUserMultipleUsersFilled]: "62451",
-  [MyIcons.BoldUserMinusFilled]: "62452",
-  [MyIcons.BoldUserMessagesPeopleUserWarningFilled]: "62453",
-  [MyIcons.BoldUserMaleSignFilled]: "62454",
-  [MyIcons.BoldUserMalePlusFilled]: "62455",
-  [MyIcons.BoldUserMaleMinusFilled]: "62456",
-  [MyIcons.BoldUserMaleListFilled]: "62457",
-  [MyIcons.BoldUserMaleFilled]: "62458",
-  [MyIcons.BoldUserMaleCrossFilled]: "62459",
-  [MyIcons.BoldUserMaleCheckFilled]: "62460",
-  [MyIcons.BoldUserLockUnlockedFilled]: "62461",
-  [MyIcons.BoldUserLockUnlockedBFilled]: "62462",
-  [MyIcons.BoldUserLockFilled]: "62463",
-  [MyIcons.BoldUserListFilled]: "62464",
-  [MyIcons.BoldUserKeyFilled]: "62465",
-  [MyIcons.BoldUserHeadsetFilled]: "62466",
-  [MyIcons.BoldUserGroupFilled]: "62467",
-  [MyIcons.BoldUserGroupFemaleFilled]: "62468",
-  [MyIcons.BoldUserGroupAFilled]: "62469",
-  [MyIcons.BoldUserGearFilled]: "62470",
-  [MyIcons.BoldUserForwardFilled]: "62471",
-  [MyIcons.BoldUserFilled]: "62472",
-  [MyIcons.BoldUserFemaleSignFilled]: "62473",
-  [MyIcons.BoldUserFemalePlusFilled]: "62474",
-  [MyIcons.BoldUserFemaleMinusFilled]: "62475",
-  [MyIcons.BoldUserFemaleListFilled]: "62476",
-  [MyIcons.BoldUserFemaleFilled]: "62477",
-  [MyIcons.BoldUserFemaleCrossFilled]: "62478",
-  [MyIcons.BoldUserFemaleCheckFilled]: "62479",
-  [MyIcons.BoldUserCrossFilled]: "62480",
-  [MyIcons.BoldUserContactBookFilled]: "62481",
-  [MyIcons.BoldUserContactBookAFilled]: "62482",
-  [MyIcons.BoldUserCircleFilled]: "62483",
-  [MyIcons.BoldUserCheckFilled]: "62484",
-  [MyIcons.BoldUserBusinessDealCashExchangeFilled]: "62485",
-  [MyIcons.BoldUiZoomInPageFilled]: "62486",
-  [MyIcons.BoldUiWindowFilled]: "62487",
-  [MyIcons.BoldUiUndoFilled]: "62488",
-  [MyIcons.BoldUiUndoBFilled]: "62489",
-  [MyIcons.BoldUiUndoAFilled]: "62490",
-  [MyIcons.BoldUiTriangleTopFilled]: "62491",
-  [MyIcons.BoldUiTriangleRightFilled]: "62492",
-  [MyIcons.BoldUiTriangleLeftFilled]: "62493",
-  [MyIcons.BoldUiTriangleBottomFilled]: "62494",
-  [MyIcons.BoldUiTreeSaveFilled]: "62495",
-  [MyIcons.BoldUiTreeLoadFilled]: "62496",
-  [MyIcons.BoldUiTargetFilled]: "62497",
-  [MyIcons.BoldUiSyncFilled]: "62498",
-  [MyIcons.BoldUiStarFilled]: "62499",
-  [MyIcons.BoldUiSqareDashedFilled]: "62500",
-  [MyIcons.BoldUiSplitVerticalFilled]: "62501",
-  [MyIcons.BoldUiSplitHorizontalFilled]: "62502",
-  [MyIcons.BoldUiShrinkFilled]: "62503",
-  [MyIcons.BoldUiSearchPlusFilled]: "62504",
-  [MyIcons.BoldUiSearchMinusFilled]: "62505",
-  [MyIcons.BoldUiSearchFilled]: "62506",
-  [MyIcons.BoldUiSearchCrossFilled]: "62507",
-  [MyIcons.BoldUiSearchCheckFilled]: "62508",
-  [MyIcons.BoldUiScrollVerticalFilled]: "62509",
-  [MyIcons.BoldUiScrollHorizontalFilled]: "62510",
-  [MyIcons.BoldUiResizeVerticalFilled]: "62511",
-  [MyIcons.BoldUiResizeTopRightFilled]: "62512",
-  [MyIcons.BoldUiResizeTopLeftFilled]: "62513",
-  [MyIcons.BoldUiResizeHorizontalFilled]: "62514",
-  [MyIcons.BoldUiResizeDiagonalFilled]: "62515",
-  [MyIcons.BoldUiResizeBottomRightFilled]: "62516",
-  [MyIcons.BoldUiResizeBottomLeftFilled]: "62517",
-  [MyIcons.BoldUiReplyFilled]: "62518",
-  [MyIcons.BoldUiRepeatingFilled]: "62519",
-  [MyIcons.BoldUiRemoveConnectionPointFilled]: "62520",
-  [MyIcons.BoldUiRefreshFilled]: "62521",
-  [MyIcons.BoldUiRadiobuttonFilled]: "62522",
-  [MyIcons.BoldUiPropertyAndFilled]: "62523",
-  [MyIcons.BoldUiPreviousFilled]: "62524",
-  [MyIcons.BoldUiPreviousAFilled]: "62525",
-  [MyIcons.BoldUiPowerFilled]: "62526",
-  [MyIcons.BoldUiPopupFilled]: "62527",
-  [MyIcons.BoldUiPlusSmallFilled]: "62528",
-  [MyIcons.BoldUiPlusFilled]: "62529",
-  [MyIcons.BoldUiPixelFilled]: "62530",
-  [MyIcons.BoldUiOutLinkFilled]: "62531",
-  [MyIcons.BoldUiNumberFilled]: "62532",
-  [MyIcons.BoldUiNextFilled]: "62533",
-  [MyIcons.BoldUiNextAFilled]: "62534",
-  [MyIcons.BoldUiMoveUpFrontFilled]: "62535",
-  [MyIcons.BoldUiMoveUpFilled]: "62536",
-  [MyIcons.BoldUiMoveFilled]: "62537",
-  [MyIcons.BoldUiMoveDownFilled]: "62538",
-  [MyIcons.BoldUiMoveDownBackgroundFilled]: "62539",
-  [MyIcons.BoldUiMoreVerticalSmallFilled]: "62540",
-  [MyIcons.BoldUiMoreVerticalFilled]: "62541",
-  [MyIcons.BoldUiMoreSmallFilled]: "62542",
-  [MyIcons.BoldUiMoreSmallCircleFilled]: "62543",
-  [MyIcons.BoldUiMoreHorizontalSmallFilled]: "62544",
-  [MyIcons.BoldUiMoreFilled]: "62545",
-  [MyIcons.BoldUiMinusSmallFilled]: "62546",
-  [MyIcons.BoldUiMinusFilled]: "62547",
-  [MyIcons.BoldUiMethodInheritedFilled]: "62548",
-  [MyIcons.BoldUiMethodFilled]: "62549",
-  [MyIcons.BoldUiLogoutFilled]: "62550",
-  [MyIcons.BoldUiLoginFilled]: "62551",
-  [MyIcons.BoldUiListViewFilled]: "62552",
-  [MyIcons.BoldUiListUserFilled]: "62553",
-  [MyIcons.BoldUiListShareFilled]: "62554",
-  [MyIcons.BoldUiListForwardFilled]: "62555",
-  [MyIcons.BoldUiLayoutWireframeFilled]: "62556",
-  [MyIcons.BoldUiLayoutThirdVerticalFilled]: "62557",
-  [MyIcons.BoldUiLayoutTableViewFilled]: "62558",
-  [MyIcons.BoldUiLayoutSidebarLHalfFilled]: "62559",
-  [MyIcons.BoldUiLayoutSidebarLFilled]: "62560",
-  [MyIcons.BoldUiLayoutHalfHorizontalFilled]: "62561",
-  [MyIcons.BoldUiLayoutHalfFilled]: "62562",
-  [MyIcons.BoldUiKeyboardFilled]: "62563",
-  [MyIcons.BoldUiInLinkFilled]: "62564",
-  [MyIcons.BoldUiImportFilled]: "62565",
-  [MyIcons.BoldUiHouseFilled]: "62566",
-  [MyIcons.BoldUiHomeFilled]: "62567",
-  [MyIcons.BoldUiHomeAFilled]: "62568",
-  [MyIcons.BoldUiHierarchyTreeFilled]: "62569",
-  [MyIcons.BoldUiHierarchyFilled]: "62570",
-  [MyIcons.BoldUiHelpLifeFilled]: "62571",
-  [MyIcons.BoldUiHelpFilled]: "62572",
-  [MyIcons.BoldUiHeartFilled]: "62573",
-  [MyIcons.BoldUiHamburgerFilled]: "62574",
-  [MyIcons.BoldUiGridViewFilled]: "62575",
-  [MyIcons.BoldUiFullscreenFilled]: "62576",
-  [MyIcons.BoldUiFullscreenAFilled]: "62577",
-  [MyIcons.BoldUiFrameFilled]: "62578",
-  [MyIcons.BoldUiForwardFilled]: "62579",
-  [MyIcons.BoldUiFilterFilled]: "62580",
-  [MyIcons.BoldUiEyeFilled]: "62581",
-  [MyIcons.BoldUiEyeCrossFilled]: "62582",
-  [MyIcons.BoldUiExportFilled]: "62583",
-  [MyIcons.BoldUiExpandFilled]: "62584",
-  [MyIcons.BoldUiEnlargeFilled]: "62585",
-  [MyIcons.BoldUiDragHandleFilled]: "62586",
-  [MyIcons.BoldUiDotLargeFilled]: "62587",
-  [MyIcons.BoldUiDotFilled]: "62588",
-  [MyIcons.BoldUiCrossSmallFilled]: "62589",
-  [MyIcons.BoldUiCrossFilled]: "62590",
-  [MyIcons.BoldUiCropFilled]: "62591",
-  [MyIcons.BoldUiCreateConnectionFilled]: "62592",
-  [MyIcons.BoldUiConnectionOpenInheritedFilled]: "62593",
-  [MyIcons.BoldUiConnectionOpenFilled]: "62594",
-  [MyIcons.BoldUiConnectionInheritedFilled]: "62595",
-  [MyIcons.BoldUiConnectionFilled]: "62596",
-  [MyIcons.BoldUiConeFilled]: "62597",
-  [MyIcons.BoldUiConditionFilled]: "62598",
-  [MyIcons.BoldUiComboboxFilled]: "62599",
-  [MyIcons.BoldUiCmdFilled]: "62600",
-  [MyIcons.BoldUiCloudUploadFilled]: "62601",
-  [MyIcons.BoldUiCloudDownloadFilled]: "62602",
-  [MyIcons.BoldUiCloseParallelConnectionFilled]: "62603",
-  [MyIcons.BoldUiCircleWarningFilled]: "62604",
-  [MyIcons.BoldUiCirclePlusFilled]: "62605",
-  [MyIcons.BoldUiCircleMinusFilled]: "62606",
-  [MyIcons.BoldUiCircleInfoFilled]: "62607",
-  [MyIcons.BoldUiCircleHelpFilled]: "62608",
-  [MyIcons.BoldUiCircleFilled]: "62609",
-  [MyIcons.BoldUiCircleCrossFilled]: "62610",
-  [MyIcons.BoldUiCircleChevronTopFilled]: "62611",
-  [MyIcons.BoldUiCircleChevronRightFilled]: "62612",
-  [MyIcons.BoldUiCircleChevronLeftFilled]: "62613",
-  [MyIcons.BoldUiCircleChevronBottomFilled]: "62614",
-  [MyIcons.BoldUiCircleCheckFilled]: "62615",
-  [MyIcons.BoldUiCircleCheckAFilled]: "62616",
-  [MyIcons.BoldUiCircleArrowTopFilled]: "62617",
-  [MyIcons.BoldUiCircleArrowRightFilled]: "62618",
-  [MyIcons.BoldUiCircleArrowLeftFilled]: "62619",
-  [MyIcons.BoldUiCircleArrowBottomFilled]: "62620",
-  [MyIcons.BoldUiChevronTopSmallFilled]: "62621",
-  [MyIcons.BoldUiChevronTopFilled]: "62622",
-  [MyIcons.BoldUiChevronRightTrippleFilled]: "62623",
-  [MyIcons.BoldUiChevronRightSmallFilled]: "62624",
-  [MyIcons.BoldUiChevronRightFilled]: "62625",
-  [MyIcons.BoldUiChevronLeftSmallFilled]: "62626",
-  [MyIcons.BoldUiChevronLeftFilled]: "62627",
-  [MyIcons.BoldUiChevronBottomSmallFilled]: "62628",
-  [MyIcons.BoldUiChevronBottomFilled]: "62629",
-  [MyIcons.BoldUiCheckboxFilled]: "62630",
-  [MyIcons.BoldUiCheckSmallFilled]: "62631",
-  [MyIcons.BoldUiCheckSmallCircleFilled]: "62632",
-  [MyIcons.BoldUiCheckFilled]: "62633",
-  [MyIcons.BoldUiCardViewFilled]: "62634",
-  [MyIcons.BoldUiCardFilled]: "62635",
-  [MyIcons.BoldUiBulletViewFilled]: "62636",
-  [MyIcons.BoldUiBoxWarningFilled]: "62637",
-  [MyIcons.BoldUiBoxHelpFilled]: "62638",
-  [MyIcons.BoldUiBlockFilled]: "62639",
-  [MyIcons.BoldUiBackspaceFilled]: "62640",
-  [MyIcons.BoldUiAttributeInheritedFilled]: "62641",
-  [MyIcons.BoldUiAttributeFilled]: "62642",
-  [MyIcons.BoldUiArrowTopSmallFilled]: "62643",
-  [MyIcons.BoldUiArrowTopRightFilled]: "62644",
-  [MyIcons.BoldUiArrowTopLeftFilled]: "62645",
-  [MyIcons.BoldUiArrowTopFilled]: "62646",
-  [MyIcons.BoldUiArrowTopAFilled]: "62647",
-  [MyIcons.BoldUiArrowRightSmallFilled]: "62648",
-  [MyIcons.BoldUiArrowRightFilled]: "62649",
-  [MyIcons.BoldUiArrowRightAFilled]: "62650",
-  [MyIcons.BoldUiArrowLeftSmallFilled]: "62651",
-  [MyIcons.BoldUiArrowLeftFilled]: "62652",
-  [MyIcons.BoldUiArrowLeftAFilled]: "62653",
-  [MyIcons.BoldUiArrowBottomSmallFilled]: "62654",
-  [MyIcons.BoldUiArrowBottomRightFilled]: "62655",
-  [MyIcons.BoldUiArrowBottomLeftFilled]: "62656",
-  [MyIcons.BoldUiArrowBottomFilled]: "62657",
-  [MyIcons.BoldUiArrowBottomAFilled]: "62658",
-  [MyIcons.BoldUiAlignTopFilled]: "62659",
-  [MyIcons.BoldUiAlignRightFilled]: "62660",
-  [MyIcons.BoldUiAlignLeftFilled]: "62661",
-  [MyIcons.BoldUiAlignCenterVerticalFilled]: "62662",
-  [MyIcons.BoldUiAlignCenterHorizontalFilled]: "62663",
-  [MyIcons.BoldUiAlignBottomFilled]: "62664",
-  [MyIcons.BoldUiAddConnectionPointFilled]: "62665",
-  [MyIcons.BoldTransportTruckFilled]: "62666",
-  [MyIcons.BoldTransportTruckAFilled]: "62667",
-  [MyIcons.BoldTransportTrainFilled]: "62668",
-  [MyIcons.BoldTransportSignStopFilled]: "62669",
-  [MyIcons.BoldTransportShipFilled]: "62670",
-  [MyIcons.BoldTransportShipAFilled]: "62671",
-  [MyIcons.BoldTransportCarFilled]: "62672",
-  [MyIcons.BoldTransportCarAFilled]: "62673",
-  [MyIcons.BoldTransportBusTicketFilled]: "62674",
-  [MyIcons.BoldTransportBusFilled]: "62675",
-  [MyIcons.BoldTransportBusAFilled]: "62676",
-  [MyIcons.BoldTransportBicycleFilled]: "62677",
-  [MyIcons.BoldToolUmbrellaFilled]: "62678",
-  [MyIcons.BoldToolToolsBoxFilled]: "62679",
-  [MyIcons.BoldToolTextTypeFilled]: "62680",
-  [MyIcons.BoldToolSmartphonePayFilled]: "62681",
-  [MyIcons.BoldToolScissorsFilled]: "62682",
-  [MyIcons.BoldToolSateliteTypeFilled]: "62683",
-  [MyIcons.BoldToolRulerFilled]: "62684",
-  [MyIcons.BoldToolRulerCornerFilled]: "62685",
-  [MyIcons.BoldToolRulerBFilled]: "62686",
-  [MyIcons.BoldToolRouterSignalFilled]: "62687",
-  [MyIcons.BoldToolRazorFilled]: "62688",
-  [MyIcons.BoldToolProtectionTypeFilled]: "62689",
-  [MyIcons.BoldToolPropertyTypeFilled]: "62690",
-  [MyIcons.BoldToolProjectorFilled]: "62691",
-  [MyIcons.BoldToolPlugFilled]: "62692",
-  [MyIcons.BoldToolPhoneLandscapeFilled]: "62693",
-  [MyIcons.BoldToolPhoneFilled]: "62694",
-  [MyIcons.BoldToolMouseFilled]: "62695",
-  [MyIcons.BoldToolModuleThreeFilled]: "62696",
-  [MyIcons.BoldToolMagnetFilled]: "62697",
-  [MyIcons.BoldToolMagicWandFilled]: "62698",
-  [MyIcons.BoldToolLaptopFilled]: "62699",
-  [MyIcons.BoldToolIntTypeFilled]: "62700",
-  [MyIcons.BoldToolHardwareTypeFilled]: "62701",
-  [MyIcons.BoldToolHammerPlusFilled]: "62702",
-  [MyIcons.BoldToolHammerFilled]: "62703",
-  [MyIcons.BoldToolHammerAngleFilled]: "62704",
-  [MyIcons.BoldToolHammerAFilled]: "62705",
-  [MyIcons.BoldToolGridFilled]: "62706",
-  [MyIcons.BoldToolGearsTypeFilled]: "62707",
-  [MyIcons.BoldToolFocusFilled]: "62708",
-  [MyIcons.BoldToolFloppyEditFilled]: "62709",
-  [MyIcons.BoldToolFloppyDisksFilled]: "62710",
-  [MyIcons.BoldToolFloppyDiskFilled]: "62711",
-  [MyIcons.BoldToolFlashlightFilled]: "62712",
-  [MyIcons.BoldToolFireExtinguisherFilled]: "62713",
-  [MyIcons.BoldToolDisplayUserFilled]: "62714",
-  [MyIcons.BoldToolDisplayFilled]: "62715",
-  [MyIcons.BoldToolConsoleFilled]: "62716",
-  [MyIcons.BoldToolConsoleAFilled]: "62717",
-  [MyIcons.BoldToolCompassFilled]: "62718",
-  [MyIcons.BoldToolCameraFilled]: "62719",
-  [MyIcons.BoldToolCalcFilled]: "62720",
-  [MyIcons.BoldToolBinocularsFilled]: "62721",
-  [MyIcons.BoldToolAreaTypeFilled]: "62722",
-  [MyIcons.BoldToolAndroidTypeFilled]: "62723",
-  [MyIcons.BoldTimeWatchFilled]: "62724",
-  [MyIcons.BoldTimeTimerFilled]: "62725",
-  [MyIcons.BoldTimeStopwatchFilled]: "62726",
-  [MyIcons.BoldTimeSpeedMeterFilled]: "62727",
-  [MyIcons.BoldTimeHourglassFilled]: "62728",
-  [MyIcons.BoldTimeClockFFilled]: "62729",
-  [MyIcons.BoldTimeClockCircleFilled]: "62730",
-  [MyIcons.BoldTimeCalendarWeekFilled]: "62731",
-  [MyIcons.BoldTimeCalendarSmallFilled]: "62732",
-  [MyIcons.BoldTimeCalendarFilled]: "62733",
-  [MyIcons.BoldTimeCalendarDotsFilled]: "62734",
-  [MyIcons.BoldTimeCalendarClockFilled]: "62735",
-  [MyIcons.BoldTimeCalendarCashFilled]: "62736",
-  [MyIcons.BoldTimeAlarmFilled]: "62737",
-  [MyIcons.BoldSportTvFilled]: "62738",
-  [MyIcons.BoldSportTrophyFilled]: "62739",
-  [MyIcons.BoldSportPuzzleFilled]: "62740",
-  [MyIcons.BoldSportMedicineLabFilled]: "62741",
-  [MyIcons.BoldSportMedicFilled]: "62742",
-  [MyIcons.BoldSportHeartPulseFilled]: "62743",
-  [MyIcons.BoldSportGaugeFilled]: "62744",
-  [MyIcons.BoldSportFlagFilled]: "62745",
-  [MyIcons.BoldSportDumbellFilled]: "62746",
-  [MyIcons.BoldSportBadgeHFilled]: "62747",
-  [MyIcons.BoldSportBadgeFilled]: "62748",
-  [MyIcons.BoldSportBadgeCFilled]: "62749",
-  [MyIcons.BoldSportBadgeBFilled]: "62750",
-  [MyIcons.BoldShopWalletFilled]: "62751",
-  [MyIcons.BoldShopTrackingFilled]: "62752",
-  [MyIcons.BoldShopTieFilled]: "62753",
-  [MyIcons.BoldShopTagSearchFilled]: "62754",
-  [MyIcons.BoldShopTagRefreshFilled]: "62755",
-  [MyIcons.BoldShopTagPlusFilled]: "62756",
-  [MyIcons.BoldShopTagMinusFilled]: "62757",
-  [MyIcons.BoldShopTagLockFilled]: "62758",
-  [MyIcons.BoldShopTagInfoFilled]: "62759",
-  [MyIcons.BoldShopTagFilled]: "62760",
-  [MyIcons.BoldShopTagDatabaseFilled]: "62761",
-  [MyIcons.BoldShopTagCrossFilled]: "62762",
-  [MyIcons.BoldShopTagCheckFilled]: "62763",
-  [MyIcons.BoldShopSuitcaseFilled]: "62764",
-  [MyIcons.BoldShopShipmentPackagesFilled]: "62765",
-  [MyIcons.BoldShopSavingPiggyBankFilled]: "62766",
-  [MyIcons.BoldShopSafeBoxFilled]: "62767",
-  [MyIcons.BoldShopPresentFilled]: "62768",
-  [MyIcons.BoldShopPoundFilled]: "62769",
-  [MyIcons.BoldShopPerformanceMoneyDecreaseFilled]: "62770",
-  [MyIcons.BoldShopMastercardFilled]: "62771",
-  [MyIcons.BoldShopMarketFilled]: "62772",
-  [MyIcons.BoldShopEuroFilled]: "62773",
-  [MyIcons.BoldShopDolarFilled]: "62774",
-  [MyIcons.BoldShopDiscountCouponFilled]: "62775",
-  [MyIcons.BoldShopDiscountCircleFilled]: "62776",
-  [MyIcons.BoldShopDiamondFilled]: "62777",
-  [MyIcons.BoldShopCreditcardFilled]: "62778",
-  [MyIcons.BoldShopCoinsFilled]: "62779",
-  [MyIcons.BoldShopCashFilled]: "62780",
-  [MyIcons.BoldShopCashDolarFilled]: "62781",
-  [MyIcons.BoldShopCartFullFilled]: "62782",
-  [MyIcons.BoldShopCartEmptyFilled]: "62783",
-  [MyIcons.BoldShopCartEmptyAltFilled]: "62784",
-  [MyIcons.BoldShopCartDownloadFilled]: "62785",
-  [MyIcons.BoldShopBoxPlusFilled]: "62786",
-  [MyIcons.BoldShopBoxMinusFilled]: "62787",
-  [MyIcons.BoldShopBoxFilled]: "62788",
-  [MyIcons.BoldShopBoxEmptyFilled]: "62789",
-  [MyIcons.BoldShopBillFilled]: "62790",
-  [MyIcons.BoldShopBasketFilled]: "62791",
-  [MyIcons.BoldShopBarcodeFilled]: "62792",
-  [MyIcons.BoldShopBagFilled]: "62793",
-  [MyIcons.BoldShopAccountingBillStackFilled]: "62794",
-  [MyIcons.BoldSettingsWrenchFilled]: "62795",
-  [MyIcons.BoldSettingsMachineTrackFilled]: "62796",
-  [MyIcons.BoldSettingsHotspotFilled]: "62797",
-  [MyIcons.BoldSettingsGearFilled]: "62798",
-  [MyIcons.BoldSettingsGearAFilled]: "62799",
-  [MyIcons.BoldSettingsEqualizerFilled]: "62800",
-  [MyIcons.BoldSettingsComonentFilled]: "62801",
-  [MyIcons.BoldSettingsColorModeFilled]: "62802",
-  [MyIcons.BoldSettingsAutoFlashFilled]: "62803",
-  [MyIcons.BoldSettingsAirplaneFilled]: "62804",
-  [MyIcons.BoldMusicVolumeMuteFilled]: "62805",
-  [MyIcons.BoldMusicVolumeMediumFilled]: "62806",
-  [MyIcons.BoldMusicVolumeLowFilled]: "62807",
-  [MyIcons.BoldMusicVolumeHighFilled]: "62808",
-  [MyIcons.BoldMusicStopFilled]: "62809",
-  [MyIcons.BoldMusicSpeakerFilled]: "62810",
-  [MyIcons.BoldMusicShuffleFilled]: "62811",
-  [MyIcons.BoldMusicRepeatOneFilled]: "62812",
-  [MyIcons.BoldMusicRepeatFilled]: "62813",
-  [MyIcons.BoldMusicRadioFilled]: "62814",
-  [MyIcons.BoldMusicPreviousFilled]: "62815",
-  [MyIcons.BoldMusicPreviousAFilled]: "62816",
-  [MyIcons.BoldMusicPlaylistFilled]: "62817",
-  [MyIcons.BoldMusicPlayFilled]: "62818",
-  [MyIcons.BoldMusicPauseFilled]: "62819",
-  [MyIcons.BoldMusicNoteFilled]: "62820",
-  [MyIcons.BoldMusicNoteAFilled]: "62821",
-  [MyIcons.BoldMusicNextFilled]: "62822",
-  [MyIcons.BoldMusicNextAFilled]: "62823",
-  [MyIcons.BoldMusicMicFilled]: "62824",
-  [MyIcons.BoldMusicListFilled]: "62825",
-  [MyIcons.BoldMusicHeadphonesFilled]: "62826",
-  [MyIcons.BoldMusicHeadphonesAFilled]: "62827",
-  [MyIcons.BoldMusicEqualiserFilled]: "62828",
-  [MyIcons.BoldMusicEjectFilled]: "62829",
-  [MyIcons.BoldMusicCdFilled]: "62830",
-  [MyIcons.BoldMusicAlbumFilled]: "62831",
-  [MyIcons.BoldMiscWifiFilled]: "62832",
-  [MyIcons.BoldMiscSmileSadFilled]: "62833",
-  [MyIcons.BoldMiscSmileMehFilled]: "62834",
-  [MyIcons.BoldMiscSmileLaughtFilled]: "62835",
-  [MyIcons.BoldMiscSmileHappyFilled]: "62836",
-  [MyIcons.BoldMiscSmileAngryFilled]: "62837",
-  [MyIcons.BoldMiscReceptionHotelBellFilled]: "62838",
-  [MyIcons.BoldMiscPuzzleFilled]: "62839",
-  [MyIcons.BoldMiscModuleHandPuzzleFilled]: "62840",
-  [MyIcons.BoldMiscMaleSignFilled]: "62841",
-  [MyIcons.BoldMiscGridPerspectiveFilled]: "62842",
-  [MyIcons.BoldMiscGlobeFilled]: "62843",
-  [MyIcons.BoldMiscGestureTapFilled]: "62844",
-  [MyIcons.BoldMiscGestureSwipeRightFilled]: "62845",
-  [MyIcons.BoldMiscGestureSwipeLeftFilled]: "62846",
-  [MyIcons.BoldMiscGestureFilled]: "62847",
-  [MyIcons.BoldMiscGestureDoubleTapFilled]: "62848",
-  [MyIcons.BoldMiscFemaleSignFilled]: "62849",
-  [MyIcons.BoldMiscCursorHandOpenFilled]: "62850",
-  [MyIcons.BoldMiscCubeFilled]: "62851",
-  [MyIcons.BoldMiscCrownFilled]: "62852",
-  [MyIcons.BoldMiscBulletDiamondFilled]: "62853",
-  [MyIcons.BoldLogoXFilled]: "62854",
-  [MyIcons.BoldLogoWindowsFilled]: "62855",
-  [MyIcons.BoldLogoTwitterFilled]: "62856",
-  [MyIcons.BoldLogoLinuxFilled]: "62857",
-  [MyIcons.BoldLogoLinkedinFilled]: "62858",
-  [MyIcons.BoldLogoInstagramFilled]: "62859",
-  [MyIcons.BoldLogoFacebookFilled]: "62860",
-  [MyIcons.BoldLogoAppleFilled]: "62861",
-  [MyIcons.BoldLocationStreetSignFilled]: "62862",
-  [MyIcons.BoldLocationStreetSignAFilled]: "62863",
-  [MyIcons.BoldLocationPinsFilled]: "62864",
-  [MyIcons.BoldLocationPinPlusFilled]: "62865",
-  [MyIcons.BoldLocationPinMinusFilled]: "62866",
-  [MyIcons.BoldLocationPinMapFilled]: "62867",
-  [MyIcons.BoldLocationPinFilled]: "62868",
-  [MyIcons.BoldLocationPinCheckFilled]: "62869",
-  [MyIcons.BoldLocationPinBFilled]: "62870",
-  [MyIcons.BoldLocationPinAFilled]: "62871",
-  [MyIcons.BoldLocationMapFilled]: "62872",
-  [MyIcons.BoldLocationMapCrossFilled]: "62873",
-  [MyIcons.BoldLocationDirectionSignFilled]: "62874",
-  [MyIcons.BoldLocationDirectionFilled]: "62875",
-  [MyIcons.BoldLocationCompassFilled]: "62876",
-  [MyIcons.BoldEnvTreeFilled]: "62877",
-  [MyIcons.BoldEnvTreeAFilled]: "62878",
-  [MyIcons.BoldEnvMountainsFilled]: "62879",
-  [MyIcons.BoldEnvLeafFilled]: "62880",
-  [MyIcons.BoldEnvFlowerFilled]: "62881",
-  [MyIcons.BoldEnvEarthFilled]: "62882",
-  [MyIcons.BoldEnvAtomicBombFilled]: "62883",
-  [MyIcons.BoldEditorialUndoFilled]: "62884",
-  [MyIcons.BoldEditorialTypingMachineFilled]: "62885",
-  [MyIcons.BoldEditorialTrashFilled]: "62886",
-  [MyIcons.BoldEditorialTextUnderlineFilled]: "62887",
-  [MyIcons.BoldEditorialTextStyleFilled]: "62888",
-  [MyIcons.BoldEditorialTextStrikeThroughFilled]: "62889",
-  [MyIcons.BoldEditorialTextItalicFilled]: "62890",
-  [MyIcons.BoldEditorialTextFormatFilled]: "62891",
-  [MyIcons.BoldEditorialTextBoldFilled]: "62892",
-  [MyIcons.BoldEditorialSortDescFilled]: "62893",
-  [MyIcons.BoldEditorialSortCancelFilled]: "62894",
-  [MyIcons.BoldEditorialSortAscFilled]: "62895",
-  [MyIcons.BoldEditorialRedoFilled]: "62896",
-  [MyIcons.BoldEditorialPencilSmallFilled]: "62897",
-  [MyIcons.BoldEditorialPencilFilled]: "62898",
-  [MyIcons.BoldEditorialPenFilled]: "62899",
-  [MyIcons.BoldEditorialParagraphFirstLetterFilled]: "62900",
-  [MyIcons.BoldEditorialParagraphFilled]: "62901",
-  [MyIcons.BoldEditorialItalicOffFilled]: "62902",
-  [MyIcons.BoldEditorialIndentRightFilled]: "62903",
-  [MyIcons.BoldEditorialIndentLeftFilled]: "62904",
-  [MyIcons.BoldEditorialHashtagSmallFilled]: "62905",
-  [MyIcons.BoldEditorialHashFilled]: "62906",
-  [MyIcons.BoldEditorialFontSizeFilled]: "62907",
-  [MyIcons.BoldEditorialCombineIntersectFilled]: "62908",
-  [MyIcons.BoldEditorialColorPaletteFilled]: "62909",
-  [MyIcons.BoldEditorialBrushFilled]: "62910",
-  [MyIcons.BoldEditorialBookmarkFilled]: "62911",
-  [MyIcons.BoldEditorialAlignRightFilled]: "62912",
-  [MyIcons.BoldEditorialAlignLeftFilled]: "62913",
-  [MyIcons.BoldEditorialAlignCenterFilled]: "62914",
-  [MyIcons.BoldDocWboardSearchFilled]: "62915",
-  [MyIcons.BoldDocWboardLineFilled]: "62916",
-  [MyIcons.BoldDocWboardGearFilled]: "62917",
-  [MyIcons.BoldDocWboardCheckFilled]: "62918",
-  [MyIcons.BoldDocWboardArrowTopFilled]: "62919",
-  [MyIcons.BoldDocUploadFilled]: "62920",
-  [MyIcons.BoldDocTodoListUserFilled]: "62921",
-  [MyIcons.BoldDocTodoListSquareFilled]: "62922",
-  [MyIcons.BoldDocTodoListFilled]: "62923",
-  [MyIcons.BoldDocTaskListQuestionFilled]: "62924",
-  [MyIcons.BoldDocTaskChecklistFilled]: "62925",
-  [MyIcons.BoldDocStackFilled]: "62926",
-  [MyIcons.BoldDocProfileFilled]: "62927",
-  [MyIcons.BoldDocPrinterFilled]: "62928",
-  [MyIcons.BoldDocPlusFilled]: "62929",
-  [MyIcons.BoldDocPinFilled]: "62930",
-  [MyIcons.BoldDocPieFilled]: "62931",
-  [MyIcons.BoldDocPapersFilled]: "62932",
-  [MyIcons.BoldDocPaperStackFilled]: "62933",
-  [MyIcons.BoldDocPaperLineFilled]: "62934",
-  [MyIcons.BoldDocOfficeStampDocumentFilled]: "62935",
-  [MyIcons.BoldDocOfficeFolderFilled]: "62936",
-  [MyIcons.BoldDocOfficeFilePdfFilled]: "62937",
-  [MyIcons.BoldDocNotesUploadFilled]: "62938",
-  [MyIcons.BoldDocNotesPaperTextFilled]: "62939",
-  [MyIcons.BoldDocNotesHomeFilled]: "62940",
-  [MyIcons.BoldDocNotesGiveFilled]: "62941",
-  [MyIcons.BoldDocNotesFlipFilled]: "62942",
-  [MyIcons.BoldDocNewspaperFilled]: "62943",
-  [MyIcons.BoldDocMinusFilled]: "62944",
-  [MyIcons.BoldDocMailboxInFilled]: "62945",
-  [MyIcons.BoldDocListNumbersFilled]: "62946",
-  [MyIcons.BoldDocListFilled]: "62947",
-  [MyIcons.BoldDocInvoiceFilled]: "62948",
-  [MyIcons.BoldDocImageFilled]: "62949",
-  [MyIcons.BoldDocImageAFilled]: "62950",
-  [MyIcons.BoldDocIdCardVerticalFilled]: "62951",
-  [MyIcons.BoldDocGlassesFilled]: "62952",
-  [MyIcons.BoldDocFolderSyncFilled]: "62953",
-  [MyIcons.BoldDocFolderPlusFilled]: "62954",
-  [MyIcons.BoldDocFolderMinusFilled]: "62955",
-  [MyIcons.BoldDocFolderHomeFilled]: "62956",
-  [MyIcons.BoldDocFolderFilled]: "62957",
-  [MyIcons.BoldDocFolderCrossFilled]: "62958",
-  [MyIcons.BoldDocFolderCheckFilled]: "62959",
-  [MyIcons.BoldDocFileZipFilled]: "62960",
-  [MyIcons.BoldDocFileXlsFilled]: "62961",
-  [MyIcons.BoldDocFileVideoFilled]: "62962",
-  [MyIcons.BoldDocFileSaveFilled]: "62963",
-  [MyIcons.BoldDocFileRefreshFilled]: "62964",
-  [MyIcons.BoldDocFilePrintFilled]: "62965",
-  [MyIcons.BoldDocFilePrevFilled]: "62966",
-  [MyIcons.BoldDocFilePresentationFilled]: "62967",
-  [MyIcons.BoldDocFilePptFilled]: "62968",
-  [MyIcons.BoldDocFilePlusFilled]: "62969",
-  [MyIcons.BoldDocFileNextFilled]: "62970",
-  [MyIcons.BoldDocFileMinusFilled]: "62971",
-  [MyIcons.BoldDocFileLineFilled]: "62972",
-  [MyIcons.BoldDocFileImageFilled]: "62973",
-  [MyIcons.BoldDocFileGraphFilled]: "62974",
-  [MyIcons.BoldDocFileDocFilled]: "62975",
-  [MyIcons.BoldDocFileCrossFilled]: "62976",
-  [MyIcons.BoldDocFileCheckFilled]: "62977",
-  [MyIcons.BoldDocFileBookmarkFilled]: "62978",
-  [MyIcons.BoldDocFileBlankFilled]: "62979",
-  [MyIcons.BoldDocFileAudioFilled]: "62980",
-  [MyIcons.BoldDocDownloadFilled]: "62981",
-  [MyIcons.BoldDocDiaryFilled]: "62982",
-  [MyIcons.BoldDocCopyFilled]: "62983",
-  [MyIcons.BoldDocComposeFilled]: "62984",
-  [MyIcons.BoldDocCommonFileTextEditFilled]: "62985",
-  [MyIcons.BoldDocCommonFileHomeFilled]: "62986",
-  [MyIcons.BoldDocCommonFileEditFilled]: "62987",
-  [MyIcons.BoldDocCameraFilled]: "62988",
-  [MyIcons.BoldDocBriefcaseFilled]: "62989",
-  [MyIcons.BoldDocBoxPFilled]: "62990",
-  [MyIcons.BoldDocBookmarkFilled]: "62991",
-  [MyIcons.BoldDocBookUploadFilled]: "62992",
-  [MyIcons.BoldDocBookTargetFilled]: "62993",
-  [MyIcons.BoldDocBookSettingsFilled]: "62994",
-  [MyIcons.BoldDocBookModulesFilled]: "62995",
-  [MyIcons.BoldDocBookLibraryFilled]: "62996",
-  [MyIcons.BoldDocBookFilled]: "62997",
-  [MyIcons.BoldDocBookDownloadFilled]: "62998",
-  [MyIcons.BoldDocBookCashFilled]: "62999",
-  [MyIcons.BoldDocBookBFilled]: "63000",
-  [MyIcons.BoldDocBookAFilled]: "63001",
-  [MyIcons.BoldDocAttachmentFilled]: "63002",
-  [MyIcons.BoldDocArticleFilled]: "63003",
-  [MyIcons.BoldDocArchiveUploadFilled]: "63004",
-  [MyIcons.BoldDocArchiveFolderFilled]: "63005",
-  [MyIcons.BoldDocArchiveFilled]: "63006",
-  [MyIcons.BoldDocArchiveEmptyFilled]: "63007",
-  [MyIcons.BoldDocArchiveDownloadFilled]: "63008",
-  [MyIcons.BoldDocAnalyticsUpFilled]: "63009",
-  [MyIcons.BoldComWarningFilled]: "63010",
-  [MyIcons.BoldComVoicemailFilled]: "63011",
-  [MyIcons.BoldComSatelliteFilled]: "63012",
-  [MyIcons.BoldComPostcardFilled]: "63013",
-  [MyIcons.BoldComPicturesFilled]: "63014",
-  [MyIcons.BoldComPhoneLandlineFilled]: "63015",
-  [MyIcons.BoldComPhoneFilled]: "63016",
-  [MyIcons.BoldComPaperplaneFilled]: "63017",
-  [MyIcons.BoldComMicrophonePodcastFilled]: "63018",
-  [MyIcons.BoldComMicMuteFilled]: "63019",
-  [MyIcons.BoldComMicFilled]: "63020",
-  [MyIcons.BoldComMegaphoneFilled]: "63021",
-  [MyIcons.BoldComMailWarningFilled]: "63022",
-  [MyIcons.BoldComMailSyncFilled]: "63023",
-  [MyIcons.BoldComMailReceiveFilled]: "63024",
-  [MyIcons.BoldComMailPlusFilled]: "63025",
-  [MyIcons.BoldComMailOpenWarningFilled]: "63026",
-  [MyIcons.BoldComMailOpenFilled]: "63027",
-  [MyIcons.BoldComMailMinusFilled]: "63028",
-  [MyIcons.BoldComMailFilled]: "63029",
-  [MyIcons.BoldComMailDownloadFilled]: "63030",
-  [MyIcons.BoldComMailCrossFilled]: "63031",
-  [MyIcons.BoldComMailClockFilled]: "63032",
-  [MyIcons.BoldComMailCheckFilled]: "63033",
-  [MyIcons.BoldComLanguageFilled]: "63034",
-  [MyIcons.BoldComHelpFilled]: "63035",
-  [MyIcons.BoldComHelpAFilled]: "63036",
-  [MyIcons.BoldComBubbleLineFilled]: "63037",
-  [MyIcons.BoldComBubbleLineAFilled]: "63038",
-  [MyIcons.BoldComBubbleGroupFilled]: "63039",
-  [MyIcons.BoldComBubbleGroupAFilled]: "63040",
-  [MyIcons.BoldComBubbleFilled]: "63041",
-  [MyIcons.BoldComBubbleDotFilled]: "63042",
-  [MyIcons.BoldComBubbleDotAFilled]: "63043",
-  [MyIcons.BoldComBubbleAFilled]: "63044",
-  [MyIcons.BoldComBellFilled]: "63045",
-  [MyIcons.BoldComAdvertisingMegaphoneFilled]: "63046",
-  [MyIcons.BoldBuildingViewFilled]: "63047",
-  [MyIcons.BoldBuildingToiletFilled]: "63048",
-  [MyIcons.BoldBuildingSofaFilled]: "63049",
-  [MyIcons.BoldBuildingSofaAFilled]: "63050",
-  [MyIcons.BoldBuildingSafetyFireShieldFilled]: "63051",
-  [MyIcons.BoldBuildingRockerSwitchFilled]: "63052",
-  [MyIcons.BoldBuildingRealEstateDimensionsPlanFilled]: "63053",
-  [MyIcons.BoldBuildingRealEstateDimensionsBlockFilled]: "63054",
-  [MyIcons.BoldBuildingPlanBalconyFilled]: "63055",
-  [MyIcons.BoldBuildingOfficeSettingsBFilled]: "63056",
-  [MyIcons.BoldBuildingOfficeFilled]: "63057",
-  [MyIcons.BoldBuildingOfficeAddBFilled]: "63058",
-  [MyIcons.BoldBuildingOfficeAFilled]: "63059",
-  [MyIcons.BoldBuildingMuseumFilled]: "63060",
-  [MyIcons.BoldBuildingLiftFilled]: "63061",
-  [MyIcons.BoldBuildingLampFilled]: "63062",
-  [MyIcons.BoldBuildingLampAFilled]: "63063",
-  [MyIcons.BoldBuildingHouseFilled]: "63064",
-  [MyIcons.BoldBuildingHeaterFilled]: "63065",
-  [MyIcons.BoldBuildingHangingRackFilled]: "63066",
-  [MyIcons.BoldBuildingFireplaceFilled]: "63067",
-  [MyIcons.BoldBuildingFaucetFilled]: "63068",
-  [MyIcons.BoldBuildingExitFilled]: "63069",
-  [MyIcons.BoldBuildingDrawerFilled]: "63070",
-  [MyIcons.BoldBuildingDoorFilled]: "63071",
-  [MyIcons.BoldBuildingDimensionsRulerFilled]: "63072",
-  [MyIcons.BoldBuildingDeskFilled]: "63073",
-  [MyIcons.BoldBuildingDaylightFilled]: "63074",
-  [MyIcons.BoldBuildingChairFilled]: "63075",
-  [MyIcons.BoldBuildingCabinetFilled]: "63076",
-  [MyIcons.BoldBuildingBlueprintFilled]: "63077",
-  [MyIcons.BoldBuildingBedFilled]: "63078",
+  [MyIcons.WebWebcam]: "58034",
+  [MyIcons.WebWebcamFilled]: "58725",
+  [MyIcons.WebWarning]: "58033",
+  [MyIcons.WebWarningFilled]: "58724",
+  [MyIcons.WebTabs]: "58032",
+  [MyIcons.WebTabsPlus]: "58031",
+  [MyIcons.WebTabsPlusFilled]: "58723",
+  [MyIcons.WebTabsMinus]: "58030",
+  [MyIcons.WebTabsMinusFilled]: "58722",
+  [MyIcons.WebTabsFilled]: "58721",
+  [MyIcons.WebTabsCross]: "58029",
+  [MyIcons.WebTabsCrossFilled]: "58720",
+  [MyIcons.WebTabsCheck]: "58028",
+  [MyIcons.WebTabsCheckFilled]: "58719",
+  [MyIcons.WebTabletIncrease]: "58027",
+  [MyIcons.WebTabletIncreaseFilled]: "58718",
+  [MyIcons.WebStatistic]: "58026",
+  [MyIcons.WebStatisticFilled]: "58717",
+  [MyIcons.WebShieldWarning]: "58025",
+  [MyIcons.WebShieldWarningFilled]: "58716",
+  [MyIcons.WebShare]: "58024",
+  [MyIcons.WebShareFilled]: "58715",
+  [MyIcons.WebServer]: "58023",
+  [MyIcons.WebServerFilled]: "58714",
+  [MyIcons.WebRss]: "58022",
+  [MyIcons.WebRssSettings]: "58021",
+  [MyIcons.WebRssSettingsFilled]: "58713",
+  [MyIcons.WebRssFilled]: "58712",
+  [MyIcons.WebLink]: "58020",
+  [MyIcons.WebLinkFilled]: "58711",
+  [MyIcons.WebLinkB]: "58019",
+  [MyIcons.WebLinkBFilled]: "58710",
+  [MyIcons.WebLinkBCheck]: "58018",
+  [MyIcons.WebLinkBCheckFilled]: "58709",
+  [MyIcons.WebIncreaseMail]: "58017",
+  [MyIcons.WebIncreaseMailFilled]: "58708",
+  [MyIcons.WebGridUpload]: "58016",
+  [MyIcons.WebGridUploadFilled]: "58707",
+  [MyIcons.WebGraphLinearSmall]: "58015",
+  [MyIcons.WebGraphLinearSmallFilled]: "58706",
+  [MyIcons.WebGlobe]: "58014",
+  [MyIcons.WebGlobeFilled]: "58705",
+  [MyIcons.WebFlag]: "58013",
+  [MyIcons.WebFlagFilled]: "58704",
+  [MyIcons.WebFlagC]: "58012",
+  [MyIcons.WebFlagCFilled]: "58703",
+  [MyIcons.WebDataFileBars]: "58011",
+  [MyIcons.WebDataFileBarsFilled]: "58702",
+  [MyIcons.WebConsole]: "58010",
+  [MyIcons.WebConsoleFilled]: "58701",
+  [MyIcons.WebCollapseUp]: "58009",
+  [MyIcons.WebCollapseUpFilled]: "58700",
+  [MyIcons.WebCollapseRight]: "58008",
+  [MyIcons.WebCollapseRightFilled]: "58699",
+  [MyIcons.WebCollapseLeft]: "58007",
+  [MyIcons.WebCollapseLeftFilled]: "58698",
+  [MyIcons.WebCollapseDown]: "58006",
+  [MyIcons.WebCollapseDownFilled]: "58697",
+  [MyIcons.WebCode]: "58005",
+  [MyIcons.WebCodeFilled]: "58696",
+  [MyIcons.WebChart]: "58004",
+  [MyIcons.WebChartFilled]: "58695",
+  [MyIcons.WebBug]: "58003",
+  [MyIcons.WebBugFilled]: "58694",
+  [MyIcons.WebBrowser]: "58002",
+  [MyIcons.WebBrowserWindow]: "58001",
+  [MyIcons.WebBrowserWindowFilled]: "58693",
+  [MyIcons.WebBrowserGrid]: "58000",
+  [MyIcons.WebBrowserGridFilled]: "58692",
+  [MyIcons.WebBrowserFilled]: "58691",
+  [MyIcons.WebBrokenLink]: "57999",
+  [MyIcons.WebBrokenLinkFilled]: "58690",
+  [MyIcons.WebBarsHome]: "57998",
+  [MyIcons.WebBarsHomeFilled]: "58689",
+  [MyIcons.WebAtSign]: "57997",
+  [MyIcons.WebAtSignFilled]: "58688",
+  [MyIcons.WebAnalyticsNet]: "57996",
+  [MyIcons.WebAnalyticsNetFilled]: "58687",
+  [MyIcons.WebAnalyticsGraph]: "57995",
+  [MyIcons.WebAnalyticsGraphFilled]: "58686",
+  [MyIcons.WeatherWindsock]: "57994",
+  [MyIcons.WeatherWindsockFilled]: "58685",
+  [MyIcons.WeatherWater]: "57993",
+  [MyIcons.WeatherWaterFilled]: "58684",
+  [MyIcons.WeatherThermometer]: "57992",
+  [MyIcons.WeatherThermometerFilled]: "58683",
+  [MyIcons.WeatherSunrise]: "57991",
+  [MyIcons.WeatherSunriseFilled]: "58682",
+  [MyIcons.WeatherSun]: "57990",
+  [MyIcons.WeatherSunFilled]: "58681",
+  [MyIcons.WeatherSunCloudSnow]: "57989",
+  [MyIcons.WeatherSunCloudSnowFilled]: "58680",
+  [MyIcons.WeatherSnowflake]: "57988",
+  [MyIcons.WeatherSnowflakeFilled]: "58679",
+  [MyIcons.WeatherMoon]: "57987",
+  [MyIcons.WeatherMoonFilled]: "58678",
+  [MyIcons.WeatherMoonA]: "57986",
+  [MyIcons.WeatherMoonAFilled]: "58677",
+  [MyIcons.WeatherFlash]: "57985",
+  [MyIcons.WeatherFlashFilled]: "58676",
+  [MyIcons.WeatherFire]: "57984",
+  [MyIcons.WeatherFireFilled]: "58675",
+  [MyIcons.WeatherCloud]: "57983",
+  [MyIcons.WeatherCloudSnow]: "57982",
+  [MyIcons.WeatherCloudSnowFilled]: "58674",
+  [MyIcons.WeatherCloudRain]: "57981",
+  [MyIcons.WeatherCloudRainFilled]: "58673",
+  [MyIcons.WeatherCloudFlash]: "57980",
+  [MyIcons.WeatherCloudFlashFilled]: "58672",
+  [MyIcons.WeatherCloudFilled]: "58671",
+  [MyIcons.VideoPlayer]: "57979",
+  [MyIcons.VideoPlayerFilled]: "58670",
+  [MyIcons.User]: "57978",
+  [MyIcons.UserWalking]: "57977",
+  [MyIcons.UserWalkingFilled]: "58669",
+  [MyIcons.UserToiletSign]: "57976",
+  [MyIcons.UserToiletSignFilled]: "58668",
+  [MyIcons.UserSingleNeutralHome]: "57975",
+  [MyIcons.UserSingleNeutralHomeFilled]: "58667",
+  [MyIcons.UserSingleNeutralActionsEdit]: "57974",
+  [MyIcons.UserSingleNeutralActionsEditFilled]: "58666",
+  [MyIcons.UserSingleNeutralActionsBlock]: "57973",
+  [MyIcons.UserSingleNeutralActionsBlockFilled]: "58665",
+  [MyIcons.UserShare]: "57972",
+  [MyIcons.UserShareFilled]: "58664",
+  [MyIcons.UserPlus]: "57971",
+  [MyIcons.UserPlusFilled]: "58663",
+  [MyIcons.UserMultipleUsers]: "57970",
+  [MyIcons.UserMultipleUsersFilled]: "58662",
+  [MyIcons.UserMinus]: "57969",
+  [MyIcons.UserMinusFilled]: "58661",
+  [MyIcons.UserMessagesPeopleUserWarning]: "57968",
+  [MyIcons.UserMessagesPeopleUserWarningFilled]: "58660",
+  [MyIcons.UserMale]: "57967",
+  [MyIcons.UserMaleSign]: "57966",
+  [MyIcons.UserMaleSignFilled]: "58659",
+  [MyIcons.UserMalePlus]: "57965",
+  [MyIcons.UserMalePlusFilled]: "58658",
+  [MyIcons.UserMaleMinus]: "57964",
+  [MyIcons.UserMaleMinusFilled]: "58657",
+  [MyIcons.UserMaleList]: "57963",
+  [MyIcons.UserMaleListFilled]: "58656",
+  [MyIcons.UserMaleFilled]: "58655",
+  [MyIcons.UserMaleCross]: "57962",
+  [MyIcons.UserMaleCrossFilled]: "58654",
+  [MyIcons.UserMaleCheck]: "57961",
+  [MyIcons.UserMaleCheckFilled]: "58653",
+  [MyIcons.UserLock]: "57960",
+  [MyIcons.UserLockUnlocked]: "57959",
+  [MyIcons.UserLockUnlockedFilled]: "58652",
+  [MyIcons.UserLockUnlockedB]: "57958",
+  [MyIcons.UserLockUnlockedBFilled]: "58651",
+  [MyIcons.UserLockFilled]: "58650",
+  [MyIcons.UserList]: "57957",
+  [MyIcons.UserListFilled]: "58649",
+  [MyIcons.UserKey]: "57956",
+  [MyIcons.UserKeyFilled]: "58648",
+  [MyIcons.UserHeadset]: "57955",
+  [MyIcons.UserHeadsetFilled]: "58647",
+  [MyIcons.UserGroup]: "57954",
+  [MyIcons.UserGroupFilled]: "58646",
+  [MyIcons.UserGroupFemale]: "57953",
+  [MyIcons.UserGroupFemaleFilled]: "58645",
+  [MyIcons.UserGroupA]: "57952",
+  [MyIcons.UserGroupAFilled]: "58644",
+  [MyIcons.UserGear]: "57951",
+  [MyIcons.UserGearFilled]: "58643",
+  [MyIcons.UserForward]: "57950",
+  [MyIcons.UserForwardFilled]: "58642",
+  [MyIcons.UserFilled]: "58641",
+  [MyIcons.UserFemale]: "57949",
+  [MyIcons.UserFemaleSign]: "57948",
+  [MyIcons.UserFemaleSignFilled]: "58640",
+  [MyIcons.UserFemalePlus]: "57947",
+  [MyIcons.UserFemalePlusFilled]: "58639",
+  [MyIcons.UserFemaleMinus]: "57946",
+  [MyIcons.UserFemaleMinusFilled]: "58638",
+  [MyIcons.UserFemaleList]: "57945",
+  [MyIcons.UserFemaleListFilled]: "58637",
+  [MyIcons.UserFemaleFilled]: "58636",
+  [MyIcons.UserFemaleCross]: "57944",
+  [MyIcons.UserFemaleCrossFilled]: "58635",
+  [MyIcons.UserFemaleCheck]: "57943",
+  [MyIcons.UserFemaleCheckFilled]: "58634",
+  [MyIcons.UserCross]: "57942",
+  [MyIcons.UserCrossFilled]: "58633",
+  [MyIcons.UserContactBook]: "57941",
+  [MyIcons.UserContactBookFilled]: "58632",
+  [MyIcons.UserContactBookA]: "57940",
+  [MyIcons.UserContactBookAFilled]: "58631",
+  [MyIcons.UserCircle]: "57939",
+  [MyIcons.UserCircleFilled]: "58630",
+  [MyIcons.UserCheck]: "57938",
+  [MyIcons.UserCheckFilled]: "58629",
+  [MyIcons.UserBusinessDealCashExchange]: "57937",
+  [MyIcons.UserBusinessDealCashExchangeFilled]: "58628",
+  [MyIcons.UiZoomInPage]: "57936",
+  [MyIcons.UiZoomInPageFilled]: "58627",
+  [MyIcons.UiWindow]: "57935",
+  [MyIcons.UiWindowFilled]: "58626",
+  [MyIcons.UiUndo]: "57934",
+  [MyIcons.UiUndoFilled]: "58625",
+  [MyIcons.UiUndoB]: "57933",
+  [MyIcons.UiUndoBFilled]: "58624",
+  [MyIcons.UiUndoA]: "57932",
+  [MyIcons.UiUndoAFilled]: "58623",
+  [MyIcons.UiTriangleTop]: "57931",
+  [MyIcons.UiTriangleTopFilled]: "58622",
+  [MyIcons.UiTriangleRight]: "57930",
+  [MyIcons.UiTriangleRightFilled]: "58621",
+  [MyIcons.UiTriangleLeft]: "57929",
+  [MyIcons.UiTriangleLeftFilled]: "58620",
+  [MyIcons.UiTriangleBottom]: "57928",
+  [MyIcons.UiTriangleBottomFilled]: "58619",
+  [MyIcons.UiTreeSave]: "57927",
+  [MyIcons.UiTreeSaveFilled]: "58618",
+  [MyIcons.UiTreeLoad]: "57926",
+  [MyIcons.UiTreeLoadFilled]: "58617",
+  [MyIcons.UiTarget]: "57925",
+  [MyIcons.UiTargetFilled]: "58616",
+  [MyIcons.UiSync]: "57924",
+  [MyIcons.UiSyncFilled]: "58615",
+  [MyIcons.UiStar]: "57923",
+  [MyIcons.UiStarFilled]: "58614",
+  [MyIcons.UiSqareDashed]: "57922",
+  [MyIcons.UiSqareDashedFilled]: "58613",
+  [MyIcons.UiSplitVertical]: "57921",
+  [MyIcons.UiSplitVerticalFilled]: "58612",
+  [MyIcons.UiSplitHorizontal]: "57920",
+  [MyIcons.UiSplitHorizontalFilled]: "58611",
+  [MyIcons.UiShrink]: "57919",
+  [MyIcons.UiShrinkFilled]: "58610",
+  [MyIcons.UiSearch]: "57918",
+  [MyIcons.UiSearchPlus]: "57917",
+  [MyIcons.UiSearchPlusFilled]: "58609",
+  [MyIcons.UiSearchMinus]: "57916",
+  [MyIcons.UiSearchMinusFilled]: "58608",
+  [MyIcons.UiSearchFilled]: "58607",
+  [MyIcons.UiSearchCross]: "57915",
+  [MyIcons.UiSearchCrossFilled]: "58606",
+  [MyIcons.UiSearchCheck]: "57914",
+  [MyIcons.UiSearchCheckFilled]: "58605",
+  [MyIcons.UiScrollVertical]: "57913",
+  [MyIcons.UiScrollVerticalFilled]: "58604",
+  [MyIcons.UiScrollHorizontal]: "57912",
+  [MyIcons.UiScrollHorizontalFilled]: "58603",
+  [MyIcons.UiResizeVertical]: "57911",
+  [MyIcons.UiResizeVerticalFilled]: "58602",
+  [MyIcons.UiResizeTopRight]: "57910",
+  [MyIcons.UiResizeTopRightFilled]: "58601",
+  [MyIcons.UiResizeTopLeft]: "57909",
+  [MyIcons.UiResizeTopLeftFilled]: "58600",
+  [MyIcons.UiResizeHorizontal]: "57908",
+  [MyIcons.UiResizeHorizontalFilled]: "58599",
+  [MyIcons.UiResizeDiagonal]: "57907",
+  [MyIcons.UiResizeDiagonalFilled]: "58598",
+  [MyIcons.UiResizeBottomRight]: "57906",
+  [MyIcons.UiResizeBottomRightFilled]: "58597",
+  [MyIcons.UiResizeBottomLeft]: "57905",
+  [MyIcons.UiResizeBottomLeftFilled]: "58596",
+  [MyIcons.UiReply]: "57904",
+  [MyIcons.UiReplyFilled]: "58595",
+  [MyIcons.UiRepeating]: "57903",
+  [MyIcons.UiRepeatingFilled]: "58594",
+  [MyIcons.UiRemoveConnectionPoint]: "57902",
+  [MyIcons.UiRemoveConnectionPointFilled]: "58593",
+  [MyIcons.UiRefresh]: "57901",
+  [MyIcons.UiRefreshFilled]: "58592",
+  [MyIcons.UiRadiobutton]: "57900",
+  [MyIcons.UiRadiobuttonFilled]: "58591",
+  [MyIcons.UiPropertyAnd]: "57899",
+  [MyIcons.UiPropertyAndFilled]: "58590",
+  [MyIcons.UiPrevious]: "57898",
+  [MyIcons.UiPreviousFilled]: "58589",
+  [MyIcons.UiPreviousA]: "57897",
+  [MyIcons.UiPreviousAFilled]: "58588",
+  [MyIcons.UiPower]: "57896",
+  [MyIcons.UiPowerFilled]: "58587",
+  [MyIcons.UiPopup]: "57895",
+  [MyIcons.UiPopupFilled]: "58586",
+  [MyIcons.UiPlus]: "57894",
+  [MyIcons.UiPlusSmall]: "57893",
+  [MyIcons.UiPlusSmallFilled]: "58585",
+  [MyIcons.UiPlusFilled]: "58584",
+  [MyIcons.UiPixel]: "57892",
+  [MyIcons.UiPixelFilled]: "58583",
+  [MyIcons.UiOutLink]: "57891",
+  [MyIcons.UiOutLinkFilled]: "58582",
+  [MyIcons.UiNumber]: "57890",
+  [MyIcons.UiNumberFilled]: "58581",
+  [MyIcons.UiNext]: "57889",
+  [MyIcons.UiNextFilled]: "58580",
+  [MyIcons.UiNextA]: "57888",
+  [MyIcons.UiNextAFilled]: "58579",
+  [MyIcons.UiMove]: "57887",
+  [MyIcons.UiMoveUp]: "57886",
+  [MyIcons.UiMoveUpFront]: "57885",
+  [MyIcons.UiMoveUpFrontFilled]: "58578",
+  [MyIcons.UiMoveUpFilled]: "58577",
+  [MyIcons.UiMoveFilled]: "58576",
+  [MyIcons.UiMoveDown]: "57884",
+  [MyIcons.UiMoveDownFilled]: "58575",
+  [MyIcons.UiMoveDownBackground]: "57883",
+  [MyIcons.UiMoveDownBackgroundFilled]: "58574",
+  [MyIcons.UiMore]: "57882",
+  [MyIcons.UiMoreVertical]: "57881",
+  [MyIcons.UiMoreVerticalSmall]: "57880",
+  [MyIcons.UiMoreVerticalSmallFilled]: "58573",
+  [MyIcons.UiMoreVerticalFilled]: "58572",
+  [MyIcons.UiMoreSmall]: "57879",
+  [MyIcons.UiMoreSmallFilled]: "58571",
+  [MyIcons.UiMoreSmallCircle]: "57878",
+  [MyIcons.UiMoreSmallCircleFilled]: "58570",
+  [MyIcons.UiMoreHorizontalSmall]: "57877",
+  [MyIcons.UiMoreHorizontalSmallFilled]: "58569",
+  [MyIcons.UiMoreFilled]: "58568",
+  [MyIcons.UiMinus]: "57876",
+  [MyIcons.UiMinusSmall]: "57875",
+  [MyIcons.UiMinusSmallFilled]: "58567",
+  [MyIcons.UiMinusFilled]: "58566",
+  [MyIcons.UiMethod]: "57874",
+  [MyIcons.UiMethodInherited]: "57873",
+  [MyIcons.UiMethodInheritedFilled]: "58565",
+  [MyIcons.UiMethodFilled]: "58564",
+  [MyIcons.UiLogout]: "57872",
+  [MyIcons.UiLogoutFilled]: "58563",
+  [MyIcons.UiLogin]: "57871",
+  [MyIcons.UiLoginFilled]: "58562",
+  [MyIcons.UiListView]: "57870",
+  [MyIcons.UiListViewFilled]: "58561",
+  [MyIcons.UiListUser]: "57869",
+  [MyIcons.UiListUserFilled]: "58560",
+  [MyIcons.UiListShare]: "57868",
+  [MyIcons.UiListShareFilled]: "58559",
+  [MyIcons.UiListForward]: "57867",
+  [MyIcons.UiListForwardFilled]: "58558",
+  [MyIcons.UiLayoutWireframe]: "57866",
+  [MyIcons.UiLayoutWireframeFilled]: "58557",
+  [MyIcons.UiLayoutThirdVertical]: "57865",
+  [MyIcons.UiLayoutThirdVerticalFilled]: "58556",
+  [MyIcons.UiLayoutTableView]: "57864",
+  [MyIcons.UiLayoutTableViewFilled]: "58555",
+  [MyIcons.UiLayoutSidebarL]: "57863",
+  [MyIcons.UiLayoutSidebarLHalf]: "57862",
+  [MyIcons.UiLayoutSidebarLHalfFilled]: "58554",
+  [MyIcons.UiLayoutSidebarLFilled]: "58553",
+  [MyIcons.UiLayoutHalf]: "57861",
+  [MyIcons.UiLayoutHalfHorizontal]: "57860",
+  [MyIcons.UiLayoutHalfHorizontalFilled]: "58552",
+  [MyIcons.UiLayoutHalfFilled]: "58551",
+  [MyIcons.UiKeyboard]: "57859",
+  [MyIcons.UiKeyboardFilled]: "58550",
+  [MyIcons.UiInLink]: "57858",
+  [MyIcons.UiInLinkFilled]: "58549",
+  [MyIcons.UiImport]: "57857",
+  [MyIcons.UiImportFilled]: "58548",
+  [MyIcons.UiHouse]: "57856",
+  [MyIcons.UiHouseFilled]: "58547",
+  [MyIcons.UiHome]: "57855",
+  [MyIcons.UiHomeFilled]: "58546",
+  [MyIcons.UiHomeA]: "57854",
+  [MyIcons.UiHomeAFilled]: "58545",
+  [MyIcons.UiHierarchy]: "57853",
+  [MyIcons.UiHierarchyTree]: "57852",
+  [MyIcons.UiHierarchyTreeFilled]: "58544",
+  [MyIcons.UiHierarchyFilled]: "58543",
+  [MyIcons.UiHelp]: "57851",
+  [MyIcons.UiHelpLife]: "57850",
+  [MyIcons.UiHelpLifeFilled]: "58542",
+  [MyIcons.UiHelpFilled]: "58541",
+  [MyIcons.UiHeart]: "57849",
+  [MyIcons.UiHeartFilled]: "58540",
+  [MyIcons.UiHamburger]: "57848",
+  [MyIcons.UiHamburgerFilled]: "58539",
+  [MyIcons.UiGridView]: "57847",
+  [MyIcons.UiGridViewFilled]: "58538",
+  [MyIcons.UiFullscreen]: "57846",
+  [MyIcons.UiFullscreenFilled]: "58537",
+  [MyIcons.UiFullscreenA]: "57845",
+  [MyIcons.UiFullscreenAFilled]: "58536",
+  [MyIcons.UiFrame]: "57844",
+  [MyIcons.UiFrameFilled]: "58535",
+  [MyIcons.UiForward]: "57843",
+  [MyIcons.UiForwardFilled]: "58534",
+  [MyIcons.UiFilter]: "57842",
+  [MyIcons.UiFilterFilled]: "58533",
+  [MyIcons.UiEye]: "57841",
+  [MyIcons.UiEyeFilled]: "58532",
+  [MyIcons.UiEyeCross]: "57840",
+  [MyIcons.UiEyeCrossFilled]: "58531",
+  [MyIcons.UiExport]: "57839",
+  [MyIcons.UiExportFilled]: "58530",
+  [MyIcons.UiExpand]: "57838",
+  [MyIcons.UiExpandFilled]: "58529",
+  [MyIcons.UiEnlarge]: "57837",
+  [MyIcons.UiEnlargeFilled]: "58528",
+  [MyIcons.UiDragHandle]: "57836",
+  [MyIcons.UiDragHandleFilled]: "58527",
+  [MyIcons.UiDot]: "57835",
+  [MyIcons.UiDotLarge]: "57834",
+  [MyIcons.UiDotLargeFilled]: "58526",
+  [MyIcons.UiDotFilled]: "58525",
+  [MyIcons.UiCross]: "57833",
+  [MyIcons.UiCrossSmall]: "57832",
+  [MyIcons.UiCrossSmallFilled]: "58524",
+  [MyIcons.UiCrossFilled]: "58523",
+  [MyIcons.UiCrop]: "57831",
+  [MyIcons.UiCropFilled]: "58522",
+  [MyIcons.UiCreateConnection]: "57830",
+  [MyIcons.UiCreateConnectionFilled]: "58521",
+  [MyIcons.UiConnection]: "57829",
+  [MyIcons.UiConnectionOpen]: "57828",
+  [MyIcons.UiConnectionOpenInherited]: "57827",
+  [MyIcons.UiConnectionOpenInheritedFilled]: "58520",
+  [MyIcons.UiConnectionOpenFilled]: "58519",
+  [MyIcons.UiConnectionInherited]: "57826",
+  [MyIcons.UiConnectionInheritedFilled]: "58518",
+  [MyIcons.UiConnectionFilled]: "58517",
+  [MyIcons.UiCone]: "57825",
+  [MyIcons.UiConeFilled]: "58516",
+  [MyIcons.UiCondition]: "57824",
+  [MyIcons.UiConditionFilled]: "58515",
+  [MyIcons.UiCombobox]: "57823",
+  [MyIcons.UiComboboxFilled]: "58514",
+  [MyIcons.UiCmd]: "57822",
+  [MyIcons.UiCmdFilled]: "58513",
+  [MyIcons.UiCloudUpload]: "57821",
+  [MyIcons.UiCloudUploadFilled]: "58512",
+  [MyIcons.UiCloudDownload]: "57820",
+  [MyIcons.UiCloudDownloadFilled]: "58511",
+  [MyIcons.UiCloseParallelConnection]: "57819",
+  [MyIcons.UiCloseParallelConnectionFilled]: "58510",
+  [MyIcons.UiCircle]: "57818",
+  [MyIcons.UiCircleWarning]: "57817",
+  [MyIcons.UiCircleWarningFilled]: "58509",
+  [MyIcons.UiCirclePlus]: "57816",
+  [MyIcons.UiCirclePlusFilled]: "58508",
+  [MyIcons.UiCircleMinus]: "57815",
+  [MyIcons.UiCircleMinusFilled]: "58507",
+  [MyIcons.UiCircleInfo]: "57814",
+  [MyIcons.UiCircleInfoFilled]: "58506",
+  [MyIcons.UiCircleHelp]: "57813",
+  [MyIcons.UiCircleHelpFilled]: "58505",
+  [MyIcons.UiCircleFilled]: "58504",
+  [MyIcons.UiCircleCross]: "57812",
+  [MyIcons.UiCircleCrossFilled]: "58503",
+  [MyIcons.UiCircleChevronTop]: "57811",
+  [MyIcons.UiCircleChevronTopFilled]: "58502",
+  [MyIcons.UiCircleChevronRight]: "57810",
+  [MyIcons.UiCircleChevronRightFilled]: "58501",
+  [MyIcons.UiCircleChevronLeft]: "57809",
+  [MyIcons.UiCircleChevronLeftFilled]: "58500",
+  [MyIcons.UiCircleChevronBottom]: "57808",
+  [MyIcons.UiCircleChevronBottomFilled]: "58499",
+  [MyIcons.UiCircleCheck]: "57807",
+  [MyIcons.UiCircleCheckFilled]: "58498",
+  [MyIcons.UiCircleCheckA]: "57806",
+  [MyIcons.UiCircleCheckAFilled]: "58497",
+  [MyIcons.UiCircleArrowTop]: "57805",
+  [MyIcons.UiCircleArrowTopFilled]: "58496",
+  [MyIcons.UiCircleArrowRight]: "57804",
+  [MyIcons.UiCircleArrowRightFilled]: "58495",
+  [MyIcons.UiCircleArrowLeft]: "57803",
+  [MyIcons.UiCircleArrowLeftFilled]: "58494",
+  [MyIcons.UiCircleArrowBottom]: "57802",
+  [MyIcons.UiCircleArrowBottomFilled]: "58493",
+  [MyIcons.UiChevronTop]: "57801",
+  [MyIcons.UiChevronTopSmall]: "57800",
+  [MyIcons.UiChevronTopSmallFilled]: "58492",
+  [MyIcons.UiChevronTopFilled]: "58491",
+  [MyIcons.UiChevronRight]: "57799",
+  [MyIcons.UiChevronRightTripple]: "57798",
+  [MyIcons.UiChevronRightTrippleFilled]: "58490",
+  [MyIcons.UiChevronRightSmall]: "57797",
+  [MyIcons.UiChevronRightSmallFilled]: "58489",
+  [MyIcons.UiChevronRightFilled]: "58488",
+  [MyIcons.UiChevronLeft]: "57796",
+  [MyIcons.UiChevronLeftSmall]: "57795",
+  [MyIcons.UiChevronLeftSmallFilled]: "58487",
+  [MyIcons.UiChevronLeftFilled]: "58486",
+  [MyIcons.UiChevronBottom]: "57794",
+  [MyIcons.UiChevronBottomSmall]: "57793",
+  [MyIcons.UiChevronBottomSmallFilled]: "58485",
+  [MyIcons.UiChevronBottomFilled]: "58484",
+  [MyIcons.UiCheckbox]: "57792",
+  [MyIcons.UiCheckboxFilled]: "58483",
+  [MyIcons.UiCheck]: "57791",
+  [MyIcons.UiCheckSmall]: "57790",
+  [MyIcons.UiCheckSmallFilled]: "58482",
+  [MyIcons.UiCheckSmallCircle]: "57789",
+  [MyIcons.UiCheckSmallCircleFilled]: "58481",
+  [MyIcons.UiCheckFilled]: "58480",
+  [MyIcons.UiCard]: "57788",
+  [MyIcons.UiCardView]: "57787",
+  [MyIcons.UiCardViewFilled]: "58479",
+  [MyIcons.UiCardFilled]: "58478",
+  [MyIcons.UiBulletView]: "57786",
+  [MyIcons.UiBulletViewFilled]: "58477",
+  [MyIcons.UiBoxWarning]: "57785",
+  [MyIcons.UiBoxWarningFilled]: "58476",
+  [MyIcons.UiBoxHelp]: "57784",
+  [MyIcons.UiBoxHelpFilled]: "58475",
+  [MyIcons.UiBlock]: "57783",
+  [MyIcons.UiBlockFilled]: "58474",
+  [MyIcons.UiBackspace]: "57782",
+  [MyIcons.UiBackspaceFilled]: "58473",
+  [MyIcons.UiAttribute]: "57781",
+  [MyIcons.UiAttributeInherited]: "57780",
+  [MyIcons.UiAttributeInheritedFilled]: "58472",
+  [MyIcons.UiAttributeFilled]: "58471",
+  [MyIcons.UiArrowTop]: "57779",
+  [MyIcons.UiArrowTopSmall]: "57778",
+  [MyIcons.UiArrowTopSmallFilled]: "58470",
+  [MyIcons.UiArrowTopRight]: "57777",
+  [MyIcons.UiArrowTopRightFilled]: "58469",
+  [MyIcons.UiArrowTopLeft]: "57776",
+  [MyIcons.UiArrowTopLeftFilled]: "58468",
+  [MyIcons.UiArrowTopFilled]: "58467",
+  [MyIcons.UiArrowTopA]: "57775",
+  [MyIcons.UiArrowTopAFilled]: "58466",
+  [MyIcons.UiArrowRight]: "57774",
+  [MyIcons.UiArrowRightSmall]: "57773",
+  [MyIcons.UiArrowRightSmallFilled]: "58465",
+  [MyIcons.UiArrowRightFilled]: "58464",
+  [MyIcons.UiArrowRightA]: "57772",
+  [MyIcons.UiArrowRightAFilled]: "58463",
+  [MyIcons.UiArrowLeft]: "57771",
+  [MyIcons.UiArrowLeftSmall]: "57770",
+  [MyIcons.UiArrowLeftSmallFilled]: "58462",
+  [MyIcons.UiArrowLeftFilled]: "58461",
+  [MyIcons.UiArrowLeftA]: "57769",
+  [MyIcons.UiArrowLeftAFilled]: "58460",
+  [MyIcons.UiArrowBottom]: "57768",
+  [MyIcons.UiArrowBottomSmall]: "57767",
+  [MyIcons.UiArrowBottomSmallFilled]: "58459",
+  [MyIcons.UiArrowBottomRight]: "57766",
+  [MyIcons.UiArrowBottomRightFilled]: "58458",
+  [MyIcons.UiArrowBottomLeft]: "57765",
+  [MyIcons.UiArrowBottomLeftFilled]: "58457",
+  [MyIcons.UiArrowBottomFilled]: "58456",
+  [MyIcons.UiArrowBottomA]: "57764",
+  [MyIcons.UiArrowBottomAFilled]: "58455",
+  [MyIcons.UiAlignTop]: "57763",
+  [MyIcons.UiAlignTopFilled]: "58454",
+  [MyIcons.UiAlignRight]: "57762",
+  [MyIcons.UiAlignRightFilled]: "58453",
+  [MyIcons.UiAlignLeft]: "57761",
+  [MyIcons.UiAlignLeftFilled]: "58452",
+  [MyIcons.UiAlignCenterVertical]: "57760",
+  [MyIcons.UiAlignCenterVerticalFilled]: "58451",
+  [MyIcons.UiAlignCenterHorizontal]: "57759",
+  [MyIcons.UiAlignCenterHorizontalFilled]: "58450",
+  [MyIcons.UiAlignBottom]: "57758",
+  [MyIcons.UiAlignBottomFilled]: "58449",
+  [MyIcons.UiAddConnectionPoint]: "57757",
+  [MyIcons.UiAddConnectionPointFilled]: "58448",
+  [MyIcons.TransportTruck]: "57756",
+  [MyIcons.TransportTruckFilled]: "58447",
+  [MyIcons.TransportTruckA]: "57755",
+  [MyIcons.TransportTruckAFilled]: "58446",
+  [MyIcons.TransportTrain]: "57754",
+  [MyIcons.TransportTrainFilled]: "58445",
+  [MyIcons.TransportSignStop]: "57753",
+  [MyIcons.TransportSignStopFilled]: "58444",
+  [MyIcons.TransportShip]: "57752",
+  [MyIcons.TransportShipFilled]: "58443",
+  [MyIcons.TransportShipA]: "57751",
+  [MyIcons.TransportShipAFilled]: "58442",
+  [MyIcons.TransportCar]: "57750",
+  [MyIcons.TransportCarFilled]: "58441",
+  [MyIcons.TransportCarA]: "57749",
+  [MyIcons.TransportCarAFilled]: "58440",
+  [MyIcons.TransportBus]: "57748",
+  [MyIcons.TransportBusTicket]: "57747",
+  [MyIcons.TransportBusTicketFilled]: "58439",
+  [MyIcons.TransportBusFilled]: "58438",
+  [MyIcons.TransportBusA]: "57746",
+  [MyIcons.TransportBusAFilled]: "58437",
+  [MyIcons.TransportBicycle]: "57745",
+  [MyIcons.TransportBicycleFilled]: "58436",
+  [MyIcons.ToolUmbrella]: "57744",
+  [MyIcons.ToolUmbrellaFilled]: "58435",
+  [MyIcons.ToolToolsBox]: "57743",
+  [MyIcons.ToolToolsBoxFilled]: "58434",
+  [MyIcons.ToolTextType]: "57742",
+  [MyIcons.ToolTextTypeFilled]: "58433",
+  [MyIcons.ToolSmartphonePay]: "57741",
+  [MyIcons.ToolSmartphonePayFilled]: "58432",
+  [MyIcons.ToolScissors]: "57740",
+  [MyIcons.ToolScissorsFilled]: "58431",
+  [MyIcons.ToolSateliteType]: "57739",
+  [MyIcons.ToolSateliteTypeFilled]: "58430",
+  [MyIcons.ToolRuler]: "57738",
+  [MyIcons.ToolRulerFilled]: "58429",
+  [MyIcons.ToolRulerCorner]: "57737",
+  [MyIcons.ToolRulerCornerFilled]: "58428",
+  [MyIcons.ToolRulerB]: "57736",
+  [MyIcons.ToolRulerBFilled]: "58427",
+  [MyIcons.ToolRouterSignal]: "57735",
+  [MyIcons.ToolRouterSignalFilled]: "58426",
+  [MyIcons.ToolRazor]: "57734",
+  [MyIcons.ToolRazorFilled]: "58425",
+  [MyIcons.ToolProtectionType]: "57733",
+  [MyIcons.ToolProtectionTypeFilled]: "58424",
+  [MyIcons.ToolPropertyType]: "57732",
+  [MyIcons.ToolPropertyTypeFilled]: "58423",
+  [MyIcons.ToolProjector]: "57731",
+  [MyIcons.ToolProjectorFilled]: "58422",
+  [MyIcons.ToolPlug]: "57730",
+  [MyIcons.ToolPlugFilled]: "58421",
+  [MyIcons.ToolPhone]: "57729",
+  [MyIcons.ToolPhoneLandscape]: "57728",
+  [MyIcons.ToolPhoneLandscapeFilled]: "58420",
+  [MyIcons.ToolPhoneFilled]: "58419",
+  [MyIcons.ToolMouse]: "57727",
+  [MyIcons.ToolMouseFilled]: "58418",
+  [MyIcons.ToolModuleThree]: "57726",
+  [MyIcons.ToolModuleThreeFilled]: "58417",
+  [MyIcons.ToolMagnet]: "57725",
+  [MyIcons.ToolMagnetFilled]: "58416",
+  [MyIcons.ToolMagicWand]: "57724",
+  [MyIcons.ToolMagicWandFilled]: "58415",
+  [MyIcons.ToolLaptop]: "57723",
+  [MyIcons.ToolLaptopFilled]: "58414",
+  [MyIcons.ToolIntType]: "57722",
+  [MyIcons.ToolIntTypeFilled]: "58413",
+  [MyIcons.ToolHardwareType]: "57721",
+  [MyIcons.ToolHardwareTypeFilled]: "58412",
+  [MyIcons.ToolHammer]: "57720",
+  [MyIcons.ToolHammerPlus]: "57719",
+  [MyIcons.ToolHammerPlusFilled]: "58411",
+  [MyIcons.ToolHammerFilled]: "58410",
+  [MyIcons.ToolHammerAngle]: "57718",
+  [MyIcons.ToolHammerAngleFilled]: "58409",
+  [MyIcons.ToolHammerA]: "57717",
+  [MyIcons.ToolHammerAFilled]: "58408",
+  [MyIcons.ToolGrid]: "57716",
+  [MyIcons.ToolGridFilled]: "58407",
+  [MyIcons.ToolGearsType]: "57715",
+  [MyIcons.ToolGearsTypeFilled]: "58406",
+  [MyIcons.ToolFocus]: "57714",
+  [MyIcons.ToolFocusFilled]: "58405",
+  [MyIcons.ToolFloppyEdit]: "57713",
+  [MyIcons.ToolFloppyEditFilled]: "58404",
+  [MyIcons.ToolFloppyDisks]: "57712",
+  [MyIcons.ToolFloppyDisksFilled]: "58403",
+  [MyIcons.ToolFloppyDisk]: "57711",
+  [MyIcons.ToolFloppyDiskFilled]: "58402",
+  [MyIcons.ToolFlashlight]: "57710",
+  [MyIcons.ToolFlashlightFilled]: "58401",
+  [MyIcons.ToolFireExtinguisher]: "57709",
+  [MyIcons.ToolFireExtinguisherFilled]: "58400",
+  [MyIcons.ToolDisplay]: "57708",
+  [MyIcons.ToolDisplayUser]: "57707",
+  [MyIcons.ToolDisplayUserFilled]: "58399",
+  [MyIcons.ToolDisplayFilled]: "58398",
+  [MyIcons.ToolConsole]: "57706",
+  [MyIcons.ToolConsoleFilled]: "58397",
+  [MyIcons.ToolConsoleA]: "57705",
+  [MyIcons.ToolConsoleAFilled]: "58396",
+  [MyIcons.ToolCompass]: "57704",
+  [MyIcons.ToolCompassFilled]: "58395",
+  [MyIcons.ToolCamera]: "57703",
+  [MyIcons.ToolCameraFilled]: "58394",
+  [MyIcons.ToolCalc]: "57702",
+  [MyIcons.ToolCalcFilled]: "58393",
+  [MyIcons.ToolBinoculars]: "57701",
+  [MyIcons.ToolBinocularsFilled]: "58392",
+  [MyIcons.ToolAreaType]: "57700",
+  [MyIcons.ToolAreaTypeFilled]: "58391",
+  [MyIcons.ToolAndroidType]: "57699",
+  [MyIcons.ToolAndroidTypeFilled]: "58390",
+  [MyIcons.TimeWatch]: "57698",
+  [MyIcons.TimeWatchFilled]: "58389",
+  [MyIcons.TimeTimer]: "57697",
+  [MyIcons.TimeTimerFilled]: "58388",
+  [MyIcons.TimeStopwatch]: "57696",
+  [MyIcons.TimeStopwatchFilled]: "58387",
+  [MyIcons.TimeSpeedMeter]: "57695",
+  [MyIcons.TimeSpeedMeterFilled]: "58386",
+  [MyIcons.TimeHourglass]: "57694",
+  [MyIcons.TimeHourglassFilled]: "58385",
+  [MyIcons.TimeClockF]: "57693",
+  [MyIcons.TimeClockFFilled]: "58384",
+  [MyIcons.TimeClockCircle]: "57692",
+  [MyIcons.TimeClockCircleFilled]: "58383",
+  [MyIcons.TimeCalendar]: "57691",
+  [MyIcons.TimeCalendarWeek]: "57690",
+  [MyIcons.TimeCalendarWeekFilled]: "58382",
+  [MyIcons.TimeCalendarSmall]: "57689",
+  [MyIcons.TimeCalendarSmallFilled]: "58381",
+  [MyIcons.TimeCalendarFilled]: "58380",
+  [MyIcons.TimeCalendarDots]: "57688",
+  [MyIcons.TimeCalendarDotsFilled]: "58379",
+  [MyIcons.TimeCalendarClock]: "57687",
+  [MyIcons.TimeCalendarClockFilled]: "58378",
+  [MyIcons.TimeCalendarCash]: "57686",
+  [MyIcons.TimeCalendarCashFilled]: "58377",
+  [MyIcons.TimeAlarm]: "57685",
+  [MyIcons.TimeAlarmFilled]: "58376",
+  [MyIcons.SportTv]: "57684",
+  [MyIcons.SportTvFilled]: "58375",
+  [MyIcons.SportTrophy]: "57683",
+  [MyIcons.SportTrophyFilled]: "58374",
+  [MyIcons.SportPuzzle]: "57682",
+  [MyIcons.SportPuzzleFilled]: "58373",
+  [MyIcons.SportMedicineLab]: "57681",
+  [MyIcons.SportMedicineLabFilled]: "58372",
+  [MyIcons.SportMedic]: "57680",
+  [MyIcons.SportMedicFilled]: "58371",
+  [MyIcons.SportHeartPulse]: "57679",
+  [MyIcons.SportHeartPulseFilled]: "58370",
+  [MyIcons.SportGauge]: "57678",
+  [MyIcons.SportGaugeFilled]: "58369",
+  [MyIcons.SportFlag]: "57677",
+  [MyIcons.SportFlagFilled]: "58368",
+  [MyIcons.SportDumbell]: "57676",
+  [MyIcons.SportDumbellFilled]: "58367",
+  [MyIcons.SportBadge]: "57675",
+  [MyIcons.SportBadgeH]: "57674",
+  [MyIcons.SportBadgeHFilled]: "58366",
+  [MyIcons.SportBadgeFilled]: "58365",
+  [MyIcons.SportBadgeC]: "57673",
+  [MyIcons.SportBadgeCFilled]: "58364",
+  [MyIcons.SportBadgeB]: "57672",
+  [MyIcons.SportBadgeBFilled]: "58363",
+  [MyIcons.ShopWallet]: "57671",
+  [MyIcons.ShopWalletFilled]: "58362",
+  [MyIcons.ShopTracking]: "57670",
+  [MyIcons.ShopTrackingFilled]: "58361",
+  [MyIcons.ShopTie]: "57669",
+  [MyIcons.ShopTieFilled]: "58360",
+  [MyIcons.ShopTag]: "57668",
+  [MyIcons.ShopTagSearch]: "57667",
+  [MyIcons.ShopTagSearchFilled]: "58359",
+  [MyIcons.ShopTagRefresh]: "57666",
+  [MyIcons.ShopTagRefreshFilled]: "58358",
+  [MyIcons.ShopTagPlus]: "57665",
+  [MyIcons.ShopTagPlusFilled]: "58357",
+  [MyIcons.ShopTagMinus]: "57664",
+  [MyIcons.ShopTagMinusFilled]: "58356",
+  [MyIcons.ShopTagLock]: "57663",
+  [MyIcons.ShopTagLockFilled]: "58355",
+  [MyIcons.ShopTagInfo]: "57662",
+  [MyIcons.ShopTagInfoFilled]: "58354",
+  [MyIcons.ShopTagFilled]: "58353",
+  [MyIcons.ShopTagDatabase]: "57661",
+  [MyIcons.ShopTagDatabaseFilled]: "58352",
+  [MyIcons.ShopTagCross]: "57660",
+  [MyIcons.ShopTagCrossFilled]: "58351",
+  [MyIcons.ShopTagCheck]: "57659",
+  [MyIcons.ShopTagCheckFilled]: "58350",
+  [MyIcons.ShopSuitcase]: "57658",
+  [MyIcons.ShopSuitcaseFilled]: "58349",
+  [MyIcons.ShopShipmentPackages]: "57657",
+  [MyIcons.ShopShipmentPackagesFilled]: "58348",
+  [MyIcons.ShopSavingPiggyBank]: "57656",
+  [MyIcons.ShopSavingPiggyBankFilled]: "58347",
+  [MyIcons.ShopSafeBox]: "57655",
+  [MyIcons.ShopSafeBoxFilled]: "58346",
+  [MyIcons.ShopPresent]: "57654",
+  [MyIcons.ShopPresentFilled]: "58345",
+  [MyIcons.ShopPound]: "57653",
+  [MyIcons.ShopPoundFilled]: "58344",
+  [MyIcons.ShopPerformanceMoneyDecrease]: "57652",
+  [MyIcons.ShopPerformanceMoneyDecreaseFilled]: "58343",
+  [MyIcons.ShopMastercard]: "57651",
+  [MyIcons.ShopMastercardFilled]: "58342",
+  [MyIcons.ShopMarket]: "57650",
+  [MyIcons.ShopMarketFilled]: "58341",
+  [MyIcons.ShopEuro]: "57649",
+  [MyIcons.ShopEuroFilled]: "58340",
+  [MyIcons.ShopDolar]: "57648",
+  [MyIcons.ShopDolarFilled]: "58339",
+  [MyIcons.ShopDiscountCoupon]: "57647",
+  [MyIcons.ShopDiscountCouponFilled]: "58338",
+  [MyIcons.ShopDiscountCircle]: "57646",
+  [MyIcons.ShopDiscountCircleFilled]: "58337",
+  [MyIcons.ShopDiamond]: "57645",
+  [MyIcons.ShopDiamondFilled]: "58336",
+  [MyIcons.ShopCreditcard]: "57644",
+  [MyIcons.ShopCreditcardFilled]: "58335",
+  [MyIcons.ShopCoins]: "57643",
+  [MyIcons.ShopCoinsFilled]: "58334",
+  [MyIcons.ShopCash]: "57642",
+  [MyIcons.ShopCashFilled]: "58333",
+  [MyIcons.ShopCashDolar]: "57641",
+  [MyIcons.ShopCashDolarFilled]: "58332",
+  [MyIcons.ShopCartFull]: "57640",
+  [MyIcons.ShopCartFullFilled]: "58331",
+  [MyIcons.ShopCartEmpty]: "57639",
+  [MyIcons.ShopCartEmptyFilled]: "58330",
+  [MyIcons.ShopCartEmptyAlt]: "57638",
+  [MyIcons.ShopCartEmptyAltFilled]: "58329",
+  [MyIcons.ShopCartDownload]: "57637",
+  [MyIcons.ShopCartDownloadFilled]: "58328",
+  [MyIcons.ShopBox]: "57636",
+  [MyIcons.ShopBoxPlus]: "57635",
+  [MyIcons.ShopBoxPlusFilled]: "58327",
+  [MyIcons.ShopBoxMinus]: "57634",
+  [MyIcons.ShopBoxMinusFilled]: "58326",
+  [MyIcons.ShopBoxFilled]: "58325",
+  [MyIcons.ShopBoxEmpty]: "57633",
+  [MyIcons.ShopBoxEmptyFilled]: "58324",
+  [MyIcons.ShopBill]: "57632",
+  [MyIcons.ShopBillFilled]: "58323",
+  [MyIcons.ShopBasket]: "57631",
+  [MyIcons.ShopBasketFilled]: "58322",
+  [MyIcons.ShopBarcode]: "57630",
+  [MyIcons.ShopBarcodeFilled]: "58321",
+  [MyIcons.ShopBag]: "57629",
+  [MyIcons.ShopBagFilled]: "58320",
+  [MyIcons.ShopAccountingBillStack]: "57628",
+  [MyIcons.ShopAccountingBillStackFilled]: "58319",
+  [MyIcons.SettingsWrench]: "57627",
+  [MyIcons.SettingsWrenchFilled]: "58318",
+  [MyIcons.SettingsMachineTrack]: "57626",
+  [MyIcons.SettingsMachineTrackFilled]: "58317",
+  [MyIcons.SettingsHotspot]: "57625",
+  [MyIcons.SettingsHotspotFilled]: "58316",
+  [MyIcons.SettingsGear]: "57624",
+  [MyIcons.SettingsGearFilled]: "58315",
+  [MyIcons.SettingsGearA]: "57623",
+  [MyIcons.SettingsGearAFilled]: "58314",
+  [MyIcons.SettingsEqualizer]: "57622",
+  [MyIcons.SettingsEqualizerFilled]: "58313",
+  [MyIcons.SettingsComonent]: "57621",
+  [MyIcons.SettingsComonentFilled]: "58312",
+  [MyIcons.SettingsColorMode]: "57620",
+  [MyIcons.SettingsColorModeFilled]: "58311",
+  [MyIcons.SettingsAutoFlash]: "57619",
+  [MyIcons.SettingsAutoFlashFilled]: "58310",
+  [MyIcons.SettingsAirplane]: "57618",
+  [MyIcons.SettingsAirplaneFilled]: "58309",
+  [MyIcons.MusicVolumeMute]: "57617",
+  [MyIcons.MusicVolumeMuteFilled]: "58308",
+  [MyIcons.MusicVolumeMedium]: "57616",
+  [MyIcons.MusicVolumeMediumFilled]: "58307",
+  [MyIcons.MusicVolumeLow]: "57615",
+  [MyIcons.MusicVolumeLowFilled]: "58306",
+  [MyIcons.MusicVolumeHigh]: "57614",
+  [MyIcons.MusicVolumeHighFilled]: "58305",
+  [MyIcons.MusicStop]: "57613",
+  [MyIcons.MusicStopFilled]: "58304",
+  [MyIcons.MusicSpeaker]: "57612",
+  [MyIcons.MusicSpeakerFilled]: "58303",
+  [MyIcons.MusicShuffle]: "57611",
+  [MyIcons.MusicShuffleFilled]: "58302",
+  [MyIcons.MusicRepeat]: "57610",
+  [MyIcons.MusicRepeatOne]: "57609",
+  [MyIcons.MusicRepeatOneFilled]: "58301",
+  [MyIcons.MusicRepeatFilled]: "58300",
+  [MyIcons.MusicRadio]: "57608",
+  [MyIcons.MusicRadioFilled]: "58299",
+  [MyIcons.MusicPrevious]: "57607",
+  [MyIcons.MusicPreviousFilled]: "58298",
+  [MyIcons.MusicPreviousA]: "57606",
+  [MyIcons.MusicPreviousAFilled]: "58297",
+  [MyIcons.MusicPlaylist]: "57605",
+  [MyIcons.MusicPlaylistFilled]: "58296",
+  [MyIcons.MusicPlay]: "57604",
+  [MyIcons.MusicPlayFilled]: "58295",
+  [MyIcons.MusicPause]: "57603",
+  [MyIcons.MusicPauseFilled]: "58294",
+  [MyIcons.MusicNote]: "57602",
+  [MyIcons.MusicNoteFilled]: "58293",
+  [MyIcons.MusicNoteA]: "57601",
+  [MyIcons.MusicNoteAFilled]: "58292",
+  [MyIcons.MusicNext]: "57600",
+  [MyIcons.MusicNextFilled]: "58291",
+  [MyIcons.MusicNextA]: "57599",
+  [MyIcons.MusicNextAFilled]: "58290",
+  [MyIcons.MusicMic]: "57598",
+  [MyIcons.MusicMicFilled]: "58289",
+  [MyIcons.MusicList]: "57597",
+  [MyIcons.MusicListFilled]: "58288",
+  [MyIcons.MusicHeadphones]: "57596",
+  [MyIcons.MusicHeadphonesFilled]: "58287",
+  [MyIcons.MusicHeadphonesA]: "57595",
+  [MyIcons.MusicHeadphonesAFilled]: "58286",
+  [MyIcons.MusicEqualiser]: "57594",
+  [MyIcons.MusicEqualiserFilled]: "58285",
+  [MyIcons.MusicEject]: "57593",
+  [MyIcons.MusicEjectFilled]: "58284",
+  [MyIcons.MusicCd]: "57592",
+  [MyIcons.MusicCdFilled]: "58283",
+  [MyIcons.MusicAlbum]: "57591",
+  [MyIcons.MusicAlbumFilled]: "58282",
+  [MyIcons.MiscWifi]: "57590",
+  [MyIcons.MiscWifiFilled]: "58281",
+  [MyIcons.MiscSmileSad]: "57589",
+  [MyIcons.MiscSmileSadFilled]: "58280",
+  [MyIcons.MiscSmileMeh]: "57588",
+  [MyIcons.MiscSmileMehFilled]: "58279",
+  [MyIcons.MiscSmileLaught]: "57587",
+  [MyIcons.MiscSmileLaughtFilled]: "58278",
+  [MyIcons.MiscSmileHappy]: "57586",
+  [MyIcons.MiscSmileHappyFilled]: "58277",
+  [MyIcons.MiscSmileAngry]: "57585",
+  [MyIcons.MiscSmileAngryFilled]: "58276",
+  [MyIcons.MiscReceptionHotelBell]: "57584",
+  [MyIcons.MiscReceptionHotelBellFilled]: "58275",
+  [MyIcons.MiscPuzzle]: "57583",
+  [MyIcons.MiscPuzzleFilled]: "58274",
+  [MyIcons.MiscModuleHandPuzzle]: "57582",
+  [MyIcons.MiscModuleHandPuzzleFilled]: "58273",
+  [MyIcons.MiscMaleSign]: "57581",
+  [MyIcons.MiscMaleSignFilled]: "58272",
+  [MyIcons.MiscGridPerspective]: "57580",
+  [MyIcons.MiscGridPerspectiveFilled]: "58271",
+  [MyIcons.MiscGlobe]: "57579",
+  [MyIcons.MiscGlobeFilled]: "58270",
+  [MyIcons.MiscGesture]: "57578",
+  [MyIcons.MiscGestureTap]: "57577",
+  [MyIcons.MiscGestureTapFilled]: "58269",
+  [MyIcons.MiscGestureSwipeRight]: "57576",
+  [MyIcons.MiscGestureSwipeRightFilled]: "58268",
+  [MyIcons.MiscGestureSwipeLeft]: "57575",
+  [MyIcons.MiscGestureSwipeLeftFilled]: "58267",
+  [MyIcons.MiscGestureFilled]: "58266",
+  [MyIcons.MiscGestureDoubleTap]: "57574",
+  [MyIcons.MiscGestureDoubleTapFilled]: "58265",
+  [MyIcons.MiscFemaleSign]: "57573",
+  [MyIcons.MiscFemaleSignFilled]: "58264",
+  [MyIcons.MiscCursorHandOpen]: "57572",
+  [MyIcons.MiscCursorHandOpenFilled]: "58263",
+  [MyIcons.MiscCube]: "57571",
+  [MyIcons.MiscCubeFilled]: "58262",
+  [MyIcons.MiscCrown]: "57570",
+  [MyIcons.MiscCrownFilled]: "58261",
+  [MyIcons.MiscBulletDiamond]: "57569",
+  [MyIcons.MiscBulletDiamondFilled]: "58260",
+  [MyIcons.LogoX]: "57568",
+  [MyIcons.LogoXFilled]: "58259",
+  [MyIcons.LogoWindows]: "57567",
+  [MyIcons.LogoWindowsFilled]: "58258",
+  [MyIcons.LogoTwitter]: "57566",
+  [MyIcons.LogoTwitterFilled]: "58257",
+  [MyIcons.LogoLinux]: "57565",
+  [MyIcons.LogoLinuxFilled]: "58256",
+  [MyIcons.LogoLinkedin]: "57564",
+  [MyIcons.LogoLinkedinFilled]: "58255",
+  [MyIcons.LogoInstagram]: "57563",
+  [MyIcons.LogoInstagramFilled]: "58254",
+  [MyIcons.LogoFacebook]: "57562",
+  [MyIcons.LogoFacebookFilled]: "58253",
+  [MyIcons.LogoApple]: "57561",
+  [MyIcons.LogoAppleFilled]: "58252",
+  [MyIcons.LocationStreetSign]: "57560",
+  [MyIcons.LocationStreetSignFilled]: "58251",
+  [MyIcons.LocationStreetSignA]: "57559",
+  [MyIcons.LocationStreetSignAFilled]: "58250",
+  [MyIcons.LocationPins]: "57558",
+  [MyIcons.LocationPinsFilled]: "58249",
+  [MyIcons.LocationPin]: "57557",
+  [MyIcons.LocationPinPlus]: "57556",
+  [MyIcons.LocationPinPlusFilled]: "58248",
+  [MyIcons.LocationPinMinus]: "57555",
+  [MyIcons.LocationPinMinusFilled]: "58247",
+  [MyIcons.LocationPinMap]: "57554",
+  [MyIcons.LocationPinMapFilled]: "58246",
+  [MyIcons.LocationPinFilled]: "58245",
+  [MyIcons.LocationPinCheck]: "57553",
+  [MyIcons.LocationPinCheckFilled]: "58244",
+  [MyIcons.LocationPinB]: "57552",
+  [MyIcons.LocationPinBFilled]: "58243",
+  [MyIcons.LocationPinA]: "57551",
+  [MyIcons.LocationPinAFilled]: "58242",
+  [MyIcons.LocationMap]: "57550",
+  [MyIcons.LocationMapFilled]: "58241",
+  [MyIcons.LocationMapCross]: "57549",
+  [MyIcons.LocationMapCrossFilled]: "58240",
+  [MyIcons.LocationDirection]: "57548",
+  [MyIcons.LocationDirectionSign]: "57547",
+  [MyIcons.LocationDirectionSignFilled]: "58239",
+  [MyIcons.LocationDirectionFilled]: "58238",
+  [MyIcons.LocationCompass]: "57546",
+  [MyIcons.LocationCompassFilled]: "58237",
+  [MyIcons.EnvTree]: "57545",
+  [MyIcons.EnvTreeFilled]: "58236",
+  [MyIcons.EnvTreeA]: "57544",
+  [MyIcons.EnvTreeAFilled]: "58235",
+  [MyIcons.EnvMountains]: "57543",
+  [MyIcons.EnvMountainsFilled]: "58234",
+  [MyIcons.EnvLeaf]: "57542",
+  [MyIcons.EnvLeafFilled]: "58233",
+  [MyIcons.EnvFlower]: "57541",
+  [MyIcons.EnvFlowerFilled]: "58232",
+  [MyIcons.EnvEarth]: "57540",
+  [MyIcons.EnvEarthFilled]: "58231",
+  [MyIcons.EnvAtomicBomb]: "57539",
+  [MyIcons.EnvAtomicBombFilled]: "58230",
+  [MyIcons.EditorialUndo]: "57538",
+  [MyIcons.EditorialUndoFilled]: "58229",
+  [MyIcons.EditorialTypingMachine]: "57537",
+  [MyIcons.EditorialTypingMachineFilled]: "58228",
+  [MyIcons.EditorialTrash]: "57536",
+  [MyIcons.EditorialTrashFilled]: "58227",
+  [MyIcons.EditorialTextUnderline]: "57535",
+  [MyIcons.EditorialTextUnderlineFilled]: "58226",
+  [MyIcons.EditorialTextStyle]: "57534",
+  [MyIcons.EditorialTextStyleFilled]: "58225",
+  [MyIcons.EditorialTextStrikeThrough]: "57533",
+  [MyIcons.EditorialTextStrikeThroughFilled]: "58224",
+  [MyIcons.EditorialTextItalic]: "57532",
+  [MyIcons.EditorialTextItalicFilled]: "58223",
+  [MyIcons.EditorialTextFormat]: "57531",
+  [MyIcons.EditorialTextFormatFilled]: "58222",
+  [MyIcons.EditorialTextBold]: "57530",
+  [MyIcons.EditorialTextBoldFilled]: "58221",
+  [MyIcons.EditorialSortDesc]: "57529",
+  [MyIcons.EditorialSortDescFilled]: "58220",
+  [MyIcons.EditorialSortCancel]: "57528",
+  [MyIcons.EditorialSortCancelFilled]: "58219",
+  [MyIcons.EditorialSortAsc]: "57527",
+  [MyIcons.EditorialSortAscFilled]: "58218",
+  [MyIcons.EditorialRedo]: "57526",
+  [MyIcons.EditorialRedoFilled]: "58217",
+  [MyIcons.EditorialPencil]: "57525",
+  [MyIcons.EditorialPencilSmall]: "57524",
+  [MyIcons.EditorialPencilSmallFilled]: "58216",
+  [MyIcons.EditorialPencilFilled]: "58215",
+  [MyIcons.EditorialPen]: "57523",
+  [MyIcons.EditorialPenFilled]: "58214",
+  [MyIcons.EditorialParagraph]: "57522",
+  [MyIcons.EditorialParagraphFirstLetter]: "57521",
+  [MyIcons.EditorialParagraphFirstLetterFilled]: "58213",
+  [MyIcons.EditorialParagraphFilled]: "58212",
+  [MyIcons.EditorialItalicOff]: "57520",
+  [MyIcons.EditorialItalicOffFilled]: "58211",
+  [MyIcons.EditorialIndentRight]: "57519",
+  [MyIcons.EditorialIndentRightFilled]: "58210",
+  [MyIcons.EditorialIndentLeft]: "57518",
+  [MyIcons.EditorialIndentLeftFilled]: "58209",
+  [MyIcons.EditorialHashtagSmall]: "57517",
+  [MyIcons.EditorialHashtagSmallFilled]: "58208",
+  [MyIcons.EditorialHash]: "57516",
+  [MyIcons.EditorialHashFilled]: "58207",
+  [MyIcons.EditorialFontSize]: "57515",
+  [MyIcons.EditorialFontSizeFilled]: "58206",
+  [MyIcons.EditorialCombineIntersect]: "57514",
+  [MyIcons.EditorialCombineIntersectFilled]: "58205",
+  [MyIcons.EditorialColorPalette]: "57513",
+  [MyIcons.EditorialColorPaletteFilled]: "58204",
+  [MyIcons.EditorialBrush]: "57512",
+  [MyIcons.EditorialBrushFilled]: "58203",
+  [MyIcons.EditorialBookmark]: "57511",
+  [MyIcons.EditorialBookmarkFilled]: "58202",
+  [MyIcons.EditorialAlignRight]: "57510",
+  [MyIcons.EditorialAlignRightFilled]: "58201",
+  [MyIcons.EditorialAlignLeft]: "57509",
+  [MyIcons.EditorialAlignLeftFilled]: "58200",
+  [MyIcons.EditorialAlignCenter]: "57508",
+  [MyIcons.EditorialAlignCenterFilled]: "58199",
+  [MyIcons.DocWboardSearch]: "57507",
+  [MyIcons.DocWboardSearchFilled]: "58198",
+  [MyIcons.DocWboardLine]: "57506",
+  [MyIcons.DocWboardLineFilled]: "58197",
+  [MyIcons.DocWboardGear]: "57505",
+  [MyIcons.DocWboardGearFilled]: "58196",
+  [MyIcons.DocWboardCheck]: "57504",
+  [MyIcons.DocWboardCheckFilled]: "58195",
+  [MyIcons.DocWboardArrowTop]: "57503",
+  [MyIcons.DocWboardArrowTopFilled]: "58194",
+  [MyIcons.DocUpload]: "57502",
+  [MyIcons.DocUploadFilled]: "58193",
+  [MyIcons.DocTodoList]: "57501",
+  [MyIcons.DocTodoListUser]: "57500",
+  [MyIcons.DocTodoListUserFilled]: "58192",
+  [MyIcons.DocTodoListSquare]: "57499",
+  [MyIcons.DocTodoListSquareFilled]: "58191",
+  [MyIcons.DocTodoListFilled]: "58190",
+  [MyIcons.DocTaskListQuestion]: "57498",
+  [MyIcons.DocTaskListQuestionFilled]: "58189",
+  [MyIcons.DocTaskChecklist]: "57497",
+  [MyIcons.DocTaskChecklistFilled]: "58188",
+  [MyIcons.DocStack]: "57496",
+  [MyIcons.DocStackFilled]: "58187",
+  [MyIcons.DocProfile]: "57495",
+  [MyIcons.DocProfileFilled]: "58186",
+  [MyIcons.DocPrinter]: "57494",
+  [MyIcons.DocPrinterFilled]: "58185",
+  [MyIcons.DocPlus]: "57493",
+  [MyIcons.DocPlusFilled]: "58184",
+  [MyIcons.DocPin]: "57492",
+  [MyIcons.DocPinFilled]: "58183",
+  [MyIcons.DocPie]: "57491",
+  [MyIcons.DocPieFilled]: "58182",
+  [MyIcons.DocPapers]: "57490",
+  [MyIcons.DocPapersFilled]: "58181",
+  [MyIcons.DocPaperStack]: "57489",
+  [MyIcons.DocPaperStackFilled]: "58180",
+  [MyIcons.DocPaperLine]: "57488",
+  [MyIcons.DocPaperLineFilled]: "58179",
+  [MyIcons.DocOfficeStampDocument]: "57487",
+  [MyIcons.DocOfficeStampDocumentFilled]: "58178",
+  [MyIcons.DocOfficeFolder]: "57486",
+  [MyIcons.DocOfficeFolderFilled]: "58177",
+  [MyIcons.DocOfficeFilePdf]: "57485",
+  [MyIcons.DocOfficeFilePdfFilled]: "58176",
+  [MyIcons.DocNotesUpload]: "57484",
+  [MyIcons.DocNotesUploadFilled]: "58175",
+  [MyIcons.DocNotesPaperText]: "57483",
+  [MyIcons.DocNotesPaperTextFilled]: "58174",
+  [MyIcons.DocNotesHome]: "57482",
+  [MyIcons.DocNotesHomeFilled]: "58173",
+  [MyIcons.DocNotesGive]: "57481",
+  [MyIcons.DocNotesGiveFilled]: "58172",
+  [MyIcons.DocNotesFlip]: "57480",
+  [MyIcons.DocNotesFlipFilled]: "58171",
+  [MyIcons.DocNewspaper]: "57479",
+  [MyIcons.DocNewspaperFilled]: "58170",
+  [MyIcons.DocMinus]: "57478",
+  [MyIcons.DocMinusFilled]: "58169",
+  [MyIcons.DocMailboxIn]: "57477",
+  [MyIcons.DocMailboxInFilled]: "58168",
+  [MyIcons.DocList]: "57476",
+  [MyIcons.DocListNumbers]: "57475",
+  [MyIcons.DocListNumbersFilled]: "58167",
+  [MyIcons.DocListFilled]: "58166",
+  [MyIcons.DocInvoice]: "57474",
+  [MyIcons.DocInvoiceFilled]: "58165",
+  [MyIcons.DocImage]: "57473",
+  [MyIcons.DocImageFilled]: "58164",
+  [MyIcons.DocImageA]: "57472",
+  [MyIcons.DocImageAFilled]: "58163",
+  [MyIcons.DocIdCardVertical]: "57471",
+  [MyIcons.DocIdCardVerticalFilled]: "58162",
+  [MyIcons.DocGlasses]: "57470",
+  [MyIcons.DocGlassesFilled]: "58161",
+  [MyIcons.DocFolder]: "57469",
+  [MyIcons.DocFolderSync]: "57468",
+  [MyIcons.DocFolderSyncFilled]: "58160",
+  [MyIcons.DocFolderPlus]: "57467",
+  [MyIcons.DocFolderPlusFilled]: "58159",
+  [MyIcons.DocFolderMinus]: "57466",
+  [MyIcons.DocFolderMinusFilled]: "58158",
+  [MyIcons.DocFolderHome]: "57465",
+  [MyIcons.DocFolderHomeFilled]: "58157",
+  [MyIcons.DocFolderFilled]: "58156",
+  [MyIcons.DocFolderCross]: "57464",
+  [MyIcons.DocFolderCrossFilled]: "58155",
+  [MyIcons.DocFolderCheck]: "57463",
+  [MyIcons.DocFolderCheckFilled]: "58154",
+  [MyIcons.DocFileZip]: "57462",
+  [MyIcons.DocFileZipFilled]: "58153",
+  [MyIcons.DocFileXls]: "57461",
+  [MyIcons.DocFileXlsFilled]: "58152",
+  [MyIcons.DocFileVideo]: "57460",
+  [MyIcons.DocFileVideoFilled]: "58151",
+  [MyIcons.DocFileSave]: "57459",
+  [MyIcons.DocFileSaveFilled]: "58150",
+  [MyIcons.DocFileRefresh]: "57458",
+  [MyIcons.DocFileRefreshFilled]: "58149",
+  [MyIcons.DocFilePrint]: "57457",
+  [MyIcons.DocFilePrintFilled]: "58148",
+  [MyIcons.DocFilePrev]: "57456",
+  [MyIcons.DocFilePrevFilled]: "58147",
+  [MyIcons.DocFilePresentation]: "57455",
+  [MyIcons.DocFilePresentationFilled]: "58146",
+  [MyIcons.DocFilePpt]: "57454",
+  [MyIcons.DocFilePptFilled]: "58145",
+  [MyIcons.DocFilePlus]: "57453",
+  [MyIcons.DocFilePlusFilled]: "58144",
+  [MyIcons.DocFileNext]: "57452",
+  [MyIcons.DocFileNextFilled]: "58143",
+  [MyIcons.DocFileMinus]: "57451",
+  [MyIcons.DocFileMinusFilled]: "58142",
+  [MyIcons.DocFileLine]: "57450",
+  [MyIcons.DocFileLineFilled]: "58141",
+  [MyIcons.DocFileImage]: "57449",
+  [MyIcons.DocFileImageFilled]: "58140",
+  [MyIcons.DocFileGraph]: "57448",
+  [MyIcons.DocFileGraphFilled]: "58139",
+  [MyIcons.DocFileDoc]: "57447",
+  [MyIcons.DocFileDocFilled]: "58138",
+  [MyIcons.DocFileCross]: "57446",
+  [MyIcons.DocFileCrossFilled]: "58137",
+  [MyIcons.DocFileCheck]: "57445",
+  [MyIcons.DocFileCheckFilled]: "58136",
+  [MyIcons.DocFileBookmark]: "57444",
+  [MyIcons.DocFileBookmarkFilled]: "58135",
+  [MyIcons.DocFileBlank]: "57443",
+  [MyIcons.DocFileBlankFilled]: "58134",
+  [MyIcons.DocFileAudio]: "57442",
+  [MyIcons.DocFileAudioFilled]: "58133",
+  [MyIcons.DocDownload]: "57441",
+  [MyIcons.DocDownloadFilled]: "58132",
+  [MyIcons.DocDiary]: "57440",
+  [MyIcons.DocDiaryFilled]: "58131",
+  [MyIcons.DocCopy]: "57439",
+  [MyIcons.DocCopyFilled]: "58130",
+  [MyIcons.DocCompose]: "57438",
+  [MyIcons.DocComposeFilled]: "58129",
+  [MyIcons.DocCommonFileTextEdit]: "57437",
+  [MyIcons.DocCommonFileTextEditFilled]: "58128",
+  [MyIcons.DocCommonFileHome]: "57436",
+  [MyIcons.DocCommonFileHomeFilled]: "58127",
+  [MyIcons.DocCommonFileEdit]: "57435",
+  [MyIcons.DocCommonFileEditFilled]: "58126",
+  [MyIcons.DocCamera]: "57434",
+  [MyIcons.DocCameraFilled]: "58125",
+  [MyIcons.DocBriefcase]: "57433",
+  [MyIcons.DocBriefcaseFilled]: "58124",
+  [MyIcons.DocBoxP]: "57432",
+  [MyIcons.DocBoxPFilled]: "58123",
+  [MyIcons.DocBookmark]: "57431",
+  [MyIcons.DocBookmarkFilled]: "58122",
+  [MyIcons.DocBook]: "57430",
+  [MyIcons.DocBookUpload]: "57429",
+  [MyIcons.DocBookUploadFilled]: "58121",
+  [MyIcons.DocBookTarget]: "57428",
+  [MyIcons.DocBookTargetFilled]: "58120",
+  [MyIcons.DocBookSettings]: "57427",
+  [MyIcons.DocBookSettingsFilled]: "58119",
+  [MyIcons.DocBookModules]: "57426",
+  [MyIcons.DocBookModulesFilled]: "58118",
+  [MyIcons.DocBookLibrary]: "57425",
+  [MyIcons.DocBookLibraryFilled]: "58117",
+  [MyIcons.DocBookFilled]: "58116",
+  [MyIcons.DocBookDownload]: "57424",
+  [MyIcons.DocBookDownloadFilled]: "58115",
+  [MyIcons.DocBookCash]: "57423",
+  [MyIcons.DocBookCashFilled]: "58114",
+  [MyIcons.DocBookB]: "57422",
+  [MyIcons.DocBookBFilled]: "58113",
+  [MyIcons.DocBookA]: "57421",
+  [MyIcons.DocBookAFilled]: "58112",
+  [MyIcons.DocAttachment]: "57420",
+  [MyIcons.DocAttachmentFilled]: "58111",
+  [MyIcons.DocArticle]: "57419",
+  [MyIcons.DocArticleFilled]: "58110",
+  [MyIcons.DocArchive]: "57418",
+  [MyIcons.DocArchiveUpload]: "57417",
+  [MyIcons.DocArchiveUploadFilled]: "58109",
+  [MyIcons.DocArchiveFolder]: "57416",
+  [MyIcons.DocArchiveFolderFilled]: "58108",
+  [MyIcons.DocArchiveFilled]: "58107",
+  [MyIcons.DocArchiveEmpty]: "57415",
+  [MyIcons.DocArchiveEmptyFilled]: "58106",
+  [MyIcons.DocArchiveDownload]: "57414",
+  [MyIcons.DocArchiveDownloadFilled]: "58105",
+  [MyIcons.DocAnalyticsUp]: "57413",
+  [MyIcons.DocAnalyticsUpFilled]: "58104",
+  [MyIcons.ComWarning]: "57412",
+  [MyIcons.ComWarningFilled]: "58103",
+  [MyIcons.ComVoicemail]: "57411",
+  [MyIcons.ComVoicemailFilled]: "58102",
+  [MyIcons.ComSatellite]: "57410",
+  [MyIcons.ComSatelliteFilled]: "58101",
+  [MyIcons.ComPostcard]: "57409",
+  [MyIcons.ComPostcardFilled]: "58100",
+  [MyIcons.ComPictures]: "57408",
+  [MyIcons.ComPicturesFilled]: "58099",
+  [MyIcons.ComPhone]: "57407",
+  [MyIcons.ComPhoneLandline]: "57406",
+  [MyIcons.ComPhoneLandlineFilled]: "58098",
+  [MyIcons.ComPhoneFilled]: "58097",
+  [MyIcons.ComPaperplane]: "57405",
+  [MyIcons.ComPaperplaneFilled]: "58096",
+  [MyIcons.ComMicrophonePodcast]: "57404",
+  [MyIcons.ComMicrophonePodcastFilled]: "58095",
+  [MyIcons.ComMic]: "57403",
+  [MyIcons.ComMicMute]: "57402",
+  [MyIcons.ComMicMuteFilled]: "58094",
+  [MyIcons.ComMicFilled]: "58093",
+  [MyIcons.ComMegaphone]: "57401",
+  [MyIcons.ComMegaphoneFilled]: "58092",
+  [MyIcons.ComMail]: "57400",
+  [MyIcons.ComMailWarning]: "57399",
+  [MyIcons.ComMailWarningFilled]: "58091",
+  [MyIcons.ComMailSync]: "57398",
+  [MyIcons.ComMailSyncFilled]: "58090",
+  [MyIcons.ComMailReceive]: "57397",
+  [MyIcons.ComMailReceiveFilled]: "58089",
+  [MyIcons.ComMailPlus]: "57396",
+  [MyIcons.ComMailPlusFilled]: "58088",
+  [MyIcons.ComMailOpen]: "57395",
+  [MyIcons.ComMailOpenWarning]: "57394",
+  [MyIcons.ComMailOpenWarningFilled]: "58087",
+  [MyIcons.ComMailOpenFilled]: "58086",
+  [MyIcons.ComMailMinus]: "57393",
+  [MyIcons.ComMailMinusFilled]: "58085",
+  [MyIcons.ComMailFilled]: "58084",
+  [MyIcons.ComMailDownload]: "57392",
+  [MyIcons.ComMailDownloadFilled]: "58083",
+  [MyIcons.ComMailCross]: "57391",
+  [MyIcons.ComMailCrossFilled]: "58082",
+  [MyIcons.ComMailClock]: "57390",
+  [MyIcons.ComMailClockFilled]: "58081",
+  [MyIcons.ComMailCheck]: "57389",
+  [MyIcons.ComMailCheckFilled]: "58080",
+  [MyIcons.ComLanguage]: "57388",
+  [MyIcons.ComLanguageFilled]: "58079",
+  [MyIcons.ComHelp]: "57387",
+  [MyIcons.ComHelpFilled]: "58078",
+  [MyIcons.ComHelpA]: "57386",
+  [MyIcons.ComHelpAFilled]: "58077",
+  [MyIcons.ComBubble]: "57385",
+  [MyIcons.ComBubbleLine]: "57384",
+  [MyIcons.ComBubbleLineFilled]: "58076",
+  [MyIcons.ComBubbleLineA]: "57383",
+  [MyIcons.ComBubbleLineAFilled]: "58075",
+  [MyIcons.ComBubbleGroup]: "57382",
+  [MyIcons.ComBubbleGroupFilled]: "58074",
+  [MyIcons.ComBubbleGroupA]: "57381",
+  [MyIcons.ComBubbleGroupAFilled]: "58073",
+  [MyIcons.ComBubbleFilled]: "58072",
+  [MyIcons.ComBubbleDot]: "57380",
+  [MyIcons.ComBubbleDotFilled]: "58071",
+  [MyIcons.ComBubbleDotA]: "57379",
+  [MyIcons.ComBubbleDotAFilled]: "58070",
+  [MyIcons.ComBubbleA]: "57378",
+  [MyIcons.ComBubbleAFilled]: "58069",
+  [MyIcons.ComBell]: "57377",
+  [MyIcons.ComBellFilled]: "58068",
+  [MyIcons.ComAdvertisingMegaphone]: "57376",
+  [MyIcons.ComAdvertisingMegaphoneFilled]: "58067",
+  [MyIcons.BuildingView]: "57375",
+  [MyIcons.BuildingViewFilled]: "58066",
+  [MyIcons.BuildingToilet]: "57374",
+  [MyIcons.BuildingToiletFilled]: "58065",
+  [MyIcons.BuildingSofa]: "57373",
+  [MyIcons.BuildingSofaFilled]: "58064",
+  [MyIcons.BuildingSofaA]: "57372",
+  [MyIcons.BuildingSofaAFilled]: "58063",
+  [MyIcons.BuildingSafetyFireShield]: "57371",
+  [MyIcons.BuildingSafetyFireShieldFilled]: "58062",
+  [MyIcons.BuildingRockerSwitch]: "57370",
+  [MyIcons.BuildingRockerSwitchFilled]: "58061",
+  [MyIcons.BuildingRealEstateDimensionsPlan]: "57369",
+  [MyIcons.BuildingRealEstateDimensionsPlanFilled]: "58060",
+  [MyIcons.BuildingRealEstateDimensionsBlock]: "57368",
+  [MyIcons.BuildingRealEstateDimensionsBlockFilled]: "58059",
+  [MyIcons.BuildingPlanBalcony]: "57367",
+  [MyIcons.BuildingPlanBalconyFilled]: "58058",
+  [MyIcons.BuildingOffice]: "57366",
+  [MyIcons.BuildingOfficeSettingsB]: "57365",
+  [MyIcons.BuildingOfficeSettingsBFilled]: "58057",
+  [MyIcons.BuildingOfficeFilled]: "58056",
+  [MyIcons.BuildingOfficeAddB]: "57364",
+  [MyIcons.BuildingOfficeAddBFilled]: "58055",
+  [MyIcons.BuildingOfficeA]: "57363",
+  [MyIcons.BuildingOfficeAFilled]: "58054",
+  [MyIcons.BuildingMuseum]: "57362",
+  [MyIcons.BuildingMuseumFilled]: "58053",
+  [MyIcons.BuildingLift]: "57361",
+  [MyIcons.BuildingLiftFilled]: "58052",
+  [MyIcons.BuildingLamp]: "57360",
+  [MyIcons.BuildingLampFilled]: "58051",
+  [MyIcons.BuildingLampA]: "57359",
+  [MyIcons.BuildingLampAFilled]: "58050",
+  [MyIcons.BuildingHouse]: "57358",
+  [MyIcons.BuildingHouseFilled]: "58049",
+  [MyIcons.BuildingHeater]: "57357",
+  [MyIcons.BuildingHeaterFilled]: "58048",
+  [MyIcons.BuildingHangingRack]: "57356",
+  [MyIcons.BuildingHangingRackFilled]: "58047",
+  [MyIcons.BuildingFireplace]: "57355",
+  [MyIcons.BuildingFireplaceFilled]: "58046",
+  [MyIcons.BuildingFaucet]: "57354",
+  [MyIcons.BuildingFaucetFilled]: "58045",
+  [MyIcons.BuildingExit]: "57353",
+  [MyIcons.BuildingExitFilled]: "58044",
+  [MyIcons.BuildingDrawer]: "57352",
+  [MyIcons.BuildingDrawerFilled]: "58043",
+  [MyIcons.BuildingDoor]: "57351",
+  [MyIcons.BuildingDoorFilled]: "58042",
+  [MyIcons.BuildingDimensionsRuler]: "57350",
+  [MyIcons.BuildingDimensionsRulerFilled]: "58041",
+  [MyIcons.BuildingDesk]: "57349",
+  [MyIcons.BuildingDeskFilled]: "58040",
+  [MyIcons.BuildingDaylight]: "57348",
+  [MyIcons.BuildingDaylightFilled]: "58039",
+  [MyIcons.BuildingChair]: "57347",
+  [MyIcons.BuildingChairFilled]: "58038",
+  [MyIcons.BuildingCabinet]: "57346",
+  [MyIcons.BuildingCabinetFilled]: "58037",
+  [MyIcons.BuildingBlueprint]: "57345",
+  [MyIcons.BuildingBlueprintFilled]: "58036",
+  [MyIcons.BuildingBed]: "57344",
+  [MyIcons.BuildingBedFilled]: "58035",
 };

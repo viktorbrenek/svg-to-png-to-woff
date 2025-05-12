@@ -2,8 +2,8 @@ import fs from "fs";
 import path from "path";
 
 const outputDirs = [
-  { folder: "output/regular", prefix: "regular" },
-  { folder: "output/bold", prefix: "bold" }
+  { folder: "output/regular" },
+  { folder: "output/bold" }
 ];
 
 const startCodepoint = 0xe000;

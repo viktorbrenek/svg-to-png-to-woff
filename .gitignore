@@ -1,0 +1,21 @@
+# build output
+dist/
+tmp/
+output/
+
+# ignore all SVGs from source and outputs
+iconyzfigmy/**/*.svg
+output/**/*.svg
+tmp/**/*.svg
+
+# ignore temporary raster files
+tmp/**/*.png
+tmp/**/*.pgm
+
+# node modules and build caches
+node_modules/
+*.log
+
+# system files
+.DS_Store
+Thumbs.db

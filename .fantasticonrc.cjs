@@ -1,20 +1,28 @@
-/** @type {import('fantasticon').Config} */
-module.exports = {
-  inputDir: 'output', // důležité: bez ./ a správná složka
-  outputDir: 'dist',
-  fontTypes: ['ttf', 'woff', 'woff2'],
-  assetTypes: ['css', 'html', 'json', 'ts'],
-  name: 'my-icons',
-  fontsUrl: '/static/fonts',
+import path from 'path';
+
+export default {
+  inputDir: "./output", // nebo specificky "output/regular" / "output/bold"
+  outputDir: "./dist",
+  fontTypes: ["woff2", "ttf", "svg"],
+  assetTypes: ["css"],
+  name: "my-icon-font",
+  prefix: "icon",
   normalize: true,
-  fontHeight: 1000,
-  descent: 200,
-  prefix: 'icon',
+  descent: 64,
+  fontHeight: 1024,
+  formatOptions: {
+    svg: {
+      metadata: true
+    }
+  },
   pathOptions: {
-    ts: 'dist/icon-types.ts',
-    json: 'dist/icon-codepoints.json'
+    css: "./style.css"
   },
   templates: {
-    css: 'my-custom-tp.css.hbs'
-  }
+    css: path.resolve("./my-custom-tp.css.hbs")
+  },
+  // 🔽 Reset unicode start to U+E000
+  codepoints: {}, // necháme prázdné, bude generováno automaticky
+  // 🔽 DŮLEŽITÉ: řazení podle názvu (nutné před použitím)
+  sort: true
 };

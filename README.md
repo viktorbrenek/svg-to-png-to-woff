@@ -1,24 +1,24 @@
 # SVG to Font Toolchain
 
-Tento nástroj slouží k automatické konverzi SVG ikon exportovaných z Figmy (včetně výřezů a složitých tvarů) na čistý webový ikonový font.
+This tool automatically converts SVG icons exported from Figma (including cutouts and complex shapes) into a clean web icon font.
 
-## 🔧 Složky
+## 🔧 Folder Structure
 
-- `iconyzfigmy/` – sem nahrajte původní SVG ikony exportované z Figmy
-- `tmp/` – dočasné soubory (PNG, PGM)
-- `output/` – hotové SVG po bitmapovém trasování
-- `dist/` – výsledný ikonový font
+- `iconyzfigmy/` – place your original SVG icons exported from Figma here
+- `tmp/` – temporary files (PNG, PGM)
+- `output/` – cleaned SVGs after bitmap tracing
+- `dist/` – final generated icon font
 
 ---
 
-## 🧰 Požadavky
+## 🧰 Requirements
 
-- Node.js (doporučeno 18+)
-- `npx` a `fantasticon`
-- [ImageMagick](https://imagemagick.org/) (příkaz `convert`)
-- [Potrace](http://potrace.sourceforge.net/) (trasování bitmap na vektor)
+- Node.js (recommended 18+)
+- `npx` and `fantasticon`
+- [ImageMagick](https://imagemagick.org/) (`convert` command)
+- [Potrace](http://potrace.sourceforge.net/) (bitmap to vector tracer)
 
-Na macOS lze nainstalovat pomocí:
+On macOS, you can install them with:
 
 ```bash
 brew install imagemagick potrace
@@ -27,59 +27,69 @@ npm install
 
 ---
 
-## 🚀 Postup
+## 🚀 Workflow
 
-### 1. Nahraj SVG ikony z Figmy
+### 1. Add your SVG icons from Figma
 
-Zkopíruj své SVG soubory do složky:
+Copy your SVG files into:
 
 ```
 iconyzfigmy/
 ```
 
-Každý soubor by měl obsahovat jeden tvar (ideálně černý na průhledném pozadí).
+Each file should contain a single shape, preferably black on a transparent background.
 
 ---
 
-### 2. Spusť trasování SVG na čisté cesty
+### 2. Trace SVGs into clean vector paths
 
-Tento skript provede:
+This script performs the following steps:
 
 - SVG → PNG
-- PNG → PGM (černobílý obraz)
-- PGM → SVG pomocí `potrace`
+- PNG → PGM (grayscale image)
+- PGM → SVG using `potrace`
 
 ```bash
 node trace-svg.js
 ```
 
-Hotové soubory se uloží do složky `output/`.
+The traced SVG files will be saved in the `output/` folder.
 
 ---
 
-### 3. Vygeneruj ikonový font
+### 3. Generate the icon font
 
-Použij `fantasticon` pro převod SVG na WOFF/TTF fonty:
+Use `fantasticon` to convert SVGs into WOFF/TTF font formats:
 
 ```bash
 npx fantasticon --config .fantasticonrc.cjs
 ```
 
-Tento krok:
+This step:
 
-- vezme SVG ze složky `output/`
-- vygeneruje ikonový font do `dist/`
-- vytvoří i `style.css` s mapou ikon
-
----
-
-## ✅ Výsledek
-
-Fonty najdeš ve složce `dist/`. Můžeš je ihned použít na webu nebo v aplikaci.
+- takes SVGs from the `output/` folder
+- generates the icon font into `dist/`
+- creates a `style.css` file with icon mapping
 
 ---
 
-## 📝 Poznámky
+## ✅ Output
 
-- Tento nástroj řeší i výřezy (`fill-rule="evenodd"`), které bývají problém při běžném převodu.
-- Pokud SVG obsahuje `clipPath`, `mask` nebo `use`, bitmapové trasování zajistí správný výsledek.
+You will find the generated fonts in the `dist/` folder, ready to use in your web or app project.
+
+---
+
+## 📝 Notes
+
+- This tool handles `fill-rule="evenodd"` properly, which can cause issues with typical vector conversion.
+- If your SVG uses `clipPath`, `mask`, or `use`, the bitmap tracing ensures the output looks correct.
+
+---
+
+## 📄 License and Attribution
+
+Icons are sourced from [Solar Icons](https://github.com/AlfieJones/solar), licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+
+By using these icons, we comply with the license terms by providing proper attribution:
+
+> Solar Icons by [Alfie Jones](https://github.com/AlfieJones/solar) — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)

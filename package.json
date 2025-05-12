@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "fix": "node optimize-svg.js",
-    "build": "DEBUG=fantasticon* fantasticon --config .fantasticonrc.cjs",
+    "fix": "node trace-svg.js",
+    "build": "npx fantasticon --config .fantasticonrc.cjs",
     "all": "npm run fix && npm run build"
   },
   "keywords": [],

@@ -1,28 +1,28 @@
-import path from 'path';
+const path = require("path");
+const codepoints = require("./codepoints.json");
 
-export default {
-  inputDir: "./output", // nebo specificky "output/regular" / "output/bold"
+module.exports = {
+  inputDir: "./output", // zachová strukturu a názvy
   outputDir: "./dist",
-  fontTypes: ["woff2", "ttf", "svg"],
-  assetTypes: ["css"],
-  name: "my-icon-font",
-  prefix: "icon",
+  fontTypes: ['ttf', 'woff', 'woff2'],
+  assetTypes: ['css', 'html', 'json', 'ts'],
+  name: 'my-icons',
+  fontsUrl: '/static/fonts',
   normalize: true,
-  descent: 64,
   fontHeight: 1024,
+  descent: 64,
+  prefix: 'icon',
   formatOptions: {
     svg: {
       metadata: true
     }
   },
   pathOptions: {
-    css: "./style.css"
+    ts: 'dist/icon-types.ts',
+    json: 'dist/icon-codepoints.json'
   },
   templates: {
-    css: path.resolve("./my-custom-tp.css.hbs")
+    css: 'my-custom-tp.css.hbs'
   },
-  // 🔽 Reset unicode start to U+E000
-  codepoints: {}, // necháme prázdné, bude generováno automaticky
-  // 🔽 DŮLEŽITÉ: řazení podle názvu (nutné před použitím)
-  sort: true
+  codepoints
 };

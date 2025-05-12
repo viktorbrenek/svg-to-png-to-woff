@@ -4,9 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "fix": "node trace-svg.js",
-    "build": "npx fantasticon --config .fantasticonrc.cjs",
-    "all": "npm run fix && npm run build"
+  "fix": "node trace-svg.js",
+  "generate:codepoints": "node generate-codepoints.js",
+  "build": "npx fantasticon --config .fantasticonrc.cjs",
+  "all": "npm run fix && npm run generate:codepoints && npm run build"
   },
   "keywords": [],
   "author": "",

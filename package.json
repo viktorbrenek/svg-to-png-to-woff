@@ -1,0 +1,28 @@
+{
+  "name": "my-icon-font",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "fix": "node optimize-svg.js",
+    "build": "DEBUG=fantasticon* fantasticon --config .fantasticonrc.cjs",
+    "all": "npm run fix && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "fantasticon": "^3.0.0",
+    "svgicons2svgfont": "^15.0.1"
+  },
+  "dependencies": {
+    "canvas": "^3.1.0",
+    "clipper-lib": "^6.4.2",
+    "jsdom": "^26.1.0",
+    "paper": "^0.12.18",
+    "svg-path-parser": "^1.1.0",
+    "svgo": "^3.3.2",
+    "svgpath": "^2.6.0"
+  }
+}

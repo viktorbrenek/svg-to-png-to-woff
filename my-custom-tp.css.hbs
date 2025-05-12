@@ -1,0 +1,6 @@
+{{#each glyphs}}
+.{{../prefix}}-{{name}}::before {
+  content: "{{code}}";
+  font-family: "{{../name}}";
+}
+{{/each}}

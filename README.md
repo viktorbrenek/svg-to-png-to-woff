@@ -6,6 +6,38 @@ Why? I’ve tried (what feels like) every existing solution for converting SVGs 
 
 Since I wanted a fully reliable, custom solution, I discovered that SVGs can be converted to PNG almost losslessly—and then traced back into vector format using bitmap tracers that completely ignore Figma-specific features that tend to break font conversion. After countless rounds of trial and error, this tool was born.
 
+## 💡 Use Case: Why Convert SVG Icons to a Font?
+
+Converting SVG icons into a font provides a highly efficient and scalable way to manage icons across websites and applications. Fonts are vector-based, lightweight, and render crisply on any screen resolution—making them ideal for responsive design. 
+
+Unlike inline SVGs or icon sprites, font-based icons can be styled easily with CSS:
+
+```css
+.icon-home {
+  font-family: "my-icons";
+  font-size: 24px;
+  color: #333;
+}
+```
+
+This approach reduces the need for additional markup or external assets, simplifying the integration of icon sets in both small and large projects.
+
+---
+
+### ✅ What You Can Use It For
+
+- Web projects via CSS classes (e.g., `.icon-home`)
+- Design systems with unified token-based theming
+- Component libraries (React, Vue, etc.) that need scalable icon sets
+- Low-bandwidth environments where every kilobyte matters
+
+---
+
+This tool enables you to export clean, reliable web icon fonts from complex Figma SVGs—handling tricky shapes, cutouts, and boolean operations that most direct converters fail to process.
+
+Whether you're building a robust design system or just want pixel-perfect, scalable icons without SVG quirks, this tool gives you total control over your icon pipeline.
+
+
 ## 🔧 Folder Structure
 
 - `iconyzfigmy/` – place your original SVG icons exported from Figma here
@@ -85,7 +117,9 @@ You will find the generated fonts in the `dist/` folder, ready to use in your we
 
 ## 📝 Current problems
 
-For now the generated icon-types.ts is generated backwards from Z to A. However it is an easy fix with VS Code command "sort ascending" if you really need it to be from A to Z. 
+a) For now the generated icon-types.ts is generated backwards from Z to A. However it is an easy fix with VS Code command "sort ascending" if you really need it to be from A to Z. 
+
+b) All source icons must have the same size. For example 24x24 (tested). If there is a different size in one of your icons, it can create unwanted elements in such icon.
 
 ## 📝 Notes
 

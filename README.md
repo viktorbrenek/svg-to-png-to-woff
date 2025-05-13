@@ -1,6 +1,10 @@
-# SVG to Font Toolchain
+# What is "Iconimo"? .SVG to .PNG to .PGM to .SVG to Font Toolchain
 
 This tool automatically converts SVG icons exported from Figma (including cutouts and complex shapes) into a clean web icon font.
+
+Why? I’ve tried (what feels like) every existing solution for converting SVGs directly into fonts—but each of them failed when handling more complex SVGs that included advanced operations like exclude, difference, union, and others. These operations often cause rendering issues, and the only tool that sometimes handled them correctly was IcoMoon.
+
+Since I wanted a fully reliable, custom solution, I discovered that SVGs can be converted to PNG almost losslessly—and then traced back into vector format using bitmap tracers that completely ignore Figma-specific features that tend to break font conversion. After countless rounds of trial and error, this tool was born.
 
 ## 🔧 Folder Structure
 

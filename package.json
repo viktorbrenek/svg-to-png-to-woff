@@ -8,7 +8,9 @@
   "flatten": "node flatten-for-fantasticon.js",
   "codepoints": "node generate-codepoints.js",
   "build": "npx fantasticon --config .fantasticonrc.cjs",
-  "all": "npm run trace && npm run flatten && npm run codepoints && npm run build"
+  "generate:less": "node generate-less.js",
+  "generate:ts": "node generate-iconCode.ts.js",
+  "all": "npm run trace && npm run flatten && npm run codepoints && npm run build && npm run generate:less && npm run generate:ts"
 }
 ,
   "keywords": [],

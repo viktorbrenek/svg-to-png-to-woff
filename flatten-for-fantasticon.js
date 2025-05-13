@@ -21,3 +21,5 @@ for (const folder of sets) {
     fs.copyFileSync(src, dest);
   }
 }
+
+console.log(`📦 Flatten complete. Total icons copied: ${fs.readdirSync(flatOutput).length}`);

@@ -117,9 +117,9 @@ You will find the generated fonts in the `dist/` folder, ready to use in your we
 
 ## 📝 Current problems
 
-a) For now the generated icon-types.ts is generated backwards from Z to A. However it is an easy fix with VS Code command "sort ascending" if you really need it to be from A to Z. 
+A) All source icons must have the same size. For example 24x24 (tested). If there is a different size in one of your icons, it can create unwanted elements in such icon.
 
-b) All source icons must have the same size. For example 24x24 (tested). If there is a different size in one of your icons, it can create unwanted elements in such icon.
+B) Note: Fantasticon does not handle sorting of special European characters (e.g. š, č, ch, ž) correctly. As a result, icons with such names might be ordered unexpectedly. To avoid potential issues, it's recommended to stick to basic Latin characters when naming your icons.
 
 ## 📝 Notes
 
@@ -128,10 +128,57 @@ b) All source icons must have the same size. For example 24x24 (tested). If ther
 
 ---
 
-## 📄 License and Attribution
+## 📄 Icons License and Attribution
 
 Icons are sourced from [Solar Icons](https://github.com/AlfieJones/solar), licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
 
 By using these icons, we comply with the license terms by providing proper attribution:
 
 > Solar Icons by [Alfie Jones](https://github.com/AlfieJones/solar) — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+## 📄 Third-party Licenses and Attribution
+
+#### 🧠 Node packages:
+
+- **[sharp](https://github.com/lovell/sharp)**  
+  License: [Apache License 2.0](https://github.com/lovell/sharp/blob/main/LICENSE)  
+  Used to convert SVGs to PNGs for tracing.
+
+#### ⚙️ System CLI tools (must be installed manually):
+
+- **[ImageMagick](https://imagemagick.org/)** (specifically `convert` or `magick` CLI)  
+  License: [Apache License 2.0](https://imagemagick.org/script/license.php)  
+  Used to convert PNG images to grayscale PGM format before tracing.
+
+- **[Potrace](http://potrace.sourceforge.net/)**  
+  License: [GNU General Public License v2.0](https://opensource.org/licenses/GPL-2.0)  
+  Used for bitmap to SVG vector tracing.
+
+- **[Fantasticon](https://github.com/tancredi/fantasticon)**  
+  License: [MIT License](https://github.com/tancredi/fantasticon/blob/master/LICENSE)  
+  Used to generate icon fonts from processed SVG files.
+
+---
+
+## UPDATES
+
+➡️ **Console output for all scripts**: Reports how many SVGs were successfully processed with each processor.
+
+#### 1. Flatten SVGs to organize them normally
+
+The default sorting of icons was from Z to A. With this simple script i reversed it. 
+
+```bash
+npm run flatten
+```
+
+#### 2. Generate LESS and TypeScript token files
+
+These scripts output icon names and codepoints for web usage. Same as IcoMoon:
+
+```bash
+npm run generate:less
+npm run generate:ts
+```
+
+You can use the generated LESS for icon mixins and the TypeScript file for auto-completion or type-safe icon references in web apps.

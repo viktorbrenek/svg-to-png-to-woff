@@ -28,4 +28,5 @@ for (const { folder } of outputDirs) {
 }
 
 fs.writeFileSync("codepoints.json", JSON.stringify(result, null, 2), "utf-8");
-console.log("✅ codepoints.json generated.");
+console.log(`✅ codepoints.json generated with ${Object.keys(result).length} icons.`);
+

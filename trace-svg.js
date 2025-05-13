@@ -18,10 +18,22 @@ async function convertSvgToPng(input, output) {
     .toFile(output);
 }
 
+function getImageMagickCommand() {
+  try {
+    execSync('magick -version', { stdio: 'ignore' });
+    return 'magick';
+  } catch {
+    return 'convert';
+  }
+}
+
+const imageMagickCmd = getImageMagickCommand();
+
 function convertPngToPgm(pngInput, pgmOutput) {
   console.log(`🟠 PNG ➜ PGM (alpha extract): ${pngInput}`);
-  execSync(`convert "${pngInput}" -alpha extract -threshold 50% -negate "${pgmOutput}"`);
+  execSync(`${imageMagickCmd} "${pngInput}" -alpha extract -threshold 50% -negate "${pgmOutput}"`);
 }
+
 
 function tracePgmToSvg(pgmInput, svgOutput) {
   console.log(`🟡 Tracing to SVG: ${pgmInput}`);
@@ -66,9 +78,26 @@ async function walkAndProcess(dir, relative = '') {
 }
 
 async function main() {
-  await walkAndProcess(inputDir);
-  console.log('🎉 All icons processed.');
+  let count = 0;
+  async function wrappedWalk(dir, relative = '') {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      const relPath = path.join(relative, entry.name);
+      if (entry.isDirectory()) {
+        await wrappedWalk(fullPath, relPath);
+      } else if (entry.isFile() && entry.name.endsWith('.svg')) {
+        const outputRelPath = relPath.replace(/\.svg$/, '.svg');
+        await processIcon(fullPath, outputRelPath);
+        count++;
+      }
+    }
+  }
+
+  await wrappedWalk(inputDir);
+  console.log(`🎉 Tracing complete. Total icons processed: ${count}`);
 }
+
 
 main().catch(err => {
   console.error('❌ Error:', err);

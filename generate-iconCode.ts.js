@@ -30,4 +30,4 @@ const final = [...normal, ...comment, ...filled];
 const content = `export enum IconCode {\n${final.join("\n")}\n}\n`;
 
 fs.writeFileSync("./dist/iconCode.ts", content, "utf-8");
-console.log("✅ iconCode.ts generated with section comment before bold/filled icons.");
+console.log(`✅ iconCode.ts generated with ${Object.keys(codepoints).length} icons (non-filled first).`);

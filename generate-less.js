@@ -7,4 +7,5 @@ const lines = Object.entries(codepoints).map(
 );
 
 fs.writeFileSync("./dist/iconCode.less", lines.join("\n") + "\n", "utf-8");
-console.log("✅ iconCode.less generated from icon-codepoints.json");
+console.log(`✅ iconCode.less generated. Total: ${lines.length} icons.`);
+

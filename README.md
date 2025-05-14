@@ -1,3 +1,7 @@
+## 🔧 CLI Usage
+
+TBA - working on it - Just download the zip now and install manually.
+
 # What is "Iconimo"? .SVG to .PNG to .PGM to .SVG to Font Toolchain
 
 This tool automatically converts SVG icons exported from Figma (including cutouts and complex shapes) into a clean web icon font.
@@ -46,6 +50,9 @@ Whether you're building a robust design system or just want pixel-perfect, scala
 - `dist/` – final generated icon font
 
 ---
+
+#### Update
+There is also a new file paths.json where you can define all the paths. 
 
 ## 🧰 Requirements
 
@@ -164,12 +171,12 @@ By using these icons, we comply with the license terms by providing proper attri
 
 ➡️ **Console output for all scripts**: Reports how many SVGs were successfully processed with each processor.
 
-#### 1. Flatten SVGs to organize them normally
+#### 1. Sort SVGs to organize them normally
 
 The default sorting of icons was from Z to A. With this simple script i reversed it. 
 
 ```bash
-npm run flatten
+npm run organize
 ```
 
 #### 2. Generate LESS and TypeScript token files

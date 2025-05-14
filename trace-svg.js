@@ -3,9 +3,10 @@ import path from 'path';
 import { execSync } from 'child_process';
 import sharp from 'sharp';
 
-const inputDir = './iconyzfigmy';
-const tmpDir = './tmp';
-const outputDir = './output';
+import { paths } from './config.js';
+const inputDir = paths.input;
+const tmpDir = paths.tmp;
+const outputDir = paths.output;
 
 if (!fs.existsSync(tmpDir)) fs.mkdirSync(tmpDir);
 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);

@@ -1,6 +1,7 @@
 import fs from "fs";
+import { paths } from "./config.js";
 
-const codepoints = JSON.parse(fs.readFileSync("./dist/icon-codepoints.json", "utf-8"));
+const codepoints = JSON.parse(fs.readFileSync(paths.codepoints, "utf-8"));
 
 function formatEnumEntry(name) {
   const parts = name.split("-");

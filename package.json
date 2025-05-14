@@ -1,22 +1,48 @@
 {
-  "name": "my-icon-font",
+  "name": "@viktorbrenek/my-icon-font",
   "version": "1.0.0",
+  "description": "CLI tool to trace, flatten, and generate webfonts from SVG icons (supports Figma exports with boolean operations).",
   "main": "index.js",
   "type": "module",
+  "bin": {
+    "generate-icons": "./index.js"
+  },
   "scripts": {
-  "trace": "node trace-svg.js",
-  "flatten": "node flatten-for-fantasticon.js",
-  "codepoints": "node generate-codepoints.js",
-  "build": "npx fantasticon --config .fantasticonrc.cjs",
-  "generate:less": "node generate-less.js",
-  "generate:ts": "node generate-iconCode.ts.js",
-  "all": "npm run trace && npm run flatten && npm run codepoints && npm run build && npm run generate:less && npm run generate:ts"
-}
-,
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+    "trace": "node trace-svg.js",
+    "organize": "node organize-for-fantasticon.js",
+    "codepoints": "node generate-codepoints.js",
+    "build": "npx fantasticon --config .fantasticonrc.cjs",
+    "generate:less": "node generate-less.js",
+    "generate:ts": "node generate-iconCode.ts.js",
+    "all": "npm run trace && npm run organize && npm run codepoints && npm run build && npm run generate:less && npm run generate:ts"
+  },
+  "keywords": [
+    "svg",
+    "icon-font",
+    "font-generator",
+    "figma",
+    "webfont",
+    "svg-to-font",
+    "boolean-operations",
+    "fantasticon",
+    "cli-tool"
+  ],
+  "author": "Viktor Břenek",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "trace-svg.js",
+    "flatten-for-fantasticon.js",
+    "generate-codepoints.js",
+    "generate-less.js",
+    "generate-iconCode.ts.js",
+    "my-custom-tp.css.hbs",
+    "codepoints.json",
+    ".fantasticonrc.cjs",
+    "LICENSE.md",
+    "ATTRIBUTION.md",
+    "README.md"
+  ],
   "devDependencies": {
     "fantasticon": "^3.0.0",
     "svgicons2svgfont": "^15.0.1"
@@ -26,7 +52,6 @@
     "clipper-lib": "^6.4.2",
     "jsdom": "^26.1.0",
     "paper": "^0.12.18",
-    "svg-path-parser": "^1.1.0",
     "svgo": "^3.3.2",
     "svgpath": "^2.6.0"
   }

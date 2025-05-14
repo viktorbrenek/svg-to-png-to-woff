@@ -1,0 +1,11 @@
+{
+  "input": "./iconyzfigmy",
+  "output": "./output",
+  "tmp": "./tmp",
+  "codepoints": "./codepoints.json",
+  "lessOutput": "./output/icon-font.less",
+  "tsOutput": "./output/icon-codepoints.ts",
+  "svgDirs": ["output/regular", "output/bold"],
+  "flatOutputDir": "output-flat",
+  "distDir": "dist"
+}

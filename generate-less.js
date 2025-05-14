@@ -1,6 +1,7 @@
 import fs from "fs";
+import { paths } from "./config.js";
 
-const codepoints = JSON.parse(fs.readFileSync("./dist/icon-codepoints.json", "utf-8"));
+const codepoints = JSON.parse(fs.readFileSync(paths.codepoints, "utf-8"));
 
 const lines = Object.entries(codepoints).map(
   ([name, code]) => `@${name}: "\\${code.toString(16).padStart(4, "0")}";`

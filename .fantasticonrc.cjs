@@ -1,11 +1,12 @@
-const path = require("path");
-const codepoints = require("./codepoints.json");
+const fs = require('fs');
+const paths = JSON.parse(fs.readFileSync('./paths.json', 'utf-8'));
+const codepoints = require('./codepoints.json');
 
 module.exports = {
-  inputDir: "./output-flat", // zachová strukturu a názvy
-  outputDir: "./dist",
+  inputDir: paths.flatOutputDir,
+  outputDir: paths.distDir,
   fontTypes: ['ttf', 'woff', 'woff2'],
-  assetTypes: ['css', 'html', 'json', 'ts'],
+  assetTypes: ['html', 'json', 'ts'],
   name: 'my-icons',
   fontsUrl: '/static/fonts',
   normalize: true,
@@ -18,8 +19,8 @@ module.exports = {
     }
   },
   pathOptions: {
-    ts: 'dist/icon-types.ts',
-    json: 'dist/icon-codepoints.json'
+    ts: `${paths.distDir}/icon-types.ts`,
+    json: `${paths.distDir}/icon-codepoints.json`
   },
   templates: {
     css: 'my-custom-tp.css.hbs'

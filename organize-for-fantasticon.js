@@ -22,4 +22,4 @@ for (const folder of svgDirs) {
   }
 }
 
-console.log(`📦 Flatten complete. Total icons copied: ${fs.readdirSync(flatOutputDir).length}`);
+console.log(`📦 Sorting complete. Total icons copied: ${fs.readdirSync(flatOutputDir).length}`);

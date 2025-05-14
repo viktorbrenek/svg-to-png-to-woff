@@ -24,6 +24,8 @@ Unlike inline SVGs or icon sprites, font-based icons can be styled easily with C
 }
 ```
 
+You can also style every individual icon if you have them mapped on your application with .less and .ts files. Which can be also generated with this tool.
+
 This approach reduces the need for additional markup or external assets, simplifying the integration of icon sets in both small and large projects.
 
 ---
@@ -93,34 +95,79 @@ This script performs the following steps:
 - PGM → SVG using `potrace`
 
 ```bash
-node trace-svg.js
+npm run trace
 ```
 
 The traced SVG files will be saved in the `output/` folder.
 
 ---
 
-### 3. Generate the icon font
+### 3. Organizing
+
+By deafult fantasticon doesnt care about alphabetical sorting. It just takes your files from folders based on the date of creation.
+So now there are these helpers to sort them. 
+
+```bash
+npm run organize
+```
+
+and
+
+```bash
+npm run codepoints
+```
+
+### 4. Generate the icon font
 
 Use `fantasticon` to convert SVGs into WOFF/TTF font formats:
 
 ```bash
-npx fantasticon --config .fantasticonrc.cjs
+npm run build
 ```
 
 This step:
 
 - takes SVGs from the `output/` folder
 - generates the icon font into `dist/`
-- creates a `style.css` file with icon mapping
+- you can turn off/on various types of fonts in .fantasticonrc.cjs
 
 ---
-
-## ✅ Output
 
 You will find the generated fonts in the `dist/` folder, ready to use in your web or app project.
 
+PS: After the Update 4 there is an auto cleanup of this folder after the generation. See the updates on the bottom of this README.
+
 ---
+
+### 5. Generate less
+
+For some web applications you might need to generate a list of icons with U+000 codes
+
+```bash
+npm run generate:less
+```
+
+### 6. Generate Icons ID
+
+For some web applications you might need to generate a list of icons ID
+
+```bash
+npm run generate:ts
+```
+
+### 7. Cleanup 
+
+There is now a way to auto clean up the output folder after the generation. So it doesnt get cluttered with old icons. 
+
+```bash
+npm run cleanup
+```
+
+## Just run it all with one command 
+
+```bash
+npm run all
+```
 
 ## 📝 Current problems
 
@@ -189,3 +236,15 @@ npm run generate:ts
 ```
 
 You can use the generated LESS for icon mixins and the TypeScript file for auto-completion or type-safe icon references in web apps.
+
+#### 3. Paths Config 
+
+You can specify each path in the paths.json now. This way you can customize the tool to your application needs. 
+
+#### 4. Cleanup 
+
+There is now a way to auto clean up the output folder after the generation. 
+
+```bash
+npm run cleanup
+```

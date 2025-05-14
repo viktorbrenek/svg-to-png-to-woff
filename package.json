@@ -14,7 +14,8 @@
     "build": "npx fantasticon --config .fantasticonrc.cjs",
     "generate:less": "node generate-less.js",
     "generate:ts": "node generate-iconCode.ts.js",
-    "all": "npm run trace && npm run organize && npm run codepoints && npm run build && npm run generate:less && npm run generate:ts"
+    "cleanup": "node cleanup-output.js",
+    "all": "npm run trace && npm run organize && npm run codepoints && npm run build && npm run generate:less && npm run generate:ts && npm run cleanup"
   },
   "keywords": [
     "svg",

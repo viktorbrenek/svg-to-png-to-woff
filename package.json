@@ -11,11 +11,12 @@
     "trace": "node trace-svg.js",
     "organize": "node organize-for-fantasticon.js",
     "codepoints": "node generate-codepoints.js",
-    "build": "npx fantasticon --config .fantasticonrc.cjs",
+    "generate:data": "node generate-codes.js",
+    "generate:font": "npx fantasticon --config .fantasticonrc.cjs",
     "generate:less": "node generate-less.js",
     "generate:ts": "node generate-iconCode.ts.js",
     "cleanup": "node cleanup-output.js",
-    "all": "npm run trace && npm run organize && npm run codepoints && npm run build && npm run generate:less && npm run generate:ts && npm run cleanup"
+    "build": "npm run trace && npm run organize && npm run codepoints && npm run generate:data && npm run generate:font && npm run generate:less && npm run generate:ts && npm run cleanup"
   },
   "keywords": [
     "svg",
@@ -50,6 +51,7 @@
   },
   "dependencies": {
     "canvas": "^3.1.0",
+    "cli-progress": "^3.12.0",
     "clipper-lib": "^6.4.2",
     "jsdom": "^26.1.0",
     "paper": "^0.12.18",

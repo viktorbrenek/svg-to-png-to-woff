@@ -5,9 +5,9 @@ const codepoints = require('./codepoints.json');
 module.exports = {
   inputDir: paths.flatOutputDir,
   outputDir: paths.distDir,
-  fontTypes: ['ttf', 'woff', 'woff2'],
-  assetTypes: ['html', 'json', 'ts'],
-  name: 'my-icons',
+  fontTypes: ['woff2'],
+  assetTypes: [],
+  name: 'solar-icons',
   fontsUrl: '/static/fonts',
   normalize: true,
   fontHeight: 1024,
@@ -17,10 +17,6 @@ module.exports = {
     svg: {
       metadata: true
     }
-  },
-  pathOptions: {
-    ts: `${paths.distDir}/icon-types.ts`,
-    json: `${paths.distDir}/icon-codepoints.json`
   },
   templates: {
     css: 'my-custom-tp.css.hbs'

@@ -3,9 +3,10 @@
   "output": "./output",
   "tmp": "./tmp",
   "codepoints": "./codepoints.json",
-  "lessOutput": "./output/icon-font.less",
-  "tsOutput": "./output/icon-codepoints.ts",
+  "lessOutput": "./dist/iconCode.less",
+  "tsOutput": "./dist/iconCode.ts",
   "svgDirs": ["output/regular", "output/bold"],
   "flatOutputDir": "output-flat",
-  "distDir": "dist"
+  "distDir": "dist",
+  "staticIconAliasesPath": "./iconAliases.json" 
 }

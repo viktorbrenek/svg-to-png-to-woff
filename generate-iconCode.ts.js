@@ -1,6 +1,5 @@
 import fs from "fs";
 import { paths } from "./config.js";
-
 const codepoints = JSON.parse(fs.readFileSync(paths.codepoints, "utf-8"));
 
 function formatEnumEntry(name) {
@@ -9,26 +8,27 @@ function formatEnumEntry(name) {
   return `    ${key} = "${name}",`;
 }
 
-// Rozdělit na "regular" a "filled"
-const normal = [];
-const filled = [];
+// Rozdělení
+const allNames = Object.keys(codepoints);
+const nonFilled = allNames.filter(n => !n.endsWith("-filled")).sort((a, b) => a.localeCompare(b));
+const filledSet = new Set(allNames.filter(n => n.endsWith("-filled")));
 
-for (const name of Object.keys(codepoints).sort()) {
-  if (name.endsWith("-filled")) {
-    filled.push(formatEnumEntry(name));
-  } else {
-    normal.push(formatEnumEntry(name));
+const final = [];
+
+for (const name of nonFilled) {
+  final.push(formatEnumEntry(name));
+
+  const filledName = name + "-filled";
+  if (filledSet.has(filledName)) {
+    final.push(formatEnumEntry(filledName));
+    filledSet.delete(filledName); // prevent duplicates
   }
 }
 
-// Přidat komentář před začátek filled ikon
-const comment = [
-  "    // Bold version STARTS HERE",
-  "    // Ends with *-filled"
-];
-const final = [...normal, ...comment, ...filled];
+// Přidat zbylé filled (pro které nenašel pair)
+for (const name of filledSet) {
+  final.push(formatEnumEntry(name));
+}
 
 const content = `export enum IconCode {\n${final.join("\n")}\n}\n`;
-
 fs.writeFileSync("./dist/iconCode.ts", content, "utf-8");
-console.log(`✅ iconCode.ts generated with ${Object.keys(codepoints).length} icons (non-filled first).`);

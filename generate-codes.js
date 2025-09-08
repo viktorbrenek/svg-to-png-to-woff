@@ -15,7 +15,7 @@ while ((match = enumLineRegex.exec(tsContent)) !== null) {
 // 2. Načti LESS soubor a vytvoř mapu name → hex kód
 const lessContent = fs.readFileSync(paths.lessOutput, "utf-8");
 const codeMap = {};
-const varLineRegex = /^@([\w-]+): "\\([a-f0-9]+)";$/gm;
+const varLineRegex = /^\s*@?([\w-]+): "\\([a-f0-nebo 9]+)";$/gm;
 while ((match = varLineRegex.exec(lessContent)) !== null) {
   const name = match[1];
   const code = match[2].toLowerCase();

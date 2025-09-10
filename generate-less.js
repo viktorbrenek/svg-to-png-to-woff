@@ -35,7 +35,7 @@ const legacyAliases = `@icon-codes-legacy: {
 };`;
 
 const finalContent = `// Icon codes
-${staticAliases}
+${staticAliases.trim()}
 
 // Dynamically generated icon variables
 ${iconVariables}

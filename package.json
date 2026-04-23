@@ -34,16 +34,21 @@
   "license": "MIT",
   "files": [
     "index.js",
+    "config.js",
+    "paths.json",
     "trace-svg.js",
-    "flatten-for-fantasticon.js",
+    "organize-for-fantasticon.js",
     "generate-codepoints.js",
+    "generate-codes.js",
     "generate-less.js",
     "generate-iconCode.ts.js",
-    "my-custom-tp.css.hbs",
+    "cleanup-output.js",
+    "check-env.js",
+    "iconAliases.json",
     "codepoints.json",
+    "my-custom-tp.css.hbs",
     ".fantasticonrc.cjs",
-    "LICENSE.md",
-    "ATTRIBUTION.md",
+    "LICENCE.md",
     "README.md"
   ],
   "devDependencies": {
@@ -52,13 +57,8 @@
     "svgicons2svgfont": "^15.0.1"
   },
   "dependencies": {
-    "canvas": "^3.1.0",
     "cli-progress": "^3.12.0",
-    "clipper-lib": "^6.4.2",
-    "jsdom": "^26.1.0",
-    "paper": "^0.12.18",
-    "svgo": "^3.3.2",
-    "svgpath": "^2.6.0"
+    "sharp": "^0.33.5"
   },
   "watch": "nodemon --watch iconyzfigmy --ext svg --exec \"npm start\""
 }

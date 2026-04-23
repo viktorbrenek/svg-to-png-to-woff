@@ -166,7 +166,7 @@ npm run cleanup
 ## Just run it all with one command 
 
 ```bash
-npm run all
+npm run build
 ```
 
 ## 📝 Current problems

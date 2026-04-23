@@ -2,12 +2,15 @@
 
 import { execSync } from 'child_process';
 
-console.log('🛠 Generating icon font...');
+console.log('🚀 Spouštím generování ikon...');
 
 try {
-  execSync('npm run all', { stdio: 'inherit' });
-  console.log('✅ Font generation finished.');
+  // Změna z 'npm run all' na 'npm run build'
+  // stdio: 'inherit' zajistí, že uvidíte barevné výstupy z podprocesů
+  execSync('npm run build', { stdio: 'inherit' }); 
+  
+  console.log('✅ Hotovo! Všechny ikony byly vygenerovány.');
 } catch (err) {
-  console.error('❌ Error during generation:', err);
+  console.error('❌ Chyba při generování:', err.message);
   process.exit(1);
 }
